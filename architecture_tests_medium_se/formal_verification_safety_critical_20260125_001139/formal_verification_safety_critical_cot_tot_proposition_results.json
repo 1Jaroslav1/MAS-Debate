@@ -1,0 +1,2181 @@
+{
+  "config_id": "formal_verification_safety_critical",
+  "topic": "Static analysis and formal verification should be mandatory for safety-critical software",
+  "max_rounds": 2,
+  "rounds_completed": 2,
+  "teams": [
+    "anti_formal_verification_safety_critical",
+    "pro_formal_verification_safety_critical"
+  ],
+  "team_architectures": {
+    "anti_formal_verification_safety_critical": {
+      "architecture": "cot",
+      "team_type": "proposition",
+      "members": [
+        {
+          "name": "Dr. Alan Pierce",
+          "knowledge_active": false,
+          "knowledge_use_rag": false,
+          "knowledge_use_web_search": false,
+          "evaluation_active": false,
+          "max_iterations": 3,
+          "use_personalization": true,
+          "use_context_analysis": true
+        },
+        {
+          "name": "Yuki Tanaka",
+          "knowledge_active": false,
+          "knowledge_use_rag": false,
+          "knowledge_use_web_search": false,
+          "evaluation_active": false,
+          "max_iterations": 3,
+          "use_personalization": true,
+          "use_context_analysis": true
+        }
+      ]
+    },
+    "pro_formal_verification_safety_critical": {
+      "architecture": "tot",
+      "team_type": "opposition",
+      "tot_config": {
+        "num_analysis_branches": null,
+        "num_argument_variations": null,
+        "pruning_strategy": null,
+        "analysis_pruning_k": null,
+        "argument_pruning_k": null,
+        "search_algorithm": null,
+        "enable_fast_scoring": null,
+        "diversity_weight": null
+      },
+      "members": [
+        {
+          "name": "Dr. Heinrich Vogel",
+          "knowledge_active": false,
+          "knowledge_use_rag": false,
+          "knowledge_use_web_search": false,
+          "evaluation_active": false,
+          "max_iterations": 3,
+          "use_personalization": true,
+          "use_context_analysis": true
+        },
+        {
+          "name": "Maria Santos",
+          "knowledge_active": false,
+          "knowledge_use_rag": false,
+          "knowledge_use_web_search": false,
+          "evaluation_active": false,
+          "max_iterations": 3,
+          "use_personalization": true,
+          "use_context_analysis": true
+        }
+      ]
+    }
+  },
+  "audience_initial_votes": [
+    {
+      "name": "Dr. Elizabeth Warren-Smith",
+      "decision": "disagree",
+      "reasoning": "As a health economist, I am deeply concerned about the practicality and cost-effectiveness of mandating static analysis and formal verification for safety-critical software. While I recognize their potential to enhance software reliability, I believe they could impose significant financial burdens on organizations, especially smaller ones. It's essential to focus on evidence-based policies that balance safety with economic viability, hence I would oppose making these methods mandatory."
+    },
+    {
+      "name": "Jonathan Tech-Garcia",
+      "decision": "agree",
+      "reasoning": "I vote 'agree' because static analysis and formal verification are crucial in ensuring the reliability and safety of software, especially in critical systems where failures can lead to severe consequences. As a software engineer, I see these methodologies as essential tools that can help us identify potential flaws before deployment. Data from various studies suggests that incorporating these practices significantly reduces bug rates and enhances code quality, aligning with my belief in the optimistic potential of technology to improve our safety standards."
+    },
+    {
+      "name": "Professor Sarah Environment-Jones",
+      "decision": "disagree",
+      "reasoning": "As a climate scientist, my focus primarily revolves around the intersection of science and urgent environmental challenges. I vote 'disagree' because while I acknowledge the importance of software reliability, I feel that mandates like those proposed for static analysis and formal verification could divert resources from more pressing environmental issues. We are in a climate crisis, and I believe that innovation should be adaptable rather than strictly regulated in ways that may hinder progress in more vital sectors."
+    },
+    {
+      "name": "Marcus Business-Chen",
+      "decision": "agree",
+      "reasoning": "I strongly support the implementation of static analysis and formal verification, especially for safety-critical software. From a venture capitalist perspective, investing in these rigorous practices enhances market confidence by assuring safety and reliability. Startups and established businesses alike benefit from minimizing risks associated with software failures. My experience shows that the potential cost savings from avoiding catastrophic failures far outweigh the initial investments in these methodologies, thus I vote 'agree'."
+    },
+    {
+      "name": "Dr. Helen Ethics-Martinez",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because I believe that while safety is paramount, mandating static analysis and formal verification could lead us into a regulatory trap. As a medical ethicist, I prioritize patient-centered care and traditional ethical principles over rigid protocols. Each case in healthcare software is unique and should be approached with flexibility, allowing for innovation and responsiveness to specific patient needs. Over-regulation may inhibit creative solutions that address these needs effectively."
+    },
+    {
+      "name": "David Policy-Anderson",
+      "decision": "agree",
+      "reasoning": "From a government policy analyst's standpoint, I vote 'agree' because implementing mandatory static analysis and formal verification in safety-critical software ensures a systematic approach to risk management. By basing policies on data and empirical evidence, we can significantly decrease the likelihood of software failures, which can result in harmful outcomes. The safety benefits and long-term economic savings through reduced liabilities and enhanced public trust in software systems make a compelling case for this mandate."
+    },
+    {
+      "name": "Rebecca Science-Taylor",
+      "decision": "agree",
+      "reasoning": "As a research scientist, I wholeheartedly support mandatory static analysis and formal verification for safety-critical software. These methods provide a solid foundation in data-backed assurance of quality and reliability that is essential in sectors where failure is not an option. Research repeatedly shows that these practices can drastically cut down on errors in complex systems. By voting 'agree', I champion a scientifically-informed approach to software safety that can ultimately save lives and protect public trust."
+    },
+    {
+      "name": "Professor James Law-Wilson",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' based on my expertise in constitutional law and civil liberties. While I value safety, I am wary of mandating specific practices that may stifle innovation or infringe on individual freedoms in software development. The legal implications of imposing static analysis and formal verification could lead to unintended consequences, restricting the ability of developers to adapt their solutions creatively. I advocate for maintaining a balance between safety measures and the protection of civil liberties."
+    },
+    {
+      "name": "Dr. Maria Healthcare-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "As a physician focusing on patient care, I must vote 'disagree' regarding the cutthroat imposition of static analysis and formal verification. Software tools in medicine need to evolve in a way that prioritizes patient welfare and adaptability rather than rigidity. Such mandates could delay vital innovations and adaptations that can significantly benefit patient outcomes. We need a system that fosters creativity while maintaining high standards, rather than a one-size-fits-all approach."
+    },
+    {
+      "name": "Steven Innovation-Kim",
+      "decision": "agree",
+      "reasoning": "I'm in favor of making static analysis and formal verification mandatory for safety-critical software, as these methodologies can transform industries by fostering reliability and trust. As an entrepreneur, I've seen firsthand how rigorous quality assurance in software isn't merely a regulatory hurdle; it's an enabler of innovation and customer confidence. By preventing software failures before they can happen, we not only enhance safety but also open the door for disruptive innovations that can redefine markets."
+    },
+    {
+      "name": "Dr. Patricia Environment-Green",
+      "decision": "disagree",
+      "reasoning": "In my perspective as an environmental policy expert, I vote 'disagree' because focusing too heavily on mandated technological processes could detract from more coordinated solutions addressing systemic environmental issues. Although safety in software is important, I fear that overregulation without nuanced understanding may lead to inefficiencies and stifle innovative strategies needed to combat climate change. We should be promoting flexibility in how safety is achieved rather than box developers into rigid methodologies."
+    },
+    {
+      "name": "Michael Finance-Thompson",
+      "decision": "disagree",
+      "reasoning": "As an investment banker, my background leads me to vote 'disagree' on mandatory static analysis and formal verification. Such regulations could create barriers to entry for smaller firms in the software industry, thereby stifling competition and innovation. The financial market thrives on diverse approaches, and imposing strict verification mandates might hamper agility and resilience. We should encourage a variety of methodologies that can coexist rather than enforcing a singular approach."
+    },
+    {
+      "name": "Dr. Angela Education-Foster",
+      "decision": "disagree",
+      "reasoning": "As an education researcher, my voting position is 'disagree', as I believe that mandatory protocols can often limit pedagogical flexibility and creativity. In the context of software development, it is crucial that the evolution of education reflects the dynamic and fluid nature of technology. Mandating static analysis and formal verification could restrict innovative educational approaches that better prepare individuals for the changing workforce. We should prioritize adaptability over rigidity in fostering educational effectiveness."
+    },
+    {
+      "name": "Robert Security-Cooper",
+      "decision": "disagree",
+      "reasoning": "In my work as a cybersecurity expert, I lean towards voting 'disagree' due to concerns about the reactive nature of implementing static analysis and formal verification. While these tools can be beneficial, they are just part of a broader risk management strategy. An overemphasis on these methodologies may distract teams from addressing real threats and evolving challenges, promoting a false sense of complete security in software products. We must balance strict safety measures with adaptive, pragmatic security practices."
+    },
+    {
+      "name": "Dr. Christina Medical-Miller",
+      "decision": "agree",
+      "reasoning": "As a biomedical researcher, I firmly believe in the importance of static analysis and formal verification, particularly given the stakes involved in biomedical software. By voting 'agree', I emphasize that these methods could prevent errors that lead to serious harm in clinical settings, ensuring patient safety. The uptick in innovative biomedical solutions rests on reliable software functioning, and rigorous methodologies can effectively safeguard our commitment to innovation while prioritizing patient welfare."
+    },
+    {
+      "name": "Daniel Legal-Martinez",
+      "decision": "disagree",
+      "reasoning": "In my capacity as a corporate lawyer, I believe that mandating static analysis and formal verification could potentially lead to excessive regulatory burdens and compliance costs. Thus, I vote 'disagree'. Regulations should be clear and aligned with promoting innovation and market dynamics. Striking a balance is imperative; we must ensure compliance while also enabling companies to pursue efficient, outcome-oriented software development without being bogged down by excessive scrutiny that hinders progress."
+    },
+    {
+      "name": "Dr. Kevin Philosophy-Liu",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because, as an ethics professor, I caution against rigid mandates like static analysis and formal verification. Such requirements could limit the flexibility of engineers to find creative solutions or adapt to evolving technologies. Mandating specific methods may conflict with the ethical principle of respecting the autonomy of developers to make thoughtful choices in their work. Ethics in software development should focus on principles rather than fixed methodologies."
+    },
+    {
+      "name": "Lisa Technology-Hayes",
+      "decision": "agree",
+      "reasoning": "I vote 'agree' because, as an AI researcher, I recognize the significant role static analysis and formal verification play in enhancing the reliability of AI systems, especially in safety-critical applications. With the rise of intelligent systems, ensuring that these systems adhere to stringent safety standards is not just beneficial; it's necessary. Data-driven evidence supports the effectiveness of these methods in identifying and mitigating risks, aligning perfectly with my values of efficiency and reliability in technology."
+    },
+    {
+      "name": "Professor Mark Economics-Stevens",
+      "decision": "disagree",
+      "reasoning": "As a labor economist, I vote 'disagree' based on potential impacts on workforce dynamics. Mandating static analysis and formal verification may result in stifling certain job roles within software industries and can limit opportunities for workers to develop diverse skill sets. While safety is crucial, the evolving nature of the labor market suggests we should encourage adaptability in approaches to safety and software development rather than enforcing strict mandates that may deter workforce creativity."
+    },
+    {
+      "name": "Dr. Sophia Ethics-Petrov",
+      "decision": "disagree",
+      "reasoning": "In my view as a bioethicist, I must vote 'disagree' as I prioritize human dignity and ethical considerations over mandatory regulations. While safety is vital, the necessity for flexibility, creativity, and human judgment in software development should not be overlooked. Rigid methods like static analysis and formal verification may compromise those qualities, potentially resulting in unintended ethical implications in patient-centered technologies. A balanced approach that incorporates ethics with technological rigor is crucial."
+    },
+    {
+      "name": "Paul Industry-Anderson",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' based on my experience in manufacturing, where efficiency and practical implementation are paramount. My concerns with mandatory static analysis and formal verification stem from their potential to complicate production processes. A more flexible approach that allows for adaptation in methodologies can lead to better innovation and timely responses to market demands, rather than adhering to a rigid standard that may not fit every situation in practice."
+    },
+    {
+      "name": "Dr. Janet Data-Kim",
+      "decision": "disagree",
+      "reasoning": "As a statistician, my vote is 'disagree' because I feel that mandatory requirements may stifle innovative approaches to software development. While statistical methods can certainly enhance the reliability of software, forcing static analysis and formal verification as standards could lead to a one-size-fits-all scenario where valuable insights and creative solutions are overlooked. Flexibility in methodologies often yields the best results, and we should embrace a variety of approaches to ensure meaningful progress."
+    },
+    {
+      "name": "Captain Steve Military-Richards",
+      "decision": "disagree",
+      "reasoning": "As a former military officer, I have always prioritized discipline in operations, but I express my disagreement with mandatory static analysis and formal verification. My concern lies in the rigidity such requirements impose on adaptive system designs; military operations must inherently evolve and respond to changing circumstances. While safety is undeniably critical, I believe imposing strict regulations may hinder the development of flexible solutions necessary in many dynamic environments."
+    },
+    {
+      "name": "Dr. Anna Medical-Volkov",
+      "decision": "disagree",
+      "reasoning": "In my role as a reproductive specialist, I support patient autonomy and choice above all else. Voting 'disagree' on the mandate for static analysis and formal verification reflects my belief that these methods, while they hold merit, might create unnecessary obstacles for innovative solutions in sensitive medical contexts. A patient-centered approach requires flexibility and adaptation rather than stringent requirements that could impede critical advancements in reproductive health."
+    },
+    {
+      "name": "Professor William Science-Chen",
+      "decision": "agree",
+      "reasoning": "As a physical scientist, I see the immense value in static analysis and formal verification, thus I vote 'agree'. These methodologies enhance the reliability of safety-critical software, which can have monumental impacts on scientific advancements. The data clearly shows that implementing such rigor can mitigate risks associated with unforeseen software failures, promoting trust in technological solutions. A solid foundation in software quality is essential for fostering the next generation of scientific innovation."
+    },
+    {
+      "name": "Melissa Art-Johnson",
+      "decision": "disagree",
+      "reasoning": "As a museum curator whose focus is on cultural preservation, I must vote 'disagree' because I believe that overly structured methodologies like static analysis and formal verification could stifle the creative processes necessary for storytelling in software development. Cultural narratives require flexibility and adaptability, which may be constrained by rigid mandates. Our goal should be to foster diverse expressions in software rather than confining them to prescriptive standards."
+    },
+    {
+      "name": "Tony Sports-Rodriguez",
+      "decision": "agree",
+      "reasoning": "I'm in favor of mandatory static analysis and formal verification as a former athlete who understands the critical nature of precision in competitive environments. Teams rely on accuracy and reliability; similarly, safety-critical software must be dependable. From my perspective, rigorous practices in software development will ensure that systems perform reliably under pressure—an ethos that resonates across disciplines. Therefore, I vote 'agree' in favor of promoting rigorous standards for enhanced software safety."
+    },
+    {
+      "name": "Grace Music-Wilson",
+      "decision": "disagree",
+      "reasoning": "From my background as a classical musician, I firmly believe in the importance of creativity and flexibility in all forms of artistry, including software development. Hence, I vote 'disagree'. Mandating rigid methodologies such as static analysis and formal verification may limit the imaginative strides essential in crafting innovative solutions. Just as music requires interpretation beyond the score, software must be allowed the same creative freedom for effective problem-solving."
+    },
+    {
+      "name": "Frank History-Thompson",
+      "decision": "disagree",
+      "reasoning": "As a history teacher, I emphasize traditional narratives, thus I vote 'disagree' on the issue of mandatory static analysis and formal verification. Similar to historical interpretation, software development thrives on diverse perspectives and methods. Mandating a singular path may reduce the richness of approaches available to developers, ultimately hindering the evolution of software that can adapt and grow with society. I advocate for openness in methodologies rather than rigid confines."
+    },
+    {
+      "name": "Luna Spiritual-Garcia",
+      "decision": "disagree",
+      "reasoning": "Having a holistic worldview as a yoga instructor, I vote 'disagree' on mandatory static analysis and formal verification. The essence of holistic practices lies in flexibility, adaptability, and understanding the interconnectedness of things, including software systems. Mandating specific verification methods may detract from the flow and adaptability needed in creating software solutions that adapt to user needs. We should embrace various practices instead of enforcing strict regulations."
+    },
+    {
+      "name": "Bob Construction-Miller",
+      "decision": "disagree",
+      "reasoning": "As a union electrician who values practical and hands-on approaches, I vote 'disagree'. The imposition of mandatory static analysis and formal verification could create barriers for skilled trades who engage with software at a foundational level. While I recognize the importance of safety, it's crucial that we allow those who work with software the freedom to use practical methods that suit their experiences rather than adhering to prescribed standards that may not fit all contexts."
+    },
+    {
+      "name": "Jennifer Fashion-Anderson",
+      "decision": "disagree",
+      "reasoning": "As a retail manager focused on consumer needs and market trends, my vote is 'disagree'. Mandating static analysis and formal verification could lead to increased costs and less responsiveness in the rapidly changing retail environment. This could hinder innovation and flexibility on the part of software developers tasked with adapting systems to meet consumer demand. A more adaptable approach would better serve the dynamic nature of the market."
+    },
+    {
+      "name": "Carlos Literature-Martinez",
+      "decision": "disagree",
+      "reasoning": "In my role as an English professor, I emphasize the importance of critical interpretation, which is why I vote 'disagree' on making static analysis and formal verification mandatory. Rigid methodologies could inhibit the ability to navigate complex narratives in software development and diminish the diversity of thought essential in crafting nuanced software solutions. Encouraging varied approaches rather than enforcing strict standards allows for richer explorations in technology."
+    },
+    {
+      "name": "Destiny Social-Kim",
+      "decision": "agree",
+      "reasoning": "As a social media influencer, my perspective is often trend-driven, thus I vote 'agree' in support of mandatory static analysis and formal verification. The rapid pace of technological advancement necessitates a robust framework for ensuring software safety, especially in critical applications. By upholding these rigorous standards, we create trust and assurance among users that the technologies they rely on are tested and verified, reflecting a commitment to quality which is vital in today's digital landscape."
+    },
+    {
+      "name": "Ralph Mechanical-Taylor",
+      "decision": "disagree",
+      "reasoning": "As an auto mechanic focused on practical problem-solving, I find the notion of mandatory static analysis and formal verification impractical, prompting my 'disagree' vote. These processes run the risk of complicating rather than simplifying the development of software, which should be accessible and functional. Flexibility in software development should be encouraged to foster innovative and adaptive solutions that directly address user needs while maintaining high standards."
+    },
+    {
+      "name": "Amber Wellness-Foster",
+      "decision": "disagree",
+      "reasoning": "My expertise as a nutritionist leads me to believe that while safety is vital, imposing mandatory static analysis and formal verification doesn't necessarily reflect a natural or holistic approach. Therefore, I vote 'disagree'. In fields ranging from health to technology, a rigid standard can stifle innovation or adaptability in methods that cater to individual needs. We should focus on creating adaptable frameworks that allow for diverse and effective software solutions while still promoting safety."
+    },
+    {
+      "name": "Kevin Gaming-Chen",
+      "decision": "agree",
+      "reasoning": "As a video game developer, I find that rigorous methodologies such as static analysis and formal verification are essential for ensuring software reliability, leading me to vote 'agree'. The stakes are high in creating immersive and responsive gaming experiences where bugs can detrimentally affect user engagement. By advocating for mandatory practices in safety-critical software, I support the creation of high-quality, dependable experiences that users can trust."
+    },
+    {
+      "name": "Patricia Religious-O'Sullivan",
+      "decision": "disagree",
+      "reasoning": "As a church administrator, my core principles are faith-based, emphasizing compassion and understanding. This leads me to vote 'disagree'. While I recognize the importance of safety, I argue that a mandate for static analysis and formal verification could detract from the organic, relational elements tied to software development. I believe in allowing for compassionate adaptability in meeting user needs rather than imposing stringent, potentially isolating protocols."
+    },
+    {
+      "name": "Jake Outdoor-Wilson",
+      "decision": "disagree",
+      "reasoning": "As a park ranger, I vote 'disagree' because safety and conservation require more flexible, site-specific approaches rather than a blanket mandate for static analysis and formal verification. While I'm fully aware of the need for careful oversight in software that affects environmental aspects, impositions could slow down innovative solutions tailored to unique conservation challenges. We need coherent strategies that promote adaptability to regional contexts rather than rigid standards."
+    },
+    {
+      "name": "Nicole Beauty-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "In my role as a cosmetics sales rep focusing on appearance and customer engagement, I vote 'disagree' on making static analysis and formal verification mandatory. These rigorous standards could detract from creativity in developing innovative marketing and beauty tech solutions that prioritize user enjoyment and experience. By allowing flexibility in approaches, we can effectively align software with consumer desires while still ensuring quality and safety."
+    },
+    {
+      "name": "Martin Craft-Anderson",
+      "decision": "disagree",
+      "reasoning": "As a furniture maker focused on craftsmanship and quality, I find the push for mandatory static analysis and formal verification overly prescriptive, leading me to vote 'disagree'. In practice, such mandates may stifle the craft of software development, which thrives on creativity and individual input. The best designs often emerge from iterative experimentation rather than strict adherence to specific protocols. Let's allow innovators to flourish through their unique contributions."
+    },
+    {
+      "name": "Samantha Travel-Lee",
+      "decision": "agree",
+      "reasoning": "As a travel blogger, I value adventure and exploration, prompting my vote of 'agree' in favor of mandatory static analysis and formal verification. In safety-critical software, ensuring reliable experiences is akin to well-planned travel—it fosters trust and enjoyment for users. These methodologies can greatly reduce incidents and improve user satisfaction, reflecting a commitment to quality in technological services while aligning with a commitment to safe travel."
+    },
+    {
+      "name": "Eddie Food-Garcia",
+      "decision": "disagree",
+      "reasoning": "As a restaurant chef, I prioritize culinary creativity while ensuring the safety and quality of my dishes. Hence, my vote is 'disagree'. While static analysis and formal verification have merits, mandating them could generate unnecessary constraints and limit innovative approaches in software development. Just as cooking requires an ingredient's adaptability, software should maintain a degree of flexibility to allow for creativity and quick response to emerging needs."
+    },
+    {
+      "name": "Brenda Real-Estate-Thompson",
+      "decision": "disagree",
+      "reasoning": "From my vantage point as a property agent, I must vote 'disagree' due to the concerns about the potential regulatory burden that mandatory static analysis and formal verification may introduce. Imposing strict verification processes could hamper agility and responsiveness in software development, much like how unnecessary regulations can slow real estate transactions. Encouraging diverse methodologies would better serve clients' needs and foster innovation in addressing market changes."
+    },
+    {
+      "name": "Tyler Photography-Kim",
+      "decision": "disagree",
+      "reasoning": "As a wedding photographer, I view storytelling through visuals as vital, leading me to vote 'disagree'. Mandating static analysis and formal verification might impose rigidity that oversimplifies the nuanced creativity needed in software development. Just as each wedding has its unique elements that require careful interpretation, software solutions must retain flexibility to uniquely cater to the varied demands of users and circumstances."
+    },
+    {
+      "name": "Crystal Therapy-Martinez",
+      "decision": "disagree",
+      "reasoning": "As a physical therapist, I approach health from a holistic perspective, prompting my vote of 'disagree' on mandatory static analysis and formal verification. I believe that overly prescriptive methods in software development may overlook the importance of personal adaptation and individualized care in technology. Flexibility is crucial for innovation, enabling developers to cater solutions to the diverse needs of patients and their circumstances."
+    },
+    {
+      "name": "Gary Fishing-Johnson",
+      "decision": "disagree",
+      "reasoning": "As a commercial fisherman, I opt for pragmatic and traditional methods, which leads me to vote 'disagree'. Rigid mandates like static analysis and formal verification could hinder adaptive and scalable practices that are essential in my field. Such regulations may overlook the diverse, often unpredictable environments we encounter in software development, thereby stifling efficiency and quick responses needed to navigate challenges."
+    },
+    {
+      "name": "Alicia Dance-Foster",
+      "decision": "disagree",
+      "reasoning": "As a dance instructor, my role emphasizes fluidity in movement and creative expression. Thus, my vote is 'disagree' as I believe mandatory static analysis and formal verification could limit the artistic and adaptive nature of software development. Just as each dancer brings their unique style and interpretation to choreography, software development must retain room for spontaneous creative inputs to address user needs effectively."
+    },
+    {
+      "name": "Bruce Volunteer-Wilson",
+      "decision": "disagree",
+      "reasoning": "As a retired volunteer coordinator, fostering community engagement is key to my philosophy, and it influences my vote of 'disagree'. I am concerned that imposing static analysis and formal verification could compartmentalize software development, leading to a lack of community collaboration and innovation. A more open and collaborative approach allows for diverse voices to contribute effectively without being hindered by strict requirements."
+    },
+    {
+      "name": "Tina Pet-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "In my role as a veterinary technician, my focus is on compassionate care, guiding my vote of 'disagree'. While ensuring software safety is crucial, I believe that mandatory static analysis and formal verification may overlook the need for personalized approaches that address the unique circumstances of animal care. We should embrace flexibility in methods to tailor solutions to individual patient needs rather than enforce rigid regulations."
+    }
+  ],
+  "audience_final_votes": [
+    {
+      "name": "Dr. Elizabeth Warren-Smith",
+      "decision": "disagree",
+      "reasoning": "As a health economist, I find that while static analysis and formal verification can provide certain assurances, making them mandatory can lead to unnecessary costs and delays in software development, especially for smaller organizations. The evidence suggests that not all safety-critical software benefits equally from these analyses. A more flexible approach that considers the context and risk could yield better outcomes without stifling innovation."
+    },
+    {
+      "name": "Jonathan Tech-Garcia",
+      "decision": "agree",
+      "reasoning": "I'm a firm believer in the power of technology to improve safety in software development. Mandating static analysis and formal verification for safety-critical software ensures that we're catching issues early, reducing costs in the long run. The data clearly supports that such measures lead to fewer defects and enhances system reliability. We need to embrace these tools to foster innovation while ensuring safety."
+    },
+    {
+      "name": "Professor Sarah Environment-Jones",
+      "decision": "disagree",
+      "reasoning": "While I see the importance of verification in software, I believe that mandatory static analysis could become a hindrance rather than a help. My field values urgency in implementing solutions, and imposing rigid requirements may slow down vital advancements in climate science software development. We should instead focus on adaptable solutions tailored to specific environmental issues."
+    },
+    {
+      "name": "Marcus Business-Chen",
+      "decision": "disagree",
+      "reasoning": "From a financial perspective, regulatory burdens like mandatory static analysis can hinder innovation and market efficiency. While safety-critical software is crucial, we must balance that with the need for agility in software development. Imposing stringent requirements could disincentivize investment in promising tech startups that are trying to innovate in safety-critical areas."
+    },
+    {
+      "name": "Dr. Helen Ethics-Martinez",
+      "decision": "disagree",
+      "reasoning": "As a medical ethicist, I have concerns regarding mandatory practices that might infringe upon the ability to make case-by-case decisions when developing safety-critical software. Rigid standards may overlook the ethical implications related to flexibility and context. It's essential to uphold traditional values while making sure that our standards do not compromise the well-being of individuals in health care."
+    },
+    {
+      "name": "David Policy-Anderson",
+      "decision": "disagree",
+      "reasoning": "From a public policy perspective, it’s vital to strike a balance between promoting safety and allowing innovation. While static analysis and formal verification are beneficial tools, making them mandatory could create bureaucracy that stifles creativity and slow responses to evolving public needs. A pragmatic approach would advocate for these tools as recommendations rather than requirements."
+    },
+    {
+      "name": "Rebecca Science-Taylor",
+      "decision": "disagree",
+      "reasoning": "I align with the belief that in software development, especially for safety-critical applications, a flexible approach tends to work better. Mandatory practices could deter innovation, as developers might resort to merely meeting requirements rather than prioritizing genuine safety enhancements. Let's emphasize scientific evidence over rigid methodologies."
+    },
+    {
+      "name": "Professor James Law-Wilson",
+      "decision": "disagree",
+      "reasoning": "My expertise in constitutional law leads me to view mandatory requirements through a civil liberties lens. Imposing rigid protocols like static analysis may restrict the necessary creative processes involved in software development. Ensuring the integrity of safety-critical systems should not come at the cost of innovator freedoms and the exploration of new ideas."
+    },
+    {
+      "name": "Dr. Maria Healthcare-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "As a physician, I'm concerned that mandatory requirements could delay critical software updates that impact patient care. Safety in medical software is paramount, but enforcing static analysis and formal verification as prerequisites may lead to bureaucratic slowdowns. We must be able to adapt swiftly to patient needs and safety developments."
+    },
+    {
+      "name": "Steven Innovation-Kim",
+      "decision": "agree",
+      "reasoning": "As a technology entrepreneur, I see the potential in harnessing static analysis and formal verification to build better software. Making these practices mandatory could encourage more developers to adopt best practices early on, enhancing product reliability. Innovations should not be stifled, but a structured approach to safety can improve their standards and acceptance in the market."
+    },
+    {
+      "name": "Dr. Patricia Environment-Green",
+      "decision": "disagree",
+      "reasoning": "From an environmental policy standpoint, rigid requirements like mandatory static analysis could detract from essential flexibility in tackling various issues. Our approach should not impose barriers to rapid innovation and adaptation in environmental solutions. Safety-critical software must adapt fluidly to the science at hand without excessive bureaucratic constraints."
+    },
+    {
+      "name": "Michael Finance-Thompson",
+      "decision": "disagree",
+      "reasoning": "In finance, for us to see growth in sectors relying on safety-critical software, we must avoid overly stiff regulations like requiring static analysis. These constraints can suffocate opportunities for new entrants in the market. We need to prioritize efficiency and profitability, as they ultimately lead to better solutions in this space."
+    },
+    {
+      "name": "Dr. Angela Education-Foster",
+      "decision": "disagree",
+      "reasoning": "I oppose a mandatory approach as it could limit the application of flexibility necessary in education technologies. The diversity of education software requires a tailored approach to risk and safety rather than imposing broad, rigid mandates, which may stifle the innovation required to meet various learning needs."
+    },
+    {
+      "name": "Robert Security-Cooper",
+      "decision": "disagree",
+      "reasoning": "Safety-critical software must be effective in a fast-evolving field like cybersecurity. Imposing heavy mandates could create friction between immediate needs and thorough analyses. I advocate for a risk-focused approach, encouraging adaptable practices that prioritize security without constraining technological advancement."
+    },
+    {
+      "name": "Dr. Christina Medical-Miller",
+      "decision": "disagree",
+      "reasoning": "In seeking to innovate in biomedicine, I am wary of mandatory processes surrounding software development. Static analysis and verification have their place but shouldn’t dictate how we explore and implement groundbreaking solutions. Ethics should prioritize innovation that embodies humane and compassionate values over rigid adherence to standards."
+    },
+    {
+      "name": "Daniel Legal-Martinez",
+      "decision": "disagree",
+      "reasoning": "From a corporate law perspective, I view regulatory clarity as a fundamental necessity. However, mandating static analysis can introduce ambiguity, deterring innovation. We need to shape regulations in a way that supports progress while ensuring accountability without being punitive or obstructive."
+    },
+    {
+      "name": "Dr. Kevin Philosophy-Liu",
+      "decision": "disagree",
+      "reasoning": "I contend that enforcing static analysis could detract from stakeholders' rights to dynamically approach software safety. A balanced, rights-oriented approach prioritizes individuals’ freedoms to solve complex problems creatively rather than rigidly adhering to mandated processes that may not suit every circumstance."
+    },
+    {
+      "name": "Lisa Technology-Hayes",
+      "decision": "agree",
+      "reasoning": "As an AI researcher, I see significant benefits in adopting static analysis and formal verification as universal practices, especially in safety-critical areas. Certainty in these technologies can enhance performance outcomes, driving efficiency. The data suggests they have the potential to create safer systems, helping us innovate responsibly."
+    },
+    {
+      "name": "Professor Mark Economics-Stevens",
+      "decision": "disagree",
+      "reasoning": "As a labor economist, the focus should be on the economic implications of mandatory regulations. Adopting rigid standards for safety-critical software could lead to reduced employment opportunities, adversely affecting innovation and economic growth. A more measured approach would facilitate creativity while ensuring necessary safety."
+    },
+    {
+      "name": "Dr. Sophia Ethics-Petrov",
+      "decision": "disagree",
+      "reasoning": "I find that the rigidity imposed by mandatory static analysis and formal verification might compromise our ability to maintain human dignity in healthcare. While accountability is key, excessive regulation can impede personalized care, which is essential in addressing diverse patient needs."
+    },
+    {
+      "name": "Paul Industry-Anderson",
+      "decision": "disagree",
+      "reasoning": "With practical implementation at the forefront of my values, I argue that imposing mandatory static analysis could complicate essential processes and deter innovation. It's crucial to ensure that safety protocols are efficient and adaptable within our rapidly changing environment rather than dictated by rigid mandates."
+    },
+    {
+      "name": "Dr. Janet Data-Kim",
+      "decision": "disagree",
+      "reasoning": "In my view as a statistician, the push for mandatory static analysis overlooks the nuances of situational application. Each context requires a crafted approach that weighs benefits against potential shortcomings of universal mandates that might not apply effectively in every case."
+    },
+    {
+      "name": "Captain Steve Military-Richards",
+      "decision": "disagree",
+      "reasoning": "My experience in structured operations leads me to believe that mandatory static analysis might create unnecessary bureaucracy. While safety in software is vital, a more flexible and responsive approach allows for better adaptability in security and operational effectiveness."
+    },
+    {
+      "name": "Dr. Anna Medical-Volkov",
+      "decision": "disagree",
+      "reasoning": "In the field of reproductive medicine, where the patient’s choice is paramount, the imposition of mandatory static analysis can hinder our ability to innovate quickly in software development. Flexibility is key in addressing diverse patient needs, and rigid standards can be counterproductive."
+    },
+    {
+      "name": "Professor William Science-Chen",
+      "decision": "agree",
+      "reasoning": "I support mandatory static analysis because scientists thrive on rigorous validation processes. Safety-critical applications should follow strict protocols to minimize risks and ensure trustworthiness in future technologies. Emphasizing verification enhances our contributions to the scientific community."
+    },
+    {
+      "name": "Melissa Art-Johnson",
+      "decision": "disagree",
+      "reasoning": "As a museum curator, the imposition of mandatory practices seems too overarching for the creative fields, where adaptability drives progress. The intricacies of developing safety-critical software require tailored approaches rather than blanket strategies that can hinder artistic innovation."
+    },
+    {
+      "name": "Tony Sports-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "In the realm of sports, teamwork and collaboration thrive on flexible strategies. Implementing rigid standards in safety-critical software runs the risk of overlooking diverse approaches that could yield better solutions. Agility is essential for optimal teamwork."
+    },
+    {
+      "name": "Grace Music-Wilson",
+      "decision": "disagree",
+      "reasoning": "I view safety-critical software from an artistic perspective as one that thrives on innovation and freedom of expression. Mandatory structures stifle creativity and can lead to generic solutions. A balance must be struck to allow for expressive approaches that foster harmonious development."
+    },
+    {
+      "name": "Frank History-Thompson",
+      "decision": "disagree",
+      "reasoning": "As a history teacher, I find the debate around mandatory practices compelling but believe that an environment fostering discussion and adaptability produces better educational software outcomes. Mandating static analysis could detract from more dynamic learning instrument strategies."
+    },
+    {
+      "name": "Luna Spiritual-Garcia",
+      "decision": "disagree",
+      "reasoning": "I prioritize a holistic approach to wellness, emphasizing the need for flexibility in methodologies. While safety is paramount, stark requirements may restrict the ability to innovate and explore diverse paths effectively in software development geared toward well-being."
+    },
+    {
+      "name": "Bob Construction-Miller",
+      "decision": "disagree",
+      "reasoning": "As a union electrician, practical solutions matter, and while safety is critical, imposing mandatory static analysis in software development can create barriers. We should focus on solutions that allow workers to operate safely without bogging them down in red tape."
+    },
+    {
+      "name": "Jennifer Fashion-Anderson",
+      "decision": "disagree",
+      "reasoning": "In retail management, consumer trends shift rapidly, and I believe flexibility in software practices is necessary to respond to these changes. Mandatory mandates can slow the speed of response and affect market viability—an adaptable approach would be more impactful."
+    },
+    {
+      "name": "Carlos Literature-Martinez",
+      "decision": "disagree",
+      "reasoning": "As an English professor, I appreciate the nuances involved in crafting compelling narratives. Mandating static analysis could restrict the creative storytelling capabilities required for developing engaging and safety-critical software. The arts thrive in adaptive environments."
+    },
+    {
+      "name": "Destiny Social-Kim",
+      "decision": "agree",
+      "reasoning": "As a social media influencer, agility is essential, and while safety matters, rigid standards can hinder creativity and engagement. The software should evolve with its audience, adapting to trends and dynamics rather than being constrained by mandatory requirements."
+    },
+    {
+      "name": "Ralph Mechanical-Taylor",
+      "decision": "disagree",
+      "reasoning": "In my mechanical expertise, the practical side of implementing safety-critical software shouldn't be bogged down by overregulation. Flexibility in how safety measures are approached will lead to more effective solutions than rigid mandates that can impede innovation."
+    },
+    {
+      "name": "Amber Wellness-Foster",
+      "decision": "disagree",
+      "reasoning": "My focus on natural solutions drives me to support a non-mandatory approach to static analysis in safety-critical software. Solutions should adapt to the unique challenges posed by different cases rather than following strict requirements that may not serve each situation."
+    },
+    {
+      "name": "Kevin Gaming-Chen",
+      "decision": "agree",
+      "reasoning": "Understanding creative problem-solving means recognizing that mandatory standards can stifle innovation. While the need for safety in software is paramount, it’s vital to allow developers the flexibility needed to explore new ideas and solutions without burdening them with excessive mandates."
+    },
+    {
+      "name": "Patricia Religious-O'Sullivan",
+      "decision": "disagree",
+      "reasoning": "In my role within the community, I believe mandates can impose restrictions that detract from faith-based values centered around compassion and outreach. Safety-critical software development should allow for a nuanced understanding of individual needs rather than imposing broad requirements."
+    },
+    {
+      "name": "Jake Outdoor-Wilson",
+      "decision": "disagree",
+      "reasoning": "In the conservation field, I stress individualized responses to problems rather than one-size-fits-all mandates. While I understand the safety needs within software, imposing rigid protocols could slow down urgently needed creative solutions to conservation challenges."
+    },
+    {
+      "name": "Nicole Beauty-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "In the realm of cosmetics, meeting diverse consumer needs demands flexibility. Mandating static analysis may hinder rapid adaptation to changing beauty standards and trends in safety-critical software, leading to missed opportunities in the market."
+    },
+    {
+      "name": "Martin Craft-Anderson",
+      "decision": "disagree",
+      "reasoning": "My craftsmanship relies on quality and precision, hence I see the value in having safety measures in place. However, mandatory standards may disrupt the hands-on approach necessary for effectively innovating within the craft of developing safety-critical software."
+    },
+    {
+      "name": "Samantha Travel-Lee",
+      "decision": "agree",
+      "reasoning": "As a travel blogger, I see safety as a priority, but I also understand that creativity and adaptability are vital. Making safety-critical software subject to strict mandates could stifle the inventive process and deter exploration in developing more innovative solutions."
+    },
+    {
+      "name": "Eddie Food-Garcia",
+      "decision": "disagree",
+      "reasoning": "In the culinary field, creativity thrives on adaptation. While safety is paramount in food services, imposing rigid standards on software meant for safety-critical areas can restrict the innovative spirit essential to culinary creativity."
+    },
+    {
+      "name": "Brenda Real-Estate-Thompson",
+      "decision": "disagree",
+      "reasoning": "In real estate, the nuances of local market dynamics suggest that blanket mandates can disrupt local knowledge and adaptability. Safety-critical software should evolve with its needs without rigid impositions that may overlook specific contexts."
+    },
+    {
+      "name": "Tyler Photography-Kim",
+      "decision": "disagree",
+      "reasoning": "As a photographer, creative expression is at the heart of my work. While safety is crucial, mandatory practices can constrain innovative thinking in software development. Flexibility should be maintained to foster creativity and foster engaging narratives."
+    },
+    {
+      "name": "Crystal Therapy-Martinez",
+      "decision": "disagree",
+      "reasoning": "In my practice as a physical therapist, I recognize the importance of tailoring solutions to individual needs. Mandating rigid static analysis may hinder our ability to create adaptive responses focused on optimizing rehabilitation and recovery."
+    },
+    {
+      "name": "Gary Fishing-Johnson",
+      "decision": "disagree",
+      "reasoning": "As a commercial fisherman, practical implications take precedence over mandates. Ensuring safety is crucial, but heavy-handed regulations can burden operational efficiency and the ability to innovate with technology that best serves our industry."
+    },
+    {
+      "name": "Alicia Dance-Foster",
+      "decision": "disagree",
+      "reasoning": "In dance and movement, creativity and expression must flourish. While I value safety, imposing heavy mandates like static analysis on software development can constrict the very innovative energy we need to thrive."
+    },
+    {
+      "name": "Bruce Volunteer-Wilson",
+      "decision": "disagree",
+      "reasoning": "Civic engagement lends itself to flexibility and responsiveness. While safety is paramount, mandating strict measures could inhibit our ability to react efficiently to the needs of the community. A more adaptive approach leads to better outcomes."
+    },
+    {
+      "name": "Tina Pet-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "As a veterinary technician, compassion and care are paramount. While I value safety, imposing rigid mandates may restrict our ability to respond dynamically to the individual needs of animals and their owners. Flexibility should guide the development of safety-critical software in this field."
+    }
+  ],
+  "initial_vote_counts": {
+    "disagree": 38,
+    "agree": 12
+  },
+  "initial_winning_team": "disagree",
+  "initial_margin_of_victory": 26,
+  "final_vote_counts": {
+    "disagree": 43,
+    "agree": 7
+  },
+  "final_winning_team": "disagree",
+  "final_margin_of_victory": 36,
+  "final_vote_changes": {
+    "unchanged_votes": [
+      {
+        "name": "Dr. Elizabeth Warren-Smith",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Jonathan Tech-Garcia",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Professor Sarah Environment-Jones",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Helen Ethics-Martinez",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Professor James Law-Wilson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Maria Healthcare-Rodriguez",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Steven Innovation-Kim",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Patricia Environment-Green",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Michael Finance-Thompson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Angela Education-Foster",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Robert Security-Cooper",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Daniel Legal-Martinez",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Kevin Philosophy-Liu",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Lisa Technology-Hayes",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Professor Mark Economics-Stevens",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Sophia Ethics-Petrov",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Paul Industry-Anderson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Janet Data-Kim",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Captain Steve Military-Richards",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Anna Medical-Volkov",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Professor William Science-Chen",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Melissa Art-Johnson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Grace Music-Wilson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Frank History-Thompson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Luna Spiritual-Garcia",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Bob Construction-Miller",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Jennifer Fashion-Anderson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Carlos Literature-Martinez",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Destiny Social-Kim",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Ralph Mechanical-Taylor",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Amber Wellness-Foster",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Kevin Gaming-Chen",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Patricia Religious-O'Sullivan",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Jake Outdoor-Wilson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Nicole Beauty-Rodriguez",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Martin Craft-Anderson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Samantha Travel-Lee",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Eddie Food-Garcia",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Brenda Real-Estate-Thompson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Tyler Photography-Kim",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Crystal Therapy-Martinez",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Gary Fishing-Johnson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Alicia Dance-Foster",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Bruce Volunteer-Wilson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Tina Pet-Rodriguez",
+        "decision": "disagree",
+        "confidence": 0
+      }
+    ],
+    "changed_votes": [
+      {
+        "name": "Marcus Business-Chen",
+        "initial_decision": "agree",
+        "final_decision": "disagree",
+        "confidence": 0,
+        "reasoning": "From a financial perspective, regulatory burdens like mandatory static analysis can hinder innovation and market efficiency. While safety-critical software is crucial, we must balance that with the need for agility in software development. Imposing stringent requirements could disincentivize investment in promising tech startups that are trying to innovate in safety-critical areas."
+      },
+      {
+        "name": "David Policy-Anderson",
+        "initial_decision": "agree",
+        "final_decision": "disagree",
+        "confidence": 0,
+        "reasoning": "From a public policy perspective, it’s vital to strike a balance between promoting safety and allowing innovation. While static analysis and formal verification are beneficial tools, making them mandatory could create bureaucracy that stifles creativity and slow responses to evolving public needs. A pragmatic approach would advocate for these tools as recommendations rather than requirements."
+      },
+      {
+        "name": "Rebecca Science-Taylor",
+        "initial_decision": "agree",
+        "final_decision": "disagree",
+        "confidence": 0,
+        "reasoning": "I align with the belief that in software development, especially for safety-critical applications, a flexible approach tends to work better. Mandatory practices could deter innovation, as developers might resort to merely meeting requirements rather than prioritizing genuine safety enhancements. Let's emphasize scientific evidence over rigid methodologies."
+      },
+      {
+        "name": "Dr. Christina Medical-Miller",
+        "initial_decision": "agree",
+        "final_decision": "disagree",
+        "confidence": 0,
+        "reasoning": "In seeking to innovate in biomedicine, I am wary of mandatory processes surrounding software development. Static analysis and verification have their place but shouldn’t dictate how we explore and implement groundbreaking solutions. Ethics should prioritize innovation that embodies humane and compassionate values over rigid adherence to standards."
+      },
+      {
+        "name": "Tony Sports-Rodriguez",
+        "initial_decision": "agree",
+        "final_decision": "disagree",
+        "confidence": 0,
+        "reasoning": "In the realm of sports, teamwork and collaboration thrive on flexible strategies. Implementing rigid standards in safety-critical software runs the risk of overlooking diverse approaches that could yield better solutions. Agility is essential for optimal teamwork."
+      }
+    ],
+    "vote_swings": {
+      "agree": {
+        "lost": 5,
+        "gained": 0
+      },
+      "disagree": {
+        "lost": 0,
+        "gained": 5
+      }
+    },
+    "net_changes": {
+      "agree": -5,
+      "disagree": 5
+    },
+    "total_changes": 5,
+    "change_percentage": 10.0
+  },
+  "winning_team": "disagree",
+  "vote_counts": {
+    "disagree": 43,
+    "agree": 7
+  },
+  "margin_of_victory": 36,
+  "domain_goal_pairs": [],
+  "arguments": [
+    {
+      "round": 1,
+      "team": "anti_formal_verification_safety_critical",
+      "member_name": "Dr. Alan Pierce",
+      "argument_name": "a_cost_effectiveness",
+      "domains": [
+        "d_software_engineering",
+        "d_safety_critical_software"
+      ],
+      "goals": {
+        "g_improved_reliability": [
+          "d_software_engineering"
+        ],
+        "g_impact_of_technological_safety": [
+          "d_safety_critical_software"
+        ]
+      },
+      "attacks": [],
+      "text": "Mandatory static analysis and formal verification for safety-critical software could impose significant costs on organizations, diverting resources from development to compliance. Many smaller companies may struggle to meet rigorous verification standards, risking innovation and market competition. The imposition of these practices universally can lead to economic inefficiency, as not all software projects possess the same risk profiles. A nuanced, risk-proportionate approach, where assurance methods are tailored based on the software's safety implications, would optimize resource allocation and enhance overall software reliability without unnecessary waste.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 738,
+          "output_tokens": 128,
+          "total_tokens": 866,
+          "elapsed_time_seconds": 4.800600528717041,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "analyser node": {
+              "phase_name": "analyser node",
+              "input_tokens": 738,
+              "output_tokens": 128,
+              "total_tokens": 866,
+              "timestamp": 1769299331.6811113
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 2075,
+          "output_tokens": 1042,
+          "total_tokens": 3117,
+          "elapsed_time_seconds": 25.521040201187134,
+          "llm_call_count": 2,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1242,
+              "output_tokens": 316,
+              "total_tokens": 1558,
+              "timestamp": 1769299338.6491678
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 833,
+              "output_tokens": 726,
+              "total_tokens": 1559,
+              "timestamp": 1769299357.2015016
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "team": "anti_formal_verification_safety_critical",
+      "member_name": "Yuki Tanaka",
+      "argument_name": "a_agile_constraints",
+      "domains": [
+        "d_software_engineering",
+        "d_safety_critical_software"
+      ],
+      "goals": {
+        "g_improved_reliability": [
+          "d_software_engineering"
+        ],
+        "g_impact_of_technological_safety": [
+          "d_safety_critical_software"
+        ]
+      },
+      "attacks": [],
+      "text": "In the fast-paced world of embedded software, imposing mandatory static analysis and formal verification could stifle agility and responsiveness. The embedded systems sector thrives on quick iteration and adaptation to rapidly changing requirements. Forcing extensive formal methods can significantly extend development cycles, slowing down delivery and affecting competitiveness. Therefore, it is essential to maintain flexibility and prioritize a balanced approach that integrates necessary verification processes without compromising the adaptability required in today’s software landscape.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1048,
+          "output_tokens": 140,
+          "total_tokens": 1188,
+          "elapsed_time_seconds": 4.635371923446655,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "analyser node": {
+              "phase_name": "analyser node",
+              "input_tokens": 1048,
+              "output_tokens": 140,
+              "total_tokens": 1188,
+              "timestamp": 1769299363.978951
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 2702,
+          "output_tokens": 1002,
+          "total_tokens": 3704,
+          "elapsed_time_seconds": 23.283729553222656,
+          "llm_call_count": 2,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1563,
+              "output_tokens": 286,
+              "total_tokens": 1849,
+              "timestamp": 1769299370.430294
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1139,
+              "output_tokens": 716,
+              "total_tokens": 1855,
+              "timestamp": 1769299387.2629044
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "team": "pro_formal_verification_safety_critical",
+      "member_name": "Dr. Heinrich Vogel",
+      "argument_name": "a_correctness_importance",
+      "domains": [
+        "d_software_engineering",
+        "d_safety_critical_software"
+      ],
+      "goals": {
+        "g_feasibility": [
+          "d_software_engineering"
+        ],
+        "g_improved_reliability": [
+          "d_software_engineering",
+          "d_safety_critical_software"
+        ]
+      },
+      "attacks": [],
+      "text": "Static analysis and formal verification are not just beneficial but essential for safety-critical software. Without rigorous validation, software vulnerabilities can go undetected, leading to catastrophic outcomes. Historical data from aviation and medical industries underscores how increased scrutiny with formal methods effectively mitigates risks. By making these methods mandatory, we promote a culture of thoroughness and adherence to safety protocols, significantly enhancing reliability and public welfare in sectors where the cost of failure is simply unacceptable.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1098,
+          "output_tokens": 591,
+          "total_tokens": 1689,
+          "elapsed_time_seconds": 18.63882541656494,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "tot analyser node": {
+              "phase_name": "tot analyser node",
+              "input_tokens": 1098,
+              "output_tokens": 591,
+              "total_tokens": 1689,
+              "timestamp": 1769299408.0962157
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 21951,
+          "output_tokens": 8816,
+          "total_tokens": 30767,
+          "elapsed_time_seconds": 218.00808548927307,
+          "llm_call_count": 18,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1683,
+              "output_tokens": 341,
+              "total_tokens": 2024,
+              "timestamp": 1769299609.5999808
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1050,
+              "output_tokens": 602,
+              "total_tokens": 1652,
+              "timestamp": 1769299626.1040564
+            }
+          }
+        },
+        "candidate_creator": {
+          "node_name": "candidate_creator",
+          "input_tokens": 1816,
+          "output_tokens": 74,
+          "total_tokens": 1890,
+          "elapsed_time_seconds": 5.4151291847229,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "variation_selection": {
+              "phase_name": "variation_selection",
+              "input_tokens": 1816,
+              "output_tokens": 74,
+              "total_tokens": 1890,
+              "timestamp": 1769299629.0186315
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "team": "pro_formal_verification_safety_critical",
+      "member_name": "Maria Santos",
+      "argument_name": "a_public_safety_focus",
+      "domains": [
+        "d_software_engineering"
+      ],
+      "goals": {
+        "g_feasibility": [
+          "d_software_engineering"
+        ],
+        "g_improved_reliability": [
+          "d_software_engineering"
+        ]
+      },
+      "attacks": [],
+      "text": "The implementation of mandatory static analysis and formal verification in safety-critical software systems is crucial for public safety. Statistically, software failures have a direct correlation with various incidents, thereby necessitating stringent oversight. This commitment to rigor ensures that engineers are held accountable for their designs, promoting not only software reliability but also societal trust in technology. Regulatory frameworks advocating for these measures will inherently shield the public from potential hazards, reinforcing the importance of safety in engineering practices.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1378,
+          "output_tokens": 631,
+          "total_tokens": 2009,
+          "elapsed_time_seconds": 13.857473611831665,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "tot analyser node": {
+              "phase_name": "tot analyser node",
+              "input_tokens": 1378,
+              "output_tokens": 631,
+              "total_tokens": 2009,
+              "timestamp": 1769299645.4265068
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 27009,
+          "output_tokens": 8626,
+          "total_tokens": 35635,
+          "elapsed_time_seconds": 318.8885989189148,
+          "llm_call_count": 18,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1970,
+              "output_tokens": 288,
+              "total_tokens": 2258,
+              "timestamp": 1769299948.9610112
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1330,
+              "output_tokens": 615,
+              "total_tokens": 1945,
+              "timestamp": 1769299964.3156595
+            }
+          }
+        },
+        "candidate_creator": {
+          "node_name": "candidate_creator",
+          "input_tokens": 1786,
+          "output_tokens": 80,
+          "total_tokens": 1866,
+          "elapsed_time_seconds": 3.945676565170288,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "variation_selection": {
+              "phase_name": "variation_selection",
+              "input_tokens": 1786,
+              "output_tokens": 80,
+              "total_tokens": 1866,
+              "timestamp": 1769299966.6917458
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "team": "anti_formal_verification_safety_critical",
+      "member_name": "Dr. Alan Pierce",
+      "argument_name": "a_economic_feasibility",
+      "domains": [
+        "d_software_engineering",
+        "d_safety_critical_software"
+      ],
+      "goals": {
+        "g_improved_reliability": [
+          "d_software_engineering"
+        ],
+        "g_impact_of_technological_safety": [
+          "d_safety_critical_software"
+        ]
+      },
+      "attacks": [],
+      "text": "While the importance of high reliability is clear, mandating static analysis and formal verification may overlook economic factors that dictate engineering decisions. The substantial investments required for full compliance could lead organizations to cut corners in other crucial areas, potentially compromising overall system safety. A risk-based approach that encourages selective application of these methods would balance safety with economic viability, allowing for innovation alongside robust assurance practices tailored to the specific software being developed.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1365,
+          "output_tokens": 154,
+          "total_tokens": 1519,
+          "elapsed_time_seconds": 3.9518942832946777,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "analyser node": {
+              "phase_name": "analyser node",
+              "input_tokens": 1365,
+              "output_tokens": 154,
+              "total_tokens": 1519,
+              "timestamp": 1769299972.3261635
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 3300,
+          "output_tokens": 949,
+          "total_tokens": 4249,
+          "elapsed_time_seconds": 27.109657526016235,
+          "llm_call_count": 2,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1855,
+              "output_tokens": 280,
+              "total_tokens": 2135,
+              "timestamp": 1769299980.5720983
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1445,
+              "output_tokens": 669,
+              "total_tokens": 2114,
+              "timestamp": 1769299999.4358108
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "team": "anti_formal_verification_safety_critical",
+      "member_name": "Yuki Tanaka",
+      "argument_name": "a_delivery_agility",
+      "domains": [
+        "d_software_engineering"
+      ],
+      "goals": {
+        "g_improved_reliability": [
+          "d_software_engineering"
+        ],
+        "g_impact_of_technological_safety": [
+          "d_software_engineering",
+          "d_safety_critical_software"
+        ]
+      },
+      "attacks": [],
+      "text": "In embedded software development, where rapid changes and iterations are the norm, the mandatory implementation of static analysis and formal verification risks hampering essential agility. Agile methodologies rely on rapid feedback loops and quick modifications to meet user needs. By enforcing rigid verification processes, companies could experience delays in deployment, hindering competitiveness and market responsiveness. It is vital to prioritize flexibility and enable teams to apply practical verification methods that fit the context of their projects, allowing for faster delivery of reliable software.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1643,
+          "output_tokens": 174,
+          "total_tokens": 1817,
+          "elapsed_time_seconds": 4.000164985656738,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "analyser node": {
+              "phase_name": "analyser node",
+              "input_tokens": 1643,
+              "output_tokens": 174,
+              "total_tokens": 1817,
+              "timestamp": 1769300005.1974883
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 3869,
+          "output_tokens": 962,
+          "total_tokens": 4831,
+          "elapsed_time_seconds": 26.757671117782593,
+          "llm_call_count": 2,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 2148,
+              "output_tokens": 307,
+              "total_tokens": 2455,
+              "timestamp": 1769300013.0486321
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1721,
+              "output_tokens": 655,
+              "total_tokens": 2376,
+              "timestamp": 1769300031.9557743
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "team": "pro_formal_verification_safety_critical",
+      "member_name": "Dr. Heinrich Vogel",
+      "argument_name": "a_verification_for_safety",
+      "domains": [
+        "d_software_engineering"
+      ],
+      "goals": {
+        "g_improved_reliability": [
+          "d_software_engineering"
+        ],
+        "g_feasibility": [
+          "d_software_engineering"
+        ]
+      },
+      "attacks": [],
+      "text": "The integration of static analysis and formal verification as mandatory practices in safety-critical software development is non-negotiable due to the potential life-threatening implications of software failures. These rigorous verification processes can identify issues that traditional testing might miss. By structuring our practices around formal verification, we not only ensure compliance but foster a thorough understanding of system behavior and risks. This shift towards an evidence-based approach to safety will enhance reliability, establishing a robust framework for future software development.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1575,
+          "output_tokens": 620,
+          "total_tokens": 2195,
+          "elapsed_time_seconds": 13.521047592163086,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "tot analyser node": {
+              "phase_name": "tot analyser node",
+              "input_tokens": 1575,
+              "output_tokens": 620,
+              "total_tokens": 2195,
+              "timestamp": 1769300047.641177
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 36243,
+          "output_tokens": 8558,
+          "total_tokens": 44801,
+          "elapsed_time_seconds": 212.81281280517578,
+          "llm_call_count": 18,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 2586,
+              "output_tokens": 312,
+              "total_tokens": 2898,
+              "timestamp": 1769300247.256358
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1734,
+              "output_tokens": 653,
+              "total_tokens": 2387,
+              "timestamp": 1769300260.4527862
+            }
+          }
+        },
+        "candidate_creator": {
+          "node_name": "candidate_creator",
+          "input_tokens": 1779,
+          "output_tokens": 97,
+          "total_tokens": 1876,
+          "elapsed_time_seconds": 4.869622707366943,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "variation_selection": {
+              "phase_name": "variation_selection",
+              "input_tokens": 1779,
+              "output_tokens": 97,
+              "total_tokens": 1876,
+              "timestamp": 1769300263.01392
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "team": "pro_formal_verification_safety_critical",
+      "member_name": "Maria Santos",
+      "argument_name": "a_accountability_and_rigor",
+      "domains": [
+        "d_software_engineering"
+      ],
+      "goals": {
+        "g_improved_reliability": [
+          "d_software_engineering"
+        ],
+        "g_feasibility": [
+          "d_software_engineering"
+        ]
+      },
+      "attacks": [],
+      "text": "Mandatory static analysis and formal verification bring vital accountability and rigor to safety-critical software. The intricate nature of these systems demands a solid foundation of trust and reliability to protect public safety. By embedding these rigorous verification frameworks into the development process, we establish higher standards that every engineer should meet, thereby ensuring that software systems are developed with the utmost regard for safety and quality. This level of accountability is essential in fostering a culture of excellence in software engineering.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1818,
+          "output_tokens": 642,
+          "total_tokens": 2460,
+          "elapsed_time_seconds": 10.688744306564331,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "tot analyser node": {
+              "phase_name": "tot analyser node",
+              "input_tokens": 1818,
+              "output_tokens": 642,
+              "total_tokens": 2460,
+              "timestamp": 1769300276.0801861
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 40644,
+          "output_tokens": 8700,
+          "total_tokens": 49344,
+          "elapsed_time_seconds": 183.3476026058197,
+          "llm_call_count": 18,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 2837,
+              "output_tokens": 240,
+              "total_tokens": 3077,
+              "timestamp": 1769300446.816202
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1978,
+              "output_tokens": 695,
+              "total_tokens": 2673,
+              "timestamp": 1769300459.4270658
+            }
+          }
+        },
+        "candidate_creator": {
+          "node_name": "candidate_creator",
+          "input_tokens": 1807,
+          "output_tokens": 82,
+          "total_tokens": 1889,
+          "elapsed_time_seconds": 3.8530595302581787,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "variation_selection": {
+              "phase_name": "variation_selection",
+              "input_tokens": 1807,
+              "output_tokens": 82,
+              "total_tokens": 1889,
+              "timestamp": 1769300461.640926
+            }
+          }
+        }
+      }
+    }
+  ],
+  "tgs_snapshots": [
+    {
+      "round": 1,
+      "team": "anti_formal_verification_safety_critical",
+      "member": "Dr. Alan Pierce",
+      "tgs": {
+        "g_improved_reliability-d_safety_policy": 0,
+        "g_improved_reliability-d_software_engineering": 3780,
+        "g_improved_reliability-d_safety_critical_software": 0,
+        "g_feasibility-d_safety_policy": 0,
+        "g_feasibility-d_software_engineering": 0,
+        "g_feasibility-d_safety_critical_software": 0,
+        "g_impact_of_technological_safety-d_safety_policy": 0,
+        "g_impact_of_technological_safety-d_software_engineering": 0,
+        "g_impact_of_technological_safety-d_safety_critical_software": 3200
+      }
+    },
+    {
+      "round": 1,
+      "team": "anti_formal_verification_safety_critical",
+      "member": "Yuki Tanaka",
+      "tgs": {
+        "g_improved_reliability-d_safety_policy": 0,
+        "g_improved_reliability-d_software_engineering": 7560,
+        "g_improved_reliability-d_safety_critical_software": 0,
+        "g_feasibility-d_safety_policy": 0,
+        "g_feasibility-d_software_engineering": 0,
+        "g_feasibility-d_safety_critical_software": 0,
+        "g_impact_of_technological_safety-d_safety_policy": 0,
+        "g_impact_of_technological_safety-d_software_engineering": 0,
+        "g_impact_of_technological_safety-d_safety_critical_software": 6400
+      }
+    },
+    {
+      "round": 1,
+      "team": "pro_formal_verification_safety_critical",
+      "member": "Dr. Heinrich Vogel",
+      "tgs": {
+        "g_improved_reliability-d_safety_policy": 0,
+        "g_improved_reliability-d_software_engineering": 3780,
+        "g_improved_reliability-d_safety_critical_software": 4960,
+        "g_feasibility-d_safety_policy": 0,
+        "g_feasibility-d_software_engineering": 3420,
+        "g_feasibility-d_safety_critical_software": 0,
+        "g_impact_of_technological_safety-d_safety_policy": 0,
+        "g_impact_of_technological_safety-d_software_engineering": 0,
+        "g_impact_of_technological_safety-d_safety_critical_software": 0
+      }
+    },
+    {
+      "round": 1,
+      "team": "pro_formal_verification_safety_critical",
+      "member": "Maria Santos",
+      "tgs": {
+        "g_improved_reliability-d_safety_policy": 0,
+        "g_improved_reliability-d_software_engineering": 7560,
+        "g_improved_reliability-d_safety_critical_software": 4960,
+        "g_feasibility-d_safety_policy": 0,
+        "g_feasibility-d_software_engineering": 6840,
+        "g_feasibility-d_safety_critical_software": 0,
+        "g_impact_of_technological_safety-d_safety_policy": 0,
+        "g_impact_of_technological_safety-d_software_engineering": 0,
+        "g_impact_of_technological_safety-d_safety_critical_software": 0
+      }
+    },
+    {
+      "round": 2,
+      "team": "anti_formal_verification_safety_critical",
+      "member": "Dr. Alan Pierce",
+      "tgs": {
+        "g_improved_reliability-d_safety_policy": 0,
+        "g_improved_reliability-d_software_engineering": 11340,
+        "g_improved_reliability-d_safety_critical_software": 0,
+        "g_feasibility-d_safety_policy": 0,
+        "g_feasibility-d_software_engineering": 0,
+        "g_feasibility-d_safety_critical_software": 0,
+        "g_impact_of_technological_safety-d_safety_policy": 0,
+        "g_impact_of_technological_safety-d_software_engineering": 0,
+        "g_impact_of_technological_safety-d_safety_critical_software": 9600
+      }
+    },
+    {
+      "round": 2,
+      "team": "anti_formal_verification_safety_critical",
+      "member": "Yuki Tanaka",
+      "tgs": {
+        "g_improved_reliability-d_safety_policy": 0,
+        "g_improved_reliability-d_software_engineering": 15120,
+        "g_improved_reliability-d_safety_critical_software": 0,
+        "g_feasibility-d_safety_policy": 0,
+        "g_feasibility-d_software_engineering": 0,
+        "g_feasibility-d_safety_critical_software": 0,
+        "g_impact_of_technological_safety-d_safety_policy": 0,
+        "g_impact_of_technological_safety-d_software_engineering": 3330,
+        "g_impact_of_technological_safety-d_safety_critical_software": 9600
+      }
+    },
+    {
+      "round": 2,
+      "team": "pro_formal_verification_safety_critical",
+      "member": "Dr. Heinrich Vogel",
+      "tgs": {
+        "g_improved_reliability-d_safety_policy": 0,
+        "g_improved_reliability-d_software_engineering": 11340,
+        "g_improved_reliability-d_safety_critical_software": 4960,
+        "g_feasibility-d_safety_policy": 0,
+        "g_feasibility-d_software_engineering": 10260,
+        "g_feasibility-d_safety_critical_software": 0,
+        "g_impact_of_technological_safety-d_safety_policy": 0,
+        "g_impact_of_technological_safety-d_software_engineering": 0,
+        "g_impact_of_technological_safety-d_safety_critical_software": 0
+      }
+    },
+    {
+      "round": 2,
+      "team": "pro_formal_verification_safety_critical",
+      "member": "Maria Santos",
+      "tgs": {
+        "g_improved_reliability-d_safety_policy": 0,
+        "g_improved_reliability-d_software_engineering": 15120,
+        "g_improved_reliability-d_safety_critical_software": 4960,
+        "g_feasibility-d_safety_policy": 0,
+        "g_feasibility-d_software_engineering": 13680,
+        "g_feasibility-d_safety_critical_software": 0,
+        "g_impact_of_technological_safety-d_safety_policy": 0,
+        "g_impact_of_technological_safety-d_software_engineering": 0,
+        "g_impact_of_technological_safety-d_safety_critical_software": 0
+      }
+    }
+  ],
+  "final_tgs": {
+    "pro_formal_verification_safety_critical": {
+      "g_improved_reliability-d_safety_policy": 0,
+      "g_improved_reliability-d_software_engineering": 15120,
+      "g_improved_reliability-d_safety_critical_software": 4960,
+      "g_feasibility-d_safety_policy": 0,
+      "g_feasibility-d_software_engineering": 13680,
+      "g_feasibility-d_safety_critical_software": 0,
+      "g_impact_of_technological_safety-d_safety_policy": 0,
+      "g_impact_of_technological_safety-d_software_engineering": 0,
+      "g_impact_of_technological_safety-d_safety_critical_software": 0
+    },
+    "anti_formal_verification_safety_critical": {
+      "g_impact_of_technological_safety-d_safety_critical_software": 9600,
+      "g_impact_of_technological_safety-d_software_engineering": 3330,
+      "g_impact_of_technological_safety-d_safety_policy": 0,
+      "g_feasibility-d_safety_critical_software": 0,
+      "g_feasibility-d_software_engineering": 0,
+      "g_feasibility-d_safety_policy": 0,
+      "g_improved_reliability-d_safety_critical_software": 0,
+      "g_improved_reliability-d_software_engineering": 15120,
+      "g_improved_reliability-d_safety_policy": 0
+    }
+  },
+  "execution_metrics": {
+    "total_nodes": 20,
+    "total_time_seconds": 1127.9068088531494,
+    "total_tokens": 197712,
+    "total_input_tokens": 155644,
+    "total_output_tokens": 42068,
+    "teams": [
+      {
+        "team_name": "pro_formal_verification_safety_critical",
+        "total_nodes": 12,
+        "total_time_seconds": 1007.8466787338257,
+        "total_tokens": 176421,
+        "total_input_tokens": 138904,
+        "total_output_tokens": 37517,
+        "average_time_per_node": 83.9872232278188,
+        "average_tokens_per_node": 14701.75,
+        "members": [
+          "Dr. Mary O'Brien",
+          "Prof. Thomas Blackwell"
+        ],
+        "nodes": [
+          "argument_creator",
+          "analyser",
+          "candidate_creator"
+        ]
+      },
+      {
+        "team_name": "anti_formal_verification_safety_critical",
+        "total_nodes": 8,
+        "total_time_seconds": 120.06013011932373,
+        "total_tokens": 21291,
+        "total_input_tokens": 16740,
+        "total_output_tokens": 4551,
+        "average_time_per_node": 15.007516264915466,
+        "average_tokens_per_node": 2661.375,
+        "members": [
+          "Dr. Kevin Liu",
+          "Dr. Priya Sharma"
+        ],
+        "nodes": [
+          "argument_creator",
+          "analyser"
+        ]
+      }
+    ],
+    "members": [
+      {
+        "member_name": "Dr. Heinrich Vogel",
+        "team_name": "pro_formal_verification_safety_critical",
+        "total_nodes": 6,
+        "total_time_seconds": 473.2655231952667,
+        "total_tokens": 83218,
+        "total_input_tokens": 64462,
+        "total_output_tokens": 18756,
+        "nodes": [
+          "argument_creator",
+          "analyser",
+          "candidate_creator"
+        ],
+        "rounds": [
+          1,
+          2
+        ]
+      },
+      {
+        "member_name": "Dr. Alan Pierce",
+        "team_name": "anti_formal_verification_safety_critical",
+        "total_nodes": 4,
+        "total_time_seconds": 61.38319253921509,
+        "total_tokens": 9751,
+        "total_input_tokens": 7478,
+        "total_output_tokens": 2273,
+        "nodes": [
+          "argument_creator",
+          "analyser"
+        ],
+        "rounds": [
+          1,
+          2
+        ]
+      },
+      {
+        "member_name": "Maria Santos",
+        "team_name": "pro_formal_verification_safety_critical",
+        "total_nodes": 6,
+        "total_time_seconds": 534.581155538559,
+        "total_tokens": 93203,
+        "total_input_tokens": 74442,
+        "total_output_tokens": 18761,
+        "nodes": [
+          "argument_creator",
+          "analyser",
+          "candidate_creator"
+        ],
+        "rounds": [
+          1,
+          2
+        ]
+      },
+      {
+        "member_name": "Yuki Tanaka",
+        "team_name": "anti_formal_verification_safety_critical",
+        "total_nodes": 4,
+        "total_time_seconds": 58.67693758010864,
+        "total_tokens": 11540,
+        "total_input_tokens": 9262,
+        "total_output_tokens": 2278,
+        "nodes": [
+          "argument_creator",
+          "analyser"
+        ],
+        "rounds": [
+          1,
+          2
+        ]
+      }
+    ],
+    "all_node_metrics": [
+      {
+        "team_name": "anti_formal_verification_safety_critical",
+        "member_name": "Dr. Alan Pierce",
+        "round": 1,
+        "node_name": "analyser",
+        "input_tokens": 738,
+        "output_tokens": 128,
+        "total_tokens": 866,
+        "elapsed_time_seconds": 4.800600528717041,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "analyser node": {
+            "phase_name": "analyser node",
+            "input_tokens": 738,
+            "output_tokens": 128,
+            "total_tokens": 866,
+            "timestamp": 1769299331.6811113
+          }
+        }
+      },
+      {
+        "team_name": "anti_formal_verification_safety_critical",
+        "member_name": "Dr. Alan Pierce",
+        "round": 1,
+        "node_name": "argument_creator",
+        "input_tokens": 2075,
+        "output_tokens": 1042,
+        "total_tokens": 3117,
+        "elapsed_time_seconds": 25.521040201187134,
+        "llm_call_count": 2,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1242,
+            "output_tokens": 316,
+            "total_tokens": 1558,
+            "timestamp": 1769299338.6491678
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 833,
+            "output_tokens": 726,
+            "total_tokens": 1559,
+            "timestamp": 1769299357.2015016
+          }
+        }
+      },
+      {
+        "team_name": "anti_formal_verification_safety_critical",
+        "member_name": "Yuki Tanaka",
+        "round": 1,
+        "node_name": "analyser",
+        "input_tokens": 1048,
+        "output_tokens": 140,
+        "total_tokens": 1188,
+        "elapsed_time_seconds": 4.635371923446655,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "analyser node": {
+            "phase_name": "analyser node",
+            "input_tokens": 1048,
+            "output_tokens": 140,
+            "total_tokens": 1188,
+            "timestamp": 1769299363.978951
+          }
+        }
+      },
+      {
+        "team_name": "anti_formal_verification_safety_critical",
+        "member_name": "Yuki Tanaka",
+        "round": 1,
+        "node_name": "argument_creator",
+        "input_tokens": 2702,
+        "output_tokens": 1002,
+        "total_tokens": 3704,
+        "elapsed_time_seconds": 23.283729553222656,
+        "llm_call_count": 2,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1563,
+            "output_tokens": 286,
+            "total_tokens": 1849,
+            "timestamp": 1769299370.430294
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1139,
+            "output_tokens": 716,
+            "total_tokens": 1855,
+            "timestamp": 1769299387.2629044
+          }
+        }
+      },
+      {
+        "team_name": "pro_formal_verification_safety_critical",
+        "member_name": "Dr. Heinrich Vogel",
+        "round": 1,
+        "node_name": "analyser",
+        "input_tokens": 1098,
+        "output_tokens": 591,
+        "total_tokens": 1689,
+        "elapsed_time_seconds": 18.63882541656494,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "tot analyser node": {
+            "phase_name": "tot analyser node",
+            "input_tokens": 1098,
+            "output_tokens": 591,
+            "total_tokens": 1689,
+            "timestamp": 1769299408.0962157
+          }
+        }
+      },
+      {
+        "team_name": "pro_formal_verification_safety_critical",
+        "member_name": "Dr. Heinrich Vogel",
+        "round": 1,
+        "node_name": "argument_creator",
+        "input_tokens": 21951,
+        "output_tokens": 8816,
+        "total_tokens": 30767,
+        "elapsed_time_seconds": 218.00808548927307,
+        "llm_call_count": 18,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1683,
+            "output_tokens": 341,
+            "total_tokens": 2024,
+            "timestamp": 1769299609.5999808
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1050,
+            "output_tokens": 602,
+            "total_tokens": 1652,
+            "timestamp": 1769299626.1040564
+          }
+        }
+      },
+      {
+        "team_name": "pro_formal_verification_safety_critical",
+        "member_name": "Dr. Heinrich Vogel",
+        "round": 1,
+        "node_name": "candidate_creator",
+        "input_tokens": 1816,
+        "output_tokens": 74,
+        "total_tokens": 1890,
+        "elapsed_time_seconds": 5.4151291847229,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "variation_selection": {
+            "phase_name": "variation_selection",
+            "input_tokens": 1816,
+            "output_tokens": 74,
+            "total_tokens": 1890,
+            "timestamp": 1769299629.0186315
+          }
+        }
+      },
+      {
+        "team_name": "pro_formal_verification_safety_critical",
+        "member_name": "Maria Santos",
+        "round": 1,
+        "node_name": "analyser",
+        "input_tokens": 1378,
+        "output_tokens": 631,
+        "total_tokens": 2009,
+        "elapsed_time_seconds": 13.857473611831665,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "tot analyser node": {
+            "phase_name": "tot analyser node",
+            "input_tokens": 1378,
+            "output_tokens": 631,
+            "total_tokens": 2009,
+            "timestamp": 1769299645.4265068
+          }
+        }
+      },
+      {
+        "team_name": "pro_formal_verification_safety_critical",
+        "member_name": "Maria Santos",
+        "round": 1,
+        "node_name": "argument_creator",
+        "input_tokens": 27009,
+        "output_tokens": 8626,
+        "total_tokens": 35635,
+        "elapsed_time_seconds": 318.8885989189148,
+        "llm_call_count": 18,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1970,
+            "output_tokens": 288,
+            "total_tokens": 2258,
+            "timestamp": 1769299948.9610112
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1330,
+            "output_tokens": 615,
+            "total_tokens": 1945,
+            "timestamp": 1769299964.3156595
+          }
+        }
+      },
+      {
+        "team_name": "pro_formal_verification_safety_critical",
+        "member_name": "Maria Santos",
+        "round": 1,
+        "node_name": "candidate_creator",
+        "input_tokens": 1786,
+        "output_tokens": 80,
+        "total_tokens": 1866,
+        "elapsed_time_seconds": 3.945676565170288,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "variation_selection": {
+            "phase_name": "variation_selection",
+            "input_tokens": 1786,
+            "output_tokens": 80,
+            "total_tokens": 1866,
+            "timestamp": 1769299966.6917458
+          }
+        }
+      },
+      {
+        "team_name": "anti_formal_verification_safety_critical",
+        "member_name": "Dr. Alan Pierce",
+        "round": 2,
+        "node_name": "analyser",
+        "input_tokens": 1365,
+        "output_tokens": 154,
+        "total_tokens": 1519,
+        "elapsed_time_seconds": 3.9518942832946777,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "analyser node": {
+            "phase_name": "analyser node",
+            "input_tokens": 1365,
+            "output_tokens": 154,
+            "total_tokens": 1519,
+            "timestamp": 1769299972.3261635
+          }
+        }
+      },
+      {
+        "team_name": "anti_formal_verification_safety_critical",
+        "member_name": "Dr. Alan Pierce",
+        "round": 2,
+        "node_name": "argument_creator",
+        "input_tokens": 3300,
+        "output_tokens": 949,
+        "total_tokens": 4249,
+        "elapsed_time_seconds": 27.109657526016235,
+        "llm_call_count": 2,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1855,
+            "output_tokens": 280,
+            "total_tokens": 2135,
+            "timestamp": 1769299980.5720983
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1445,
+            "output_tokens": 669,
+            "total_tokens": 2114,
+            "timestamp": 1769299999.4358108
+          }
+        }
+      },
+      {
+        "team_name": "anti_formal_verification_safety_critical",
+        "member_name": "Yuki Tanaka",
+        "round": 2,
+        "node_name": "analyser",
+        "input_tokens": 1643,
+        "output_tokens": 174,
+        "total_tokens": 1817,
+        "elapsed_time_seconds": 4.000164985656738,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "analyser node": {
+            "phase_name": "analyser node",
+            "input_tokens": 1643,
+            "output_tokens": 174,
+            "total_tokens": 1817,
+            "timestamp": 1769300005.1974883
+          }
+        }
+      },
+      {
+        "team_name": "anti_formal_verification_safety_critical",
+        "member_name": "Yuki Tanaka",
+        "round": 2,
+        "node_name": "argument_creator",
+        "input_tokens": 3869,
+        "output_tokens": 962,
+        "total_tokens": 4831,
+        "elapsed_time_seconds": 26.757671117782593,
+        "llm_call_count": 2,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 2148,
+            "output_tokens": 307,
+            "total_tokens": 2455,
+            "timestamp": 1769300013.0486321
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1721,
+            "output_tokens": 655,
+            "total_tokens": 2376,
+            "timestamp": 1769300031.9557743
+          }
+        }
+      },
+      {
+        "team_name": "pro_formal_verification_safety_critical",
+        "member_name": "Dr. Heinrich Vogel",
+        "round": 2,
+        "node_name": "analyser",
+        "input_tokens": 1575,
+        "output_tokens": 620,
+        "total_tokens": 2195,
+        "elapsed_time_seconds": 13.521047592163086,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "tot analyser node": {
+            "phase_name": "tot analyser node",
+            "input_tokens": 1575,
+            "output_tokens": 620,
+            "total_tokens": 2195,
+            "timestamp": 1769300047.641177
+          }
+        }
+      },
+      {
+        "team_name": "pro_formal_verification_safety_critical",
+        "member_name": "Dr. Heinrich Vogel",
+        "round": 2,
+        "node_name": "argument_creator",
+        "input_tokens": 36243,
+        "output_tokens": 8558,
+        "total_tokens": 44801,
+        "elapsed_time_seconds": 212.81281280517578,
+        "llm_call_count": 18,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 2586,
+            "output_tokens": 312,
+            "total_tokens": 2898,
+            "timestamp": 1769300247.256358
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1734,
+            "output_tokens": 653,
+            "total_tokens": 2387,
+            "timestamp": 1769300260.4527862
+          }
+        }
+      },
+      {
+        "team_name": "pro_formal_verification_safety_critical",
+        "member_name": "Dr. Heinrich Vogel",
+        "round": 2,
+        "node_name": "candidate_creator",
+        "input_tokens": 1779,
+        "output_tokens": 97,
+        "total_tokens": 1876,
+        "elapsed_time_seconds": 4.869622707366943,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "variation_selection": {
+            "phase_name": "variation_selection",
+            "input_tokens": 1779,
+            "output_tokens": 97,
+            "total_tokens": 1876,
+            "timestamp": 1769300263.01392
+          }
+        }
+      },
+      {
+        "team_name": "pro_formal_verification_safety_critical",
+        "member_name": "Maria Santos",
+        "round": 2,
+        "node_name": "analyser",
+        "input_tokens": 1818,
+        "output_tokens": 642,
+        "total_tokens": 2460,
+        "elapsed_time_seconds": 10.688744306564331,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "tot analyser node": {
+            "phase_name": "tot analyser node",
+            "input_tokens": 1818,
+            "output_tokens": 642,
+            "total_tokens": 2460,
+            "timestamp": 1769300276.0801861
+          }
+        }
+      },
+      {
+        "team_name": "pro_formal_verification_safety_critical",
+        "member_name": "Maria Santos",
+        "round": 2,
+        "node_name": "argument_creator",
+        "input_tokens": 40644,
+        "output_tokens": 8700,
+        "total_tokens": 49344,
+        "elapsed_time_seconds": 183.3476026058197,
+        "llm_call_count": 18,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 2837,
+            "output_tokens": 240,
+            "total_tokens": 3077,
+            "timestamp": 1769300446.816202
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1978,
+            "output_tokens": 695,
+            "total_tokens": 2673,
+            "timestamp": 1769300459.4270658
+          }
+        }
+      },
+      {
+        "team_name": "pro_formal_verification_safety_critical",
+        "member_name": "Maria Santos",
+        "round": 2,
+        "node_name": "candidate_creator",
+        "input_tokens": 1807,
+        "output_tokens": 82,
+        "total_tokens": 1889,
+        "elapsed_time_seconds": 3.8530595302581787,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "variation_selection": {
+            "phase_name": "variation_selection",
+            "input_tokens": 1807,
+            "output_tokens": 82,
+            "total_tokens": 1889,
+            "timestamp": 1769300461.640926
+          }
+        }
+      }
+    ]
+  }
+}

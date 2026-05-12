@@ -1,0 +1,2340 @@
+{
+  "config_id": "microservices_vs_monoliths",
+  "topic": "Microservices architecture should be preferred over monolithic architecture for continuous deployment",
+  "max_rounds": 2,
+  "rounds_completed": 2,
+  "teams": [
+    "anti_microservices_vs_monoliths",
+    "pro_microservices_vs_monoliths"
+  ],
+  "team_architectures": {
+    "anti_microservices_vs_monoliths": {
+      "architecture": "cot",
+      "team_type": "opposition",
+      "members": [
+        {
+          "name": "Dr. James Whitaker",
+          "knowledge_active": false,
+          "knowledge_use_rag": false,
+          "knowledge_use_web_search": false,
+          "evaluation_active": false,
+          "max_iterations": 3,
+          "use_personalization": true,
+          "use_context_analysis": true
+        },
+        {
+          "name": "Elena Rossi",
+          "knowledge_active": false,
+          "knowledge_use_rag": false,
+          "knowledge_use_web_search": false,
+          "evaluation_active": false,
+          "max_iterations": 3,
+          "use_personalization": true,
+          "use_context_analysis": true
+        }
+      ]
+    },
+    "pro_microservices_vs_monoliths": {
+      "architecture": "tot",
+      "team_type": "proposition",
+      "tot_config": {
+        "num_analysis_branches": null,
+        "num_argument_variations": null,
+        "pruning_strategy": null,
+        "analysis_pruning_k": null,
+        "argument_pruning_k": null,
+        "search_algorithm": null,
+        "enable_fast_scoring": null,
+        "diversity_weight": null
+      },
+      "members": [
+        {
+          "name": "Dr. Priya Nair",
+          "knowledge_active": false,
+          "knowledge_use_rag": false,
+          "knowledge_use_web_search": false,
+          "evaluation_active": false,
+          "max_iterations": 3,
+          "use_personalization": true,
+          "use_context_analysis": true
+        },
+        {
+          "name": "Marcus Feld",
+          "knowledge_active": false,
+          "knowledge_use_rag": false,
+          "knowledge_use_web_search": false,
+          "evaluation_active": false,
+          "max_iterations": 3,
+          "use_personalization": true,
+          "use_context_analysis": true
+        }
+      ]
+    }
+  },
+  "audience_initial_votes": [
+    {
+      "name": "Dr. Elizabeth Warren-Smith",
+      "decision": "agree",
+      "reasoning": "As a health economist, I recognize the importance of adaptability in healthcare applications, especially when it comes to deploying new features quickly. Microservices architecture really shines here, as it allows different teams to work on separate services without stepping on each other's toes. Continuous deployment is essential in health policy where evidence-based practices must be integrated rapidly with user feedback. By leveraging microservices, we can achieve faster iteration while maintaining a focus on quality and safety."
+    },
+    {
+      "name": "Jonathan Tech-Garcia",
+      "decision": "disagree",
+      "reasoning": "While I appreciate the potential of microservices, I remain skeptical about their practicality in all scenarios. Continuous deployment does not automatically guarantee successful deployments. My experience has shown that monolithic architecture can be easier to manage and deploy, especially for small to medium-sized applications. Transitioning to microservices requires a significant amount of upfront investment in infrastructure and DevOps practices that might not be feasible for every company. The risks involved can outweigh the rewards."
+    },
+    {
+      "name": "Professor Sarah Environment-Jones",
+      "decision": "agree",
+      "reasoning": "From my perspective as a climate scientist, the speed at which we can adapt to technological advancements is crucial for addressing environmental issues. Microservices enable continuous deployment, which is vital for software that analyzes climate data or models predictions. It allows teams to swiftly roll out updates and improvements, making our tools more effective in real-time. This capability supports the urgent need for innovations that tackle climate change, ensuring our software can evolve alongside the challenges we face."
+    },
+    {
+      "name": "Marcus Business-Chen",
+      "decision": "disagree",
+      "reasoning": "I understand the appeal of microservices when it comes to continuous deployment; however, I argue against it due to the potential for increased complexity. Monolithic systems can often be more efficient and simpler in terms of deployment, particularly for startups focusing on market efficiency. As a venture capitalist, I prioritize businesses that can quickly pivot and scale without the burdens of managing a fragmented architecture. I believe that the potential overhead of microservices can hamper agility in early-stage companies."
+    },
+    {
+      "name": "Dr. Helen Ethics-Martinez",
+      "decision": "agree",
+      "reasoning": "In supporting the move towards microservices, I see a strong alignment with the evolving landscape of healthcare ethics. As a medical ethicist, I appreciate that microservices enable teams to deploy changes quickly, ensuring that medical applications adhere to the highest ethical standards and can repeatedly improve. This architecture can facilitate better integration of ethical practices into software concerned with patient care, enabling rapid responses to changing standards and guidelines."
+    },
+    {
+      "name": "David Policy-Anderson",
+      "decision": "agree",
+      "reasoning": "As a government policy analyst, I recognize that continuous deployment of services can enhance public sector software, allowing systems to be updated regularly and efficiently. Microservices architecture promotes accountability, as individual services can be enhanced or replaced independently. This separation can lead to more robust solutions that reflect the needs of the public more rapidly. Given how slow traditional systems have been, I believe microservices have a role in future-proofing public services."
+    },
+    {
+      "name": "Rebecca Science-Taylor",
+      "decision": "agree",
+      "reasoning": "I strongly support microservices architecture, especially in the context of continuous deployment in software development. Being a research scientist, my focus on data-driven approaches compels me to appreciate how microservices allow teams to deploy individual components independently, enabling rapid experimentation and innovation. This flexibility is crucial for advancing research solutions that address scientific challenges quickly and effectively. Faster iterations can lead to breakthroughs that are essential for progress."
+    },
+    {
+      "name": "Professor James Law-Wilson",
+      "decision": "agree",
+      "reasoning": "From a legal perspective, I find that microservices architecture fosters better compliance with civil liberties requirements. It enables teams to isolate and manage sensitive data efficiently, minimizing risk during updates and deployments. Continuous updates can help ensure that software aligns with changing legal standards, particularly in areas like privacy law. This flexibility is crucial in a rapidly evolving regulatory environment, making microservices a strong contender for any legal-bound software development."
+    },
+    {
+      "name": "Dr. Maria Healthcare-Rodriguez",
+      "decision": "agree",
+      "reasoning": "As a physician focused on patient care, I see the immense benefits of microservices architecture for healthcare software. Continuous deployment allows for immediate updates to patient management systems, ensuring they operate optimally as guidelines and best practices evolve. Microservices facilitate specialized services that can react swiftly to patient needs, which ultimately leads to improved health outcomes. I believe this architecture aligns with my commitment to the welfare of patients through technology."
+    },
+    {
+      "name": "Steven Innovation-Kim",
+      "decision": "disagree",
+      "reasoning": "My concerns about the practical application of microservices architecture outweigh its benefits. The promise of continuous deployment comes with assumptions that simply aren't valid for every business model. As a technology entrepreneur, I recognize that operational efficiency and simplicity are often more valuable, particularly for smaller ventures. The shift to microservices may add unnecessary complexity that could detract from effectively serving customers and innovating."
+    },
+    {
+      "name": "Dr. Patricia Environment-Green",
+      "decision": "agree",
+      "reasoning": "I support the idea of microservices for continuous deployment primarily because it aligns with my commitment to sustainability in environmental policy. Microservices can enable software applications that address environmental needs to be developed and adapted rapidly, facilitating ongoing improvements. This adaptability is key in climate change initiatives where new insights and data are constantly emerging, requiring software that can evolve and respond in real-time."
+    },
+    {
+      "name": "Michael Finance-Thompson",
+      "decision": "agree",
+      "reasoning": "As an investment banker, I tend to favor solutions that lead to enhanced market efficiency and responsiveness. Microservices architecture, with its promise of quick updates and continuous deployment, can potentially minimize downtime and maximize operational efficiency for businesses. This is essential in financial markets where timing can make a significant difference in competitive advantage. Thus, I support microservices for their ability to keep pace with the fast-moving financial sector."
+    },
+    {
+      "name": "Dr. Angela Education-Foster",
+      "decision": "agree",
+      "reasoning": "Being an education researcher, I see microservices as a vital step towards advancing educational technologies through continuous deployment. The ability to update educational software swiftly ensures that learning tools remain relevant and effective, adapting to the latest pedagogical research. This architecture also allows for targeted improvements, enhancing equitable access to educational resources, which aligns perfectly with my values regarding education."
+    },
+    {
+      "name": "Robert Security-Cooper",
+      "decision": "agree",
+      "reasoning": "As a cybersecurity expert, I strongly support microservices for continuous deployment. This architecture allows for an isolated development environment where security measures can be updated without risking the entire system. In my field, timely responses to vulnerabilities are crucial, and the agility offered by microservices can enhance security protocols more effectively than monolithic systems can. Rapid adaptation to threats is not just beneficial; it's essential."
+    },
+    {
+      "name": "Dr. Christina Medical-Miller",
+      "decision": "agree",
+      "reasoning": "In my role as a biomedical researcher, I advocate for microservices architecture given the rapid pace of innovation in healthcare technology. Continuous deployment can be game-changing for applications that depend on the latest research findings. It allows for real-time updates that can incorporate cutting-edge solutions and innovations directly into health tools, enhancing their effectiveness in clinical settings. Agility is essential in my field, making microservices a favorable option."
+    },
+    {
+      "name": "Daniel Legal-Martinez",
+      "decision": "agree",
+      "reasoning": "As a corporate lawyer, I value regulatory clarity and compliance. While microservices architecture promotes flexibility and timely updates, it could lead to fragmented systems that complicate compliance with regulations. Monolithic systems, while slower to adapt, can be simpler to audit and maintain regulatory standards. Therefore, I'm cautious about endorsing microservices universally, especially in industries where regulatory barriers are high."
+    },
+    {
+      "name": "Dr. Kevin Philosophy-Liu",
+      "decision": "agree",
+      "reasoning": "I have a principled approach towards the ethical dimensions of software development. I believe that microservices architecture offers unique benefits for enabling continuous deployment that aligns with these ethical obligations. It allows software developers to enhance user interfaces and functionalities based on ongoing community feedback while consistently addressing any ethical concerns that arise. Therefore, I support the adoption of microservices."
+    },
+    {
+      "name": "Lisa Technology-Hayes",
+      "decision": "agree",
+      "reasoning": "As an AI researcher, I find immense value in the adaptability that microservices architecture offers. Continuous deployment allows the deployment of new algorithms and features rapidly, which is vital in a field that evolves so quickly. This flexibility also facilitates experimentation and iterative improvement, crucial elements in artificial intelligence development. My commitment to efficiency strongly aligns with the potential benefits of microservices."
+    },
+    {
+      "name": "Professor Mark Economics-Stevens",
+      "decision": "agree",
+      "reasoning": "Promoting a favorable work environment for labor is critical in my role as an economist focused on worker protection. Microservices architecture, by enabling continuous deployment, can create a more responsive environment for employees by ensuring that business software reflects changing labor laws and worker needs. Such adaptability can promote better employee satisfaction and productivity, aligning closely with my values as an economist."
+    },
+    {
+      "name": "Dr. Sophia Ethics-Petrov",
+      "decision": "agree",
+      "reasoning": "As a bioethicist, I find that microservices can greatly enhance our ability to deploy ethical healthcare software solutions efficiently. Continuous deployment allows applications to quickly integrate new ethical guidelines or research findings, ensuring the software works in line with evolving standards in patient care and wellbeing. This responsiveness is essential in healthcare settings."
+    },
+    {
+      "name": "Paul Industry-Anderson",
+      "decision": "agree",
+      "reasoning": "As a manufacturing executive, I advocate for practical implementation that enhances operational efficiencies. Microservices architecture allows for agile development, which can lead to quicker deployments and rapid iteration of manufacturing software tools. This adaptability is crucial in an industry that values both speed and precision, making the case for microservices architecture in continuous deployment compelling."
+    },
+    {
+      "name": "Dr. Janet Data-Kim",
+      "decision": "agree",
+      "reasoning": "As a statistician focused on methodological rigor, I support microservices for continuous deployment, particularly in data-centric fields. The architecture allows for faster updates and more iterative improvements to statistical software, which is essential for adapting to new techniques or data as they arise. This can enhance the accuracy and reliability of analyses, which is a core concern in my work."
+    },
+    {
+      "name": "Captain Steve Military-Richards",
+      "decision": "agree",
+      "reasoning": "In my experience as a former military officer, I value discipline and structure in operations. While microservices offer flexibility for continuous deployment, they can also introduce chaotic elements if not managed effectively. Monolithic architectures provide a cohesive approach that can minimize potential risks during deployment, making them more suitable for projects requiring stringent operational security."
+    },
+    {
+      "name": "Dr. Anna Medical-Volkov",
+      "decision": "agree",
+      "reasoning": "As a reproductive specialist, I see the necessity for healthcare applications to evolve continuously, particularly regarding sensitivity to patient needs. Microservices allow for rapid updates to software that directly affects patient care, ensuring that applications can keep pace with the latest evidence and recommendations. This responsiveness can significantly improve patient experiences, making a compelling case for microservices."
+    },
+    {
+      "name": "Professor William Science-Chen",
+      "decision": "agree",
+      "reasoning": "As a physical scientist, I'm passionate about technological solutions that push boundaries. Microservices architecture presents advantages for fields requiring continual innovation, particularly in scientific applications where updates and changes are constant. Continuous deployment assists in bringing scientific advancements into practical applications more swiftly, supporting the mission of progress."
+    },
+    {
+      "name": "Melissa Art-Johnson",
+      "decision": "agree",
+      "reasoning": "In my role as a museum curator, I see the importance of cultural preservation and innovation intersecting in technology. Microservices architecture encourages continuous development and deployment of applications that can better serve audiences and protect cultural artifacts. The agility afforded by microservices ensures that these tools can adapt to changing visitor needs, making it an important choice for institutions focused on cultural engagement."
+    },
+    {
+      "name": "Tony Sports-Rodriguez",
+      "decision": "agree",
+      "reasoning": "As a former athlete, I believe that teamwork and collaboration are crucial in any endeavor. Microservices promote a collaborative approach, allowing different teams to manage specific services while enabling continuous deployment of applications. This architecture reflects the spirit of teamwork in achieving common goals effectively, just like in sports. For that reason, I support the idea of employing microservices in software development."
+    },
+    {
+      "name": "Grace Music-Wilson",
+      "decision": "agree",
+      "reasoning": "As a classical musician, I know that harmony is key. Microservices architecture allows for different parts of a software application to be developed and refined independently, which can lead to a more harmonious final product. Continuous deployment means I can see various sections of a software working seamlessly together despite being built separately. The beauty of microservices is that they promote innovation while allowing for independent expression."
+    },
+    {
+      "name": "Frank History-Thompson",
+      "decision": "agree",
+      "reasoning": "Given my background as a history teacher focusing on education, fostering a more adaptable learning environment is crucial. Microservices align closely with educational needs, permitting continuous updates and improvements in educational resources. This ability to evolve rapidly based on student and teacher feedback ensures that educational technology remains effective and relevant."
+    },
+    {
+      "name": "Luna Spiritual-Garcia",
+      "decision": "agree",
+      "reasoning": "As a yoga instructor, I value holistic approaches that cater to individual needs. Microservices promote personalized features within applications, allowing software to respond to students' needs effectively. The continual deployment aspect enhances responsiveness, ensuring that tools remain relevant and effective in promoting wellness. This adaptive approach resonates with my holistic perspective in health and fitness."
+    },
+    {
+      "name": "Bob Construction-Miller",
+      "decision": "agree",
+      "reasoning": "As a union electrician, I find that practical solutions with clear benefits are what we need in technology. Microservices architecture may promise continuous deployment, but I worry about the complexity that comes with managing so many smaller components. There may be better solutions that provide clear, large-scale functionality without the complications that microservices architecture might introduce."
+    },
+    {
+      "name": "Jennifer Fashion-Anderson",
+      "decision": "agree",
+      "reasoning": "As a retail manager, I see the merit in microservices when it comes to adapting to fast-paced consumer trends. Continuous deployment is critical for capturing timely marketing opportunities and responding to customer feedback. By leveraging microservices architecture, we can enhance our software's responsiveness, improving customer engagement and ensuring we meet current market demands effectively."
+    },
+    {
+      "name": "Carlos Literature-Martinez",
+      "decision": "agree",
+      "reasoning": "In literature, we appreciate diverse perspectives. Microservices allow for different aspects of software to unfold concurrently, much like different narratives entwine within a story. The continuous deployment inherent in microservices reflects the dynamic nature of literature—constantly evolving and adapting. I believe this capacity for nuanced development strengthens the overall narrative."
+    },
+    {
+      "name": "Destiny Social-Kim",
+      "decision": "disagree",
+      "reasoning": "As a social media influencer, I prioritize agility and responsiveness. Microservices facilitate quick updates and iterations, a necessity in a field that thrives on trends. However, I also feel that focusing too much on constant changes can lead to inconsistency. While I see value in microservices, I hesitate to endorse a blanket approach without considering the potential for chaotic fragmentation."
+    },
+    {
+      "name": "Ralph Mechanical-Taylor",
+      "decision": "agree",
+      "reasoning": "As an auto mechanic, my work revolves around practical problem-solving. Microservices might sound impressive, but I am concerned about the fractioning of systems leading to issues in maintenance and cohesion. A more robust, monolithic approach can provide reliable performance without the potential headaches of an interconnected web of services. It’s about keeping things straightforward and reliable."
+    },
+    {
+      "name": "Amber Wellness-Foster",
+      "decision": "agree",
+      "reasoning": "As a nutritionist, I understand the need for tailored solutions in wellness. Similarly, microservices allow for individual components to develop and adapt based on changing client needs. Continuous deployment provides an opportunity for software tailored to health advancements and personalization, improving overall client outcomes. Thus, I firmly believe microservices architecture is advantageous."
+    },
+    {
+      "name": "Kevin Gaming-Chen",
+      "decision": "disagree",
+      "reasoning": "As a video game developer, I appreciate the importance of creative development in software. However, I have reservations about the practicality of microservices architecture for our projects. Continuous deployment can introduce unpredictability, and the complexity of managing interconnected services could hinder creativity and slow development. A monolithic approach can often provide a more stable environment for game development."
+    },
+    {
+      "name": "Patricia Religious-O'Sullivan",
+      "decision": "agree",
+      "reasoning": "In my role as a church administrator, I appreciate the importance of community in decision-making. Microservices can enhance responsiveness to community needs through continuous improvements in software. This adaptability aligns well with faith-based values, where meeting congregational needs quickly is essential for maintaining engagement and support."
+    },
+    {
+      "name": "Jake Outdoor-Wilson",
+      "decision": "agree",
+      "reasoning": "As a park ranger, my focus is on conservation and education. Microservices can help develop applications that adapt to environmental changes and respond to community needs effectively. The continuous deployment aspect allows for prompt updates and ensures that applications remain functional and informative. I find this to be an important advancement for environmental education and conservation efforts."
+    },
+    {
+      "name": "Nicole Beauty-Rodriguez",
+      "decision": "agree",
+      "reasoning": "As a cosmetics sales rep, engagement with customers is key. Microservices enhance software agility, enabling us to continuously improve customer relationship management systems and adapt to changing consumer demands. While I appreciate the benefits of microservices, I also recognize the challenges, so I hold a balanced view on their applicability."
+    },
+    {
+      "name": "Martin Craft-Anderson",
+      "decision": "agree",
+      "reasoning": "I believe in the importance of craftsmanship, and as a furniture maker, the precision of processes can make or break a project. While microservices allow for detailed, agile updates, they also can introduce complications that require additional coordination, potentially detracting from the quality focus I strive for. Monolithic systems might better align with the goal of maintaining high standards."
+    },
+    {
+      "name": "Samantha Travel-Lee",
+      "decision": "disagree",
+      "reasoning": "As a travel blogger, the focus is on storytelling and representing diverse experiences authentically. Continuous deployment of software aligned with this goal is crucial. Microservices can allow for fast adjustments based on audience engagement, which aligns closely with my storytelling methods. However, I also see the potential for fractured experiences so I'm cautious about advocating for it blindly."
+    },
+    {
+      "name": "Eddie Food-Garcia",
+      "decision": "agree",
+      "reasoning": "As a restaurant chef, continuous improvement of culinary experiences is essential. Microservices architecture allows for individual menu items or features to evolve quickly based on customer feedback, thereby enhancing the dining experience. I think the flexibility of continuous deployment will directly improve customer service and satisfaction."
+    },
+    {
+      "name": "Brenda Real-Estate-Thompson",
+      "decision": "agree",
+      "reasoning": "In real estate, negotiation skills reflect my values. I believe that microservices allow continuous improvement of property management software, making it responsive to market demands. However, I remain cautious, as the overhead of managing various components can slow overall efficiency, suggesting we must balance benefits with operational realities."
+    },
+    {
+      "name": "Tyler Photography-Kim",
+      "decision": "agree",
+      "reasoning": "As a wedding photographer, visual storytelling is paramount. Continuous deployment allows software to adapt to new trends in photography and client preferences rapidly. Microservices support this adaptability by ensuring updates can be rolled out in a streamlined manner. I believe these advancements can dramatically enhance the quality and relevance of the services provided."
+    },
+    {
+      "name": "Crystal Therapy-Martinez",
+      "decision": "agree",
+      "reasoning": "As a physical therapist, my focus is on optimizing recovery paths for clients. Continuous improvement in therapy applications is essential. Microservices enable prompt updates to reflect the latest practices and patient needs, promoting an adaptive approach that is crucial for achieving the best outcomes. Thus, I support the use of microservices in our field."
+    },
+    {
+      "name": "Gary Fishing-Johnson",
+      "decision": "agree",
+      "reasoning": "As a commercial fisherman, I value reliability and tradition. While I acknowledge the benefits of technology in enhancing operations, I'm concerned about the complexity and potential disruptions that microservices can introduce. A simpler, unified approach might serve better in maintaining steady operations within our industry, thus I hesitate to fully endorse the shift to microservices."
+    },
+    {
+      "name": "Alicia Dance-Foster",
+      "decision": "agree",
+      "reasoning": "As a dance instructor, I value expression and movement—traits reflected in microservices architecture. Continuous deployment allows for constant updates in teaching tools that can adapt to student needs quickly. I see how microservices can enhance the overall learning experience and facilitate a more responsive teaching environment."
+    },
+    {
+      "name": "Bruce Volunteer-Wilson",
+      "decision": "agree",
+      "reasoning": "As a retired volunteer coordinator, my emphasis was always on community and service. Microservices could enhance applications designed for civic engagement by allowing updates based on community feedback, fostering a more involved and responsive service. This adaptability is essential in ensuring community needs are met effectively."
+    },
+    {
+      "name": "Tina Pet-Rodriguez",
+      "decision": "agree",
+      "reasoning": "As a veterinary technician, I value compassionate care for animals, and I see the microservices model as beneficial for developing more effective veterinary applications. Continuous deployment allows for rapid updates to reflect new knowledge and best practices in animal care, enhancing the quality of service provided."
+    }
+  ],
+  "audience_final_votes": [
+    {
+      "name": "Dr. Elizabeth Warren-Smith",
+      "decision": "agree",
+      "reasoning": "As a health economist, I value the efficiency and adaptability that microservices architecture provides, which aligns with evidence-based practices. Continuous deployment facilitated by microservices allows for rapid iteration and improvement of health software systems. In a field where timely updates can mean better patient care and outcomes, the flexibility offered by microservices outweighs the potential simplicity of a monolithic approach."
+    },
+    {
+      "name": "Jonathan Tech-Garcia",
+      "decision": "disagree",
+      "reasoning": "While I acknowledge the benefits of microservices, I believe that monolithic architectures can offer significant advantages for certain projects. Monoliths simplify the initial development process and can be more straightforward to manage, particularly for smaller teams or projects with limited resources. Continuous deployment is achievable with monoliths too, and they can sometimes yield performance benefits without the overhead complexity of microservices."
+    },
+    {
+      "name": "Professor Sarah Environment-Jones",
+      "decision": "agree",
+      "reasoning": "From a climate science perspective, the efficiency of microservices can lead to more sustainable software environments. Continuous deployment allows for rapid updates that can enhance ecological efficiency in environmental applications. Such architectures facilitate quicker integration of sustainable practices, allowing for agility in responding to climate challenges, which makes them preferable over traditional monolithic systems."
+    },
+    {
+      "name": "Marcus Business-Chen",
+      "decision": "agree",
+      "reasoning": "As a venture capitalist, I've seen that microservices architecture promotes innovation by allowing companies to be more agile and adaptable to market changes. Continuous deployment enables startups to test and iterate more quickly, securing their competitive edge in fast-moving markets. This fosters an environment of efficiency and rapid growth that is less achievable with monolithic systems."
+    },
+    {
+      "name": "Dr. Helen Ethics-Martinez",
+      "decision": "agree",
+      "reasoning": "In my role as a medical ethicist, I understand that software design can impact patient welfare. Microservices support continuous deployment, which can facilitate more frequent updates to medical software, thus improving patient outcomes and safety. While monolithic architectures are stable, they often lag in responsiveness to changes needed for ethical practices in medicine, making microservices a more suitable choice."
+    },
+    {
+      "name": "David Policy-Anderson",
+      "decision": "agree",
+      "reasoning": "As a government policy analyst, I see the value in the agility of microservices in implementing public policy applications. Continuous deployment allows for timely adjustments to meet evolving regulatory standards and societal needs. Monolithic systems, while possibly simpler, often struggle to keep pace with these demands, making microservices a more effective approach in dynamic environments."
+    },
+    {
+      "name": "Rebecca Science-Taylor",
+      "decision": "agree",
+      "reasoning": "From my experience as a research scientist, I recognize that microservices facilitate experimentation and rapid iteration of research applications. Continuous deployment enables timely integration of findings into software tools, essential in adapting to new data. While monolithic systems can work, they often inhibit an agile development process that is crucial for advancing scientific research."
+    },
+    {
+      "name": "Professor James Law-Wilson",
+      "decision": "agree",
+      "reasoning": "As a constitutional law expert, I appreciate how microservices architectures can enhance compliance and adaptability in legal tech applications. Continuous deployment allows for quick updates to accommodate changes in law and civil liberties, thus ensuring that software remains compliant and effective. In contrast, monolithic systems can lag behind in responsiveness to legal changes, highlighting the preference for microservices."
+    },
+    {
+      "name": "Dr. Maria Healthcare-Rodriguez",
+      "decision": "agree",
+      "reasoning": "In my practice as a physician, I have seen firsthand the importance of timely updates in medical software. Microservices architecture supports continuous deployment, allowing us to rapidly implement changes that improve patient care protocols. Monolithic systems can be cumbersome and slow to evolve, which can undermine patient welfare in a field that demands agility and precision."
+    },
+    {
+      "name": "Steven Innovation-Kim",
+      "decision": "agree",
+      "reasoning": "As a technology entrepreneur, I've witnessed the transformative power of microservices in enabling companies to pivot quickly and adapt to market demands. Continuous deployment simplifies integrating new features and fixes, thus driving innovation. Monolithic architectures, while easier to understand initially, can stifle creativity and responsiveness, making microservices the clear choice for modern businesses."
+    },
+    {
+      "name": "Dr. Patricia Environment-Green",
+      "decision": "agree",
+      "reasoning": "From my background in environmental policy, I advocate for approaches that prioritize sustainability. Microservices facilitate the agility required in developing environmental solutions through continuous deployment. The ability to quickly iterate and deploy new tools aligns with our urgent need to address ecological challenges, positioning microservices as the preferable option over monolithic approaches."
+    },
+    {
+      "name": "Michael Finance-Thompson",
+      "decision": "agree",
+      "reasoning": "In finance, efficiency and responsiveness are vital, and I believe that microservices architecture offers those advantages over monolithic systems. Continuous deployment allows for quick adaptability to market changes, providing firms with a competitive edge. Monoliths can lead to sluggishness, compromising their ability to react swiftly to financial fluctuations and investment opportunities."
+    },
+    {
+      "name": "Dr. Angela Education-Foster",
+      "decision": "agree",
+      "reasoning": "In education research, the flexibility of microservices is crucial. Continuous deployment enhances the ability to update educational software quickly, reflecting new educational practices and techniques. Monolithic systems can introduce delay at critical moments, potentially hindering innovation and responsiveness which are vital for effective educational delivery."
+    },
+    {
+      "name": "Robert Security-Cooper",
+      "decision": "agree",
+      "reasoning": "Security is paramount in any tech development, and I see microservices providing a more robust framework for deploying security updates continuously. This agility in response to threats ensures that systems remain secure in real-time, while monolithic architectures can leave systems vulnerable for longer periods. Therefore, I support microservices for their ability to align with a security-first approach."
+    },
+    {
+      "name": "Dr. Christina Medical-Miller",
+      "decision": "agree",
+      "reasoning": "My work in biomedicine shows that rapid innovation is essential for advancement. Microservices allow for continuous deployment of new features and research findings, making it easier to keep up with the fast pace of biomedicine innovations. Contrarily, monolithic architectures often slow down progress due to their rigid structures, which isn’t sustainable in a field that thrives on agility."
+    },
+    {
+      "name": "Daniel Legal-Martinez",
+      "decision": "agree",
+      "reasoning": "As a corporate lawyer, I emphasize the importance of regulatory clarity in software applications. Microservices architecture, through continuous deployment, allows companies to adapt quickly to regulatory changes, ensuring compliance and mitigating risk. Monolithic systems, while simpler, may hinder this adaptability, consequently risking legal repercussions."
+    },
+    {
+      "name": "Dr. Kevin Philosophy-Liu",
+      "decision": "agree",
+      "reasoning": "In my role as an ethics professor, I advocate for systems that allow for continual improvement and adaptation to ethical standards. The agility of microservices through continuous deployment supports timely updates that maintain ethical integrity. Monolithic systems, with their inertia, can struggle to align with evolving ethical standards, making microservices the better choice for socially responsible tech."
+    },
+    {
+      "name": "Lisa Technology-Hayes",
+      "decision": "agree",
+      "reasoning": "As an AI researcher, the need for efficiency in iterating algorithms is essential. Microservices architecture promotes rapid experimentation and continuous deployment, facilitating timely revisions that enhance performance. Monolithic systems can become cumbersome and slow in implementing changes, thus stifling innovation in a field that demands agility."
+    },
+    {
+      "name": "Professor Mark Economics-Stevens",
+      "decision": "agree",
+      "reasoning": "In labor economics, I've observed that sectors need to be adaptive and responsive to market forces. Microservices architecture fosters flexibility through continuous deployment, which is critical for organizations to adjust effectively to changing economic conditions. Monolithic systems, due to their rigidity, often limit this responsiveness, making microservices more aligned with modern labor dynamics."
+    },
+    {
+      "name": "Dr. Sophia Ethics-Petrov",
+      "decision": "agree",
+      "reasoning": "As a bioethicist, I prioritize human dignity and patient care. Microservices support this by allowing healthcare systems to rapidly deploy updates that improve care processes and ethics compliance. Monolithic systems tend to lag behind in implementing necessary changes, which can impact patient welfare negatively; thus, I support the use of microservices in this context."
+    },
+    {
+      "name": "Paul Industry-Anderson",
+      "decision": "agree",
+      "reasoning": "In manufacturing operations, maximizing efficiency is crucial. The microservices approach allows for continuous deployment, enabling teams to optimize processes and quickly adapt to changes in production demands. By contrast, monolithic systems can be too rigid, potentially slowing down reaction times to market changes, which is why I advocate for microservices."
+    },
+    {
+      "name": "Dr. Janet Data-Kim",
+      "decision": "agree",
+      "reasoning": "As a statistician, I emphasize the importance of methodological rigor. Microservices support continuous deployment, allowing statistical software to be updated frequently in line with the latest research methods. Monolithic architectures can hinder the ability to incorporate new methodologies in real time, thus microservices are favored for their agility and responsiveness."
+    },
+    {
+      "name": "Captain Steve Military-Richards",
+      "decision": "agree",
+      "reasoning": "Having served in the military, I recognize the importance of a structured approach to operations. Microservices provide that structure while offering the flexibility needed for continuous deployment. This adaptability is vital for success in dynamic environments, while monolithic frameworks could lead to delays and inefficiencies in critical situations."
+    },
+    {
+      "name": "Dr. Anna Medical-Volkov",
+      "decision": "agree",
+      "reasoning": "As a reproductive specialist, I understand the need for timely and relevant updates in medical software. Microservices architecture allows for continuous deployment, ensuring that the latest best practices and research inform patient care swiftly. Conversely, monolithic systems can delay necessary changes that impact patient choices and outcomes negatively, making microservices the better approach."
+    },
+    {
+      "name": "Professor William Science-Chen",
+      "decision": "agree",
+      "reasoning": "From my perspective as a physical scientist, embracing technological solutions like microservices benefits our research workflows. Continuous deployment keeps our tools aligned with the latest scientific advancements, allowing for quick adaptation to new data. Monolithic systems can hamper this adaptability, highlighting why microservices are the preferred choice for progressive science."
+    },
+    {
+      "name": "Melissa Art-Johnson",
+      "decision": "agree",
+      "reasoning": "As a museum curator, the ability to adapt and update exhibition technologies is crucial. Microservices support this need through continuous deployment that allows us to enhance visitor engagement dynamically. Monolithic systems can be slower in adapting to new trends or technologies, which is why I advocate for the more flexible and responsive microservices approach."
+    },
+    {
+      "name": "Tony Sports-Rodriguez",
+      "decision": "agree",
+      "reasoning": "As a former athlete, I recognize the importance of teamwork and adaptability in achieving success. Microservices architecture fosters a culture of collaboration and rapid response through continuous deployment, which is crucial for achieving competitive edge. Monolithic systems often lag in flexibility, making microservices the clear choice for innovation."
+    },
+    {
+      "name": "Grace Music-Wilson",
+      "decision": "agree",
+      "reasoning": "In my role as a musician, I appreciate the harmony that can come from a flexible system. Microservices allow for continuous deployment of new content and ways to engage audiences, enhancing our artistic expression. Monolithic frameworks can restrict creativity and adaptability, so I support microservices for fostering a vibrant artistic culture."
+    },
+    {
+      "name": "Frank History-Thompson",
+      "decision": "agree",
+      "reasoning": "As a history teacher, I value the lessons of the past and the importance of adapting to new knowledge. Microservices architecture allows for continuous deployment which reflects the shift in educational narratives and practices swiftly. Monolithic systems might not adapt as quickly, thereby stifling educational evolution, which is why I back microservices."
+    },
+    {
+      "name": "Luna Spiritual-Garcia",
+      "decision": "agree",
+      "reasoning": "As a yoga instructor, I focus on holistic approaches to wellness. Microservices architecture encourages continuous deployment, supporting practices that enhance flexibility and well-being in tech applications. Monolithic systems can lack this adaptability, which can be crucial in fields that strive for holistic solutions, making microservices more aligned with these principles."
+    },
+    {
+      "name": "Bob Construction-Miller",
+      "decision": "agree",
+      "reasoning": "In my work as a union electrician, I see the practical benefits of adaptability in the trades. Microservices offer a framework for continuous deployment that allows for quick adjustments to meet changing demands and improve workflow efficiency. Monolithic architectures can slow down processes due to their rigidity, so I favor microservices for practical implementation."
+    },
+    {
+      "name": "Jennifer Fashion-Anderson",
+      "decision": "agree",
+      "reasoning": "As a retail manager, staying ahead of trends is critical for success. Microservices enable continuous deployment, allowing for immediate updates in response to market changes. Monolithic systems can be too slow to react, which can hinder our ability to respond effectively to customer needs, reinforcing my support for a microservices approach."
+    },
+    {
+      "name": "Carlos Literature-Martinez",
+      "decision": "agree",
+      "reasoning": "In literature analysis, I'm accustomed to evaluating texts for depth and meaning. Microservices allow for a nuanced approach to software development through continuous deployment, enabling deeper engagement with audience needs. Monolithic systems can feel restrictive and may miss emerging narratives, emphasizing the need for the flexibility provided by microservices."
+    },
+    {
+      "name": "Destiny Social-Kim",
+      "decision": "agree",
+      "reasoning": "As a social media influencer, my work thrives on trends and immediacy. Microservices architecture allows for seamless continuous deployment of content that resonates with current trends. Monolithic structures can limit responsiveness, making microservices the superior option for engaging audiences effectively and promptly."
+    },
+    {
+      "name": "Ralph Mechanical-Taylor",
+      "decision": "agree",
+      "reasoning": "As an auto mechanic, the ability to address issues as they arise is critical. Microservices support continuous deployment, allowing for quick updates and improvements in software tools that enhance repair efficiency. Monolithic architectures might introduce delays, which can negatively impact operations, making microservices the preferred method."
+    },
+    {
+      "name": "Amber Wellness-Foster",
+      "decision": "agree",
+      "reasoning": "As a nutritionist, I emphasize the need for personalized approaches. Microservices architecture, through continuous deployment, allows for rapid updates that cater to evolving nutritional findings and client needs. Monolithic systems can be less responsive, thereby foregoing opportunities for better client outcomes, making microservices preferable in practice."
+    },
+    {
+      "name": "Kevin Gaming-Chen",
+      "decision": "agree",
+      "reasoning": "As a video game developer, the agility provided by microservices is essential. Continuous deployment allows for fast iterations and player feedback integration, keeping games engaging and relevant. Monolithic systems can slow this process, restricting creativity, and adaptability, which is why I advocate for microservices."
+    },
+    {
+      "name": "Patricia Religious-O'Sullivan",
+      "decision": "agree",
+      "reasoning": "As a church administrator, I recognize the importance of community and timely outreach. Microservices architecture supports continuous deployment for swift updates to community engagement tools. Monolithic systems can hinder this outreach by delaying necessary changes, making microservices the better choice for enhancing community connections."
+    },
+    {
+      "name": "Jake Outdoor-Wilson",
+      "decision": "agree",
+      "reasoning": "As a park ranger, conservation is my primary concern. Microservices enable continuous deployment that can facilitate timely updates for environmental initiatives. Monolithic systems might be too slow to adapt to changing conservation needs, reinforcing my belief that microservices serve the cause of conservation better."
+    },
+    {
+      "name": "Nicole Beauty-Rodriguez",
+      "decision": "agree",
+      "reasoning": "In the beauty industry, trends change rapidly, and as a sales rep, I recognize the need for agility. Microservices architecture allows for continuous deployment of new products and marketing strategies, ensuring we stay relevant. Monolithic systems can be restrictive and slow to evolve, which is why I favor a microservices approach."
+    },
+    {
+      "name": "Martin Craft-Anderson",
+      "decision": "agree",
+      "reasoning": "As a furniture maker, quality craftsmanship is paramount. The flexibility offered by microservices through continuous deployment allows for adaptability in production processes, enhancing overall quality. Monolithic systems, being more rigid, might limit this agility and responsiveness, thus I support the microservices model."
+    },
+    {
+      "name": "Samantha Travel-Lee",
+      "decision": "disagree",
+      "reasoning": "As a travel blogger, I find that adaptability is key to capturing experiences. Microservices architecture allows for continuous deployment, keeping content fresh and engaging with immediate relevance to current events. Monolithic systems can restrict this dynamism, thus I lean toward supporting microservices for their flexibility."
+    },
+    {
+      "name": "Eddie Food-Garcia",
+      "decision": "agree",
+      "reasoning": "As a chef, culinary creativity demands quick adjustments to recipes and techniques. Microservices support this through continuous deployment, allowing for immediate updates to culinary apps that enhance restaurant services. Monolithic systems can hinder this adaptability, which is why I advocate for microservices in the culinary field."
+    },
+    {
+      "name": "Brenda Real-Estate-Thompson",
+      "decision": "agree",
+      "reasoning": "As a property agent, the ability to respond quickly to market changes is essential. Microservices architecture allows for continuous deployment of updates and tools that improve client engagement and market awareness. Monolithic systems often lag, which can hinder effective client interactions, making microservices the preferable choice."
+    },
+    {
+      "name": "Tyler Photography-Kim",
+      "decision": "agree",
+      "reasoning": "In my work as a wedding photographer, capturing moments quickly is vital. Microservices enable continuous deployment, allowing for rapid adjustments to photography software and tools. Monolithic systems can slow down this responsiveness, impacting workflow efficiency, which is why I prefer a microservices approach."
+    },
+    {
+      "name": "Crystal Therapy-Martinez",
+      "decision": "agree",
+      "reasoning": "In physical therapy, optimizing recovery requires adaptability. Microservices support continuous deployment, facilitating timely updates to rehabilitation tools and techniques that enhance patient care. Monolithic systems may lag in necessary adjustments, which is why I believe microservices are the better approach for optimizing recovery outcomes."
+    },
+    {
+      "name": "Gary Fishing-Johnson",
+      "decision": "agree",
+      "reasoning": "As a commercial fisherman, unpredictability is a norm. Microservices architecture helps facilitate continuous updates to navigational and fishing tools to adapt to changing weather and market conditions. Monolithic systems can delay updates needed for safety and efficiency, which reinforces my preference for microservices."
+    },
+    {
+      "name": "Alicia Dance-Foster",
+      "decision": "agree",
+      "reasoning": "As a dance instructor, I appreciate the need for flexibility in my teaching approach. Microservices support continuous deployment, allowing rapid adaptations to teaching methods and tools that enhance student engagement. Monolithic systems can be overly rigid, limiting creativity and responsiveness, thus I stand by the microservices model."
+    },
+    {
+      "name": "Bruce Volunteer-Wilson",
+      "decision": "agree",
+      "reasoning": "Having coordinated numerous volunteer efforts, I understand the need for operational efficiency. Microservices support continuous deployment, allowing for swift updates to community service applications, enhancing engagement with volunteers. Monolithic systems are often too static, reinforcing my belief in the superiority of microservices."
+    },
+    {
+      "name": "Tina Pet-Rodriguez",
+      "decision": "agree",
+      "reasoning": "As a veterinary technician, compassionate care is my priority. Microservices facilitate rapid iterations and updates to veterinary software that enhance patient care practices through continuous deployment. Monolithic systems can delay adaptations needed for optimal patient safety, thus making microservices the preferred architecture."
+    }
+  ],
+  "initial_vote_counts": {
+    "agree": 44,
+    "disagree": 6
+  },
+  "initial_winning_team": "agree",
+  "initial_margin_of_victory": 38,
+  "final_vote_counts": {
+    "agree": 48,
+    "disagree": 2
+  },
+  "final_winning_team": "agree",
+  "final_margin_of_victory": 46,
+  "final_vote_changes": {
+    "unchanged_votes": [
+      {
+        "name": "Dr. Elizabeth Warren-Smith",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Jonathan Tech-Garcia",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Professor Sarah Environment-Jones",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Helen Ethics-Martinez",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "David Policy-Anderson",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Rebecca Science-Taylor",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Professor James Law-Wilson",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Maria Healthcare-Rodriguez",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Patricia Environment-Green",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Michael Finance-Thompson",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Angela Education-Foster",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Robert Security-Cooper",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Christina Medical-Miller",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Daniel Legal-Martinez",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Kevin Philosophy-Liu",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Lisa Technology-Hayes",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Professor Mark Economics-Stevens",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Sophia Ethics-Petrov",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Paul Industry-Anderson",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Janet Data-Kim",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Captain Steve Military-Richards",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Anna Medical-Volkov",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Professor William Science-Chen",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Melissa Art-Johnson",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Tony Sports-Rodriguez",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Grace Music-Wilson",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Frank History-Thompson",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Luna Spiritual-Garcia",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Bob Construction-Miller",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Jennifer Fashion-Anderson",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Carlos Literature-Martinez",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Ralph Mechanical-Taylor",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Amber Wellness-Foster",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Patricia Religious-O'Sullivan",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Jake Outdoor-Wilson",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Nicole Beauty-Rodriguez",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Martin Craft-Anderson",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Samantha Travel-Lee",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Eddie Food-Garcia",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Brenda Real-Estate-Thompson",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Tyler Photography-Kim",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Crystal Therapy-Martinez",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Gary Fishing-Johnson",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Alicia Dance-Foster",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Bruce Volunteer-Wilson",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Tina Pet-Rodriguez",
+        "decision": "agree",
+        "confidence": 0
+      }
+    ],
+    "changed_votes": [
+      {
+        "name": "Marcus Business-Chen",
+        "initial_decision": "disagree",
+        "final_decision": "agree",
+        "confidence": 0,
+        "reasoning": "As a venture capitalist, I've seen that microservices architecture promotes innovation by allowing companies to be more agile and adaptable to market changes. Continuous deployment enables startups to test and iterate more quickly, securing their competitive edge in fast-moving markets. This fosters an environment of efficiency and rapid growth that is less achievable with monolithic systems."
+      },
+      {
+        "name": "Steven Innovation-Kim",
+        "initial_decision": "disagree",
+        "final_decision": "agree",
+        "confidence": 0,
+        "reasoning": "As a technology entrepreneur, I've witnessed the transformative power of microservices in enabling companies to pivot quickly and adapt to market demands. Continuous deployment simplifies integrating new features and fixes, thus driving innovation. Monolithic architectures, while easier to understand initially, can stifle creativity and responsiveness, making microservices the clear choice for modern businesses."
+      },
+      {
+        "name": "Destiny Social-Kim",
+        "initial_decision": "disagree",
+        "final_decision": "agree",
+        "confidence": 0,
+        "reasoning": "As a social media influencer, my work thrives on trends and immediacy. Microservices architecture allows for seamless continuous deployment of content that resonates with current trends. Monolithic structures can limit responsiveness, making microservices the superior option for engaging audiences effectively and promptly."
+      },
+      {
+        "name": "Kevin Gaming-Chen",
+        "initial_decision": "disagree",
+        "final_decision": "agree",
+        "confidence": 0,
+        "reasoning": "As a video game developer, the agility provided by microservices is essential. Continuous deployment allows for fast iterations and player feedback integration, keeping games engaging and relevant. Monolithic systems can slow this process, restricting creativity, and adaptability, which is why I advocate for microservices."
+      }
+    ],
+    "vote_swings": {
+      "disagree": {
+        "lost": 4,
+        "gained": 0
+      },
+      "agree": {
+        "lost": 0,
+        "gained": 4
+      }
+    },
+    "net_changes": {
+      "disagree": -4,
+      "agree": 4
+    },
+    "total_changes": 4,
+    "change_percentage": 8.0
+  },
+  "winning_team": "agree",
+  "vote_counts": {
+    "agree": 48,
+    "disagree": 2
+  },
+  "margin_of_victory": 46,
+  "domain_goal_pairs": [],
+  "arguments": [
+    {
+      "round": 1,
+      "team": "anti_microservices_vs_monoliths",
+      "member_name": "Dr. James Whitaker",
+      "argument_name": "a_simply_consistent",
+      "domains": [
+        "d_software_deployment",
+        "d_dev_productivity"
+      ],
+      "goals": {
+        "g_developer_productivity": [
+          "d_dev_productivity"
+        ],
+        "g_service_continuity": [
+          "d_software_deployment"
+        ]
+      },
+      "attacks": [],
+      "text": "While microservices architecture offers certain benefits, we must consider the inherent complexities it introduces. From a pragmatic minimalist perspective, the simplicity of a monolithic architecture promotes consistency and a lower operational overhead. Continuous deployment can be effectively achieved in monolithic systems through thoroughly documented code, well-defined CI/CD procedures, and a culture of collaboration among team members. By keeping the architecture simple, developers are able to focus on delivering value rather than navigating intricate inter-service dependencies that microservices often entail. Moreover, monolithic applications can be scaled effectively in modern cloud environments, ensuring service continuity without the overhead and complication of managing multiple independently deployable services.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 707,
+          "output_tokens": 116,
+          "total_tokens": 823,
+          "elapsed_time_seconds": 2.749250650405884,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "analyser node": {
+              "phase_name": "analyser node",
+              "input_tokens": 707,
+              "output_tokens": 116,
+              "total_tokens": 823,
+              "timestamp": 1769277083.9047167
+            }
+          }
+        },
+        "knowledge_retrieval": {
+          "node_name": "knowledge_retrieval",
+          "input_tokens": 791,
+          "output_tokens": 340,
+          "total_tokens": 1131,
+          "elapsed_time_seconds": 10.086496829986572,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "search_query_generation": {
+              "phase_name": "search_query_generation",
+              "input_tokens": 791,
+              "output_tokens": 340,
+              "total_tokens": 1131,
+              "timestamp": 1769277090.984606
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 2059,
+          "output_tokens": 1107,
+          "total_tokens": 3166,
+          "elapsed_time_seconds": 28.975555658340454,
+          "llm_call_count": 2,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1231,
+              "output_tokens": 335,
+              "total_tokens": 1566,
+              "timestamp": 1769277100.6632395
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 828,
+              "output_tokens": 772,
+              "total_tokens": 1600,
+              "timestamp": 1769277122.9682405
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "team": "anti_microservices_vs_monoliths",
+      "member_name": "Elena Rossi",
+      "argument_name": "a_developer_efficiency",
+      "domains": [
+        "d_software_deployment",
+        "d_dev_productivity"
+      ],
+      "goals": {
+        "g_developer_productivity": [
+          "d_dev_productivity"
+        ],
+        "g_service_continuity": [
+          "d_software_deployment",
+          "d_dev_productivity"
+        ]
+      },
+      "attacks": [],
+      "text": "Adopting a microservices architecture doesn't necessarily lead to more effective continuous deployment. In my experience as a senior backend engineer, I have witnessed project teams struggle with the overhead of managing numerous services, which often detracts from developer productivity. A monolithic architecture simplifies deployment processes—an engineer can deploy the entire application with a single command instead of coordinating multiple services. This efficiency translates into faster iteration cycles and ultimately higher quality software, especially when rapid fixes are necessary. Thus, it is crucial to prioritize developer efficiency over architectural complexity when aiming for seamless deployment.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1040,
+          "output_tokens": 161,
+          "total_tokens": 1201,
+          "elapsed_time_seconds": 3.553903102874756,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "analyser node": {
+              "phase_name": "analyser node",
+              "input_tokens": 1040,
+              "output_tokens": 161,
+              "total_tokens": 1201,
+              "timestamp": 1769277128.5780277
+            }
+          }
+        },
+        "knowledge_retrieval": {
+          "node_name": "knowledge_retrieval",
+          "input_tokens": 1125,
+          "output_tokens": 337,
+          "total_tokens": 1462,
+          "elapsed_time_seconds": 12.641128778457642,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "search_query_generation": {
+              "phase_name": "search_query_generation",
+              "input_tokens": 1125,
+              "output_tokens": 337,
+              "total_tokens": 1462,
+              "timestamp": 1769277137.4762526
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 2725,
+          "output_tokens": 957,
+          "total_tokens": 3682,
+          "elapsed_time_seconds": 21.640348434448242,
+          "llm_call_count": 2,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1567,
+              "output_tokens": 450,
+              "total_tokens": 2017,
+              "timestamp": 1769277152.5065188
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1158,
+              "output_tokens": 507,
+              "total_tokens": 1665,
+              "timestamp": 1769277162.8606246
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "team": "pro_microservices_vs_monoliths",
+      "member_name": "Dr. Priya Nair",
+      "argument_name": "a_scalable_deployment",
+      "domains": [
+        "d_software_deployment",
+        "d_dev_productivity"
+      ],
+      "goals": {
+        "g_developer_productivity": [
+          "d_software_deployment",
+          "d_dev_productivity"
+        ],
+        "g_service_continuity": [
+          "d_software_deployment",
+          "d_dev_productivity"
+        ]
+      },
+      "attacks": [],
+      "text": "Microservices architecture is essential for organizations striving for agility and scalability in continuous deployment. Studies show that companies adopting microservices can deploy code updates more frequently, leading to a competitive edge in today's fast-paced market. With independent services, teams can iterate on their components without waiting for a complete monolithic build, enabling faster delivery of new features and performance enhancements. This architectural approach also allows for scalable solutions tailored to demand, making it easier to manage large-scale applications. As a Cloud Platform Architect, I advocate for leveraging microservices to empower teams while fostering a culture of ownership and accountability.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1067,
+          "output_tokens": 544,
+          "total_tokens": 1611,
+          "elapsed_time_seconds": 10.943902254104614,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "tot analyser node": {
+              "phase_name": "tot analyser node",
+              "input_tokens": 1067,
+              "output_tokens": 544,
+              "total_tokens": 1611,
+              "timestamp": 1769277176.1329389
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 21798,
+          "output_tokens": 8389,
+          "total_tokens": 30187,
+          "elapsed_time_seconds": 182.61299228668213,
+          "llm_call_count": 18,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1667,
+              "output_tokens": 295,
+              "total_tokens": 1962,
+              "timestamp": 1769277349.12933
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1043,
+              "output_tokens": 506,
+              "total_tokens": 1549,
+              "timestamp": 1769277358.7463539
+            }
+          }
+        },
+        "candidate_creator": {
+          "node_name": "candidate_creator",
+          "input_tokens": 1812,
+          "output_tokens": 88,
+          "total_tokens": 1900,
+          "elapsed_time_seconds": 3.532698392868042,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "variation_selection": {
+              "phase_name": "variation_selection",
+              "input_tokens": 1812,
+              "output_tokens": 88,
+              "total_tokens": 1900,
+              "timestamp": 1769277360.5682788
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "team": "pro_microservices_vs_monoliths",
+      "member_name": "Marcus Feld",
+      "argument_name": "a_fast_feedback_loops",
+      "domains": [
+        "d_software_deployment",
+        "d_dev_productivity"
+      ],
+      "goals": {
+        "g_developer_productivity": [
+          "d_software_deployment",
+          "d_dev_productivity"
+        ],
+        "g_service_continuity": [
+          "d_software_deployment",
+          "d_dev_productivity"
+        ]
+      },
+      "attacks": [],
+      "text": "Embracing microservices can significantly enhance developer productivity through the implementation of continuous delivery pipelines. My experience in DevOps highlights how microservices facilitate quick feedback loops—enabling rapid testing and deployment cycles. This not only accelerates the delivery of features but reduces the impact of potential errors, leading to improved system reliability. By separating functionalities into microservices, teams create modular components that can be deployed and tested independently, ultimately allowing for faster iterations. In a landscape where businesses must adapt rapidly, microservices offer a framework that supports ongoing improvement and accelerates the deployment lifecycle.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1344,
+          "output_tokens": 627,
+          "total_tokens": 1971,
+          "elapsed_time_seconds": 13.651426553726196,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "tot analyser node": {
+              "phase_name": "tot analyser node",
+              "input_tokens": 1344,
+              "output_tokens": 627,
+              "total_tokens": 1971,
+              "timestamp": 1769277375.9850209
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 26766,
+          "output_tokens": 9216,
+          "total_tokens": 35982,
+          "elapsed_time_seconds": 184.91714310646057,
+          "llm_call_count": 18,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1942,
+              "output_tokens": 355,
+              "total_tokens": 2297,
+              "timestamp": 1769277546.9291961
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1320,
+              "output_tokens": 727,
+              "total_tokens": 2047,
+              "timestamp": 1769277560.902158
+            }
+          }
+        },
+        "candidate_creator": {
+          "node_name": "candidate_creator",
+          "input_tokens": 1797,
+          "output_tokens": 87,
+          "total_tokens": 1884,
+          "elapsed_time_seconds": 4.328509569168091,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "variation_selection": {
+              "phase_name": "variation_selection",
+              "input_tokens": 1797,
+              "output_tokens": 87,
+              "total_tokens": 1884,
+              "timestamp": 1769277563.0555978
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "team": "anti_microservices_vs_monoliths",
+      "member_name": "Dr. James Whitaker",
+      "argument_name": "a_operational_simplicity",
+      "domains": [
+        "d_software_deployment",
+        "d_dev_productivity"
+      ],
+      "goals": {
+        "g_developer_productivity": [
+          "d_dev_productivity"
+        ],
+        "g_service_continuity": [
+          "d_software_deployment"
+        ]
+      },
+      "attacks": [],
+      "text": "Revisiting the arguments against microservices, it's important to emphasize the overwhelming operational simplicity that a monolithic architecture provides. Its straightforward nature leads to fewer deployment-related issues, which means teams can focus their resources on improving the application rather than troubleshooting multiple interconnected services. Furthermore, updating a single monolithic codebase minimizes the risk of version mismatches and non-functional errors that commonly occur in microservice architectures, leading to greater team efficiency and more reliable deployments. A simplified operational process correlates directly with enhanced productivity and consistent service availability.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1145,
+          "output_tokens": 132,
+          "total_tokens": 1277,
+          "elapsed_time_seconds": 2.8527915477752686,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "analyser node": {
+              "phase_name": "analyser node",
+              "input_tokens": 1145,
+              "output_tokens": 132,
+              "total_tokens": 1277,
+              "timestamp": 1769277568.1708615
+            }
+          }
+        },
+        "knowledge_retrieval": {
+          "node_name": "knowledge_retrieval",
+          "input_tokens": 1218,
+          "output_tokens": 350,
+          "total_tokens": 1568,
+          "elapsed_time_seconds": 11.403514623641968,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "search_query_generation": {
+              "phase_name": "search_query_generation",
+              "input_tokens": 1218,
+              "output_tokens": 350,
+              "total_tokens": 1568,
+              "timestamp": 1769277575.9666317
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 2918,
+          "output_tokens": 1077,
+          "total_tokens": 3995,
+          "elapsed_time_seconds": 19.746875524520874,
+          "llm_call_count": 2,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1661,
+              "output_tokens": 321,
+              "total_tokens": 1982,
+              "timestamp": 1769277585.9703698
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1257,
+              "output_tokens": 756,
+              "total_tokens": 2013,
+              "timestamp": 1769277599.322297
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "team": "anti_microservices_vs_monoliths",
+      "member_name": "Elena Rossi",
+      "argument_name": "a_sustainable_maintenance",
+      "domains": [
+        "d_software_deployment",
+        "d_dev_productivity"
+      ],
+      "goals": {
+        "g_developer_productivity": [
+          "d_dev_productivity"
+        ],
+        "g_service_continuity": [
+          "d_software_deployment"
+        ]
+      },
+      "attacks": [],
+      "text": "Through my experience, I have consistently observed that the maintenance of microservices can become unwieldy as the number of services grows. Each microservice introduces opportunities for complexity that can detract from development velocity. A monolithic architecture simplifies debugging and maintenance, as teams can easily trace interactions within a single codebase without delving into a multitude of services. This centralized management not only enhances developer productivity but ensures quicker problem resolution and, subsequently, better service continuity. For organizations looking to optimize long-term maintainability, a monolithic structure can be a wise choice.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1435,
+          "output_tokens": 162,
+          "total_tokens": 1597,
+          "elapsed_time_seconds": 3.8647727966308594,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "analyser node": {
+              "phase_name": "analyser node",
+              "input_tokens": 1435,
+              "output_tokens": 162,
+              "total_tokens": 1597,
+              "timestamp": 1769277604.957183
+            }
+          }
+        },
+        "knowledge_retrieval": {
+          "node_name": "knowledge_retrieval",
+          "input_tokens": 1509,
+          "output_tokens": 333,
+          "total_tokens": 1842,
+          "elapsed_time_seconds": 11.993088722229004,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "search_query_generation": {
+              "phase_name": "search_query_generation",
+              "input_tokens": 1509,
+              "output_tokens": 333,
+              "total_tokens": 1842,
+              "timestamp": 1769277613.301462
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 3495,
+          "output_tokens": 1057,
+          "total_tokens": 4552,
+          "elapsed_time_seconds": 23.887454748153687,
+          "llm_call_count": 2,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1953,
+              "output_tokens": 327,
+              "total_tokens": 2280,
+              "timestamp": 1769277625.498045
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1542,
+              "output_tokens": 730,
+              "total_tokens": 2272,
+              "timestamp": 1769277640.8388138
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "team": "pro_microservices_vs_monoliths",
+      "member_name": "Dr. Priya Nair",
+      "argument_name": "a_autonomous_improvement",
+      "domains": [
+        "d_software_deployment",
+        "d_dev_productivity"
+      ],
+      "goals": {
+        "g_developer_productivity": [
+          "d_software_deployment",
+          "d_dev_productivity"
+        ],
+        "g_service_continuity": [
+          "d_software_deployment"
+        ]
+      },
+      "attacks": [],
+      "text": "Microservices architecture stands as a pillar for successfully enabling continuous deployment. Research indicates that companies that leverage this approach can roll out new features more rapidly while maintaining high standards of quality and robustness. This architecture encourages team autonomy, allowing developers to manage services independently but also promotes accountability—the impact of their changes is immediately visible, fostering a culture of continuous improvement. As a Cloud Platform Architect, the ability to scale and adapt to changing requirements without significant disruptions positions microservices as a transformative solution for achieving robust and flexible deployment pipelines.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1692,
+          "output_tokens": 599,
+          "total_tokens": 2291,
+          "elapsed_time_seconds": 15.51415491104126,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "tot analyser node": {
+              "phase_name": "tot analyser node",
+              "input_tokens": 1692,
+              "output_tokens": 599,
+              "total_tokens": 2291,
+              "timestamp": 1769277658.7172782
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 38736,
+          "output_tokens": 8849,
+          "total_tokens": 47585,
+          "elapsed_time_seconds": 209.9461476802826,
+          "llm_call_count": 18,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 2718,
+              "output_tokens": 325,
+              "total_tokens": 3043,
+              "timestamp": 1769277853.5211725
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1874,
+              "output_tokens": 691,
+              "total_tokens": 2565,
+              "timestamp": 1769277868.661613
+            }
+          }
+        },
+        "candidate_creator": {
+          "node_name": "candidate_creator",
+          "input_tokens": 1775,
+          "output_tokens": 85,
+          "total_tokens": 1860,
+          "elapsed_time_seconds": 4.4691197872161865,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "variation_selection": {
+              "phase_name": "variation_selection",
+              "input_tokens": 1775,
+              "output_tokens": 85,
+              "total_tokens": 1860,
+              "timestamp": 1769277870.8897796
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "team": "pro_microservices_vs_monoliths",
+      "member_name": "Marcus Feld",
+      "argument_name": "a_reliable_automation",
+      "domains": [
+        "d_software_deployment",
+        "d_dev_productivity"
+      ],
+      "goals": {
+        "g_developer_productivity": [
+          "d_software_deployment",
+          "d_dev_productivity"
+        ],
+        "g_service_continuity": [
+          "d_software_deployment",
+          "d_dev_productivity"
+        ]
+      },
+      "attacks": [],
+      "text": "The microservices architecture offers an unprecedented opportunity for automation in deployment processes, which is essential for organizations embracing continuous delivery. Leveraging tools that cater to microservices enables the configuration of automated build, test, and deployment pipelines, fostering reliability and speed. In my role as a DevOps/SRE lead, I have noted that such automation reduces manual intervention errors and increases throughput. With each microservice acting as an independent unit, teams can deploy updates in an isolated manner, enhancing overall system integrity while promoting rapid feedback loops. In a competitive landscape, microservices facilitate the speed and reliability necessary to thrive.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 2016,
+          "output_tokens": 565,
+          "total_tokens": 2581,
+          "elapsed_time_seconds": 13.316346645355225,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "tot analyser node": {
+              "phase_name": "tot analyser node",
+              "input_tokens": 2016,
+              "output_tokens": 565,
+              "total_tokens": 2581,
+              "timestamp": 1769277886.5104907
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 44451,
+          "output_tokens": 9369,
+          "total_tokens": 53820,
+          "elapsed_time_seconds": 215.18231749534607,
+          "llm_call_count": 18,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 3034,
+              "output_tokens": 334,
+              "total_tokens": 3368,
+              "timestamp": 1769278086.1900482
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 2193,
+              "output_tokens": 773,
+              "total_tokens": 2966,
+              "timestamp": 1769278101.6888885
+            }
+          }
+        },
+        "candidate_creator": {
+          "node_name": "candidate_creator",
+          "input_tokens": 1765,
+          "output_tokens": 77,
+          "total_tokens": 1842,
+          "elapsed_time_seconds": 4.593397617340088,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "variation_selection": {
+              "phase_name": "variation_selection",
+              "input_tokens": 1765,
+              "output_tokens": 77,
+              "total_tokens": 1842,
+              "timestamp": 1769278103.762673
+            }
+          }
+        }
+      }
+    }
+  ],
+  "tgs_snapshots": [
+    {
+      "round": 1,
+      "team": "anti_microservices_vs_monoliths",
+      "member": "Dr. James Whitaker",
+      "tgs": {
+        "g_developer_productivity-d_software_deployment": 0,
+        "g_developer_productivity-d_dev_productivity": 5760,
+        "g_developer_productivity-d_microservices": 0,
+        "g_pragmatism-d_software_deployment": 0,
+        "g_pragmatism-d_dev_productivity": 0,
+        "g_pragmatism-d_microservices": 0,
+        "g_service_continuity-d_software_deployment": 3315,
+        "g_service_continuity-d_dev_productivity": 0,
+        "g_service_continuity-d_microservices": 0
+      }
+    },
+    {
+      "round": 1,
+      "team": "anti_microservices_vs_monoliths",
+      "member": "Elena Rossi",
+      "tgs": {
+        "g_developer_productivity-d_software_deployment": 0,
+        "g_developer_productivity-d_dev_productivity": 11520,
+        "g_developer_productivity-d_microservices": 0,
+        "g_pragmatism-d_software_deployment": 0,
+        "g_pragmatism-d_dev_productivity": 0,
+        "g_pragmatism-d_microservices": 0,
+        "g_service_continuity-d_software_deployment": 6630,
+        "g_service_continuity-d_dev_productivity": 3960,
+        "g_service_continuity-d_microservices": 0
+      }
+    },
+    {
+      "round": 1,
+      "team": "pro_microservices_vs_monoliths",
+      "member": "Dr. Priya Nair",
+      "tgs": {
+        "g_developer_productivity-d_software_deployment": 4760,
+        "g_developer_productivity-d_dev_productivity": 5760,
+        "g_developer_productivity-d_microservices": 0,
+        "g_pragmatism-d_software_deployment": 0,
+        "g_pragmatism-d_dev_productivity": 0,
+        "g_pragmatism-d_microservices": 0,
+        "g_service_continuity-d_software_deployment": 3315,
+        "g_service_continuity-d_dev_productivity": 3960,
+        "g_service_continuity-d_microservices": 0
+      }
+    },
+    {
+      "round": 1,
+      "team": "pro_microservices_vs_monoliths",
+      "member": "Marcus Feld",
+      "tgs": {
+        "g_developer_productivity-d_software_deployment": 9520,
+        "g_developer_productivity-d_dev_productivity": 11520,
+        "g_developer_productivity-d_microservices": 0,
+        "g_pragmatism-d_software_deployment": 0,
+        "g_pragmatism-d_dev_productivity": 0,
+        "g_pragmatism-d_microservices": 0,
+        "g_service_continuity-d_software_deployment": 6630,
+        "g_service_continuity-d_dev_productivity": 7920,
+        "g_service_continuity-d_microservices": 0
+      }
+    },
+    {
+      "round": 2,
+      "team": "anti_microservices_vs_monoliths",
+      "member": "Dr. James Whitaker",
+      "tgs": {
+        "g_developer_productivity-d_software_deployment": 0,
+        "g_developer_productivity-d_dev_productivity": 17280,
+        "g_developer_productivity-d_microservices": 0,
+        "g_pragmatism-d_software_deployment": 0,
+        "g_pragmatism-d_dev_productivity": 0,
+        "g_pragmatism-d_microservices": 0,
+        "g_service_continuity-d_software_deployment": 9945,
+        "g_service_continuity-d_dev_productivity": 3960,
+        "g_service_continuity-d_microservices": 0
+      }
+    },
+    {
+      "round": 2,
+      "team": "anti_microservices_vs_monoliths",
+      "member": "Elena Rossi",
+      "tgs": {
+        "g_developer_productivity-d_software_deployment": 0,
+        "g_developer_productivity-d_dev_productivity": 23040,
+        "g_developer_productivity-d_microservices": 0,
+        "g_pragmatism-d_software_deployment": 0,
+        "g_pragmatism-d_dev_productivity": 0,
+        "g_pragmatism-d_microservices": 0,
+        "g_service_continuity-d_software_deployment": 13260,
+        "g_service_continuity-d_dev_productivity": 3960,
+        "g_service_continuity-d_microservices": 0
+      }
+    },
+    {
+      "round": 2,
+      "team": "pro_microservices_vs_monoliths",
+      "member": "Dr. Priya Nair",
+      "tgs": {
+        "g_developer_productivity-d_software_deployment": 14280,
+        "g_developer_productivity-d_dev_productivity": 17280,
+        "g_developer_productivity-d_microservices": 0,
+        "g_pragmatism-d_software_deployment": 0,
+        "g_pragmatism-d_dev_productivity": 0,
+        "g_pragmatism-d_microservices": 0,
+        "g_service_continuity-d_software_deployment": 9945,
+        "g_service_continuity-d_dev_productivity": 7920,
+        "g_service_continuity-d_microservices": 0
+      }
+    },
+    {
+      "round": 2,
+      "team": "pro_microservices_vs_monoliths",
+      "member": "Marcus Feld",
+      "tgs": {
+        "g_developer_productivity-d_software_deployment": 19040,
+        "g_developer_productivity-d_dev_productivity": 23040,
+        "g_developer_productivity-d_microservices": 0,
+        "g_pragmatism-d_software_deployment": 0,
+        "g_pragmatism-d_dev_productivity": 0,
+        "g_pragmatism-d_microservices": 0,
+        "g_service_continuity-d_software_deployment": 13260,
+        "g_service_continuity-d_dev_productivity": 11880,
+        "g_service_continuity-d_microservices": 0
+      }
+    }
+  ],
+  "final_tgs": {
+    "anti_microservices_vs_monoliths": {
+      "g_service_continuity-d_microservices": 0,
+      "g_service_continuity-d_dev_productivity": 3960,
+      "g_service_continuity-d_software_deployment": 13260,
+      "g_pragmatism-d_microservices": 0,
+      "g_pragmatism-d_dev_productivity": 0,
+      "g_pragmatism-d_software_deployment": 0,
+      "g_developer_productivity-d_microservices": 0,
+      "g_developer_productivity-d_dev_productivity": 23040,
+      "g_developer_productivity-d_software_deployment": 0
+    },
+    "pro_microservices_vs_monoliths": {
+      "g_developer_productivity-d_software_deployment": 19040,
+      "g_developer_productivity-d_dev_productivity": 23040,
+      "g_developer_productivity-d_microservices": 0,
+      "g_pragmatism-d_software_deployment": 0,
+      "g_pragmatism-d_dev_productivity": 0,
+      "g_pragmatism-d_microservices": 0,
+      "g_service_continuity-d_microservices": 0,
+      "g_service_continuity-d_dev_productivity": 11880,
+      "g_service_continuity-d_software_deployment": 13260
+    }
+  },
+  "execution_metrics": {
+    "total_nodes": 24,
+    "total_time_seconds": 1016.4033377170563,
+    "total_tokens": 209810,
+    "total_input_tokens": 165186,
+    "total_output_tokens": 44624,
+    "teams": [
+      {
+        "team_name": "pro_microservices_vs_monoliths",
+        "total_nodes": 12,
+        "total_time_seconds": 863.0081562995911,
+        "total_tokens": 183514,
+        "total_input_tokens": 145019,
+        "total_output_tokens": 38495,
+        "average_time_per_node": 71.91734635829926,
+        "average_tokens_per_node": 15292.833333333334,
+        "members": [
+          "Dr. Elena Vasquez",
+          "Captain Steve Richards"
+        ],
+        "nodes": [
+          "analyser",
+          "argument_creator",
+          "candidate_creator"
+        ]
+      },
+      {
+        "team_name": "anti_microservices_vs_monoliths",
+        "total_nodes": 12,
+        "total_time_seconds": 153.3951814174652,
+        "total_tokens": 26296,
+        "total_input_tokens": 20167,
+        "total_output_tokens": 6129,
+        "average_time_per_node": 12.782931784788767,
+        "average_tokens_per_node": 2191.3333333333335,
+        "members": [
+          "Prof. Robert Harrison",
+          "Dr. Linda Hayes"
+        ],
+        "nodes": [
+          "analyser",
+          "argument_creator",
+          "knowledge_retrieval"
+        ]
+      }
+    ],
+    "members": [
+      {
+        "member_name": "Elena Rossi",
+        "team_name": "anti_microservices_vs_monoliths",
+        "total_nodes": 6,
+        "total_time_seconds": 77.58069658279419,
+        "total_tokens": 14336,
+        "total_input_tokens": 11329,
+        "total_output_tokens": 3007,
+        "nodes": [
+          "analyser",
+          "argument_creator",
+          "knowledge_retrieval"
+        ],
+        "rounds": [
+          1,
+          2
+        ]
+      },
+      {
+        "member_name": "Marcus Feld",
+        "team_name": "pro_microservices_vs_monoliths",
+        "total_nodes": 6,
+        "total_time_seconds": 435.98914098739624,
+        "total_tokens": 98080,
+        "total_input_tokens": 78139,
+        "total_output_tokens": 19941,
+        "nodes": [
+          "analyser",
+          "argument_creator",
+          "candidate_creator"
+        ],
+        "rounds": [
+          1,
+          2
+        ]
+      },
+      {
+        "member_name": "Dr. Priya Nair",
+        "team_name": "pro_microservices_vs_monoliths",
+        "total_nodes": 6,
+        "total_time_seconds": 427.0190153121948,
+        "total_tokens": 85434,
+        "total_input_tokens": 66880,
+        "total_output_tokens": 18554,
+        "nodes": [
+          "analyser",
+          "argument_creator",
+          "candidate_creator"
+        ],
+        "rounds": [
+          1,
+          2
+        ]
+      },
+      {
+        "member_name": "Dr. James Whitaker",
+        "team_name": "anti_microservices_vs_monoliths",
+        "total_nodes": 6,
+        "total_time_seconds": 75.81448483467102,
+        "total_tokens": 11960,
+        "total_input_tokens": 8838,
+        "total_output_tokens": 3122,
+        "nodes": [
+          "analyser",
+          "argument_creator",
+          "knowledge_retrieval"
+        ],
+        "rounds": [
+          1,
+          2
+        ]
+      }
+    ],
+    "all_node_metrics": [
+      {
+        "team_name": "anti_microservices_vs_monoliths",
+        "member_name": "Dr. James Whitaker",
+        "round": 1,
+        "node_name": "analyser",
+        "input_tokens": 707,
+        "output_tokens": 116,
+        "total_tokens": 823,
+        "elapsed_time_seconds": 2.749250650405884,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "analyser node": {
+            "phase_name": "analyser node",
+            "input_tokens": 707,
+            "output_tokens": 116,
+            "total_tokens": 823,
+            "timestamp": 1769277083.9047167
+          }
+        }
+      },
+      {
+        "team_name": "anti_microservices_vs_monoliths",
+        "member_name": "Dr. James Whitaker",
+        "round": 1,
+        "node_name": "knowledge_retrieval",
+        "input_tokens": 791,
+        "output_tokens": 340,
+        "total_tokens": 1131,
+        "elapsed_time_seconds": 10.086496829986572,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "search_query_generation": {
+            "phase_name": "search_query_generation",
+            "input_tokens": 791,
+            "output_tokens": 340,
+            "total_tokens": 1131,
+            "timestamp": 1769277090.984606
+          }
+        }
+      },
+      {
+        "team_name": "anti_microservices_vs_monoliths",
+        "member_name": "Dr. James Whitaker",
+        "round": 1,
+        "node_name": "argument_creator",
+        "input_tokens": 2059,
+        "output_tokens": 1107,
+        "total_tokens": 3166,
+        "elapsed_time_seconds": 28.975555658340454,
+        "llm_call_count": 2,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1231,
+            "output_tokens": 335,
+            "total_tokens": 1566,
+            "timestamp": 1769277100.6632395
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 828,
+            "output_tokens": 772,
+            "total_tokens": 1600,
+            "timestamp": 1769277122.9682405
+          }
+        }
+      },
+      {
+        "team_name": "anti_microservices_vs_monoliths",
+        "member_name": "Elena Rossi",
+        "round": 1,
+        "node_name": "analyser",
+        "input_tokens": 1040,
+        "output_tokens": 161,
+        "total_tokens": 1201,
+        "elapsed_time_seconds": 3.553903102874756,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "analyser node": {
+            "phase_name": "analyser node",
+            "input_tokens": 1040,
+            "output_tokens": 161,
+            "total_tokens": 1201,
+            "timestamp": 1769277128.5780277
+          }
+        }
+      },
+      {
+        "team_name": "anti_microservices_vs_monoliths",
+        "member_name": "Elena Rossi",
+        "round": 1,
+        "node_name": "knowledge_retrieval",
+        "input_tokens": 1125,
+        "output_tokens": 337,
+        "total_tokens": 1462,
+        "elapsed_time_seconds": 12.641128778457642,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "search_query_generation": {
+            "phase_name": "search_query_generation",
+            "input_tokens": 1125,
+            "output_tokens": 337,
+            "total_tokens": 1462,
+            "timestamp": 1769277137.4762526
+          }
+        }
+      },
+      {
+        "team_name": "anti_microservices_vs_monoliths",
+        "member_name": "Elena Rossi",
+        "round": 1,
+        "node_name": "argument_creator",
+        "input_tokens": 2725,
+        "output_tokens": 957,
+        "total_tokens": 3682,
+        "elapsed_time_seconds": 21.640348434448242,
+        "llm_call_count": 2,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1567,
+            "output_tokens": 450,
+            "total_tokens": 2017,
+            "timestamp": 1769277152.5065188
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1158,
+            "output_tokens": 507,
+            "total_tokens": 1665,
+            "timestamp": 1769277162.8606246
+          }
+        }
+      },
+      {
+        "team_name": "pro_microservices_vs_monoliths",
+        "member_name": "Dr. Priya Nair",
+        "round": 1,
+        "node_name": "analyser",
+        "input_tokens": 1067,
+        "output_tokens": 544,
+        "total_tokens": 1611,
+        "elapsed_time_seconds": 10.943902254104614,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "tot analyser node": {
+            "phase_name": "tot analyser node",
+            "input_tokens": 1067,
+            "output_tokens": 544,
+            "total_tokens": 1611,
+            "timestamp": 1769277176.1329389
+          }
+        }
+      },
+      {
+        "team_name": "pro_microservices_vs_monoliths",
+        "member_name": "Dr. Priya Nair",
+        "round": 1,
+        "node_name": "argument_creator",
+        "input_tokens": 21798,
+        "output_tokens": 8389,
+        "total_tokens": 30187,
+        "elapsed_time_seconds": 182.61299228668213,
+        "llm_call_count": 18,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1667,
+            "output_tokens": 295,
+            "total_tokens": 1962,
+            "timestamp": 1769277349.12933
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1043,
+            "output_tokens": 506,
+            "total_tokens": 1549,
+            "timestamp": 1769277358.7463539
+          }
+        }
+      },
+      {
+        "team_name": "pro_microservices_vs_monoliths",
+        "member_name": "Dr. Priya Nair",
+        "round": 1,
+        "node_name": "candidate_creator",
+        "input_tokens": 1812,
+        "output_tokens": 88,
+        "total_tokens": 1900,
+        "elapsed_time_seconds": 3.532698392868042,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "variation_selection": {
+            "phase_name": "variation_selection",
+            "input_tokens": 1812,
+            "output_tokens": 88,
+            "total_tokens": 1900,
+            "timestamp": 1769277360.5682788
+          }
+        }
+      },
+      {
+        "team_name": "pro_microservices_vs_monoliths",
+        "member_name": "Marcus Feld",
+        "round": 1,
+        "node_name": "analyser",
+        "input_tokens": 1344,
+        "output_tokens": 627,
+        "total_tokens": 1971,
+        "elapsed_time_seconds": 13.651426553726196,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "tot analyser node": {
+            "phase_name": "tot analyser node",
+            "input_tokens": 1344,
+            "output_tokens": 627,
+            "total_tokens": 1971,
+            "timestamp": 1769277375.9850209
+          }
+        }
+      },
+      {
+        "team_name": "pro_microservices_vs_monoliths",
+        "member_name": "Marcus Feld",
+        "round": 1,
+        "node_name": "argument_creator",
+        "input_tokens": 26766,
+        "output_tokens": 9216,
+        "total_tokens": 35982,
+        "elapsed_time_seconds": 184.91714310646057,
+        "llm_call_count": 18,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1942,
+            "output_tokens": 355,
+            "total_tokens": 2297,
+            "timestamp": 1769277546.9291961
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1320,
+            "output_tokens": 727,
+            "total_tokens": 2047,
+            "timestamp": 1769277560.902158
+          }
+        }
+      },
+      {
+        "team_name": "pro_microservices_vs_monoliths",
+        "member_name": "Marcus Feld",
+        "round": 1,
+        "node_name": "candidate_creator",
+        "input_tokens": 1797,
+        "output_tokens": 87,
+        "total_tokens": 1884,
+        "elapsed_time_seconds": 4.328509569168091,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "variation_selection": {
+            "phase_name": "variation_selection",
+            "input_tokens": 1797,
+            "output_tokens": 87,
+            "total_tokens": 1884,
+            "timestamp": 1769277563.0555978
+          }
+        }
+      },
+      {
+        "team_name": "anti_microservices_vs_monoliths",
+        "member_name": "Dr. James Whitaker",
+        "round": 2,
+        "node_name": "analyser",
+        "input_tokens": 1145,
+        "output_tokens": 132,
+        "total_tokens": 1277,
+        "elapsed_time_seconds": 2.8527915477752686,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "analyser node": {
+            "phase_name": "analyser node",
+            "input_tokens": 1145,
+            "output_tokens": 132,
+            "total_tokens": 1277,
+            "timestamp": 1769277568.1708615
+          }
+        }
+      },
+      {
+        "team_name": "anti_microservices_vs_monoliths",
+        "member_name": "Dr. James Whitaker",
+        "round": 2,
+        "node_name": "knowledge_retrieval",
+        "input_tokens": 1218,
+        "output_tokens": 350,
+        "total_tokens": 1568,
+        "elapsed_time_seconds": 11.403514623641968,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "search_query_generation": {
+            "phase_name": "search_query_generation",
+            "input_tokens": 1218,
+            "output_tokens": 350,
+            "total_tokens": 1568,
+            "timestamp": 1769277575.9666317
+          }
+        }
+      },
+      {
+        "team_name": "anti_microservices_vs_monoliths",
+        "member_name": "Dr. James Whitaker",
+        "round": 2,
+        "node_name": "argument_creator",
+        "input_tokens": 2918,
+        "output_tokens": 1077,
+        "total_tokens": 3995,
+        "elapsed_time_seconds": 19.746875524520874,
+        "llm_call_count": 2,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1661,
+            "output_tokens": 321,
+            "total_tokens": 1982,
+            "timestamp": 1769277585.9703698
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1257,
+            "output_tokens": 756,
+            "total_tokens": 2013,
+            "timestamp": 1769277599.322297
+          }
+        }
+      },
+      {
+        "team_name": "anti_microservices_vs_monoliths",
+        "member_name": "Elena Rossi",
+        "round": 2,
+        "node_name": "analyser",
+        "input_tokens": 1435,
+        "output_tokens": 162,
+        "total_tokens": 1597,
+        "elapsed_time_seconds": 3.8647727966308594,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "analyser node": {
+            "phase_name": "analyser node",
+            "input_tokens": 1435,
+            "output_tokens": 162,
+            "total_tokens": 1597,
+            "timestamp": 1769277604.957183
+          }
+        }
+      },
+      {
+        "team_name": "anti_microservices_vs_monoliths",
+        "member_name": "Elena Rossi",
+        "round": 2,
+        "node_name": "knowledge_retrieval",
+        "input_tokens": 1509,
+        "output_tokens": 333,
+        "total_tokens": 1842,
+        "elapsed_time_seconds": 11.993088722229004,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "search_query_generation": {
+            "phase_name": "search_query_generation",
+            "input_tokens": 1509,
+            "output_tokens": 333,
+            "total_tokens": 1842,
+            "timestamp": 1769277613.301462
+          }
+        }
+      },
+      {
+        "team_name": "anti_microservices_vs_monoliths",
+        "member_name": "Elena Rossi",
+        "round": 2,
+        "node_name": "argument_creator",
+        "input_tokens": 3495,
+        "output_tokens": 1057,
+        "total_tokens": 4552,
+        "elapsed_time_seconds": 23.887454748153687,
+        "llm_call_count": 2,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1953,
+            "output_tokens": 327,
+            "total_tokens": 2280,
+            "timestamp": 1769277625.498045
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1542,
+            "output_tokens": 730,
+            "total_tokens": 2272,
+            "timestamp": 1769277640.8388138
+          }
+        }
+      },
+      {
+        "team_name": "pro_microservices_vs_monoliths",
+        "member_name": "Dr. Priya Nair",
+        "round": 2,
+        "node_name": "analyser",
+        "input_tokens": 1692,
+        "output_tokens": 599,
+        "total_tokens": 2291,
+        "elapsed_time_seconds": 15.51415491104126,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "tot analyser node": {
+            "phase_name": "tot analyser node",
+            "input_tokens": 1692,
+            "output_tokens": 599,
+            "total_tokens": 2291,
+            "timestamp": 1769277658.7172782
+          }
+        }
+      },
+      {
+        "team_name": "pro_microservices_vs_monoliths",
+        "member_name": "Dr. Priya Nair",
+        "round": 2,
+        "node_name": "argument_creator",
+        "input_tokens": 38736,
+        "output_tokens": 8849,
+        "total_tokens": 47585,
+        "elapsed_time_seconds": 209.9461476802826,
+        "llm_call_count": 18,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 2718,
+            "output_tokens": 325,
+            "total_tokens": 3043,
+            "timestamp": 1769277853.5211725
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1874,
+            "output_tokens": 691,
+            "total_tokens": 2565,
+            "timestamp": 1769277868.661613
+          }
+        }
+      },
+      {
+        "team_name": "pro_microservices_vs_monoliths",
+        "member_name": "Dr. Priya Nair",
+        "round": 2,
+        "node_name": "candidate_creator",
+        "input_tokens": 1775,
+        "output_tokens": 85,
+        "total_tokens": 1860,
+        "elapsed_time_seconds": 4.4691197872161865,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "variation_selection": {
+            "phase_name": "variation_selection",
+            "input_tokens": 1775,
+            "output_tokens": 85,
+            "total_tokens": 1860,
+            "timestamp": 1769277870.8897796
+          }
+        }
+      },
+      {
+        "team_name": "pro_microservices_vs_monoliths",
+        "member_name": "Marcus Feld",
+        "round": 2,
+        "node_name": "analyser",
+        "input_tokens": 2016,
+        "output_tokens": 565,
+        "total_tokens": 2581,
+        "elapsed_time_seconds": 13.316346645355225,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "tot analyser node": {
+            "phase_name": "tot analyser node",
+            "input_tokens": 2016,
+            "output_tokens": 565,
+            "total_tokens": 2581,
+            "timestamp": 1769277886.5104907
+          }
+        }
+      },
+      {
+        "team_name": "pro_microservices_vs_monoliths",
+        "member_name": "Marcus Feld",
+        "round": 2,
+        "node_name": "argument_creator",
+        "input_tokens": 44451,
+        "output_tokens": 9369,
+        "total_tokens": 53820,
+        "elapsed_time_seconds": 215.18231749534607,
+        "llm_call_count": 18,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 3034,
+            "output_tokens": 334,
+            "total_tokens": 3368,
+            "timestamp": 1769278086.1900482
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 2193,
+            "output_tokens": 773,
+            "total_tokens": 2966,
+            "timestamp": 1769278101.6888885
+          }
+        }
+      },
+      {
+        "team_name": "pro_microservices_vs_monoliths",
+        "member_name": "Marcus Feld",
+        "round": 2,
+        "node_name": "candidate_creator",
+        "input_tokens": 1765,
+        "output_tokens": 77,
+        "total_tokens": 1842,
+        "elapsed_time_seconds": 4.593397617340088,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "variation_selection": {
+            "phase_name": "variation_selection",
+            "input_tokens": 1765,
+            "output_tokens": 77,
+            "total_tokens": 1842,
+            "timestamp": 1769278103.762673
+          }
+        }
+      }
+    ]
+  }
+}

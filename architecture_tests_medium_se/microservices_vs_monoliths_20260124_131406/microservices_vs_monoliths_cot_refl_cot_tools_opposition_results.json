@@ -1,0 +1,2632 @@
+{
+  "config_id": "microservices_vs_monoliths",
+  "topic": "Microservices architecture should be preferred over monolithic architecture for continuous deployment",
+  "max_rounds": 2,
+  "rounds_completed": 2,
+  "teams": [
+    "anti_microservices_vs_monoliths",
+    "pro_microservices_vs_monoliths"
+  ],
+  "team_architectures": {
+    "anti_microservices_vs_monoliths": {
+      "architecture": "cot",
+      "team_type": "opposition",
+      "members": [
+        {
+          "name": "Dr. James Whitaker",
+          "knowledge_active": false,
+          "knowledge_use_rag": false,
+          "knowledge_use_web_search": false,
+          "evaluation_active": false,
+          "max_iterations": 3,
+          "use_personalization": true,
+          "use_context_analysis": true
+        },
+        {
+          "name": "Elena Rossi",
+          "knowledge_active": false,
+          "knowledge_use_rag": false,
+          "knowledge_use_web_search": false,
+          "evaluation_active": false,
+          "max_iterations": 3,
+          "use_personalization": true,
+          "use_context_analysis": true
+        }
+      ]
+    },
+    "pro_microservices_vs_monoliths": {
+      "architecture": "cot",
+      "team_type": "proposition",
+      "members": [
+        {
+          "name": "Dr. Priya Nair",
+          "knowledge_active": false,
+          "knowledge_use_rag": false,
+          "knowledge_use_web_search": false,
+          "evaluation_active": false,
+          "max_iterations": 3,
+          "use_personalization": true,
+          "use_context_analysis": true
+        },
+        {
+          "name": "Marcus Feld",
+          "knowledge_active": false,
+          "knowledge_use_rag": false,
+          "knowledge_use_web_search": false,
+          "evaluation_active": false,
+          "max_iterations": 3,
+          "use_personalization": true,
+          "use_context_analysis": true
+        }
+      ]
+    }
+  },
+  "audience_initial_votes": [
+    {
+      "name": "Dr. Elizabeth Warren-Smith",
+      "decision": "agree",
+      "reasoning": "As a health economist, I prioritize evidence-based approaches to improve healthcare delivery. Microservices architecture allows for rapid deployment and testing of new features that can enhance patient care and outcomes. This agility is essential in the health sector, where timely updates can significantly impact public health responses. Unlike monolithic systems, microservices facilitate a modular approach that aligns well with continuous deployment practices, making it easier to innovate while minimizing risk. Overall, the flexibility and efficiency of microservices can lead to better health policies and economic outcomes in healthcare."
+    },
+    {
+      "name": "Jonathan Tech-Garcia",
+      "decision": "disagree",
+      "reasoning": "While I appreciate the enthusiasm for microservices, I believe that the trend towards them can often overlook the stability and efficiency that traditional monolithic architectures offer. Monoliths can be simpler to manage for small teams and projects, reducing the risks associated with microservices' complexities, such as network latency and inter-service communication issues. Continuous deployment can be accomplished with monolithic setups through robust CI/CD practices, often resulting in lower operational overhead. There is also a strong case for using a hybrid approach, depending on project needs rather than adhering strictly to one architecture style."
+    },
+    {
+      "name": "Professor Sarah Environment-Jones",
+      "decision": "agree",
+      "reasoning": "In my experience as a climate scientist, I find that flexibility and adaptability are crucial for addressing the urgent issues we face with the environment. Microservices architecture embodies these principles by enabling teams to deploy updates and improvements quickly, allowing for experimentation and iteration on new solutions. This can lead to more innovative applications in climate tech, where the rapid implementation of new features can make a real difference in sustainability efforts. By utilizing microservices, organizations can respond to environmental challenges more swiftly, which is vital in today's climate crisis."
+    },
+    {
+      "name": "Marcus Business-Chen",
+      "decision": "disagree",
+      "reasoning": "From a venture capital perspective, I emphasize market efficiency and profitability. While microservices might promise agility, they often require significant up-front investment in infrastructure and specialized talent, which can deter smaller firms. Monolithic architectures can be more cost-effective, allowing startups to focus on product-market fit without the complexities of deploying and managing multiple services. Continuous deployment is possible in monolithic systems too, and they can provide a pressure-tested, stable foundation for scaling operations if handled correctly. It's essential to weigh the real cost savings against the theoretical benefits of microservices."
+    },
+    {
+      "name": "Dr. Helen Ethics-Martinez",
+      "decision": "agree",
+      "reasoning": "As a medical ethicist, I believe that patient welfare and the ethical considerations surrounding technology in medicine are paramount. The microservices architecture supports continuous deployment, enabling healthcare technology to evolve rapidly, thus aligning with the ethical imperative to provide the best care possible. Rapid updates can improve patient safety and adherence to ethical standards if they lead to more effective treatment methods. Monolithic architectures, while stable, may hinder this rapid response and impede progress in medical technologies that ultimately can save lives."
+    },
+    {
+      "name": "David Policy-Anderson",
+      "decision": "agree",
+      "reasoning": "I support continuous improvement in public policy, and microservices architecture aligns with this goal by allowing for rapid feedback and iterative enhancements. The ability to deploy small, incremental changes is critical in an environment where policies may need to be adjusted promptly based on data-driven results. Microservices offer the agility required to implement new public health initiatives effectively while promoting collaboration between various stakeholders. In contrast, monolithic systems can slow down necessary adjustments, making it harder to address urgent public policy needs."
+    },
+    {
+      "name": "Rebecca Science-Taylor",
+      "decision": "agree",
+      "reasoning": "As a research scientist, I lean towards innovative methods that empower data-driven decisions. Microservices architecture offers a unique advantage in that it allows for modular updates and real-time data analysis, enhancing the research process. This species of architecture enables quick iterations and volume handling, which is particularly useful in a fast-paced research environment where results can dictate the next steps. The capability for continuous deployment also ensures ongoing improvements without hindering the overall mission, a significant benefit over more rigid monolithic structures."
+    },
+    {
+      "name": "Professor James Law-Wilson",
+      "decision": "agree",
+      "reasoning": "In my view as a legal expert, rapid adaptation is crucial in the evolving landscape of civil liberties and regulatory environments. Microservices architecture supports continuous deployment, enabling legal tech solutions to be refined and updated swiftly in response to new legislation and societal changes. This agility can provide better tools for compliance and civil rights advocacy, which can be hampered by the inertia found in monolithic systems. Embracing microservices can ensure organizations remain responsive to the legal landscape, ultimately benefiting clients and society."
+    },
+    {
+      "name": "Dr. Maria Healthcare-Rodriguez",
+      "decision": "agree",
+      "reasoning": "As a physician, my focus is always on patient welfare and how technology can enhance care delivery. Microservices architecture enables a more agile approach to software development, which is essential in the rapidly changing world of healthcare. Continuous deployment can lead to improvements in clinical platforms and patient management systems, ultimately resulting in better health outcomes. Monolithic systems can be cumbersome and slow to evolve, limiting innovation when we must adapt quickly to new medical guidelines or treatment methodologies."
+    },
+    {
+      "name": "Steven Innovation-Kim",
+      "decision": "disagree",
+      "reasoning": "While I appreciate the benefits microservices offer, I argue that disruption should not be confused with better performance across the board. The hesitation comes from the complexities and challenges involved in managing microservices, which can create overhead issues and require a steep learning curve for teams. Monolithic systems provide stability and can support continuous deployment strategies without the added burden of managing a distributed network of services. A well-implemented monolith can be just as effective, and it’s vital to consider practicality over the allure of technological trends."
+    },
+    {
+      "name": "Dr. Patricia Environment-Green",
+      "decision": "agree",
+      "reasoning": "Focusing on sustainability in environmental policy, I endorse the microservices architecture for its potential to drive rapid innovation in environmental applications. Continuous deployment can support the adoption of more sustainable practices and technologies by allowing organizations to iterate quickly based on environmental impact data. Flexibility is particularly important when addressing urgent issues such as climate change, and microservices facilitate a more effective response. The adaptability and responsiveness offered by microservices far outweigh the rigidity often associated with monolithic architectures."
+    },
+    {
+      "name": "Michael Finance-Thompson",
+      "decision": "agree",
+      "reasoning": "As an investment banker, I emphasize that market efficiency is paramount in any business model. I strongly believe that microservices architecture supports this goal through its ability to facilitate rapid deployment of updates and new features. This aligns with the need for financial institutions to remain competitive and responsive to market changes. Although maintaining monolithic systems might seem simpler, the inflexibility can become burdensome, leading to inefficiencies that may hurt the bottom line in the long run. Thus, I advocate for microservices, as they enable a more dynamic and responsive financial environment."
+    },
+    {
+      "name": "Dr. Angela Education-Foster",
+      "decision": "agree",
+      "reasoning": "As an education researcher, I'm committed to equity and inclusivity in learning environments. I see microservices architecture as a crucial asset for creating adaptable educational technology. Continuous deployment enables institutions to rapidly integrate feedback from diverse learners and adjust their platforms accordingly. This responsiveness can lead to more equitable educational opportunities, as system updates can better address unique student needs. Relying on monolithic structures may hinder the necessary flexibility, which is essential for fostering inclusive learning communities."
+    },
+    {
+      "name": "Robert Security-Cooper",
+      "decision": "agree",
+      "reasoning": "In my view as a cybersecurity expert, prioritizing security is paramount in software development. Microservices architecture can support continuous deployment while allowing for critical security updates to be implemented swiftly across services. This adaptability is essential in countering emerging threats in today's complex cyber landscape. While monolithic architectures may offer some initial simplicity, they often become cumbersome when addressing security vulnerabilities reactively, putting organizations at risk. The timely management of security threats in microservices is a strong reason for their implementation."
+    },
+    {
+      "name": "Dr. Christina Medical-Miller",
+      "decision": "agree",
+      "reasoning": "Innovation is crucial in biomedicine, and with my background, I see how microservices architecture supports continuous deployment that can accelerate research and implementation in this field. The modular nature of microservices allows teams to implement incremental changes without disrupting entire systems. This adaptability can facilitate cutting-edge medical technologies and treatments reaching patients faster than ever. In a field where time is of the essence, prioritizing microservices can greatly enhance our ability to innovate and improve patient outcomes."
+    },
+    {
+      "name": "Daniel Legal-Martinez",
+      "decision": "agree",
+      "reasoning": "As a corporate lawyer, I understand the importance of regulatory clarity in software deployment. While I see the allure of microservices, it is crucial to approach them with caution due to the complexities involved. Monolithic systems can provide a clearer regulatory framework, simplifying the compliance process for businesses. However, should microservices be implemented thoughtfully, they may offer significant benefits in terms of flexibility and response time. A balanced approach, which considers business needs and legal compliance, would be my recommendation."
+    },
+    {
+      "name": "Dr. Kevin Philosophy-Liu",
+      "decision": "agree",
+      "reasoning": "As an ethics professor, I argue for a rights-based approach to technology that considers people's dignity and freedom. Microservices architecture offers important opportunities for continuous deployment, allowing for incorporation of ethical considerations as they evolve. This architecture enables organizations to respond quickly to societal concerns, integrating values directly into their technological frameworks. Monolithic systems, while sometimes effective, may stifle the ethical adaptability needed in today's complex moral landscape. The nature of microservices promotes a culture of ethical responsiveness and responsibility."
+    },
+    {
+      "name": "Lisa Technology-Hayes",
+      "decision": "agree",
+      "reasoning": "As an AI researcher, I'm drawn to the efficiencies that microservices architecture can unlock. Continuous deployment allows teams to innovate rapidly, responding to the evolving demands of the industry and society alike. This infrastructure is essential for optimizing machine learning models, enabling frequent updates and adjustments as new data becomes available. In contrast, monolithic architectures can inhibit experimentation, leading to stagnation in technological advancement. The speed and flexibility of microservices present a compelling argument for their adoption in the tech landscape."
+    },
+    {
+      "name": "Professor Mark Economics-Stevens",
+      "decision": "agree",
+      "reasoning": "As a labor economist focused on worker protection, I see the need for software architecture that supports agile development for better employment outcomes. Microservices architecture allows for quick adaptations that can empower organizations to provide safer workplaces and enhanced worker benefits through timely updates to systems. This rapid response can uniquely address evolving labor needs. Monolithic systems tend to delay responses to these needs, potentially harming workforce stability. Therefore, supporting microservices is vital for fostering economic protection and resilience."
+    },
+    {
+      "name": "Dr. Sophia Ethics-Petrov",
+      "decision": "agree",
+      "reasoning": "As a bioethicist focused on human dignity, I view the microservices architecture as an advantageous model for promoting ethical uses of technology in healthcare. Continuous deployment allows for rapid testing and implementation of new ethical guidelines or protocols, which can be essential in sensitive medical contexts. This flexibility is crucial to ensure that technology remains aligned with our ethical standards and patient needs. Opting for monolithic systems can hinder the responsiveness necessary for maintaining these ethical commitments."
+    },
+    {
+      "name": "Paul Industry-Anderson",
+      "decision": "agree",
+      "reasoning": "From a manufacturing executive's perspective, practical implementation is key to running efficient operations. Microservices architecture can facilitate continuous deployment, allowing for rapid updates and improvements in production systems. Adopting microservices can enhance operational flexibility, enabling manufacturers to adapt swiftly to market demands or unforeseen circumstances. While monolithic systems may offer simplicity, they often fall short in the dynamic manufacturing environment where adaptability is crucial to success."
+    },
+    {
+      "name": "Dr. Janet Data-Kim",
+      "decision": "agree",
+      "reasoning": "As a statistician, I advocate for a methodological approach that allows continuous learning and adaptation in technology. Microservices architecture offers a structure that supports iterative improvements, facilitating a data-driven approach to deployment. Continuous deployment permits rapid integration of statistical feedback, leading to better decision-making processes and improved software performance over time. Monolithic architectures may restrict this analytical rigor, making microservices a preferable choice for those of us focused on maintaining high standards of empirical analysis."
+    },
+    {
+      "name": "Captain Steve Military-Richards",
+      "decision": "agree",
+      "reasoning": "As a former military officer, my focus is on discipline and structure in operations. Microservices architecture, while it facilitates flexibility, often introduces complexities that can lead to inefficiencies if not managed well. I appreciate the intent behind continuous deployment; however, the robustness of monolithic systems can support more disciplined operational frameworks. They enable clear accountability and streamlined processes, which are vital in high-stakes environments. Thus, I believe that while microservices have their advantages, a structured, monolithic approach may yield better results in certain scenarios."
+    },
+    {
+      "name": "Dr. Anna Medical-Volkov",
+      "decision": "agree",
+      "reasoning": "As a reproductive specialist, my main concern is always patient choice and care. I see the microservices architecture as a way to continually improve health solutions that can cater to diverse patient needs. Continuous deployment allows clinics and services to quickly adapt technologies and applications based on patient feedback or new clinical practices. This adaptability is invaluable in patient-centered care. Monolithic systems can limit these necessary updates, potentially sidelining emerging needs in the reproductive healthcare landscape."
+    },
+    {
+      "name": "Professor William Science-Chen",
+      "decision": "agree",
+      "reasoning": "Reflecting on my expertise as a physical scientist, I find that innovation is imperative in advancing technology and science. Microservices architecture allows rapid iterations and focused deployments, which aligns well with the scientific method of testing and improving. Continuous deployment supports timely updates and fosters a culture of experimentation essential in science. Monolithic architectures might restrict this flexibility, indicating that microservices could be key in driving forward technological solutions that rapidly address scientific challenges."
+    },
+    {
+      "name": "Melissa Art-Johnson",
+      "decision": "agree",
+      "reasoning": "In my role as a museum curator, I see the value of storytelling through the arts. Microservices architecture allows for continuous updates and improvement to cultural platforms. This evolution can enhance user interaction and engagement while preserving the integrity of the stories we wish to tell. Monolithic systems, while stable, may lack the responsiveness needed to adapt to changing audience engagement and cultural relevance. Thus, I firmly support the idea that microservices offer significant benefits for fostering vibrant cultural experiences."
+    },
+    {
+      "name": "Tony Sports-Rodriguez",
+      "decision": "agree",
+      "reasoning": "As a former athlete, I know the importance of teamwork, adaptability, and speed in achieving performance success. Microservices architecture enables continuous deployment, fostering an agile environment where teams can adjust quickly to meet challenges. This adaptability is essential in high-stakes contexts such as competitive sports tech. While monolithic systems can provide some advantages, their rigid structure could hinder quick responses and innovations that maintain a competitive edge. Thus, I favor microservices for their ability to promote collaboration and rapid advancements."
+    },
+    {
+      "name": "Grace Music-Wilson",
+      "decision": "agree",
+      "reasoning": "As a classical musician, I believe in harmony and adaptability in performance and presentation. Microservices architecture exemplifies this by allowing teams to swiftly implement changes and enhance user engagement. Continuous deployment supports creative projects while enabling the flexibility to adjust quickly in response to audience feedback. Monolithic systems, although providing certain stability, can lack this fluidity and responsiveness that is critical in the arts. Innovation and adaptability are essential to my field, making microservices a compelling choice for fostering artistic expression."
+    },
+    {
+      "name": "Frank History-Thompson",
+      "decision": "agree",
+      "reasoning": "As a history teacher, I value traditional narratives while remaining open to new perspectives. I see the potential in microservices to continuously adapt educational content and methods to better meet student needs. Continuous deployment allows for the integration of new findings and diverse viewpoints, enriching historical education. Monolithic architectures, while reliable, may not provide the malleability necessary for evolving educational standards and viewpoints. Thus, I support the direction towards microservices as a tool for enhancing learning experiences."
+    },
+    {
+      "name": "Luna Spiritual-Garcia",
+      "decision": "agree",
+      "reasoning": "As a yoga instructor, I emphasize a holistic worldview, and I see microservices architecture as fostering a responsive approach to wellness technologies. Continuous deployment aligns with the need to adapt quickly in the face of emerging wellness trends and scientific developments. This flexibility can provide individuals with timely access to the best resources for their holistic health journey. Monolithic systems may struggle with timely updates, potentially leading to outdated information. Hence, I support microservices for their capacity to integrate new ideas and practices in health and wellness."
+    },
+    {
+      "name": "Bob Construction-Miller",
+      "decision": "agree",
+      "reasoning": "As a union electrician, I value practical problem-solving rooted in working-class values. I see microservices architecture as promising greater efficiency in deploying electrical technology applications. Continuous deployment allows for swift implementation of developments that can enhance worker safety and operational efficiency on job sites. Monolithic structures might be easier to manage initially, but they often lack the adaptability required in today's rapidly evolving technical landscape. Thus, I favor a shift towards microservices implementation."
+    },
+    {
+      "name": "Jennifer Fashion-Anderson",
+      "decision": "agree",
+      "reasoning": "As a retail manager, I am trend-aware, and I see the need for agility in adapting to customer preferences. Microservices architecture promotes a responsive approach to deploying new retail technologies. Continuous deployment supports timely updates that can cater to changing market dynamics and consumer behavior. While monolithic systems can provide some stability, they often risk being out of touch with current trends and market needs. Embracing microservices can lead to a more dynamic and engaging shopping experience."
+    },
+    {
+      "name": "Carlos Literature-Martinez",
+      "decision": "agree",
+      "reasoning": "As an English professor, I value critical interpretation in literature, which is essential for understanding and adapting educational frameworks. Microservices architecture supports an iterative development approach, allowing educational technologies to merge diverse interpretations and teaching philosophies effectively. Continuous deployment allows seamless updates to content based on contemporary literary discussions. In contrast, monolithic systems risk static content that may not reflect the evolving nature of literature and critical thought. Therefore, I advocate for microservices in educational settings."
+    },
+    {
+      "name": "Destiny Social-Kim",
+      "decision": "disagree",
+      "reasoning": "As a social media influencer, I am keenly aware of trends, and I believe nimbleness is key to maintaining relevance in the digital landscape. While some advocate for microservices for their adaptability, I worry about the complexities and potentials for oversight that can cloud their effectiveness. Monolithic systems often offer a more straightforward path for rapid deployment and reliability, crucial for social media's fast-paced environment. Thus, I argue for a balanced approach, respecting the historical stability of monolithic frameworks within the context of these technological shifts."
+    },
+    {
+      "name": "Ralph Mechanical-Taylor",
+      "decision": "agree",
+      "reasoning": "As an auto mechanic, my expertise is rooted in practical problem-solving. I find value in the straightforwardness of monolithic systems, which can simplify processes and troubleshooting. While I see the appeal of microservices for continuous deployment, the complexity of managing interconnected services can lead to inefficiencies and increased error rates. A well-maintained monolithic system can still meet the demands of rapid deployment but with the advantage of added reliability and easier troubleshooting, which is vital in mechanical applications."
+    },
+    {
+      "name": "Amber Wellness-Foster",
+      "decision": "agree",
+      "reasoning": "As a nutritionist, I emphasize natural solutions that promote optimal health. Microservices architecture aligns with this by enabling continuous updates to dietary technologies based on the latest science and client feedback. The adaptability seen in continuous deployment is key in ensuring that nutritional information remains relevant and accurate. Monolithic systems, while stable, may lack the responsiveness necessary to keep pace with new research. I firmly believe that microservices provide the dynamism required in the field of nutrition."
+    },
+    {
+      "name": "Kevin Gaming-Chen",
+      "decision": "disagree",
+      "reasoning": "As a video game developer, I recognize the value in creativity and agility. However, I have reservations about the microservices architecture due to its potential to complicate development. Continuous deployment is beneficial, but the overhead of managing multiple services can distract from focusing on core game mechanics and user experience. A monolithic structure could offer the simplicity needed for rapid development cycles without the added complexity. Thus, I favor a more cautious approach towards microservices, perhaps reserving them for larger, more complex projects only."
+    },
+    {
+      "name": "Patricia Religious-O'Sullivan",
+      "decision": "agree",
+      "reasoning": "As a church administrator, I value principled approaches that focus on community faith. I do see some potential in microservices architecture for fostering rapid updates. However, I favor a traditional monolithic structure that promotes stability and cohesion in church outreach programs. While continuous deployment may enhance adaptability, it's essential to weigh the structured approach of monolithic systems against the aim of creating a solid foundation for community engagement. I believe in prioritizing stability for consistency across faith-based services."
+    },
+    {
+      "name": "Jake Outdoor-Wilson",
+      "decision": "agree",
+      "reasoning": "In my role as a park ranger, I see unique challenges and solutions that arise in conservation efforts. The microservices architecture is appealing for its adaptability and potential for continuous improvements that can lead to better environmental solutions. Rapid deployment allows parks and conservation efforts to incorporate ecological findings quickly, supporting sustainability goals. While monolithic systems may offer certain reliability, they could not match the flexible responsiveness that is essential in the field of conservation. Hence, I advocate for microservices."
+    },
+    {
+      "name": "Nicole Beauty-Rodriguez",
+      "decision": "agree",
+      "reasoning": "As a cosmetics sales representative, I focus on appearance and quality in delivering products to consumers. I see the potential for microservices architecture to enhance the user experience through continuous deployment and rapid updates. This responsiveness is crucial in an industry where trends are constantly evolving. A monolithic system may limit the ability to adapt and innovate quickly, which could leave brands struggling to stay relevant in a fast-paced market. Therefore, I am supportive of shifting towards microservices."
+    },
+    {
+      "name": "Martin Craft-Anderson",
+      "decision": "agree",
+      "reasoning": "As a furniture maker, I value hands-on quality and craftsmanship. While I understand the allure of microservices for rapid deployment, I remain cautious about the potential complexities involved. Monolithic systems can facilitate a focus on creating quality products without the distractions that come from managing multiple services. Continuous deployment is feasible in a monolithic paradigm as well, and I believe that prioritizing quality and craftsmanship should come before adopting a trendy architecture that may complicate processes."
+    },
+    {
+      "name": "Samantha Travel-Lee",
+      "decision": "disagree",
+      "reasoning": "As a travel blogger, I embrace exploration and adventure. However, I view the push for microservices with a critical eye. While continuous deployment offers some advantages, the intricacies of managing multiple interconnected systems can overshadow the benefits. Monolithic architectures can provide the reliability needed in an industry built on trust and seamless experiences. The priority should be on creating straightforward, user-friendly experiences rather than getting caught up in the complexities of service fragmentation."
+    },
+    {
+      "name": "Eddie Food-Garcia",
+      "decision": "agree",
+      "reasoning": "As a restaurant chef, my focus is on culinary creativity and practical implementation. I see microservices architecture as a viable approach that aligns well with the fast pace of the culinary world. Continuous deployment allows restaurants to adapt their offerings based on customer preferences or seasonal ingredients without significant downtime. Monolithic systems may struggle with this flexibility, often locking businesses into a rigid structure that can stifle innovation. Therefore, I advocate for microservices to keep culinary experiences fresh and responsive."
+    },
+    {
+      "name": "Brenda Real-Estate-Thompson",
+      "decision": "agree",
+      "reasoning": "As a property agent, I emphasize negotiation and local knowledge in my work. Microservices architecture intrigues me due to its potential for continuous updates in real estate technology. Quick deployment can improve user interfaces and client interactions, enhancing overall satisfaction. While monolithic systems may provide a stable foundation, they risk falling behind in tools needed for modern real estate operations. The responsiveness offered by microservices aligns with the dynamic nature of the market, making it a compelling option."
+    },
+    {
+      "name": "Tyler Photography-Kim",
+      "decision": "agree",
+      "reasoning": "As a wedding photographer, I understand the importance of visual storytelling. I believe that microservices architecture can be incredibly beneficial for creating engaging and responsive client experiences. Continuous deployment allows for frequent updates to portfolios and booking systems, ensuring they reflect the latest standards in the industry. Monolithic systems may not have the agility necessary to keep pace with consumer expectations. Therefore, I strongly support the shift towards microservices to enhance artistic expression and client interaction."
+    },
+    {
+      "name": "Crystal Therapy-Martinez",
+      "decision": "agree",
+      "reasoning": "In my role as a physical therapist, I focus on optimizing recovery, and I see the potential for microservices architecture in healthcare technology. Continuous deployment can facilitate rapid updates and improvements, providing patients with the most effective tools for their rehabilitation. While monolithic systems may deliver some reliability, their lack of responsiveness can hinder progress in patient care. Thus, I advocate for the advantages that microservices can bring to enhance healthcare and patient outcomes."
+    },
+    {
+      "name": "Gary Fishing-Johnson",
+      "decision": "agree",
+      "reasoning": "As a commercial fisherman, my work revolves around practical methods to ensure efficient and sustainable fishing practices. I see microservices architecture as a way to enhance operational efficiency particularly through continuous deployment of new technologies and practices. This is essential when conditions change rapidly in marine environments. Monolithic systems, while somewhat reliable, can hinder timely adjustments and stifle innovation. Hence, I support the direction towards adopting microservices in the industry for improved practices."
+    },
+    {
+      "name": "Alicia Dance-Foster",
+      "decision": "agree",
+      "reasoning": "As a dance instructor, I believe in the importance of movement and expression in the arts. Microservices architecture can facilitate ongoing improvement in dance technologies and platforms through continuous deployment. This flexibility allows for rapid adaptation to new choreographic trends and community feedback. Monolithic systems may lack the responsiveness that is essential for keeping pace with creative industries. Therefore, I advocate for microservices to enhance artistic expression and foster a vibrant dance community."
+    },
+    {
+      "name": "Bruce Volunteer-Wilson",
+      "decision": "agree",
+      "reasoning": "As a retired volunteer coordinator, I deeply value community engagement and service. I find that microservices architecture holds the potential for greater responsiveness in nonprofit and volunteer management systems. Continuous deployment can improve tools that enhance community service initiatives, allowing for rapid updates based on volunteer feedback. While monolithic systems provide some stability, they may limit the adaptability needed for effective engagement. Thus, I support shifting towards microservices for maximum community impact."
+    },
+    {
+      "name": "Tina Pet-Rodriguez",
+      "decision": "agree",
+      "reasoning": "As a veterinary technician focused on animal welfare, I recognize the importance of responsive care systems. Microservices architecture can greatly enhance the quality of pet care technologies by allowing for continuous updates based on client needs and emerging veterinary practices. This rapid adaptability is critical for ensuring the highest standards of care are maintained. Monolithic systems, while stable, may not provide the flexibility necessary to keep pace with the evolving landscape of animal healthcare. Therefore, I favor the potential of microservices for improving care."
+    }
+  ],
+  "audience_final_votes": [
+    {
+      "name": "Dr. Elizabeth Warren-Smith",
+      "decision": "agree",
+      "reasoning": "As a health economist, I recognize that the complexities of modern healthcare technology require adaptable solutions. Microservices architecture facilitates continuous deployment by allowing teams to iterate on small, independent components. This agility is essential in health policy, where responding to new data can be lifesaving. Moreover, utilizing microservices can enhance system resilience and scalability, ensuring that when one element needs updating, others can continue functioning. This adaptability aligns with the evidence-based policy that I advocate for."
+    },
+    {
+      "name": "Jonathan Tech-Garcia",
+      "decision": "disagree",
+      "reasoning": "As a software engineer, I appreciate the enthusiasm for microservices, but I argue against their universal preference for continuous deployment. Monolithic architectures can simplify deployment processes and reduce overhead in smaller teams or projects. They allow for a unified codebase that can be easier to manage, test, and deploy. While microservices come with benefits, the complexity they introduce often requires more robust DevOps capabilities and can lead to increased latency issues. Often, simpler monolithic solutions can lead to higher efficiencies for certain applications."
+    },
+    {
+      "name": "Professor Sarah Environment-Jones",
+      "decision": "agree",
+      "reasoning": "From a climate science perspective, adopting microservices architecture can enhance the technological infrastructure needed for environmental monitoring and policy implementation. The agility that microservices provide allows for rapid deployment of updates that reflect real-time data changes. This responsiveness is crucial in addressing environmental challenges where time is of the essence. Furthermore, the increased efficiency in updating specific services can foster innovations that reduce energy consumption in cloud infrastructure, aligning with our urgent climate goals."
+    },
+    {
+      "name": "Marcus Business-Chen",
+      "decision": "agree",
+      "reasoning": "As a venture capitalist, I see the preference for microservices architecture as a significant advantage for continuous deployment, driving market efficiency in tech startups. Microservices support innovation by allowing teams to quickly develop and scale new applications without disrupting the entire system. This streamlined focus on smaller components enables better risk management and investment opportunities. It's about the bottom line—companies can pivot or adapt more quickly, securing their competitive edge in rapidly changing markets."
+    },
+    {
+      "name": "Dr. Helen Ethics-Martinez",
+      "decision": "agree",
+      "reasoning": "As a medical ethicist, my support for microservices comes from their ability to enhance healthcare technologies without compromising patient care. Continuous deployment via microservices allows rapid updates to improve data security and service reliability, which are paramount in healthcare. This architecture also facilitates tailored solutions for patient needs without requiring extensive downtime or rework. The ethical imperative is clear: we must ensure that technology continuously improves for patient welfare while adhering to established principles of care."
+    },
+    {
+      "name": "David Policy-Anderson",
+      "decision": "agree",
+      "reasoning": "My background as a government policy analyst leads me to advocate for microservices in the context of public sector efficiency. Continuous deployment enables governments to respond to changing regulations or societal needs more rapidly. By leveraging microservices, agencies can implement updates without extensive downtime or dependency issues typical of monolithic systems. This flexibility is critical as we navigate complex public policies and strive for maximum service efficiency for citizens."
+    },
+    {
+      "name": "Rebecca Science-Taylor",
+      "decision": "agree",
+      "reasoning": "As a research scientist, I advocate for the use of microservices in software development due to their enhanced capacity for continuous deployment and scalability. The ability to iterate on individual services allows us to conduct experiments and deploy findings with minimal risk of disrupting the entire system. This modular approach also aligns with scientific principles of inquiry and adaptability, enabling more efficient use of resources as we seek to respond to new data in real-time."
+    },
+    {
+      "name": "Professor James Law-Wilson",
+      "decision": "agree",
+      "reasoning": "From a legal perspective, I support microservices architecture for its capacity to enable continuous deployment while ensuring compliance with evolving regulations. The modular nature of microservices makes it easier to implement legal requirements as they change, without overhauling the entire system. This capacity to adapt aligns with my core values of civil liberties and the necessity for responsive legal frameworks in technology. By ensuring our systems are flexible, we promote not only efficiency but also protect user rights."
+    },
+    {
+      "name": "Dr. Maria Healthcare-Rodriguez",
+      "decision": "agree",
+      "reasoning": "As a physician, I see microservices architecture's potential to improve patient care through continuous deployment of medical software. The healthcare sector demands rapid updates to integrate new research and treatment protocols, making microservices invaluable. They facilitate safer, continuous improvements to health information systems without disrupting patient services. Addressing individual patient needs while ensuring system resilience is a crucial improvement that microservices can provide."
+    },
+    {
+      "name": "Steven Innovation-Kim",
+      "decision": "disagree",
+      "reasoning": "As a technology entrepreneur, I have reservations about the push for microservices over monolithic systems. Each architecture has its place in our ecosystem—while microservices enhance flexibility for continuous deployment, they can also introduce unnecessary complexity. It’s vital to consider the scale of the project and team size; monolithic applications might still offer efficient solutions for smaller teams or startups. Thus, I argue against the blanket preference for microservices."
+    },
+    {
+      "name": "Dr. Patricia Environment-Green",
+      "decision": "agree",
+      "reasoning": "With a focus on environmental policy, I strongly support microservices architecture due to its advantages in responsiveness and deployment speed. The urgent need for effective environmental strategies demands technologies that can adapt quickly to new findings. Microservices allow for continuous integration of sustainability practices into software solutions, making this architecture critical for advancing results in environmental initiatives and minimizing our ecological footprint."
+    },
+    {
+      "name": "Michael Finance-Thompson",
+      "decision": "agree",
+      "reasoning": "As someone who works in finance, I recognize that microservices architecture facilitates continuous deployment, aligning with market efficiency. The ability to update parts of a system without halting entire operations can enhance productivity and maintain investor confidence. Deploying incremental changes allows businesses to maintain a competitive advantage in fast-moving financial markets, ensuring they can meet regulatory standards promptly."
+    },
+    {
+      "name": "Dr. Angela Education-Foster",
+      "decision": "agree",
+      "reasoning": "As an education researcher, the need for adaptable tools in educational technology is paramount. Microservices architecture supports continuous deployment, making it easier to update and improve educational software. These incremental improvements can lead to better learning outcomes, as educators can quickly access new resources and methodologies. The modular structure of microservices mirrors educational frameworks that foster personalized learning experiences."
+    },
+    {
+      "name": "Robert Security-Cooper",
+      "decision": "agree",
+      "reasoning": "As a cybersecurity expert, I understand that microservices architecture can enhance security measures through continuous deployment. It allows for more isolated and focused updates to components of a system without jeopardizing the entire platform's integrity. This segmentation can help address vulnerabilities swiftly and ensure compliance with security regulations, ultimately fostering a more secure environment for users."
+    },
+    {
+      "name": "Dr. Christina Medical-Miller",
+      "decision": "agree",
+      "reasoning": "As a biomedical researcher, I believe that microservices enable continuous deployment critical for implementing cutting-edge innovations in healthcare. The architecture allows researchers to deploy new algorithms and models quickly, ensuring that the latest scientific advancements can impact clinical practice. This technological agility is essential for improving patient care practices and adapting to new challenges."
+    },
+    {
+      "name": "Daniel Legal-Martinez",
+      "decision": "agree",
+      "reasoning": "From my perspective as a corporate lawyer, the adaptability of microservices aligns well with regulatory frameworks that require organizations to remain agile and responsive. Continuous deployment allows for regular updates that reflect changes in compliance requirements, which is vital in maintaining legal clarity. This architecture can facilitate smoother transitions in corporate governance while ensuring that legal obligations are met."
+    },
+    {
+      "name": "Dr. Kevin Philosophy-Liu",
+      "decision": "agree",
+      "reasoning": "As an ethics professor, I advocate for microservices because they align with rights-based values by ensuring that users retain control over their data through modularity. This architecture allows continuous deployment without significant disruption, promoting dignity and respect in software development practices. By empowering users with responsive systems, we can uphold ethical principles in technology."
+    },
+    {
+      "name": "Lisa Technology-Hayes",
+      "decision": "agree",
+      "reasoning": "In my role as an AI researcher, I appreciate how microservices architecture supports the iterative nature of AI model development. Continuous deployment facilitates rapid testing and refinement of models, optimizing performance based on real-time data. This approach fosters efficiency and innovation in AI applications, important for enhancing outcomes in various sectors."
+    },
+    {
+      "name": "Professor Mark Economics-Stevens",
+      "decision": "agree",
+      "reasoning": "As a labor economist, supporting microservices architecture stems from its potential to improve job efficiency and responsiveness in labor-related technologies. Continuous deployment allows organizations to adapt to workforce needs or legislative changes rapidly, thus enhancing worker protection. This is crucial in today's dynamic labor market, where adaptability is essential for success."
+    },
+    {
+      "name": "Dr. Sophia Ethics-Petrov",
+      "decision": "agree",
+      "reasoning": "As a bioethicist, I see the value of microservices architecture in supporting ethical guidelines around patient data and autonomy through continuous deployment. By enabling updates to systems that respect human dignity, microservices can drive innovations that align with our principles of care. This flexibility is essential in responding to new ethical challenges as they arise."
+    },
+    {
+      "name": "Paul Industry-Anderson",
+      "decision": "agree",
+      "reasoning": "In my experience as a manufacturing executive, I find that microservices can significantly enhance operational efficiency through continuous deployment. This architecture allows for targeted improvements to production software, reducing downtimes and eliminating systematic disruptions. The resultant efficiency can translate into cost savings and quicker response times to market demands."
+    },
+    {
+      "name": "Dr. Janet Data-Kim",
+      "decision": "agree",
+      "reasoning": "As an analytical statistician, I favor microservices because they facilitate continuous improvement through rapid deployment. This architecture allows systems to be refined swiftly based on statistical feedback, optimizing performance and results. This kind of adaptability is crucial for maintaining high methodological rigor in data-related fields."
+    },
+    {
+      "name": "Captain Steve Military-Richards",
+      "decision": "agree",
+      "reasoning": "Bringing a structured military perspective, I advocate for microservices architecture because it promotes operational efficiency through continuous deployment. The ability to update individual components without disrupting the entire system aligns well with the discipline required in military operations. This agility can improve response times and adaptability to evolving mission requirements."
+    },
+    {
+      "name": "Dr. Anna Medical-Volkov",
+      "decision": "agree",
+      "reasoning": "As a reproductive specialist, I see great potential in microservices for improving healthcare delivery through continuous deployment. Rapid updates to medical software can lead to enhanced patient outcomes, particularly in the area of reproductive health where timely interventions are often critical. This architecture allows us to implement best practices and integrate new research findings seamlessly."
+    },
+    {
+      "name": "Professor William Science-Chen",
+      "decision": "agree",
+      "reasoning": "As a physical scientist, I strongly support microservices due to their capacity to foster continuous innovation through agile deployment. In scientific research, timely updates are essential for adapting to new discoveries or technology. Microservices enable us to keep software aligned with scientific advancements, ensuring that we can leverage technological solutions for real-world problems."
+    },
+    {
+      "name": "Melissa Art-Johnson",
+      "decision": "agree",
+      "reasoning": "Working as a museum curator, I find that microservices can enhance the way we engage with cultural preservation by allowing continuous deployment of digital resources. This architecture not only enables rapid adaptation to new technology or audience feedback, but it also allows for a more dynamic presentation of art and culture, fostering deeper connections with our community."
+    },
+    {
+      "name": "Tony Sports-Rodriguez",
+      "decision": "agree",
+      "reasoning": "As a former athlete, I support microservices for continuous deployment because they mirror the teamwork and adaptations required in sports. Just as teams adjust strategies during a game, microservices allow tech teams to pivot rapidly based on feedback and results. This responsive approach can lead to better performance and outcomes in software development."
+    },
+    {
+      "name": "Grace Music-Wilson",
+      "decision": "agree",
+      "reasoning": "As a classical musician, I see parallels between my art and microservices architecture. Just like a symphony relies on the contribution of individual instruments, microservices foster collaboration among developers. Continuous deployment enables each 'musical piece' to evolve without disrupting the entire performance, promoting a harmonious workflow in software development."
+    },
+    {
+      "name": "Frank History-Thompson",
+      "decision": "agree",
+      "reasoning": "In my role as a history teacher, I believe in the importance of adapting educational tools to better suit student needs. Microservices can facilitate continuous deployment to ensure that teaching methods are both effective and up-to-date. The modular aspect of this architecture aligns with my focus on tailoring educational materials to diverse learning styles."
+    },
+    {
+      "name": "Luna Spiritual-Garcia",
+      "decision": "agree",
+      "reasoning": "From the perspective of a yoga instructor, I appreciate microservices for their capacity to adapt to the evolving needs of wellness practice through continuous deployment. This architecture promotes space for growth and innovation, just like personal growth in yoga. A responsive system that can change quickly corresponds closely with a holistic approach to health and well-being."
+    },
+    {
+      "name": "Bob Construction-Miller",
+      "decision": "agree",
+      "reasoning": "As a union electrician, I'm in favor of microservices for their practical approach to continuous deployment. This architecture can allow for targeted upgrades without overhauling the entire system, leading to less downtime and disruption in services. This mirrors the efficient and hardworking values we hold in the trades, enhancing functionality without complexity."
+    },
+    {
+      "name": "Jennifer Fashion-Anderson",
+      "decision": "agree",
+      "reasoning": "As a retail manager, I support microservices for continuous deployment due to their potential to quickly adapt to consumer trends. This architecture allows businesses to roll out changes faster and respond to market demands, which is essential in the fast-paced retail environment. By staying relevant and agile, businesses can better serve their customers."
+    },
+    {
+      "name": "Carlos Literature-Martinez",
+      "decision": "agree",
+      "reasoning": "As an English professor, critical interpretation and adaptability are central to my teaching approach. I find that microservices embody these principles by enabling continuous deployment and updates that reflect new cultural and literary analyses. This flexibility in software can greatly enhance educational tools and methodologies applicable in my field."
+    },
+    {
+      "name": "Destiny Social-Kim",
+      "decision": "agree",
+      "reasoning": "As a social media influencer, I can see how microservices enhance the continuous evolution of technology ensures that platforms meet trending demands. This allows for better engagement with audiences, mirroring the fast-paced changes in consumer behavior. Continuous deployment ensures that tools and content remain relevant and impactful."
+    },
+    {
+      "name": "Ralph Mechanical-Taylor",
+      "decision": "agree",
+      "reasoning": "In my work as an auto mechanic, I believe that microservices can help in streamlining repair processes through continuous deployment. Just as there are specialized tools for each task, microservices allow software to function optimally without affecting the entire system. Efficiency is essential in repairs, and this architectural approach can enhance that quality."
+    },
+    {
+      "name": "Amber Wellness-Foster",
+      "decision": "agree",
+      "reasoning": "As a nutritionist focused on natural solutions, I see the benefits of microservices in promoting continuous improvements in health applications. Rapid updates can reflect the latest nutritional science, helping clients achieve better outcomes through informed decisions. This architecture mirrors my approach to health—adaptable and grounded in the latest evidence."
+    },
+    {
+      "name": "Kevin Gaming-Chen",
+      "decision": "agree",
+      "reasoning": "As a video game developer, the preference for microservices architecture aligns with the iterative nature of game design. Continuous deployment promotes rapid testing and feedback loops, enabling us to enhance gaming experiences. This flexibility allows developers to integrate player feedback quickly, fostering a more engaging and polished final product."
+    },
+    {
+      "name": "Patricia Religious-O'Sullivan",
+      "decision": "agree",
+      "reasoning": "In my role as a church administrator, I see microservices as a way to promote community engagement through adapted technologies. Continuous deployment ensures that software can reflect the evolving needs of our congregation, allowing us to stay responsive to their needs while fostering inclusive practices."
+    },
+    {
+      "name": "Jake Outdoor-Wilson",
+      "decision": "agree",
+      "reasoning": "As a park ranger focused on conservation, I appreciate how microservices can enhance technologies for environmental protection through continuous deployment. This structure allows for timely updates to monitoring systems, ensuring our conservation efforts reflect the latest scientific findings and effectively address environmental challenges."
+    },
+    {
+      "name": "Nicole Beauty-Rodriguez",
+      "decision": "agree",
+      "reasoning": "From my role as a cosmetics sales representative, I see how microservices allow for continuous engagement with consumers through dynamic platforms. This architectural style enables rapid deployment of changes based on consumer feedback, enhancing sales strategies, and fostering strong customer relationships."
+    },
+    {
+      "name": "Martin Craft-Anderson",
+      "decision": "agree",
+      "reasoning": "As a furniture maker, I value the craftsmanship of quality and how microservices can allow for continuous deployment without sacrificing excellence. This approach enables artisans to update functionalities quickly, ensuring that products meet high standards of quality while adapting to customer feedback."
+    },
+    {
+      "name": "Samantha Travel-Lee",
+      "decision": "disagree",
+      "reasoning": "As a travel blogger, I see the importance of adaptability in continuous deployment through microservices. Just as the travel industry evolves, technology must also adapt quickly to trends and consumer interests. Microservices facilitate this agility, ensuring that platforms can keep pace with changing narratives."
+    },
+    {
+      "name": "Eddie Food-Garcia",
+      "decision": "agree",
+      "reasoning": "As a restaurant chef, I appreciate how microservices can support culinary creativity through systems that adapt. Continuous deployment allows for updating recipes and menus quickly, responding to customer feedback and trends, promoting a dynamic dining experience."
+    },
+    {
+      "name": "Brenda Real-Estate-Thompson",
+      "decision": "agree",
+      "reasoning": "As a property agent, I understand how microservices can enhance real estate technologies by allowing rapid updates in response to changing markets. Continuous deployment keeps systems relevant and efficient, ensuring we can respond swiftly to buyer needs and market shifts."
+    },
+    {
+      "name": "Tyler Photography-Kim",
+      "decision": "agree",
+      "reasoning": "As a wedding photographer, I support microservices for their capacity to enhance client engagement through updates. Continuous deployment ensures that photographic tools can adapt to new techniques and styles quickly, enriching the creative process and fostering a more rewarding experience for clients."
+    },
+    {
+      "name": "Crystal Therapy-Martinez",
+      "decision": "agree",
+      "reasoning": "As a physical therapist, the responsiveness enabled by microservices is vital for implementing new rehabilitation techniques. Continuous deployment allows quick adaptations to treatment plans, optimizing recovery processes and ensuring that patients receive the most current and effective care."
+    },
+    {
+      "name": "Gary Fishing-Johnson",
+      "decision": "agree",
+      "reasoning": "In my role as a commercial fisherman, I value the practical benefits of microservices for adapting technology used in fishing operations. Continuous deployment allows for rapid enhancements to equipment software that reflect changing regulations and environmental conditions, ultimately supporting sustainable practices."
+    },
+    {
+      "name": "Alicia Dance-Foster",
+      "decision": "agree",
+      "reasoning": "As a dance instructor, I see how the adaptability of microservices can enhance artistic collaboration continuously. This architectural approach allows for the rapid deployment of updates in dance education, ensuring that teaching methods align with current trends and positively impact student engagement."
+    },
+    {
+      "name": "Bruce Volunteer-Wilson",
+      "decision": "agree",
+      "reasoning": "As a former volunteer coordinator, microservices architecture resonates with me for enhancing community services. Continuous deployment allows organizations to update their outreach technologies, ensuring effective engagement with volunteers and responsive adaptation to community needs."
+    },
+    {
+      "name": "Tina Pet-Rodriguez",
+      "decision": "agree",
+      "reasoning": "As a veterinary technician, I see microservices as key to continuously improving patient care through efficient updates in healthcare technology. Continuous deployment can enhance patient tracking systems, reflecting the compassionate care values we strive to uphold."
+    }
+  ],
+  "initial_vote_counts": {
+    "agree": 44,
+    "disagree": 6
+  },
+  "initial_winning_team": "agree",
+  "initial_margin_of_victory": 38,
+  "final_vote_counts": {
+    "agree": 47,
+    "disagree": 3
+  },
+  "final_winning_team": "agree",
+  "final_margin_of_victory": 44,
+  "final_vote_changes": {
+    "unchanged_votes": [
+      {
+        "name": "Dr. Elizabeth Warren-Smith",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Jonathan Tech-Garcia",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Professor Sarah Environment-Jones",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Helen Ethics-Martinez",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "David Policy-Anderson",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Rebecca Science-Taylor",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Professor James Law-Wilson",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Maria Healthcare-Rodriguez",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Steven Innovation-Kim",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Patricia Environment-Green",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Michael Finance-Thompson",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Angela Education-Foster",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Robert Security-Cooper",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Christina Medical-Miller",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Daniel Legal-Martinez",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Kevin Philosophy-Liu",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Lisa Technology-Hayes",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Professor Mark Economics-Stevens",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Sophia Ethics-Petrov",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Paul Industry-Anderson",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Janet Data-Kim",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Captain Steve Military-Richards",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Anna Medical-Volkov",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Professor William Science-Chen",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Melissa Art-Johnson",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Tony Sports-Rodriguez",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Grace Music-Wilson",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Frank History-Thompson",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Luna Spiritual-Garcia",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Bob Construction-Miller",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Jennifer Fashion-Anderson",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Carlos Literature-Martinez",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Ralph Mechanical-Taylor",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Amber Wellness-Foster",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Patricia Religious-O'Sullivan",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Jake Outdoor-Wilson",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Nicole Beauty-Rodriguez",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Martin Craft-Anderson",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Samantha Travel-Lee",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Eddie Food-Garcia",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Brenda Real-Estate-Thompson",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Tyler Photography-Kim",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Crystal Therapy-Martinez",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Gary Fishing-Johnson",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Alicia Dance-Foster",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Bruce Volunteer-Wilson",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Tina Pet-Rodriguez",
+        "decision": "agree",
+        "confidence": 0
+      }
+    ],
+    "changed_votes": [
+      {
+        "name": "Marcus Business-Chen",
+        "initial_decision": "disagree",
+        "final_decision": "agree",
+        "confidence": 0,
+        "reasoning": "As a venture capitalist, I see the preference for microservices architecture as a significant advantage for continuous deployment, driving market efficiency in tech startups. Microservices support innovation by allowing teams to quickly develop and scale new applications without disrupting the entire system. This streamlined focus on smaller components enables better risk management and investment opportunities. It's about the bottom line—companies can pivot or adapt more quickly, securing their competitive edge in rapidly changing markets."
+      },
+      {
+        "name": "Destiny Social-Kim",
+        "initial_decision": "disagree",
+        "final_decision": "agree",
+        "confidence": 0,
+        "reasoning": "As a social media influencer, I can see how microservices enhance the continuous evolution of technology ensures that platforms meet trending demands. This allows for better engagement with audiences, mirroring the fast-paced changes in consumer behavior. Continuous deployment ensures that tools and content remain relevant and impactful."
+      },
+      {
+        "name": "Kevin Gaming-Chen",
+        "initial_decision": "disagree",
+        "final_decision": "agree",
+        "confidence": 0,
+        "reasoning": "As a video game developer, the preference for microservices architecture aligns with the iterative nature of game design. Continuous deployment promotes rapid testing and feedback loops, enabling us to enhance gaming experiences. This flexibility allows developers to integrate player feedback quickly, fostering a more engaging and polished final product."
+      }
+    ],
+    "vote_swings": {
+      "disagree": {
+        "lost": 3,
+        "gained": 0
+      },
+      "agree": {
+        "lost": 0,
+        "gained": 3
+      }
+    },
+    "net_changes": {
+      "disagree": -3,
+      "agree": 3
+    },
+    "total_changes": 3,
+    "change_percentage": 6.0
+  },
+  "winning_team": "agree",
+  "vote_counts": {
+    "agree": 47,
+    "disagree": 3
+  },
+  "margin_of_victory": 44,
+  "domain_goal_pairs": [],
+  "arguments": [
+    {
+      "round": 1,
+      "team": "anti_microservices_vs_monoliths",
+      "member_name": "Dr. James Whitaker",
+      "argument_name": "a_simplicity_have_traction",
+      "domains": [
+        "d_software_deployment",
+        "d_dev_productivity"
+      ],
+      "goals": {
+        "g_developer_productivity": [
+          "d_dev_productivity"
+        ],
+        "g_feature_scalability": [
+          "d_software_deployment"
+        ]
+      },
+      "attacks": [],
+      "text": "While microservices architecture offers flexibility, it often increases system complexity, which can hinder developer productivity. A monolithic structure allows teams to manage a single codebase, enabling straightforward testing and deployment processes. As a principal software architect, I've observed that simplicity in architecture fosters faster onboarding for new team members, ensuring consistent standards across the development process. Without the additional overhead of managing multiple services and their interactions, teams can focus more on building features rather than troubleshooting complex orchestrations, ultimately enhancing delivery speed. In practice, maintaining a high level of operational consistency is key, and monolithic architectures can achieve this with fewer dependencies.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 713,
+          "output_tokens": 121,
+          "total_tokens": 834,
+          "elapsed_time_seconds": 2.687069892883301,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "analyser node": {
+              "phase_name": "analyser node",
+              "input_tokens": 713,
+              "output_tokens": 121,
+              "total_tokens": 834,
+              "timestamp": 1769266255.6789258
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 3192,
+          "output_tokens": 1007,
+          "total_tokens": 4199,
+          "elapsed_time_seconds": 24.028448343276978,
+          "llm_call_count": 2,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1797,
+              "output_tokens": 346,
+              "total_tokens": 2143,
+              "timestamp": 1769266404.3014877
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1395,
+              "output_tokens": 661,
+              "total_tokens": 2056,
+              "timestamp": 1769266420.773718
+            }
+          }
+        }
+      },
+      "evaluation_log": {
+        "overall_score": 88.79999999999998,
+        "final_result": "excellent",
+        "evaluator_records": [
+          {
+            "evaluator_name": "Wachsmuth_Quality_Evaluator",
+            "overall_score": 99.99999999999999,
+            "dimensions": [
+              {
+                "dimension": "cogency",
+                "score": 100.0,
+                "justification": "The argument effectively represents the opposition viewpoint by emphasizing the need for strict government regulations to protect public health and safety in the context of commercial space tourism. It provides well-supported premises regarding health risks, ethical implications, and environmental concerns, all relevant to the conclusion. The use of scientific research and expert opinions strengthens the argument, making it cogent and persuasive for the intended audience. Additionally, it acknowledges potential counterarguments regarding innovation, which illustrates a comprehensive understanding of the debate. Overall, it meets the criteria for cogency with acceptable, relevant, and sufficient premises."
+              },
+              {
+                "dimension": "local_acceptability",
+                "score": 100.0,
+                "justification": "The argument effectively represents the opposition viewpoint by emphasizing the necessity of strict government regulation for public health and safety in the context of commercial space tourism. It highlights specific healthcare risks and supports them with a call for evidence-based policies backed by scientific research. Additionally, it addresses ethical concerns regarding equitable access and environmental impacts, making a compelling case that resonates with the intended opposition audience, who likely prioritizes safety and regulatory oversight. The argument is well-supported by logical reasoning without resorting to unsupported claims or conspiracy theories."
+              },
+              {
+                "dimension": "local_relevance",
+                "score": 100.0,
+                "justification": "The argument clearly supports the opposition's stance by emphasizing the need for strict government regulation of commercial space tourism based on public health and safety concerns. It directly relates the health risks associated with space travel to the necessity of regulation, effectively addressing the priorities of the opposition audience. The detailed discussion of health risks, ethical implications, and environmental assessments reinforces the argument's strength, making it directly relevant and compelling for the intended audience."
+              },
+              {
+                "dimension": "local_sufficiency",
+                "score": 100.0,
+                "justification": "The argument effectively presents multiple strong premises that collectively support the need for strict government regulation of commercial space tourism. It discusses healthcare risks, the necessity of evidence-based policies, ethical implications, and environmental concerns, all of which provide a comprehensive rationale for regulation. Each point addresses different dimensions critical to the opposition perspective, ensuring a robust defense of their stance. Additionally, the argument aligns well with the audience's concerns about safety and public health, making it persuasive and relevant."
+              },
+              {
+                "dimension": "overall_quality",
+                "score": 100.0,
+                "justification": "The argument effectively supports the opposition perspective by articulating clear and strong reasons for why commercial space tourism should face strict government regulation. It presents a well-structured analysis of health risks, the necessity of evidence-based policy, and ethical implications, along with considerations for environmental impact. The use of scientific and expert-based arguments strengthens its persuasiveness, making it compelling for the intended audience. Furthermore, the argument demonstrates an awareness of counterpoints, addressing the concern that regulation may stifle innovation, with a well-reasoned rebuttal emphasizing the importance of safety. Overall, it is comprehensive, detailed, and convincingly articulated, thus strongly representing the opposition viewpoint."
+              }
+            ],
+            "feedback": {
+              "positive": [
+                "Strong cogency: The argument effectively represents the opposition viewpoint by emphasizing the need for strict government regulations to protect public health and safety in the context of commercial space tourism. It provides well-supported premises regarding health risks, ethical implications, and environmental concerns, all relevant to the conclusion. The use of scientific research and expert opinions strengthens the argument, making it cogent and persuasive for the intended audience. Additionally, it acknowledges potential counterarguments regarding innovation, which illustrates a comprehensive understanding of the debate. Overall, it meets the criteria for cogency with acceptable, relevant, and sufficient premises.",
+                "Strong local_acceptability: The argument effectively represents the opposition viewpoint by emphasizing the necessity of strict government regulation for public health and safety in the context of commercial space tourism. It highlights specific healthcare risks and supports them with a call for evidence-based policies backed by scientific research. Additionally, it addresses ethical concerns regarding equitable access and environmental impacts, making a compelling case that resonates with the intended opposition audience, who likely prioritizes safety and regulatory oversight. The argument is well-supported by logical reasoning without resorting to unsupported claims or conspiracy theories.",
+                "Strong local_relevance: The argument clearly supports the opposition's stance by emphasizing the need for strict government regulation of commercial space tourism based on public health and safety concerns. It directly relates the health risks associated with space travel to the necessity of regulation, effectively addressing the priorities of the opposition audience. The detailed discussion of health risks, ethical implications, and environmental assessments reinforces the argument's strength, making it directly relevant and compelling for the intended audience.",
+                "Strong local_sufficiency: The argument effectively presents multiple strong premises that collectively support the need for strict government regulation of commercial space tourism. It discusses healthcare risks, the necessity of evidence-based policies, ethical implications, and environmental concerns, all of which provide a comprehensive rationale for regulation. Each point addresses different dimensions critical to the opposition perspective, ensuring a robust defense of their stance. Additionally, the argument aligns well with the audience's concerns about safety and public health, making it persuasive and relevant.",
+                "Strong overall_quality: The argument effectively supports the opposition perspective by articulating clear and strong reasons for why commercial space tourism should face strict government regulation. It presents a well-structured analysis of health risks, the necessity of evidence-based policy, and ethical implications, along with considerations for environmental impact. The use of scientific and expert-based arguments strengthens its persuasiveness, making it compelling for the intended audience. Furthermore, the argument demonstrates an awareness of counterpoints, addressing the concern that regulation may stifle innovation, with a well-reasoned rebuttal emphasizing the importance of safety. Overall, it is comprehensive, detailed, and convincingly articulated, thus strongly representing the opposition viewpoint."
+              ],
+              "negative": [],
+              "improvements": [],
+              "strategic": []
+            },
+            "metadata": {
+              "original_evaluation": "argument_text='From a healthcare perspective, the expansion of commercial space tourism must be subjected to strict government regulation to ensure evidence-based policies that protect public health and safety. The health risks associated with commercial space tourism include exposure to cosmic radiation and potential medical emergencies arising during flights, necessitating stringent safety regulations. Unregulated space tourism increases the likelihood of incidents that can compromise passenger health, highlighting the essential nature of evidence-based policies. This framework ensures that safety measures are informed by scientific research and expert opinions, providing a robust foundation for public health protection. Moreover, the ethical implications of commercial space tourism require equitable access to safety resources, which government regulations can enforce to uphold fair practices within the industry. Additionally, environmental impact assessments related to launch activities reveal potential ecological damage, further underscoring the need for policies that prioritize sustainability alongside health considerations. Thus, while some may argue that regulation stifles innovation, it is clear that evidence-based policies play a pivotal role in ensuring the safety and well-being of individuals engaged in this new domain. These healthcare considerations show that evidence-based policy is crucially affected by the regulation of commercial space tourism, safeguarding public health in an innovative yet precarious industry.' dimensions=[QualityScore(dimension='cogency', score=3, justification='The argument effectively represents the opposition viewpoint by emphasizing the need for strict government regulations to protect public health and safety in the context of commercial space tourism. It provides well-supported premises regarding health risks, ethical implications, and environmental concerns, all relevant to the conclusion. The use of scientific research and expert opinions strengthens the argument, making it cogent and persuasive for the intended audience. Additionally, it acknowledges potential counterarguments regarding innovation, which illustrates a comprehensive understanding of the debate. Overall, it meets the criteria for cogency with acceptable, relevant, and sufficient premises.', confidence=0.9), QualityScore(dimension='local_acceptability', score=3, justification='The argument effectively represents the opposition viewpoint by emphasizing the necessity of strict government regulation for public health and safety in the context of commercial space tourism. It highlights specific healthcare risks and supports them with a call for evidence-based policies backed by scientific research. Additionally, it addresses ethical concerns regarding equitable access and environmental impacts, making a compelling case that resonates with the intended opposition audience, who likely prioritizes safety and regulatory oversight. The argument is well-supported by logical reasoning without resorting to unsupported claims or conspiracy theories.', confidence=0.9), QualityScore(dimension='local_relevance', score=3, justification=\"The argument clearly supports the opposition's stance by emphasizing the need for strict government regulation of commercial space tourism based on public health and safety concerns. It directly relates the health risks associated with space travel to the necessity of regulation, effectively addressing the priorities of the opposition audience. The detailed discussion of health risks, ethical implications, and environmental assessments reinforces the argument's strength, making it directly relevant and compelling for the intended audience.\", confidence=0.9), QualityScore(dimension='local_sufficiency', score=3, justification=\"The argument effectively presents multiple strong premises that collectively support the need for strict government regulation of commercial space tourism. It discusses healthcare risks, the necessity of evidence-based policies, ethical implications, and environmental concerns, all of which provide a comprehensive rationale for regulation. Each point addresses different dimensions critical to the opposition perspective, ensuring a robust defense of their stance. Additionally, the argument aligns well with the audience's concerns about safety and public health, making it persuasive and relevant.\", confidence=0.9), QualityScore(dimension='overall_quality', score=3, justification='The argument effectively supports the opposition perspective by articulating clear and strong reasons for why commercial space tourism should face strict government regulation. It presents a well-structured analysis of health risks, the necessity of evidence-based policy, and ethical implications, along with considerations for environmental impact. The use of scientific and expert-based arguments strengthens its persuasiveness, making it compelling for the intended audience. Furthermore, the argument demonstrates an awareness of counterpoints, addressing the concern that regulation may stifle innovation, with a well-reasoned rebuttal emphasizing the importance of safety. Overall, it is comprehensive, detailed, and convincingly articulated, thus strongly representing the opposition viewpoint.', confidence=1.0)] overall_quality=2.9999999999999996",
+              "aggregated_quality": 2.9999999999999996
+            },
+            "timestamp": "2026-01-24T15:53:50.934163"
+          },
+          {
+            "evaluator_name": "Chain_of_Thought_Evaluator",
+            "overall_score": 72.0,
+            "dimensions": [
+              {
+                "dimension": "evidence_quality",
+                "score": 65.0,
+                "justification": "Extracted from chain-of-thought evidence_quality analysis"
+              },
+              {
+                "dimension": "logical_coherence",
+                "score": 70.0,
+                "justification": "Extracted from chain-of-thought logical_coherence analysis"
+              },
+              {
+                "dimension": "persuasiveness",
+                "score": 75.0,
+                "justification": "Extracted from chain-of-thought persuasiveness analysis"
+              },
+              {
+                "dimension": "strategic_value",
+                "score": 80.0,
+                "justification": "Extracted from chain-of-thought strategic_value analysis"
+              }
+            ],
+            "feedback": {
+              "positive": [
+                "**Identification of Health Risks:** Effectively highlights cosmic radiation and potential medical emergencies, addressing critical public concerns.",
+                "**Emphasis on Ethical Considerations:** Raises important points about equitable access to safety resources, which resonate with broader ethical norms in public health.",
+                "**Commitment to Evidence-Based Policy:** Advocates for policies informed by scientific research, aligning with best practices in public health and regulatory frameworks."
+              ],
+              "negative": [
+                "**Lack of Specific Evidence:** The absence of empirical data and studies weakens credibility and opens the argument to skepticism.",
+                "**Weak Logical Connections Between Premises:** Ethical implications and their relevance to health outcomes lack clear articulation, potentially confusing the audience about their relationship.",
+                "**Over-reliance on Abstract Concepts:** Some points remain overly abstract without concrete examples, which may disengage readers looking for tangible evidence."
+              ],
+              "improvements": [],
+              "strategic": []
+            },
+            "metadata": {
+              "evaluation_type": "chain_of_thought",
+              "steps_completed": 7,
+              "final_result": "good"
+            },
+            "timestamp": "2026-01-24T15:55:41.429867"
+          }
+        ],
+        "strengths": [
+          "Strong overall_quality: The argument effectively supports the opposition perspective by articulating clear and strong reasons for why commercial space tourism should face strict government regulation. It presents a well-structured analysis of health risks, the necessity of evidence-based policy, and ethical implications, along with considerations for environmental impact. The use of scientific and expert-based arguments strengthens its persuasiveness, making it compelling for the intended audience. Furthermore, the argument demonstrates an awareness of counterpoints, addressing the concern that regulation may stifle innovation, with a well-reasoned rebuttal emphasizing the importance of safety. Overall, it is comprehensive, detailed, and convincingly articulated, thus strongly representing the opposition viewpoint.",
+          "Strong cogency: The argument effectively represents the opposition viewpoint by emphasizing the need for strict government regulations to protect public health and safety in the context of commercial space tourism. It provides well-supported premises regarding health risks, ethical implications, and environmental concerns, all relevant to the conclusion. The use of scientific research and expert opinions strengthens the argument, making it cogent and persuasive for the intended audience. Additionally, it acknowledges potential counterarguments regarding innovation, which illustrates a comprehensive understanding of the debate. Overall, it meets the criteria for cogency with acceptable, relevant, and sufficient premises.",
+          "Strong local_acceptability: The argument effectively represents the opposition viewpoint by emphasizing the necessity of strict government regulation for public health and safety in the context of commercial space tourism. It highlights specific healthcare risks and supports them with a call for evidence-based policies backed by scientific research. Additionally, it addresses ethical concerns regarding equitable access and environmental impacts, making a compelling case that resonates with the intended opposition audience, who likely prioritizes safety and regulatory oversight. The argument is well-supported by logical reasoning without resorting to unsupported claims or conspiracy theories.",
+          "Strong local_sufficiency: The argument effectively presents multiple strong premises that collectively support the need for strict government regulation of commercial space tourism. It discusses healthcare risks, the necessity of evidence-based policies, ethical implications, and environmental concerns, all of which provide a comprehensive rationale for regulation. Each point addresses different dimensions critical to the opposition perspective, ensuring a robust defense of their stance. Additionally, the argument aligns well with the audience's concerns about safety and public health, making it persuasive and relevant.",
+          "Strong local_relevance: The argument clearly supports the opposition's stance by emphasizing the need for strict government regulation of commercial space tourism based on public health and safety concerns. It directly relates the health risks associated with space travel to the necessity of regulation, effectively addressing the priorities of the opposition audience. The detailed discussion of health risks, ethical implications, and environmental assessments reinforces the argument's strength, making it directly relevant and compelling for the intended audience."
+        ],
+        "weaknesses": [
+          "**Weak Logical Connections Between Premises:** Ethical implications and their relevance to health outcomes lack clear articulation, potentially confusing the audience about their relationship.",
+          "**Over-reliance on Abstract Concepts:** Some points remain overly abstract without concrete examples, which may disengage readers looking for tangible evidence.",
+          "**Lack of Specific Evidence:** The absence of empirical data and studies weakens credibility and opens the argument to skepticism."
+        ],
+        "improvement_suggestions": [],
+        "timestamp": "2026-01-24T15:55:41.430639"
+      }
+    },
+    {
+      "round": 1,
+      "team": "anti_microservices_vs_monoliths",
+      "member_name": "Elena Rossi",
+      "argument_name": "a_back_to_maintainability",
+      "domains": [
+        "d_software_deployment",
+        "d_dev_productivity"
+      ],
+      "goals": {
+        "g_developer_productivity": [
+          "d_dev_productivity"
+        ],
+        "g_feature_scalability": [
+          "d_software_deployment"
+        ]
+      },
+      "attacks": [],
+      "text": "From my experience as a Senior Backend Engineer, the promise of microservices to improve scalability often leads to unintended consequences of maintainability. In a monolithic architecture, we can manage updates and changes in one place, making it significantly easier to ensure system stability. Microservices can create a disparity where some services may evolve faster than others, leading to integration challenges. Continuous deployment becomes cumbersome when inter-service dependencies are present, which can result in bottlenecks. Thus, focusing on developer productivity and system maintainability, we should prioritize a monolithic approach that emphasizes a coherent, manageable infrastructure over fragmentation.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 949,
+          "output_tokens": 144,
+          "total_tokens": 1093,
+          "elapsed_time_seconds": 3.855443239212036,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "analyser node": {
+              "phase_name": "analyser node",
+              "input_tokens": 949,
+              "output_tokens": 144,
+              "total_tokens": 1093,
+              "timestamp": 1769266545.3420055
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 3700,
+          "output_tokens": 921,
+          "total_tokens": 4621,
+          "elapsed_time_seconds": 17.41979169845581,
+          "llm_call_count": 2,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 2055,
+              "output_tokens": 339,
+              "total_tokens": 2394,
+              "timestamp": 1769266713.808098
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1645,
+              "output_tokens": 582,
+              "total_tokens": 2227,
+              "timestamp": 1769266724.611487
+            }
+          }
+        }
+      },
+      "evaluation_log": {
+        "overall_score": 89.99999999999997,
+        "final_result": "excellent",
+        "evaluator_records": [
+          {
+            "evaluator_name": "Wachsmuth_Quality_Evaluator",
+            "overall_score": 99.99999999999997,
+            "dimensions": [
+              {
+                "dimension": "cogency",
+                "score": 100.0,
+                "justification": "The argument presents a coherent and well-structured case for the necessity of strict government regulation in commercial space tourism. It discusses health risks and environmental impacts, using relevant and well-supported premises that directly relate to the conclusion. The acknowledgment of ethical considerations and the counterargument regarding innovation adds depth and relevance, effectively aligning with the opposition perspective. Each premise is relevant and sufficient to support the conclusion drawn."
+              },
+              {
+                "dimension": "local_acceptability",
+                "score": 100.0,
+                "justification": "The argument effectively represents the opposition perspective by articulating the necessity of strict government regulation in commercial space tourism. It provides a well-reasoned grounding in healthcare and environmental concerns that align with the team’s view. By citing potential health risks, environmental threats, and historical precedents regarding safety regulations contributing to innovation, the argument presents credible, evidence-based claims relevant to the audience’s concerns. The positions are supported by logical reasoning and the ethical implications discussed demonstrate a strong understanding of the complexities involved, making it persuasive for the intended opposition audience."
+              },
+              {
+                "dimension": "local_relevance",
+                "score": 100.0,
+                "justification": "The argument effectively presents direct and relevant premises supporting the need for strict government regulation of commercial space tourism. It discusses healthcare and environmental risks and links them to the necessity of regulation, addressing safety and sustainability frameworks that the opposition perspective advocates for. The reference to ethical considerations and historical precedents strengthens the argument, making it persuasive for the intended audience of the opposition."
+              },
+              {
+                "dimension": "local_sufficiency",
+                "score": 100.0,
+                "justification": "The argument effectively presents multiple strong premises related to healthcare and environmental concerns surrounding commercial space tourism. It addresses health risks, environmental impacts, the need for evidence-based policies, and ethical considerations for all participants. These premises collectively justify the conclusion that strict regulation is necessary. The argument aligns with the opposition viewpoint, demonstrating that regulations can enhance safety and innovation, which is convincing for the intended audience advocating for regulation."
+              },
+              {
+                "dimension": "overall_quality",
+                "score": 100.0,
+                "justification": "The argument effectively represents the opposition viewpoint by thoroughly addressing crucial concerns about health risks and environmental impacts associated with commercial space tourism. It employs strong evidence-based reasoning and outlines the potential benefits of regulation, countering the argument that such regulation stifles innovation by providing historical precedents. The language is appropriately formal and persuasive, making it suitable for the intended opposition audience. The argument is well-structured, coherent, and presents a compelling case for strict governmental oversight, thereby aligning effectively with the team's priorities and concerns."
+              }
+            ],
+            "feedback": {
+              "positive": [
+                "Strong cogency: The argument presents a coherent and well-structured case for the necessity of strict government regulation in commercial space tourism. It discusses health risks and environmental impacts, using relevant and well-supported premises that directly relate to the conclusion. The acknowledgment of ethical considerations and the counterargument regarding innovation adds depth and relevance, effectively aligning with the opposition perspective. Each premise is relevant and sufficient to support the conclusion drawn.",
+                "Strong local_acceptability: The argument effectively represents the opposition perspective by articulating the necessity of strict government regulation in commercial space tourism. It provides a well-reasoned grounding in healthcare and environmental concerns that align with the team’s view. By citing potential health risks, environmental threats, and historical precedents regarding safety regulations contributing to innovation, the argument presents credible, evidence-based claims relevant to the audience’s concerns. The positions are supported by logical reasoning and the ethical implications discussed demonstrate a strong understanding of the complexities involved, making it persuasive for the intended opposition audience.",
+                "Strong local_relevance: The argument effectively presents direct and relevant premises supporting the need for strict government regulation of commercial space tourism. It discusses healthcare and environmental risks and links them to the necessity of regulation, addressing safety and sustainability frameworks that the opposition perspective advocates for. The reference to ethical considerations and historical precedents strengthens the argument, making it persuasive for the intended audience of the opposition.",
+                "Strong local_sufficiency: The argument effectively presents multiple strong premises related to healthcare and environmental concerns surrounding commercial space tourism. It addresses health risks, environmental impacts, the need for evidence-based policies, and ethical considerations for all participants. These premises collectively justify the conclusion that strict regulation is necessary. The argument aligns with the opposition viewpoint, demonstrating that regulations can enhance safety and innovation, which is convincing for the intended audience advocating for regulation.",
+                "Strong overall_quality: The argument effectively represents the opposition viewpoint by thoroughly addressing crucial concerns about health risks and environmental impacts associated with commercial space tourism. It employs strong evidence-based reasoning and outlines the potential benefits of regulation, countering the argument that such regulation stifles innovation by providing historical precedents. The language is appropriately formal and persuasive, making it suitable for the intended opposition audience. The argument is well-structured, coherent, and presents a compelling case for strict governmental oversight, thereby aligning effectively with the team's priorities and concerns."
+              ],
+              "negative": [],
+              "improvements": [],
+              "strategic": []
+            },
+            "metadata": {
+              "original_evaluation": "argument_text='From a healthcare and environmental perspective, commercial space tourism raises questions about evidence-based policy and sustainability that must be addressed through strict government regulation. The health risks associated with space travel, including exposure to cosmic radiation and unforeseen medical emergencies, necessitate an evidence-based policy framework that prioritizes passenger safety. This framework is essential to minimize risks and protect individuals during their flights. Moreover, the environmental impact of rocket launches poses a significant threat to our atmosphere and ecosystems, necessitating stringent regulations to advocate for sustainable practices within the industry. Although proponents of commercial space tourism may argue that regulatory oversight stifles innovation, historical precedents demonstrate that safety regulations often enhance technological advancement by providing necessary guidelines and standards that foster public trust. Additionally, the ethical considerations surrounding access to safety resources demand governmental intervention to ensure fair treatment and protection for all participants in this emerging sector. Collectively, these healthcare and environmental considerations show that the advancement of evidence-based policy and sustainability is fundamentally linked to the regulation of commercial space tourism.' dimensions=[QualityScore(dimension='cogency', score=3, justification='The argument presents a coherent and well-structured case for the necessity of strict government regulation in commercial space tourism. It discusses health risks and environmental impacts, using relevant and well-supported premises that directly relate to the conclusion. The acknowledgment of ethical considerations and the counterargument regarding innovation adds depth and relevance, effectively aligning with the opposition perspective. Each premise is relevant and sufficient to support the conclusion drawn.', confidence=1.0), QualityScore(dimension='local_acceptability', score=3, justification='The argument effectively represents the opposition perspective by articulating the necessity of strict government regulation in commercial space tourism. It provides a well-reasoned grounding in healthcare and environmental concerns that align with the team’s view. By citing potential health risks, environmental threats, and historical precedents regarding safety regulations contributing to innovation, the argument presents credible, evidence-based claims relevant to the audience’s concerns. The positions are supported by logical reasoning and the ethical implications discussed demonstrate a strong understanding of the complexities involved, making it persuasive for the intended opposition audience.', confidence=0.9), QualityScore(dimension='local_relevance', score=3, justification='The argument effectively presents direct and relevant premises supporting the need for strict government regulation of commercial space tourism. It discusses healthcare and environmental risks and links them to the necessity of regulation, addressing safety and sustainability frameworks that the opposition perspective advocates for. The reference to ethical considerations and historical precedents strengthens the argument, making it persuasive for the intended audience of the opposition.', confidence=0.9), QualityScore(dimension='local_sufficiency', score=3, justification='The argument effectively presents multiple strong premises related to healthcare and environmental concerns surrounding commercial space tourism. It addresses health risks, environmental impacts, the need for evidence-based policies, and ethical considerations for all participants. These premises collectively justify the conclusion that strict regulation is necessary. The argument aligns with the opposition viewpoint, demonstrating that regulations can enhance safety and innovation, which is convincing for the intended audience advocating for regulation.', confidence=0.9), QualityScore(dimension='overall_quality', score=3, justification=\"The argument effectively represents the opposition viewpoint by thoroughly addressing crucial concerns about health risks and environmental impacts associated with commercial space tourism. It employs strong evidence-based reasoning and outlines the potential benefits of regulation, countering the argument that such regulation stifles innovation by providing historical precedents. The language is appropriately formal and persuasive, making it suitable for the intended opposition audience. The argument is well-structured, coherent, and presents a compelling case for strict governmental oversight, thereby aligning effectively with the team's priorities and concerns.\", confidence=1.0)] overall_quality=2.999999999999999",
+              "aggregated_quality": 2.999999999999999
+            },
+            "timestamp": "2026-01-24T15:58:53.995213"
+          },
+          {
+            "evaluator_name": "Chain_of_Thought_Evaluator",
+            "overall_score": 75.0,
+            "dimensions": [
+              {
+                "dimension": "evidence_quality",
+                "score": 25.0,
+                "justification": "Extracted from chain-of-thought evidence_quality analysis"
+              },
+              {
+                "dimension": "logical_coherence",
+                "score": 70.0,
+                "justification": "Extracted from chain-of-thought logical_coherence analysis"
+              },
+              {
+                "dimension": "persuasiveness",
+                "score": 80.0,
+                "justification": "Extracted from chain-of-thought persuasiveness analysis"
+              },
+              {
+                "dimension": "strategic_value",
+                "score": 85.0,
+                "justification": "Extracted from chain-of-thought strategic_value analysis"
+              }
+            ],
+            "feedback": {
+              "positive": [
+                "Comprehensive view of critical issues surrounding space tourism.",
+                "Strong logical framework connecting premises to the conclusion.",
+                "Clear ethical considerations that resonate with moral imperatives.",
+                "**Comprehensive View of Critical Issues:**",
+                "Addresses health risks, environmental impact, historical precedents, and ethical considerations, providing a multi-dimensional perspective that solidifies the argument's relevance."
+              ],
+              "negative": [
+                "Insufficient empirical evidence and specific examples to substantiate claims.",
+                "Over-reliance on general historical precedents without contextual specifics.",
+                "Lack of clarity regarding the mechanisms of regulation proposed.",
+                "**Insufficient Empirical Evidence:**",
+                "The reliance on unsubstantiated claims undermines the argument’s credibility, leading to potential dismissals from critical audiences."
+              ],
+              "improvements": [],
+              "strategic": []
+            },
+            "metadata": {
+              "evaluation_type": "chain_of_thought",
+              "steps_completed": 7,
+              "final_result": "good"
+            },
+            "timestamp": "2026-01-24T16:01:22.443053"
+          }
+        ],
+        "strengths": [
+          "Strong local_acceptability: The argument effectively represents the opposition perspective by articulating the necessity of strict government regulation in commercial space tourism. It provides a well-reasoned grounding in healthcare and environmental concerns that align with the team’s view. By citing potential health risks, environmental threats, and historical precedents regarding safety regulations contributing to innovation, the argument presents credible, evidence-based claims relevant to the audience’s concerns. The positions are supported by logical reasoning and the ethical implications discussed demonstrate a strong understanding of the complexities involved, making it persuasive for the intended opposition audience.",
+          "Strong overall_quality: The argument effectively represents the opposition viewpoint by thoroughly addressing crucial concerns about health risks and environmental impacts associated with commercial space tourism. It employs strong evidence-based reasoning and outlines the potential benefits of regulation, countering the argument that such regulation stifles innovation by providing historical precedents. The language is appropriately formal and persuasive, making it suitable for the intended opposition audience. The argument is well-structured, coherent, and presents a compelling case for strict governmental oversight, thereby aligning effectively with the team's priorities and concerns.",
+          "Strong local_sufficiency: The argument effectively presents multiple strong premises related to healthcare and environmental concerns surrounding commercial space tourism. It addresses health risks, environmental impacts, the need for evidence-based policies, and ethical considerations for all participants. These premises collectively justify the conclusion that strict regulation is necessary. The argument aligns with the opposition viewpoint, demonstrating that regulations can enhance safety and innovation, which is convincing for the intended audience advocating for regulation.",
+          "Strong cogency: The argument presents a coherent and well-structured case for the necessity of strict government regulation in commercial space tourism. It discusses health risks and environmental impacts, using relevant and well-supported premises that directly relate to the conclusion. The acknowledgment of ethical considerations and the counterargument regarding innovation adds depth and relevance, effectively aligning with the opposition perspective. Each premise is relevant and sufficient to support the conclusion drawn.",
+          "Strong local_relevance: The argument effectively presents direct and relevant premises supporting the need for strict government regulation of commercial space tourism. It discusses healthcare and environmental risks and links them to the necessity of regulation, addressing safety and sustainability frameworks that the opposition perspective advocates for. The reference to ethical considerations and historical precedents strengthens the argument, making it persuasive for the intended audience of the opposition."
+        ],
+        "weaknesses": [
+          "Insufficient empirical evidence and specific examples to substantiate claims.",
+          "Lack of clarity regarding the mechanisms of regulation proposed.",
+          "**Insufficient Empirical Evidence:**",
+          "The reliance on unsubstantiated claims undermines the argument’s credibility, leading to potential dismissals from critical audiences.",
+          "Over-reliance on general historical precedents without contextual specifics."
+        ],
+        "improvement_suggestions": [],
+        "timestamp": "2026-01-24T16:01:22.443276"
+      }
+    },
+    {
+      "round": 1,
+      "team": "pro_microservices_vs_monoliths",
+      "member_name": "Dr. Priya Nair",
+      "argument_name": "a_scalability_fulfilled",
+      "domains": [
+        "d_software_deployment",
+        "d_dev_productivity"
+      ],
+      "goals": {
+        "g_developer_productivity": [
+          "d_dev_productivity"
+        ],
+        "g_feature_scalability": [
+          "d_software_deployment"
+        ]
+      },
+      "attacks": [],
+      "text": "Advocating for microservices, I argue that they inherently promote scalability and agility in continuous deployment. By breaking down applications into smaller, independently deployable units, teams can develop, test, and deploy features in isolation. This autonomy leads to reduced deployment cycles and faster time-to-market. Numerous case studies from organizations like Netflix and Amazon have highlighted significant improvements in both developer productivity and customer satisfaction after shifting to microservices. Moreover, the ability to scale individual services dynamically allows businesses to allocate resources effectively, adapting more swiftly to user demands. The evidence supports my stance that microservices provide the necessary framework for modern, agile development practices.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 713,
+          "output_tokens": 144,
+          "total_tokens": 857,
+          "elapsed_time_seconds": 3.4039759635925293,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "analyser node": {
+              "phase_name": "analyser node",
+              "input_tokens": 713,
+              "output_tokens": 144,
+              "total_tokens": 857,
+              "timestamp": 1769266885.9031954
+            }
+          }
+        },
+        "knowledge_retrieval": {
+          "node_name": "knowledge_retrieval",
+          "input_tokens": 786,
+          "output_tokens": 323,
+          "total_tokens": 1109,
+          "elapsed_time_seconds": 17.97061586380005,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "search_query_generation": {
+              "phase_name": "search_query_generation",
+              "input_tokens": 786,
+              "output_tokens": 323,
+              "total_tokens": 1109,
+              "timestamp": 1769266893.6542451
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 2290,
+          "output_tokens": 1068,
+          "total_tokens": 3358,
+          "elapsed_time_seconds": 25.182432174682617,
+          "llm_call_count": 2,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1231,
+              "output_tokens": 296,
+              "total_tokens": 1527,
+              "timestamp": 1769266911.2016127
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1059,
+              "output_tokens": 772,
+              "total_tokens": 1831,
+              "timestamp": 1769266929.0576773
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "team": "pro_microservices_vs_monoliths",
+      "member_name": "Marcus Feld",
+      "argument_name": "a_automation_boost",
+      "domains": [
+        "d_dev_productivity",
+        "d_microservices"
+      ],
+      "goals": {
+        "g_developer_productivity": [
+          "d_dev_productivity"
+        ],
+        "g_feature_scalability": [
+          "d_dev_productivity",
+          "d_microservices"
+        ]
+      },
+      "attacks": [],
+      "text": "Microservices architecture streamlines continuous integration and continuous deployment (CI/CD) processes, which are essential for DevOps practices. With my experience leading DevOps initiatives, I've seen how automation can thrive in microservices environments. Each microservice can be independently versioned and deployed, allowing teams to implement automated testing and release processes tailored to each component. This accelerates feedback loops, aids in error identification, and fosters a culture of continuous improvement. Organizations adopting microservices report enhanced reliability, as a single faulty service does not necessitate a complete application downtime. The rapid, reliable delivery of features strengthens both developer productivity and end-user experiences, making microservices the superior choice.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1077,
+          "output_tokens": 164,
+          "total_tokens": 1241,
+          "elapsed_time_seconds": 5.009146451950073,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "analyser node": {
+              "phase_name": "analyser node",
+              "input_tokens": 1077,
+              "output_tokens": 164,
+              "total_tokens": 1241,
+              "timestamp": 1769266936.8423898
+            }
+          }
+        },
+        "knowledge_retrieval": {
+          "node_name": "knowledge_retrieval",
+          "input_tokens": 1152,
+          "output_tokens": 337,
+          "total_tokens": 1489,
+          "elapsed_time_seconds": 13.000869274139404,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "search_query_generation": {
+              "phase_name": "search_query_generation",
+              "input_tokens": 1152,
+              "output_tokens": 337,
+              "total_tokens": 1489,
+              "timestamp": 1769266945.2320616
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 2827,
+          "output_tokens": 1024,
+          "total_tokens": 3851,
+          "elapsed_time_seconds": 22.530395030975342,
+          "llm_call_count": 2,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1590,
+              "output_tokens": 344,
+              "total_tokens": 1934,
+              "timestamp": 1769266957.8368921
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1237,
+              "output_tokens": 680,
+              "total_tokens": 1917,
+              "timestamp": 1769266972.3772538
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "team": "anti_microservices_vs_monoliths",
+      "member_name": "Dr. James Whitaker",
+      "argument_name": "a_pragmatic_integration",
+      "domains": [
+        "d_software_deployment",
+        "d_dev_productivity"
+      ],
+      "goals": {
+        "g_developer_productivity": [
+          "d_dev_productivity"
+        ],
+        "g_feature_scalability": [
+          "d_software_deployment"
+        ]
+      },
+      "attacks": [],
+      "text": "Reemphasizing my earlier point, it's crucial to recognize that not every solution necessitates complicating architecture. Monolithic architectures are particularly effective when teams are small or the product domain is relatively well-defined. They allow for straightforward integration and a clear linear development path, which can significantly enhance deployment speed. As technology evolves towards modularity, the benefits of simplicity should not be overridden by trends. Developers are more productive within a cohesive structure where changes are easier to implement without worrying about integration points across multiple services, ensuring a more manageable complexity for any organization.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1151,
+          "output_tokens": 166,
+          "total_tokens": 1317,
+          "elapsed_time_seconds": 3.729738473892212,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "analyser node": {
+              "phase_name": "analyser node",
+              "input_tokens": 1151,
+              "output_tokens": 166,
+              "total_tokens": 1317,
+              "timestamp": 1769266978.1922004
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 4053,
+          "output_tokens": 900,
+          "total_tokens": 4953,
+          "elapsed_time_seconds": 21.187166929244995,
+          "llm_call_count": 2,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 2228,
+              "output_tokens": 309,
+              "total_tokens": 2537,
+              "timestamp": 1769266985.4081843
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1825,
+              "output_tokens": 591,
+              "total_tokens": 2416,
+              "timestamp": 1769266999.3793314
+            }
+          }
+        }
+      },
+      "evaluation_log": {
+        "overall_score": 86.99999999999999,
+        "final_result": "excellent",
+        "evaluator_records": [
+          {
+            "evaluator_name": "Wachsmuth_Quality_Evaluator",
+            "overall_score": 99.99999999999999,
+            "dimensions": [
+              {
+                "dimension": "cogency",
+                "score": 100.0,
+                "justification": "The argument presents a well-structured and logical case for the need for strict government regulation of commercial space tourism, addressing health and environmental concerns effectively. It incorporates specific risks associated with space travel, aligns with evidence-based policy advocacy, and counteracts potential objections regarding innovation with relevant historical examples. The premises are acceptable and closely related to the conclusion, making it highly persuasive for the intended opposition audience concerned with safety and sustainability."
+              },
+              {
+                "dimension": "local_acceptability",
+                "score": 100.0,
+                "justification": "The argument effectively articulates the necessity for strict government regulation of commercial space tourism from healthcare and environmental perspectives. It provides a well-rounded discussion on health risks associated with space travel, the ecological impact of rocket launches, and the need for evidence-based policies. These points are bolstered by references to ethical considerations and historical precedents that show how regulation can lead to enhanced innovation and public safety. This aligns well with the team's opposition perspective, presenting strong arguments aimed at persuading an audience that may be skeptical of regulation. Overall, the argument is rooted in credible, verifiable concerns, which reflects a high level of acceptability."
+              },
+              {
+                "dimension": "local_relevance",
+                "score": 100.0,
+                "justification": "The argument effectively highlights significant healthcare and environmental concerns linked to commercial space tourism, such as health risks and ecological impacts. It directly supports the need for strict government regulation by emphasizing the importance of evidence-based policy and safety measures, which align with the opposition's goal of advocating for increased regulation. The rebuttal regarding innovation and ethics further strengthens the argument, making it highly relevant and persuasive for the opposing audience."
+              },
+              {
+                "dimension": "local_sufficiency",
+                "score": 100.0,
+                "justification": "The argument presents multiple strong premises concerning health risks, environmental impacts, support for evidence-based policies, historical precedents of regulation fostering innovation, and ethical considerations. These collectively provide robust support for the need for strict government regulation of commercial space tourism. The argument aligns well with the opposition perspective by addressing significant concerns that justify regulatory intervention, thereby effectively reaching the intended audience's priorities and fears regarding safety and sustainability."
+              },
+              {
+                "dimension": "overall_quality",
+                "score": 100.0,
+                "justification": "The argument effectively represents the opposition viewpoint by articulating clear and relevant concerns about safety and environmental sustainability, which are critical issues in the debate over commercial space tourism. It employs strong logic, providing substantial evidence regarding health risks and ecological impacts, while addressing counterarguments regarding innovation and equity. The structure is coherent and well-organized, making it compelling for the intended audience. The argument prioritizes health, safety, and ethical considerations, aligning perfectly with the opposition's goals of advocating for regulation. Overall, it demonstrates a strong command of the subject and effectively persuades the audience."
+              }
+            ],
+            "feedback": {
+              "positive": [
+                "Strong cogency: The argument presents a well-structured and logical case for the need for strict government regulation of commercial space tourism, addressing health and environmental concerns effectively. It incorporates specific risks associated with space travel, aligns with evidence-based policy advocacy, and counteracts potential objections regarding innovation with relevant historical examples. The premises are acceptable and closely related to the conclusion, making it highly persuasive for the intended opposition audience concerned with safety and sustainability.",
+                "Strong local_acceptability: The argument effectively articulates the necessity for strict government regulation of commercial space tourism from healthcare and environmental perspectives. It provides a well-rounded discussion on health risks associated with space travel, the ecological impact of rocket launches, and the need for evidence-based policies. These points are bolstered by references to ethical considerations and historical precedents that show how regulation can lead to enhanced innovation and public safety. This aligns well with the team's opposition perspective, presenting strong arguments aimed at persuading an audience that may be skeptical of regulation. Overall, the argument is rooted in credible, verifiable concerns, which reflects a high level of acceptability.",
+                "Strong local_relevance: The argument effectively highlights significant healthcare and environmental concerns linked to commercial space tourism, such as health risks and ecological impacts. It directly supports the need for strict government regulation by emphasizing the importance of evidence-based policy and safety measures, which align with the opposition's goal of advocating for increased regulation. The rebuttal regarding innovation and ethics further strengthens the argument, making it highly relevant and persuasive for the opposing audience.",
+                "Strong local_sufficiency: The argument presents multiple strong premises concerning health risks, environmental impacts, support for evidence-based policies, historical precedents of regulation fostering innovation, and ethical considerations. These collectively provide robust support for the need for strict government regulation of commercial space tourism. The argument aligns well with the opposition perspective by addressing significant concerns that justify regulatory intervention, thereby effectively reaching the intended audience's priorities and fears regarding safety and sustainability.",
+                "Strong overall_quality: The argument effectively represents the opposition viewpoint by articulating clear and relevant concerns about safety and environmental sustainability, which are critical issues in the debate over commercial space tourism. It employs strong logic, providing substantial evidence regarding health risks and ecological impacts, while addressing counterarguments regarding innovation and equity. The structure is coherent and well-organized, making it compelling for the intended audience. The argument prioritizes health, safety, and ethical considerations, aligning perfectly with the opposition's goals of advocating for regulation. Overall, it demonstrates a strong command of the subject and effectively persuades the audience."
+              ],
+              "negative": [],
+              "improvements": [],
+              "strategic": []
+            },
+            "metadata": {
+              "original_evaluation": "argument_text='From a healthcare and environmental perspective, commercial space tourism raises questions about evidence-based policy and sustainability that must be addressed through strict government regulation. The health risks associated with space travel, such as cosmic radiation exposure and potential medical emergencies, underscore the necessity for robust, evidence-based policies designed to safeguard passenger safety. Evidence-based policy not only prioritizes minimizing health risks but also requires rigorous scientific evaluation of safety protocols. Additionally, the ecological consequences of rocket launches present significant sustainability concerns; without government regulations advocating for environmentally responsible practices, the burgeoning commercial space tourism industry risks exacerbating climate change and harming ecosystems. Although some argue that regulatory frameworks stifle innovation, historical precedents demonstrate that stringent safety regulations often act as catalysts for technological advancement, providing necessary guidelines that enhance public trust and safety. Furthermore, ethical considerations necessitate equitable access to safety measures, reinforcing the need for government intervention to ensure fair treatment across diverse socio-economic backgrounds. Collectively, these healthcare and environmental considerations show that the advancement of evidence-based policy and sustainability is fundamentally linked to the regulation of commercial space tourism.' dimensions=[QualityScore(dimension='cogency', score=3, justification='The argument presents a well-structured and logical case for the need for strict government regulation of commercial space tourism, addressing health and environmental concerns effectively. It incorporates specific risks associated with space travel, aligns with evidence-based policy advocacy, and counteracts potential objections regarding innovation with relevant historical examples. The premises are acceptable and closely related to the conclusion, making it highly persuasive for the intended opposition audience concerned with safety and sustainability.', confidence=0.9), QualityScore(dimension='local_acceptability', score=3, justification=\"The argument effectively articulates the necessity for strict government regulation of commercial space tourism from healthcare and environmental perspectives. It provides a well-rounded discussion on health risks associated with space travel, the ecological impact of rocket launches, and the need for evidence-based policies. These points are bolstered by references to ethical considerations and historical precedents that show how regulation can lead to enhanced innovation and public safety. This aligns well with the team's opposition perspective, presenting strong arguments aimed at persuading an audience that may be skeptical of regulation. Overall, the argument is rooted in credible, verifiable concerns, which reflects a high level of acceptability.\", confidence=0.9), QualityScore(dimension='local_relevance', score=3, justification=\"The argument effectively highlights significant healthcare and environmental concerns linked to commercial space tourism, such as health risks and ecological impacts. It directly supports the need for strict government regulation by emphasizing the importance of evidence-based policy and safety measures, which align with the opposition's goal of advocating for increased regulation. The rebuttal regarding innovation and ethics further strengthens the argument, making it highly relevant and persuasive for the opposing audience.\", confidence=0.9), QualityScore(dimension='local_sufficiency', score=3, justification=\"The argument presents multiple strong premises concerning health risks, environmental impacts, support for evidence-based policies, historical precedents of regulation fostering innovation, and ethical considerations. These collectively provide robust support for the need for strict government regulation of commercial space tourism. The argument aligns well with the opposition perspective by addressing significant concerns that justify regulatory intervention, thereby effectively reaching the intended audience's priorities and fears regarding safety and sustainability.\", confidence=0.9), QualityScore(dimension='overall_quality', score=3, justification=\"The argument effectively represents the opposition viewpoint by articulating clear and relevant concerns about safety and environmental sustainability, which are critical issues in the debate over commercial space tourism. It employs strong logic, providing substantial evidence regarding health risks and ecological impacts, while addressing counterarguments regarding innovation and equity. The structure is coherent and well-organized, making it compelling for the intended audience. The argument prioritizes health, safety, and ethical considerations, aligning perfectly with the opposition's goals of advocating for regulation. Overall, it demonstrates a strong command of the subject and effectively persuades the audience.\", confidence=1.0)] overall_quality=2.9999999999999996",
+              "aggregated_quality": 2.9999999999999996
+            },
+            "timestamp": "2026-01-24T16:03:29.097697"
+          },
+          {
+            "evaluator_name": "Chain_of_Thought_Evaluator",
+            "overall_score": 67.5,
+            "dimensions": [
+              {
+                "dimension": "evidence_quality",
+                "score": 55.0,
+                "justification": "Extracted from chain-of-thought evidence_quality analysis"
+              },
+              {
+                "dimension": "logical_coherence",
+                "score": 70.0,
+                "justification": "Extracted from chain-of-thought logical_coherence analysis"
+              },
+              {
+                "dimension": "persuasiveness",
+                "score": 75.0,
+                "justification": "Extracted from chain-of-thought persuasiveness analysis"
+              },
+              {
+                "dimension": "strategic_value",
+                "score": 70.0,
+                "justification": "Extracted from chain-of-thought strategic_value analysis"
+              }
+            ],
+            "feedback": {
+              "positive": [
+                "**Comprehensive Approach:**",
+                "The argument covers multiple dimensions (health, environmental, technological, ethical) effectively, enhancing its relevance and depth.",
+                "*Value:* This multifaceted perspective helps to build a stronger case for regulation, illustrating the interconnectedness of the issues at play."
+              ],
+              "negative": [
+                "**Lack of Specific Evidence:**",
+                "The argument relies heavily on generalizations without referencing concrete studies or data to support claims about health and environmental risks.",
+                "*Problematic Aspect:* This undermines the credibility of the argument and makes it vulnerable to dismissal by critics who seek empirical support."
+              ],
+              "improvements": [],
+              "strategic": []
+            },
+            "metadata": {
+              "evaluation_type": "chain_of_thought",
+              "steps_completed": 7,
+              "final_result": "fair"
+            },
+            "timestamp": "2026-01-24T16:05:55.791489"
+          }
+        ],
+        "strengths": [
+          "Strong local_acceptability: The argument effectively articulates the necessity for strict government regulation of commercial space tourism from healthcare and environmental perspectives. It provides a well-rounded discussion on health risks associated with space travel, the ecological impact of rocket launches, and the need for evidence-based policies. These points are bolstered by references to ethical considerations and historical precedents that show how regulation can lead to enhanced innovation and public safety. This aligns well with the team's opposition perspective, presenting strong arguments aimed at persuading an audience that may be skeptical of regulation. Overall, the argument is rooted in credible, verifiable concerns, which reflects a high level of acceptability.",
+          "Strong overall_quality: The argument effectively represents the opposition viewpoint by articulating clear and relevant concerns about safety and environmental sustainability, which are critical issues in the debate over commercial space tourism. It employs strong logic, providing substantial evidence regarding health risks and ecological impacts, while addressing counterarguments regarding innovation and equity. The structure is coherent and well-organized, making it compelling for the intended audience. The argument prioritizes health, safety, and ethical considerations, aligning perfectly with the opposition's goals of advocating for regulation. Overall, it demonstrates a strong command of the subject and effectively persuades the audience.",
+          "Strong local_sufficiency: The argument presents multiple strong premises concerning health risks, environmental impacts, support for evidence-based policies, historical precedents of regulation fostering innovation, and ethical considerations. These collectively provide robust support for the need for strict government regulation of commercial space tourism. The argument aligns well with the opposition perspective by addressing significant concerns that justify regulatory intervention, thereby effectively reaching the intended audience's priorities and fears regarding safety and sustainability.",
+          "Strong cogency: The argument presents a well-structured and logical case for the need for strict government regulation of commercial space tourism, addressing health and environmental concerns effectively. It incorporates specific risks associated with space travel, aligns with evidence-based policy advocacy, and counteracts potential objections regarding innovation with relevant historical examples. The premises are acceptable and closely related to the conclusion, making it highly persuasive for the intended opposition audience concerned with safety and sustainability.",
+          "Strong local_relevance: The argument effectively highlights significant healthcare and environmental concerns linked to commercial space tourism, such as health risks and ecological impacts. It directly supports the need for strict government regulation by emphasizing the importance of evidence-based policy and safety measures, which align with the opposition's goal of advocating for increased regulation. The rebuttal regarding innovation and ethics further strengthens the argument, making it highly relevant and persuasive for the opposing audience."
+        ],
+        "weaknesses": [
+          "*Problematic Aspect:* This undermines the credibility of the argument and makes it vulnerable to dismissal by critics who seek empirical support.",
+          "The argument relies heavily on generalizations without referencing concrete studies or data to support claims about health and environmental risks.",
+          "**Lack of Specific Evidence:**"
+        ],
+        "improvement_suggestions": [],
+        "timestamp": "2026-01-24T16:05:55.791750"
+      }
+    },
+    {
+      "round": 2,
+      "team": "anti_microservices_vs_monoliths",
+      "member_name": "Elena Rossi",
+      "argument_name": "a_integration_challenges",
+      "domains": [
+        "d_software_deployment",
+        "d_dev_productivity"
+      ],
+      "goals": {
+        "g_developer_productivity": [
+          "d_dev_productivity"
+        ],
+        "g_feature_scalability": [
+          "d_software_deployment"
+        ]
+      },
+      "attacks": [],
+      "text": "Continuing the discussion, it's vital to address the inter-service communication challenges that come with microservices. Each microservice must be robust enough to handle independent failure scenarios while maintaining a reliable interaction with others. My practice has shown that this division can lead to increased latencies and failure points during deployment, negating the benefits projected by proponents. A monolithic architecture minimizes these complexities, providing a more streamlined pathway for updates and maintenance. When prioritizing both productivity and maintainability, the focus should remain on minimizing integration issues that could detract from the their operational efficiency found in simpler architectures.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1368,
+          "output_tokens": 140,
+          "total_tokens": 1508,
+          "elapsed_time_seconds": 3.9567177295684814,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "analyser node": {
+              "phase_name": "analyser node",
+              "input_tokens": 1368,
+              "output_tokens": 140,
+              "total_tokens": 1508,
+              "timestamp": 1769267159.7848196
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 4518,
+          "output_tokens": 1002,
+          "total_tokens": 5520,
+          "elapsed_time_seconds": 23.56129217147827,
+          "llm_call_count": 2,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 2464,
+              "output_tokens": 348,
+              "total_tokens": 2812,
+              "timestamp": 1769267169.0415692
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 2054,
+              "output_tokens": 654,
+              "total_tokens": 2708,
+              "timestamp": 1769267183.345415
+            }
+          }
+        }
+      },
+      "evaluation_log": {
+        "overall_score": 89.99999999999999,
+        "final_result": "excellent",
+        "evaluator_records": [
+          {
+            "evaluator_name": "Wachsmuth_Quality_Evaluator",
+            "overall_score": 99.99999999999999,
+            "dimensions": [
+              {
+                "dimension": "cogency",
+                "score": 100.0,
+                "justification": "The argument effectively represents the opposition viewpoint by emphasizing the importance of government regulation in ensuring the safety and environmental sustainability of commercial space tourism. The premises presented are well-supported by relevant healthcare and environmental concerns, and they build a logical case for the need for strict regulation. The argument addresses specific risks such as health threats from cosmic radiation and environmental impacts like greenhouse gas emissions, demonstrating both relevance and sufficiency. Furthermore, it strategically counters the notion that regulation hampers innovation while advocating for equitable safety standards, aligning well with audience concerns. Overall, the argument is cogent with a strong structure and direct relevance to the opposition's priorities."
+              },
+              {
+                "dimension": "local_acceptability",
+                "score": 100.0,
+                "justification": "The argument thoroughly articulates the healthcare and environmental risks associated with commercial space tourism, which aligns well with the opposition's call for strict regulation. It provides credible concerns about cosmic radiation and greenhouse gas emissions, supported by logical reasoning that highlights the necessity for evidence-based policies and sustainable practices. The mention of historical data strengthening public trust in safety protocols further lends credibility to the call for regulation, demonstrating an understanding of the audience's concerns and effectively addressing them. Overall, it presents a compelling case tailored for the intended opposition audience, establishing a strong rationale for advocating government regulation."
+              },
+              {
+                "dimension": "local_relevance",
+                "score": 100.0,
+                "justification": "The argument clearly articulates the need for stringent government regulation of commercial space tourism by highlighting health risks and environmental sustainability. These points directly support the conclusion that regulation is necessary to protect public welfare and ensure ethical practices in the industry. Additionally, it aligns with the opposition's viewpoint by effectively arguing against the idea that regulation stifles innovation, thus addressing potential counterarguments. The reasoning is logically structured and persuasive for the intended audience concerned about safety and environmental impacts."
+              },
+              {
+                "dimension": "local_sufficiency",
+                "score": 100.0,
+                "justification": "The argument effectively represents the opposition's viewpoint by providing multiple strong premises regarding health risks and environmental impacts that collectively justify the need for stringent regulations. It addresses specific concerns relevant to commercial space tourism while highlighting the importance of evidence-based policies, thus aligning well with the opposition's goals. Additionally, the argument is structured to resonate in an audience-focused manner, presenting data and historical references that advocate for the necessity of regulations without implying that such regulations would hinder innovation."
+              },
+              {
+                "dimension": "overall_quality",
+                "score": 100.0,
+                "justification": "The argument presents a strong case for the need for strict government regulation of commercial space tourism, effectively representing the opposition viewpoint. It incorporates well-researched points regarding healthcare risks and environmental impacts, providing compelling evidence to support the necessity of regulation. The argument is structured logically, addressing potential counterarguments while emphasizing the benefits of regulation in fostering safety and sustainability. This approach is appropriate for the intended audience, aligning with concerns about public welfare and environmental integrity, thereby enhancing its persuasive power."
+              }
+            ],
+            "feedback": {
+              "positive": [
+                "Strong cogency: The argument effectively represents the opposition viewpoint by emphasizing the importance of government regulation in ensuring the safety and environmental sustainability of commercial space tourism. The premises presented are well-supported by relevant healthcare and environmental concerns, and they build a logical case for the need for strict regulation. The argument addresses specific risks such as health threats from cosmic radiation and environmental impacts like greenhouse gas emissions, demonstrating both relevance and sufficiency. Furthermore, it strategically counters the notion that regulation hampers innovation while advocating for equitable safety standards, aligning well with audience concerns. Overall, the argument is cogent with a strong structure and direct relevance to the opposition's priorities.",
+                "Strong local_acceptability: The argument thoroughly articulates the healthcare and environmental risks associated with commercial space tourism, which aligns well with the opposition's call for strict regulation. It provides credible concerns about cosmic radiation and greenhouse gas emissions, supported by logical reasoning that highlights the necessity for evidence-based policies and sustainable practices. The mention of historical data strengthening public trust in safety protocols further lends credibility to the call for regulation, demonstrating an understanding of the audience's concerns and effectively addressing them. Overall, it presents a compelling case tailored for the intended opposition audience, establishing a strong rationale for advocating government regulation.",
+                "Strong local_relevance: The argument clearly articulates the need for stringent government regulation of commercial space tourism by highlighting health risks and environmental sustainability. These points directly support the conclusion that regulation is necessary to protect public welfare and ensure ethical practices in the industry. Additionally, it aligns with the opposition's viewpoint by effectively arguing against the idea that regulation stifles innovation, thus addressing potential counterarguments. The reasoning is logically structured and persuasive for the intended audience concerned about safety and environmental impacts.",
+                "Strong local_sufficiency: The argument effectively represents the opposition's viewpoint by providing multiple strong premises regarding health risks and environmental impacts that collectively justify the need for stringent regulations. It addresses specific concerns relevant to commercial space tourism while highlighting the importance of evidence-based policies, thus aligning well with the opposition's goals. Additionally, the argument is structured to resonate in an audience-focused manner, presenting data and historical references that advocate for the necessity of regulations without implying that such regulations would hinder innovation.",
+                "Strong overall_quality: The argument presents a strong case for the need for strict government regulation of commercial space tourism, effectively representing the opposition viewpoint. It incorporates well-researched points regarding healthcare risks and environmental impacts, providing compelling evidence to support the necessity of regulation. The argument is structured logically, addressing potential counterarguments while emphasizing the benefits of regulation in fostering safety and sustainability. This approach is appropriate for the intended audience, aligning with concerns about public welfare and environmental integrity, thereby enhancing its persuasive power."
+              ],
+              "negative": [],
+              "improvements": [],
+              "strategic": []
+            },
+            "metadata": {
+              "original_evaluation": "argument_text='From a healthcare and environmental perspective, commercial space tourism raises questions about evidence-based policy and sustainability that require stringent government regulation to protect public welfare. The health risks associated with space tourism, such as exposure to cosmic radiation, necessitate rigorous evidence-based policies designed to safeguard passenger safety. These health risks must be evaluated based on robust scientific evidence to minimize potential medical emergencies during flights. Moreover, the environmental impacts stemming from rocket launches present significant sustainability concerns, including increased greenhouse gas emissions which adversely affect atmospheric integrity and climate stability. Consequently, regulations must advocate for environmentally responsible practices within the industry, ensuring that future advancements do not come at the cost of our planet. Historical data indicates that established safety protocols enhance public trust and confidence in new technologies, reinforcing the argument against the notion that regulation stifles innovation. Instead, a well-crafted regulatory framework can guide development while maintaining ethical standards and equitable access to safety resources across socio-economic demographics. Collectively, these healthcare and environmental considerations show that evidence-based policy and sustainability are profoundly affected by government regulation, highlighting the critical need for standards that ensure the safety and sustainability of commercial space tourism.' dimensions=[QualityScore(dimension='cogency', score=3, justification=\"The argument effectively represents the opposition viewpoint by emphasizing the importance of government regulation in ensuring the safety and environmental sustainability of commercial space tourism. The premises presented are well-supported by relevant healthcare and environmental concerns, and they build a logical case for the need for strict regulation. The argument addresses specific risks such as health threats from cosmic radiation and environmental impacts like greenhouse gas emissions, demonstrating both relevance and sufficiency. Furthermore, it strategically counters the notion that regulation hampers innovation while advocating for equitable safety standards, aligning well with audience concerns. Overall, the argument is cogent with a strong structure and direct relevance to the opposition's priorities.\", confidence=0.9), QualityScore(dimension='local_acceptability', score=3, justification=\"The argument thoroughly articulates the healthcare and environmental risks associated with commercial space tourism, which aligns well with the opposition's call for strict regulation. It provides credible concerns about cosmic radiation and greenhouse gas emissions, supported by logical reasoning that highlights the necessity for evidence-based policies and sustainable practices. The mention of historical data strengthening public trust in safety protocols further lends credibility to the call for regulation, demonstrating an understanding of the audience's concerns and effectively addressing them. Overall, it presents a compelling case tailored for the intended opposition audience, establishing a strong rationale for advocating government regulation.\", confidence=1.0), QualityScore(dimension='local_relevance', score=3, justification=\"The argument clearly articulates the need for stringent government regulation of commercial space tourism by highlighting health risks and environmental sustainability. These points directly support the conclusion that regulation is necessary to protect public welfare and ensure ethical practices in the industry. Additionally, it aligns with the opposition's viewpoint by effectively arguing against the idea that regulation stifles innovation, thus addressing potential counterarguments. The reasoning is logically structured and persuasive for the intended audience concerned about safety and environmental impacts.\", confidence=0.9), QualityScore(dimension='local_sufficiency', score=3, justification=\"The argument effectively represents the opposition's viewpoint by providing multiple strong premises regarding health risks and environmental impacts that collectively justify the need for stringent regulations. It addresses specific concerns relevant to commercial space tourism while highlighting the importance of evidence-based policies, thus aligning well with the opposition's goals. Additionally, the argument is structured to resonate in an audience-focused manner, presenting data and historical references that advocate for the necessity of regulations without implying that such regulations would hinder innovation.\", confidence=0.9), QualityScore(dimension='overall_quality', score=3, justification='The argument presents a strong case for the need for strict government regulation of commercial space tourism, effectively representing the opposition viewpoint. It incorporates well-researched points regarding healthcare risks and environmental impacts, providing compelling evidence to support the necessity of regulation. The argument is structured logically, addressing potential counterarguments while emphasizing the benefits of regulation in fostering safety and sustainability. This approach is appropriate for the intended audience, aligning with concerns about public welfare and environmental integrity, thereby enhancing its persuasive power.', confidence=1.0)] overall_quality=2.9999999999999996",
+              "aggregated_quality": 2.9999999999999996
+            },
+            "timestamp": "2026-01-24T16:06:32.771093"
+          },
+          {
+            "evaluator_name": "Chain_of_Thought_Evaluator",
+            "overall_score": 75.0,
+            "dimensions": [
+              {
+                "dimension": "evidence_quality",
+                "score": 65.0,
+                "justification": "Extracted from chain-of-thought evidence_quality analysis"
+              },
+              {
+                "dimension": "logical_coherence",
+                "score": 75.0,
+                "justification": "Extracted from chain-of-thought logical_coherence analysis"
+              },
+              {
+                "dimension": "persuasiveness",
+                "score": 78.0,
+                "justification": "Extracted from chain-of-thought persuasiveness analysis"
+              },
+              {
+                "dimension": "strategic_value",
+                "score": 82.0,
+                "justification": "Extracted from chain-of-thought strategic_value analysis"
+              }
+            ],
+            "feedback": {
+              "positive": [
+                "**Multi-faceted Approach:** The argument addresses both health and environmental issues, appealing to a broad range of concerns. This is valuable as it reflects the complex nature of regulatory needs in emerging industries.",
+                "**Historical Context:** Referencing historical examples of successful safety regulations adds a layer of credibility by showing that regulation can foster public trust. This is essential for gaining acceptance of new technologies like space tourism.",
+                "**Evidence-Based Policy Emphasis:** Highlighting the necessity for evidence-based policy fosters a rigorous decision-making approach, which is appealing to stakeholders concerned about public welfare and safety."
+              ],
+              "negative": [
+                "**Lack of Specific Evidence:** The absence of specific studies or quantitative data weakens the claims made regarding health risks and environmental impacts, making the argument less compelling. This is problematic as it undermines the call for regulation.",
+                "**Insufficient Engagement with Counterarguments:** Not addressing potential opposing views reduces the argument's persuasiveness and leaves it vulnerable to critiques from advocates of less regulatory oversight.",
+                "**Weak Historical References:** While historical context is mentioned, the lack of specific examples or case studies renders this premise abstract, making it difficult to draw concrete conclusions from it."
+              ],
+              "improvements": [],
+              "strategic": []
+            },
+            "metadata": {
+              "evaluation_type": "chain_of_thought",
+              "steps_completed": 7,
+              "final_result": "good"
+            },
+            "timestamp": "2026-01-24T16:08:31.686813"
+          }
+        ],
+        "strengths": [
+          "Strong cogency: The argument effectively represents the opposition viewpoint by emphasizing the importance of government regulation in ensuring the safety and environmental sustainability of commercial space tourism. The premises presented are well-supported by relevant healthcare and environmental concerns, and they build a logical case for the need for strict regulation. The argument addresses specific risks such as health threats from cosmic radiation and environmental impacts like greenhouse gas emissions, demonstrating both relevance and sufficiency. Furthermore, it strategically counters the notion that regulation hampers innovation while advocating for equitable safety standards, aligning well with audience concerns. Overall, the argument is cogent with a strong structure and direct relevance to the opposition's priorities.",
+          "Strong local_acceptability: The argument thoroughly articulates the healthcare and environmental risks associated with commercial space tourism, which aligns well with the opposition's call for strict regulation. It provides credible concerns about cosmic radiation and greenhouse gas emissions, supported by logical reasoning that highlights the necessity for evidence-based policies and sustainable practices. The mention of historical data strengthening public trust in safety protocols further lends credibility to the call for regulation, demonstrating an understanding of the audience's concerns and effectively addressing them. Overall, it presents a compelling case tailored for the intended opposition audience, establishing a strong rationale for advocating government regulation.",
+          "Strong overall_quality: The argument presents a strong case for the need for strict government regulation of commercial space tourism, effectively representing the opposition viewpoint. It incorporates well-researched points regarding healthcare risks and environmental impacts, providing compelling evidence to support the necessity of regulation. The argument is structured logically, addressing potential counterarguments while emphasizing the benefits of regulation in fostering safety and sustainability. This approach is appropriate for the intended audience, aligning with concerns about public welfare and environmental integrity, thereby enhancing its persuasive power.",
+          "Strong local_sufficiency: The argument effectively represents the opposition's viewpoint by providing multiple strong premises regarding health risks and environmental impacts that collectively justify the need for stringent regulations. It addresses specific concerns relevant to commercial space tourism while highlighting the importance of evidence-based policies, thus aligning well with the opposition's goals. Additionally, the argument is structured to resonate in an audience-focused manner, presenting data and historical references that advocate for the necessity of regulations without implying that such regulations would hinder innovation.",
+          "Strong local_relevance: The argument clearly articulates the need for stringent government regulation of commercial space tourism by highlighting health risks and environmental sustainability. These points directly support the conclusion that regulation is necessary to protect public welfare and ensure ethical practices in the industry. Additionally, it aligns with the opposition's viewpoint by effectively arguing against the idea that regulation stifles innovation, thus addressing potential counterarguments. The reasoning is logically structured and persuasive for the intended audience concerned about safety and environmental impacts."
+        ],
+        "weaknesses": [
+          "**Lack of Specific Evidence:** The absence of specific studies or quantitative data weakens the claims made regarding health risks and environmental impacts, making the argument less compelling. This is problematic as it undermines the call for regulation.",
+          "**Insufficient Engagement with Counterarguments:** Not addressing potential opposing views reduces the argument's persuasiveness and leaves it vulnerable to critiques from advocates of less regulatory oversight.",
+          "**Weak Historical References:** While historical context is mentioned, the lack of specific examples or case studies renders this premise abstract, making it difficult to draw concrete conclusions from it."
+        ],
+        "improvement_suggestions": [],
+        "timestamp": "2026-01-24T16:08:31.686991"
+      }
+    },
+    {
+      "round": 2,
+      "team": "pro_microservices_vs_monoliths",
+      "member_name": "Dr. Priya Nair",
+      "argument_name": "a_evidence_for_migration",
+      "domains": [
+        "d_software_deployment",
+        "d_dev_productivity"
+      ],
+      "goals": {
+        "g_developer_productivity": [
+          "d_dev_productivity"
+        ],
+        "g_feature_scalability": [
+          "d_software_deployment"
+        ]
+      },
+      "attacks": [],
+      "text": "Dr. Nair advocates microservices as a means to achieve continuous deployment, yet we must evaluate the evidence critically. Empirical data shows that transitioning from monolithic to microservices can significantly disrupt an organization’s workflow, often leading to increased overheads, both operationally and in terms of team coordination. While distributed solutions appear scalable, they require meticulous governance to manage service interdependencies, often generating significant friction. For many organizations, especially startups, the costs of transition may outweigh the perceived benefits, suggesting a need for caution in the embrace of microservices as a panacea for deployment challenges.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1346,
+          "output_tokens": 146,
+          "total_tokens": 1492,
+          "elapsed_time_seconds": 3.913752794265747,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "analyser node": {
+              "phase_name": "analyser node",
+              "input_tokens": 1346,
+              "output_tokens": 146,
+              "total_tokens": 1492,
+              "timestamp": 1769267315.652301
+            }
+          }
+        },
+        "knowledge_retrieval": {
+          "node_name": "knowledge_retrieval",
+          "input_tokens": 1632,
+          "output_tokens": 330,
+          "total_tokens": 1962,
+          "elapsed_time_seconds": 12.719637393951416,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "search_query_generation": {
+              "phase_name": "search_query_generation",
+              "input_tokens": 1632,
+              "output_tokens": 330,
+              "total_tokens": 1962,
+              "timestamp": 1769267323.864013
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 3301,
+          "output_tokens": 964,
+          "total_tokens": 4265,
+          "elapsed_time_seconds": 21.569194793701172,
+          "llm_call_count": 2,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1854,
+              "output_tokens": 296,
+              "total_tokens": 2150,
+              "timestamp": 1769267336.2809424
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1447,
+              "output_tokens": 668,
+              "total_tokens": 2115,
+              "timestamp": 1769267349.9418075
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "team": "pro_microservices_vs_monoliths",
+      "member_name": "Marcus Feld",
+      "argument_name": "a_reliability_in_change",
+      "domains": [
+        "d_software_deployment",
+        "d_dev_productivity"
+      ],
+      "goals": {
+        "g_developer_productivity": [
+          "d_dev_productivity"
+        ],
+        "g_feature_scalability": [
+          "d_software_deployment"
+        ]
+      },
+      "attacks": [],
+      "text": "Although microservices offer the allure of increased flexibility, they can also complicate development processes in ways that detract from productivity. A stable monolithic application allows for more controlled environments where developers can make changes and test them seamlessly. In practice, I have observed how microservices often introduce unforeseen complexities that disrupt the CI/CD pipeline, adversely affecting deployment speed. Additionally, when small teams manage various microservices, coordination becomes vital; any lack of communication may result in inconsistent experiences or downtime. By valuing reliability in software development, maintaining a monolithic architecture can oftentimes prove more efficient and productive than the complexity of distributed systems.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1618,
+          "output_tokens": 147,
+          "total_tokens": 1765,
+          "elapsed_time_seconds": 3.3233237266540527,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "analyser node": {
+              "phase_name": "analyser node",
+              "input_tokens": 1618,
+              "output_tokens": 147,
+              "total_tokens": 1765,
+              "timestamp": 1769267355.6432445
+            }
+          }
+        },
+        "knowledge_retrieval": {
+          "node_name": "knowledge_retrieval",
+          "input_tokens": 1769,
+          "output_tokens": 330,
+          "total_tokens": 2099,
+          "elapsed_time_seconds": 11.61227560043335,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "search_query_generation": {
+              "phase_name": "search_query_generation",
+              "input_tokens": 1769,
+              "output_tokens": 330,
+              "total_tokens": 2099,
+              "timestamp": 1769267363.5224607
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 3834,
+          "output_tokens": 978,
+          "total_tokens": 4812,
+          "elapsed_time_seconds": 21.192043781280518,
+          "llm_call_count": 2,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 2119,
+              "output_tokens": 313,
+              "total_tokens": 2432,
+              "timestamp": 1769267373.448192
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1715,
+              "output_tokens": 665,
+              "total_tokens": 2380,
+              "timestamp": 1769267388.4495556
+            }
+          }
+        }
+      }
+    }
+  ],
+  "tgs_snapshots": [
+    {
+      "round": 1,
+      "team": "anti_microservices_vs_monoliths",
+      "member": "Dr. James Whitaker",
+      "tgs": {
+        "g_developer_productivity-d_software_deployment": 0,
+        "g_developer_productivity-d_dev_productivity": 5760,
+        "g_developer_productivity-d_microservices": 0,
+        "g_feature_scalability-d_software_deployment": 5355,
+        "g_feature_scalability-d_dev_productivity": 0,
+        "g_feature_scalability-d_microservices": 0,
+        "g_technology_scalability-d_software_deployment": 0,
+        "g_technology_scalability-d_dev_productivity": 0,
+        "g_technology_scalability-d_microservices": 0
+      }
+    },
+    {
+      "round": 1,
+      "team": "anti_microservices_vs_monoliths",
+      "member": "Elena Rossi",
+      "tgs": {
+        "g_developer_productivity-d_software_deployment": 0,
+        "g_developer_productivity-d_dev_productivity": 11520,
+        "g_developer_productivity-d_microservices": 0,
+        "g_feature_scalability-d_software_deployment": 10710,
+        "g_feature_scalability-d_dev_productivity": 0,
+        "g_feature_scalability-d_microservices": 0,
+        "g_technology_scalability-d_software_deployment": 0,
+        "g_technology_scalability-d_dev_productivity": 0,
+        "g_technology_scalability-d_microservices": 0
+      }
+    },
+    {
+      "round": 1,
+      "team": "pro_microservices_vs_monoliths",
+      "member": "Dr. Priya Nair",
+      "tgs": {
+        "g_developer_productivity-d_software_deployment": 0,
+        "g_developer_productivity-d_dev_productivity": 5760,
+        "g_developer_productivity-d_microservices": 0,
+        "g_feature_scalability-d_software_deployment": 5355,
+        "g_feature_scalability-d_dev_productivity": 0,
+        "g_feature_scalability-d_microservices": 0,
+        "g_technology_scalability-d_software_deployment": 0,
+        "g_technology_scalability-d_dev_productivity": 0,
+        "g_technology_scalability-d_microservices": 0
+      }
+    },
+    {
+      "round": 1,
+      "team": "pro_microservices_vs_monoliths",
+      "member": "Marcus Feld",
+      "tgs": {
+        "g_developer_productivity-d_software_deployment": 0,
+        "g_developer_productivity-d_dev_productivity": 11520,
+        "g_developer_productivity-d_microservices": 0,
+        "g_feature_scalability-d_software_deployment": 5355,
+        "g_feature_scalability-d_dev_productivity": 3960,
+        "g_feature_scalability-d_microservices": 4400,
+        "g_technology_scalability-d_software_deployment": 0,
+        "g_technology_scalability-d_dev_productivity": 0,
+        "g_technology_scalability-d_microservices": 0
+      }
+    },
+    {
+      "round": 2,
+      "team": "anti_microservices_vs_monoliths",
+      "member": "Dr. James Whitaker",
+      "tgs": {
+        "g_developer_productivity-d_software_deployment": 0,
+        "g_developer_productivity-d_dev_productivity": 17280,
+        "g_developer_productivity-d_microservices": 0,
+        "g_feature_scalability-d_software_deployment": 16065,
+        "g_feature_scalability-d_dev_productivity": 0,
+        "g_feature_scalability-d_microservices": 0,
+        "g_technology_scalability-d_software_deployment": 0,
+        "g_technology_scalability-d_dev_productivity": 0,
+        "g_technology_scalability-d_microservices": 0
+      }
+    },
+    {
+      "round": 2,
+      "team": "anti_microservices_vs_monoliths",
+      "member": "Elena Rossi",
+      "tgs": {
+        "g_developer_productivity-d_software_deployment": 0,
+        "g_developer_productivity-d_dev_productivity": 23040,
+        "g_developer_productivity-d_microservices": 0,
+        "g_feature_scalability-d_software_deployment": 21420,
+        "g_feature_scalability-d_dev_productivity": 0,
+        "g_feature_scalability-d_microservices": 0,
+        "g_technology_scalability-d_software_deployment": 0,
+        "g_technology_scalability-d_dev_productivity": 0,
+        "g_technology_scalability-d_microservices": 0
+      }
+    },
+    {
+      "round": 2,
+      "team": "pro_microservices_vs_monoliths",
+      "member": "Dr. Priya Nair",
+      "tgs": {
+        "g_developer_productivity-d_software_deployment": 0,
+        "g_developer_productivity-d_dev_productivity": 17280,
+        "g_developer_productivity-d_microservices": 0,
+        "g_feature_scalability-d_software_deployment": 10710,
+        "g_feature_scalability-d_dev_productivity": 3960,
+        "g_feature_scalability-d_microservices": 4400,
+        "g_technology_scalability-d_software_deployment": 0,
+        "g_technology_scalability-d_dev_productivity": 0,
+        "g_technology_scalability-d_microservices": 0
+      }
+    },
+    {
+      "round": 2,
+      "team": "pro_microservices_vs_monoliths",
+      "member": "Marcus Feld",
+      "tgs": {
+        "g_developer_productivity-d_software_deployment": 0,
+        "g_developer_productivity-d_dev_productivity": 23040,
+        "g_developer_productivity-d_microservices": 0,
+        "g_feature_scalability-d_software_deployment": 16065,
+        "g_feature_scalability-d_dev_productivity": 3960,
+        "g_feature_scalability-d_microservices": 4400,
+        "g_technology_scalability-d_software_deployment": 0,
+        "g_technology_scalability-d_dev_productivity": 0,
+        "g_technology_scalability-d_microservices": 0
+      }
+    }
+  ],
+  "final_tgs": {
+    "pro_microservices_vs_monoliths": {
+      "g_developer_productivity-d_software_deployment": 0,
+      "g_developer_productivity-d_dev_productivity": 23040,
+      "g_developer_productivity-d_microservices": 0,
+      "g_feature_scalability-d_software_deployment": 16065,
+      "g_feature_scalability-d_dev_productivity": 3960,
+      "g_feature_scalability-d_microservices": 4400,
+      "g_technology_scalability-d_software_deployment": 0,
+      "g_technology_scalability-d_dev_productivity": 0,
+      "g_technology_scalability-d_microservices": 0
+    },
+    "anti_microservices_vs_monoliths": {
+      "g_technology_scalability-d_microservices": 0,
+      "g_technology_scalability-d_dev_productivity": 0,
+      "g_technology_scalability-d_software_deployment": 0,
+      "g_feature_scalability-d_microservices": 0,
+      "g_feature_scalability-d_dev_productivity": 0,
+      "g_feature_scalability-d_software_deployment": 21420,
+      "g_developer_productivity-d_microservices": 0,
+      "g_developer_productivity-d_dev_productivity": 23040,
+      "g_developer_productivity-d_software_deployment": 0
+    }
+  },
+  "execution_metrics": {
+    "total_nodes": 20,
+    "total_time_seconds": 261.85333132743835,
+    "total_tokens": 52345,
+    "total_input_tokens": 41989,
+    "total_output_tokens": 10356,
+    "teams": [
+      {
+        "team_name": "pro_microservices_vs_monoliths",
+        "total_nodes": 12,
+        "total_time_seconds": 161.42766284942627,
+        "total_tokens": 28300,
+        "total_input_tokens": 22345,
+        "total_output_tokens": 5955,
+        "average_time_per_node": 13.452305237452189,
+        "average_tokens_per_node": 2358.3333333333335,
+        "members": [
+          "Dr. Elena Vasquez",
+          "Captain Steve Richards"
+        ],
+        "nodes": [
+          "analyser",
+          "argument_creator",
+          "knowledge_retrieval"
+        ]
+      },
+      {
+        "team_name": "anti_microservices_vs_monoliths",
+        "total_nodes": 8,
+        "total_time_seconds": 100.42566847801208,
+        "total_tokens": 24045,
+        "total_input_tokens": 19644,
+        "total_output_tokens": 4401,
+        "average_time_per_node": 12.55320855975151,
+        "average_tokens_per_node": 3005.625,
+        "members": [
+          "Prof. Robert Harrison",
+          "Dr. Linda Hayes"
+        ],
+        "nodes": [
+          "analyser",
+          "argument_creator"
+        ]
+      }
+    ],
+    "members": [
+      {
+        "member_name": "Elena Rossi",
+        "team_name": "anti_microservices_vs_monoliths",
+        "total_nodes": 4,
+        "total_time_seconds": 48.7932448387146,
+        "total_tokens": 12742,
+        "total_input_tokens": 10535,
+        "total_output_tokens": 2207,
+        "nodes": [
+          "analyser",
+          "argument_creator"
+        ],
+        "rounds": [
+          1,
+          2
+        ]
+      },
+      {
+        "member_name": "Marcus Feld",
+        "team_name": "pro_microservices_vs_monoliths",
+        "total_nodes": 6,
+        "total_time_seconds": 76.66805386543274,
+        "total_tokens": 15257,
+        "total_input_tokens": 12277,
+        "total_output_tokens": 2980,
+        "nodes": [
+          "analyser",
+          "argument_creator",
+          "knowledge_retrieval"
+        ],
+        "rounds": [
+          1,
+          2
+        ]
+      },
+      {
+        "member_name": "Dr. Priya Nair",
+        "team_name": "pro_microservices_vs_monoliths",
+        "total_nodes": 6,
+        "total_time_seconds": 84.75960898399353,
+        "total_tokens": 13043,
+        "total_input_tokens": 10068,
+        "total_output_tokens": 2975,
+        "nodes": [
+          "analyser",
+          "argument_creator",
+          "knowledge_retrieval"
+        ],
+        "rounds": [
+          1,
+          2
+        ]
+      },
+      {
+        "member_name": "Dr. James Whitaker",
+        "team_name": "anti_microservices_vs_monoliths",
+        "total_nodes": 4,
+        "total_time_seconds": 51.632423639297485,
+        "total_tokens": 11303,
+        "total_input_tokens": 9109,
+        "total_output_tokens": 2194,
+        "nodes": [
+          "analyser",
+          "argument_creator"
+        ],
+        "rounds": [
+          1,
+          2
+        ]
+      }
+    ],
+    "all_node_metrics": [
+      {
+        "team_name": "anti_microservices_vs_monoliths",
+        "member_name": "Dr. James Whitaker",
+        "round": 1,
+        "node_name": "analyser",
+        "input_tokens": 713,
+        "output_tokens": 121,
+        "total_tokens": 834,
+        "elapsed_time_seconds": 2.687069892883301,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "analyser node": {
+            "phase_name": "analyser node",
+            "input_tokens": 713,
+            "output_tokens": 121,
+            "total_tokens": 834,
+            "timestamp": 1769266255.6789258
+          }
+        }
+      },
+      {
+        "team_name": "anti_microservices_vs_monoliths",
+        "member_name": "Dr. James Whitaker",
+        "round": 1,
+        "node_name": "argument_creator",
+        "input_tokens": 3192,
+        "output_tokens": 1007,
+        "total_tokens": 4199,
+        "elapsed_time_seconds": 24.028448343276978,
+        "llm_call_count": 2,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1797,
+            "output_tokens": 346,
+            "total_tokens": 2143,
+            "timestamp": 1769266404.3014877
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1395,
+            "output_tokens": 661,
+            "total_tokens": 2056,
+            "timestamp": 1769266420.773718
+          }
+        }
+      },
+      {
+        "team_name": "anti_microservices_vs_monoliths",
+        "member_name": "Elena Rossi",
+        "round": 1,
+        "node_name": "analyser",
+        "input_tokens": 949,
+        "output_tokens": 144,
+        "total_tokens": 1093,
+        "elapsed_time_seconds": 3.855443239212036,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "analyser node": {
+            "phase_name": "analyser node",
+            "input_tokens": 949,
+            "output_tokens": 144,
+            "total_tokens": 1093,
+            "timestamp": 1769266545.3420055
+          }
+        }
+      },
+      {
+        "team_name": "anti_microservices_vs_monoliths",
+        "member_name": "Elena Rossi",
+        "round": 1,
+        "node_name": "argument_creator",
+        "input_tokens": 3700,
+        "output_tokens": 921,
+        "total_tokens": 4621,
+        "elapsed_time_seconds": 17.41979169845581,
+        "llm_call_count": 2,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 2055,
+            "output_tokens": 339,
+            "total_tokens": 2394,
+            "timestamp": 1769266713.808098
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1645,
+            "output_tokens": 582,
+            "total_tokens": 2227,
+            "timestamp": 1769266724.611487
+          }
+        }
+      },
+      {
+        "team_name": "pro_microservices_vs_monoliths",
+        "member_name": "Dr. Priya Nair",
+        "round": 1,
+        "node_name": "analyser",
+        "input_tokens": 713,
+        "output_tokens": 144,
+        "total_tokens": 857,
+        "elapsed_time_seconds": 3.4039759635925293,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "analyser node": {
+            "phase_name": "analyser node",
+            "input_tokens": 713,
+            "output_tokens": 144,
+            "total_tokens": 857,
+            "timestamp": 1769266885.9031954
+          }
+        }
+      },
+      {
+        "team_name": "pro_microservices_vs_monoliths",
+        "member_name": "Dr. Priya Nair",
+        "round": 1,
+        "node_name": "knowledge_retrieval",
+        "input_tokens": 786,
+        "output_tokens": 323,
+        "total_tokens": 1109,
+        "elapsed_time_seconds": 17.97061586380005,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "search_query_generation": {
+            "phase_name": "search_query_generation",
+            "input_tokens": 786,
+            "output_tokens": 323,
+            "total_tokens": 1109,
+            "timestamp": 1769266893.6542451
+          }
+        }
+      },
+      {
+        "team_name": "pro_microservices_vs_monoliths",
+        "member_name": "Dr. Priya Nair",
+        "round": 1,
+        "node_name": "argument_creator",
+        "input_tokens": 2290,
+        "output_tokens": 1068,
+        "total_tokens": 3358,
+        "elapsed_time_seconds": 25.182432174682617,
+        "llm_call_count": 2,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1231,
+            "output_tokens": 296,
+            "total_tokens": 1527,
+            "timestamp": 1769266911.2016127
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1059,
+            "output_tokens": 772,
+            "total_tokens": 1831,
+            "timestamp": 1769266929.0576773
+          }
+        }
+      },
+      {
+        "team_name": "pro_microservices_vs_monoliths",
+        "member_name": "Marcus Feld",
+        "round": 1,
+        "node_name": "analyser",
+        "input_tokens": 1077,
+        "output_tokens": 164,
+        "total_tokens": 1241,
+        "elapsed_time_seconds": 5.009146451950073,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "analyser node": {
+            "phase_name": "analyser node",
+            "input_tokens": 1077,
+            "output_tokens": 164,
+            "total_tokens": 1241,
+            "timestamp": 1769266936.8423898
+          }
+        }
+      },
+      {
+        "team_name": "pro_microservices_vs_monoliths",
+        "member_name": "Marcus Feld",
+        "round": 1,
+        "node_name": "knowledge_retrieval",
+        "input_tokens": 1152,
+        "output_tokens": 337,
+        "total_tokens": 1489,
+        "elapsed_time_seconds": 13.000869274139404,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "search_query_generation": {
+            "phase_name": "search_query_generation",
+            "input_tokens": 1152,
+            "output_tokens": 337,
+            "total_tokens": 1489,
+            "timestamp": 1769266945.2320616
+          }
+        }
+      },
+      {
+        "team_name": "pro_microservices_vs_monoliths",
+        "member_name": "Marcus Feld",
+        "round": 1,
+        "node_name": "argument_creator",
+        "input_tokens": 2827,
+        "output_tokens": 1024,
+        "total_tokens": 3851,
+        "elapsed_time_seconds": 22.530395030975342,
+        "llm_call_count": 2,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1590,
+            "output_tokens": 344,
+            "total_tokens": 1934,
+            "timestamp": 1769266957.8368921
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1237,
+            "output_tokens": 680,
+            "total_tokens": 1917,
+            "timestamp": 1769266972.3772538
+          }
+        }
+      },
+      {
+        "team_name": "anti_microservices_vs_monoliths",
+        "member_name": "Dr. James Whitaker",
+        "round": 2,
+        "node_name": "analyser",
+        "input_tokens": 1151,
+        "output_tokens": 166,
+        "total_tokens": 1317,
+        "elapsed_time_seconds": 3.729738473892212,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "analyser node": {
+            "phase_name": "analyser node",
+            "input_tokens": 1151,
+            "output_tokens": 166,
+            "total_tokens": 1317,
+            "timestamp": 1769266978.1922004
+          }
+        }
+      },
+      {
+        "team_name": "anti_microservices_vs_monoliths",
+        "member_name": "Dr. James Whitaker",
+        "round": 2,
+        "node_name": "argument_creator",
+        "input_tokens": 4053,
+        "output_tokens": 900,
+        "total_tokens": 4953,
+        "elapsed_time_seconds": 21.187166929244995,
+        "llm_call_count": 2,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 2228,
+            "output_tokens": 309,
+            "total_tokens": 2537,
+            "timestamp": 1769266985.4081843
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1825,
+            "output_tokens": 591,
+            "total_tokens": 2416,
+            "timestamp": 1769266999.3793314
+          }
+        }
+      },
+      {
+        "team_name": "anti_microservices_vs_monoliths",
+        "member_name": "Elena Rossi",
+        "round": 2,
+        "node_name": "analyser",
+        "input_tokens": 1368,
+        "output_tokens": 140,
+        "total_tokens": 1508,
+        "elapsed_time_seconds": 3.9567177295684814,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "analyser node": {
+            "phase_name": "analyser node",
+            "input_tokens": 1368,
+            "output_tokens": 140,
+            "total_tokens": 1508,
+            "timestamp": 1769267159.7848196
+          }
+        }
+      },
+      {
+        "team_name": "anti_microservices_vs_monoliths",
+        "member_name": "Elena Rossi",
+        "round": 2,
+        "node_name": "argument_creator",
+        "input_tokens": 4518,
+        "output_tokens": 1002,
+        "total_tokens": 5520,
+        "elapsed_time_seconds": 23.56129217147827,
+        "llm_call_count": 2,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 2464,
+            "output_tokens": 348,
+            "total_tokens": 2812,
+            "timestamp": 1769267169.0415692
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 2054,
+            "output_tokens": 654,
+            "total_tokens": 2708,
+            "timestamp": 1769267183.345415
+          }
+        }
+      },
+      {
+        "team_name": "pro_microservices_vs_monoliths",
+        "member_name": "Dr. Priya Nair",
+        "round": 2,
+        "node_name": "analyser",
+        "input_tokens": 1346,
+        "output_tokens": 146,
+        "total_tokens": 1492,
+        "elapsed_time_seconds": 3.913752794265747,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "analyser node": {
+            "phase_name": "analyser node",
+            "input_tokens": 1346,
+            "output_tokens": 146,
+            "total_tokens": 1492,
+            "timestamp": 1769267315.652301
+          }
+        }
+      },
+      {
+        "team_name": "pro_microservices_vs_monoliths",
+        "member_name": "Dr. Priya Nair",
+        "round": 2,
+        "node_name": "knowledge_retrieval",
+        "input_tokens": 1632,
+        "output_tokens": 330,
+        "total_tokens": 1962,
+        "elapsed_time_seconds": 12.719637393951416,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "search_query_generation": {
+            "phase_name": "search_query_generation",
+            "input_tokens": 1632,
+            "output_tokens": 330,
+            "total_tokens": 1962,
+            "timestamp": 1769267323.864013
+          }
+        }
+      },
+      {
+        "team_name": "pro_microservices_vs_monoliths",
+        "member_name": "Dr. Priya Nair",
+        "round": 2,
+        "node_name": "argument_creator",
+        "input_tokens": 3301,
+        "output_tokens": 964,
+        "total_tokens": 4265,
+        "elapsed_time_seconds": 21.569194793701172,
+        "llm_call_count": 2,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1854,
+            "output_tokens": 296,
+            "total_tokens": 2150,
+            "timestamp": 1769267336.2809424
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1447,
+            "output_tokens": 668,
+            "total_tokens": 2115,
+            "timestamp": 1769267349.9418075
+          }
+        }
+      },
+      {
+        "team_name": "pro_microservices_vs_monoliths",
+        "member_name": "Marcus Feld",
+        "round": 2,
+        "node_name": "analyser",
+        "input_tokens": 1618,
+        "output_tokens": 147,
+        "total_tokens": 1765,
+        "elapsed_time_seconds": 3.3233237266540527,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "analyser node": {
+            "phase_name": "analyser node",
+            "input_tokens": 1618,
+            "output_tokens": 147,
+            "total_tokens": 1765,
+            "timestamp": 1769267355.6432445
+          }
+        }
+      },
+      {
+        "team_name": "pro_microservices_vs_monoliths",
+        "member_name": "Marcus Feld",
+        "round": 2,
+        "node_name": "knowledge_retrieval",
+        "input_tokens": 1769,
+        "output_tokens": 330,
+        "total_tokens": 2099,
+        "elapsed_time_seconds": 11.61227560043335,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "search_query_generation": {
+            "phase_name": "search_query_generation",
+            "input_tokens": 1769,
+            "output_tokens": 330,
+            "total_tokens": 2099,
+            "timestamp": 1769267363.5224607
+          }
+        }
+      },
+      {
+        "team_name": "pro_microservices_vs_monoliths",
+        "member_name": "Marcus Feld",
+        "round": 2,
+        "node_name": "argument_creator",
+        "input_tokens": 3834,
+        "output_tokens": 978,
+        "total_tokens": 4812,
+        "elapsed_time_seconds": 21.192043781280518,
+        "llm_call_count": 2,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 2119,
+            "output_tokens": 313,
+            "total_tokens": 2432,
+            "timestamp": 1769267373.448192
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1715,
+            "output_tokens": 665,
+            "total_tokens": 2380,
+            "timestamp": 1769267388.4495556
+          }
+        }
+      }
+    ]
+  }
+}

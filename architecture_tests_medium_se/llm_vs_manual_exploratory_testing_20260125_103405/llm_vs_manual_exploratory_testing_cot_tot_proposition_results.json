@@ -1,0 +1,2183 @@
+{
+  "config_id": "llm_vs_manual_exploratory_testing",
+  "topic": "LLM-based exploratory testing should replace manual exploratory testing in CI/CD pipelines",
+  "max_rounds": 2,
+  "rounds_completed": 2,
+  "teams": [
+    "anti_llm_vs_manual_exploratory_testing",
+    "pro_llm_vs_manual_exploratory_testing"
+  ],
+  "team_architectures": {
+    "anti_llm_vs_manual_exploratory_testing": {
+      "architecture": "cot",
+      "team_type": "proposition",
+      "members": [
+        {
+          "name": "Dr. Karen Mitchell",
+          "knowledge_active": false,
+          "knowledge_use_rag": false,
+          "knowledge_use_web_search": false,
+          "evaluation_active": false,
+          "max_iterations": 3,
+          "use_personalization": true,
+          "use_context_analysis": true
+        },
+        {
+          "name": "Sergei Ivanov",
+          "knowledge_active": false,
+          "knowledge_use_rag": false,
+          "knowledge_use_web_search": false,
+          "evaluation_active": false,
+          "max_iterations": 3,
+          "use_personalization": true,
+          "use_context_analysis": true
+        }
+      ]
+    },
+    "pro_llm_vs_manual_exploratory_testing": {
+      "architecture": "tot",
+      "team_type": "opposition",
+      "tot_config": {
+        "num_analysis_branches": null,
+        "num_argument_variations": null,
+        "pruning_strategy": null,
+        "analysis_pruning_k": null,
+        "argument_pruning_k": null,
+        "search_algorithm": null,
+        "enable_fast_scoring": null,
+        "diversity_weight": null
+      },
+      "members": [
+        {
+          "name": "Dr. Emma Foster",
+          "knowledge_active": false,
+          "knowledge_use_rag": false,
+          "knowledge_use_web_search": false,
+          "evaluation_active": false,
+          "max_iterations": 3,
+          "use_personalization": true,
+          "use_context_analysis": true
+        },
+        {
+          "name": "Raj Patel",
+          "knowledge_active": false,
+          "knowledge_use_rag": false,
+          "knowledge_use_web_search": false,
+          "evaluation_active": false,
+          "max_iterations": 3,
+          "use_personalization": true,
+          "use_context_analysis": true
+        }
+      ]
+    }
+  },
+  "audience_initial_votes": [
+    {
+      "name": "Dr. Elizabeth Warren-Smith",
+      "decision": "disagree",
+      "reasoning": "As a health economist, I believe that replacing manual exploratory testing with LLM-based approaches can overlook nuances that human testers provide, especially in understanding user workflows and outcomes. Evidence shows that human judgment is critical for capturing complex scenarios, particularly in healthcare applications where lives may be at stake. Automated systems may optimize speed but risk sacrificing the thoroughness and contextual understanding needed for effectiveness. Policy should be rooted in evidence, and until we have data showing that LLMs can replace the depth of human insight, I remain skeptical."
+    },
+    {
+      "name": "Jonathan Tech-Garcia",
+      "decision": "agree",
+      "reasoning": "I strongly support the idea that LLM-based exploratory testing should replace manual exploratory testing in CI/CD pipelines. As a software engineer, I've witnessed how rapidly evolving AI technologies can enhance productivity and efficiency. LLMs have shown great promise in automating repetitive tasks while offering insights based on extensive data analysis. By systematically learning from comprehensive datasets, these models can identify patterns that human testers might miss. The future of software development lies in embracing AI-driven solutions that can continuously improve our testing processes and deliver higher quality software faster."
+    },
+    {
+      "name": "Professor Sarah Environment-Jones",
+      "decision": "disagree",
+      "reasoning": "My expertise as a climate scientist leads me to think of the broader implications when adopting any new technology, including LLMs for exploratory testing. Though LLMs can process vast amounts of data, they may not be adaptable to the dynamic context of environmental issues that often require deep, qualitative insights derived from human experience. Environments are nuanced, and human intuition plays an important role in capturing the multifaceted nature of climate dynamics. Therefore, I believe we must retain human mental models in exploratory testing to ensure we cover all potential dimensions of environmental complexity."
+    },
+    {
+      "name": "Marcus Business-Chen",
+      "decision": "disagree",
+      "reasoning": "As a venture capitalist, I prioritize market efficiency and returns on investments. While LLMs offer a certain level of innovation, I am concerned about their reliability and the potential for error. Investments in exploratory testing should minimize risks, and deploying LLMs to replace human testers may introduce unforeseen issues. Companies must focus on proven methods that have deliverable results rather than unproven technologies. Until LLMs can demonstrate consistency and align with market demands, I remain skeptical about fully backing their replacement of manual exploratory testing."
+    },
+    {
+      "name": "Dr. Helen Ethics-Martinez",
+      "decision": "disagree",
+      "reasoning": "As a medical ethicist, I hold traditional values that emphasize the irreplaceable elements of human oversight in any practice, especially one related to healthcare and patient welfare. LLM-based exploratory testing undermines the ethical responsibility to provide compassionate and context-aware judgments in testing scenarios. Human testers can grasp ethical dimensions and clinical implications that LLMs, however advanced, may overlook. Until we can ensure LLM applications maintain such ethical standards, I cannot support their use as a replacement for human testers."
+    },
+    {
+      "name": "David Policy-Anderson",
+      "decision": "disagree",
+      "reasoning": "With my background as a policy analyst, I believe that LLM-based exploratory testing, while innovative, may not be ready to replace the nuanced insights provided by human testers in CI/CD pipelines. Policy decisions must consider public accountability and transparency, areas where human judgment is critical. LLMs risk introducing biases in testing scenarios that need human interpretation, impacting user experience and public trust. I must advocate for a balanced approach that retains human input to ensure comprehensive and accountable processes."
+    },
+    {
+      "name": "Rebecca Science-Taylor",
+      "decision": "disagree",
+      "reasoning": "As a research scientist, I value the importance of thoroughness and iterative development in any testing process. While LLMs can process data rapidly, they may lack the critical thinking and contextual analysis humans provide during exploratory testing. Inadequate understanding of complex scenarios could lead to faulty assumptions in software development. Therefore, I view manual exploratory testing as crucial for maintaining scientific rigor and comprehensive evaluations that LLMs cannot yet achieve."
+    },
+    {
+      "name": "Professor James Law-Wilson",
+      "decision": "disagree",
+      "reasoning": "My expertise in constitutional law leads me to be cautious about fully endorsing LLM-based exploratory testing in CI/CD pipelines. While innovation is vital, I worry about the implications for user rights and the potential for biased interpretations by AI systems. There's always a risk that automated solutions could undermine civil liberties and protections in software development. Until we have clear guidelines established to safeguard these rights, I believe manual exploratory testing is essential to ensure lawful and ethical practices."
+    },
+    {
+      "name": "Dr. Maria Healthcare-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "As a physician, my primary concern is patient welfare, which demands thoroughness and personal insight that LLM-driven exploratory testing may not be able to replicate. In healthcare contexts, outcomes are not just about functionality; they involve human empathy and ethical considerations that automated systems can't fully grasp. I support the notion that exploratory testing must remain human-centric to prioritize patient safety and ensure quality outcomes in software that impacts lives."
+    },
+    {
+      "name": "Steven Innovation-Kim",
+      "decision": "agree",
+      "reasoning": "As a technology entrepreneur, I've seen firsthand how disruptive innovations can revolutionize industries. I believe LLM-based exploratory testing presents an opportunity to enhance efficiency and accuracy in CI/CD pipelines. These systems can perform repetitive tasks at a speed and scale that far exceed human capabilities, allowing teams to focus on more creative and strategic aspects of development. The key is to integrate LLMs wisely, complementing human insights rather than replacing them entirely, to accelerate innovation while maintaining quality."
+    },
+    {
+      "name": "Dr. Patricia Environment-Green",
+      "decision": "disagree",
+      "reasoning": "In the realm of environmental policy, I approach the topic with caution. LLM technology, while promising, poses challenges in understanding the complex web of environmental interactions. An automated system may lack the intrinsic understanding needed to assess nuanced ecological scenarios effectively. I have reservations about adopting LLMs for exploratory testing without empirical evidence demonstrating their reliability in accurately reflecting nuanced environmental solutions. Human judgment is essential in navigating the unpredictable nature of environmental issues."
+    },
+    {
+      "name": "Michael Finance-Thompson",
+      "decision": "disagree",
+      "reasoning": "As an investment banker, I'm inclined to prioritize quantitative efficiency and effective risk management. Although LLMs can automate exploratory testing and potentially enhance workflows, I remain skeptical about the consequences of replacing seasoned human testers. It’s hard to measure the long-term impacts of relying solely on AI for such complex tasks. Ultimately, there's a risk that automation could lead to overlooked details, which would undermine our investments and the quality of our deliverables."
+    },
+    {
+      "name": "Dr. Angela Education-Foster",
+      "decision": "disagree",
+      "reasoning": "As an education researcher, I understand the importance of human interaction in exploratory practices. LLMs, while innovative, may simplify complex social dynamics and fail to grasp meaningful context in educational software testing. The depth of understanding derived from human experience is vital for ensuring equity and accessibility in educational technologies. I assert that human testers are irreplaceable in exploring and evaluating socio-educational dimensions."
+    },
+    {
+      "name": "Robert Security-Cooper",
+      "decision": "disagree",
+      "reasoning": "As a cybersecurity expert, my first priority is security and risk mitigation. While LLMs offer potential efficiencies, they raise concerns about vulnerabilities and biases that require stringent human oversight. Cybersecurity cannot solely rely on algorithms; human intuition and insight are essential for identifying threats. I argue that maintaining expert human testers is vital for ensuring a robust and secure exploratory testing process within CI/CD frameworks."
+    },
+    {
+      "name": "Dr. Christina Medical-Miller",
+      "decision": "disagree",
+      "reasoning": "In my role as a biomedical researcher, I appreciate the value of innovation but also recognize the importance of the ethical dimensions in research processes. LLM-based exploratory testing may overlook critical biomedical implications that require human nuance in judgment and interpretation. While LLMs can assist in analysis, I advocate for the combination of human expertise with technological advancements to ensure we uphold research integrity. I don't support the complete replacement of manual exploratory testing."
+    },
+    {
+      "name": "Daniel Legal-Martinez",
+      "decision": "disagree",
+      "reasoning": "As a corporate lawyer, ensuring regulatory clarity is paramount. LLMs could introduce risks by operating outside established legal frameworks, potentially leading to compliance issues. In the context of exploratory testing, I believe consistency and adherence to existing regulations are essential. Until LLMs are proven to operate within the bounds of legal standards sufficiently, I am cautious about favoring their full replacement of human testers. A hybrid approach may be more prudent."
+    },
+    {
+      "name": "Dr. Kevin Philosophy-Liu",
+      "decision": "agree",
+      "reasoning": "I support LLM-based exploratory testing as a promising avenue for future software development, particularly from an ethical and philosophical standpoint. As an ethics professor, I believe these systems can enhance efficiency and consistency in testing processes. However, we must ensure they're monitored and complemented by human judgment to uphold ethical standards. Human oversight is vital to ensure these technologies are used responsibly while maximizing their potential benefits."
+    },
+    {
+      "name": "Lisa Technology-Hayes",
+      "decision": "disagree",
+      "reasoning": "My position as an AI researcher encourages me to value data-driven efficiencies, and I see potential in LLM-based exploratory testing. These systems can transform how we approach CI/CD pipelines by providing rapid feedback loops and facilitating continuous integration. However, I believe it's critical to balance data-driven insights with human testers' nuanced understanding. The best approach would integrate both to ensure comprehensive and effective exploratory testing."
+    },
+    {
+      "name": "Professor Mark Economics-Stevens",
+      "decision": "disagree",
+      "reasoning": "As a labor economist focused on worker protection, I am wary of automated systems like LLMs potentially displacing skilled testers in exploratory roles. While I acknowledge that LLMs can enhance testing efficiency, we must consider the implications for job security and the importance of preserving human expertise in roles that require complex problem-solving and insight. I do not support outright replacement and advocate for a blended approach that values both human and artificial intelligence."
+    },
+    {
+      "name": "Dr. Sophia Ethics-Petrov",
+      "decision": "disagree",
+      "reasoning": "My work as a bioethicist compels me to scrutinize the implications of employing LLMs for exploratory testing. The human dimension is crucial in navigating complex moral dilemmas inherent in medical software, and relying solely on LLMs could lead to oversights that compromise patient dignity and trust. I argue for maintaining manual exploratory testing as a core component, emphasizing the need for ethical considerations that machines cannot adequately address."
+    },
+    {
+      "name": "Paul Industry-Anderson",
+      "decision": "disagree",
+      "reasoning": "In manufacturing operations, practical implementation is key to a successful outcome. I've not yet seen compelling evidence that LLMs can match the nuanced understanding and hands-on experience provided by human testers. There are varying variables that influence testing processes that require a discerning eye. Until LLM technology can prove its ability to handle such complexities effectively, I maintain that manual exploratory testing is irreplaceable."
+    },
+    {
+      "name": "Dr. Janet Data-Kim",
+      "decision": "disagree",
+      "reasoning": "As a statistician driven by methodological rigor, I approach exploratory testing with an analytical mindset. I remain skeptical about wholly adopting LLMs, as they may lack the capacity for the critical evaluation of diverse testing scenarios. Thus, until LLMs can show a level of sophistication in analysis that rivals human expertise, I believe that retaining manual exploratory testing is vital for ensuring statistical validity and comprehensive evaluation."
+    },
+    {
+      "name": "Captain Steve Military-Richards",
+      "decision": "disagree",
+      "reasoning": "Drawing from my experience as a former military officer, I appreciate the structured and disciplined approach required in exploratory testing. While I understand the appeal of LLMs, I believe they might lack the comprehensive situational awareness and strategic thinking that human testers bring to the table. Effective exploratory testing needs depth and intuition that machines currently cannot replicate, making human oversight indispensable."
+    },
+    {
+      "name": "Dr. Anna Medical-Volkov",
+      "decision": "disagree",
+      "reasoning": "As a reproductive specialist, my focus is on patient choice and welfare. Raw algorithms cannot account for the depth of understanding necessary for sensitive medical scenarios that require compassion. LLMs, despite their capabilities, cannot replace the ethical and emotional aspects that human testers embody. I believe in maintaining manual exploratory testing to prioritize patient welfare and uphold medical ethics."
+    },
+    {
+      "name": "Professor William Science-Chen",
+      "decision": "disagree",
+      "reasoning": "My background as a physical scientist leads me to caution against fully replacing manual exploratory testing with LLMs. The complexities of scientific inquiry often require critical thinking that is not easily codified into algorithms. While LLMs can augment the testing process, they should not obviate the need for comprehensive human analysis to navigate the intricacies of experimental scenarios effectively."
+    },
+    {
+      "name": "Melissa Art-Johnson",
+      "decision": "disagree",
+      "reasoning": "As a museum curator, I believe in the cultural preservation of traditions and narratives. LLMs might lack the nuanced understanding necessary for appreciating the aesthetic and cultural significance of creative works. I advocate for maintaining human oversight in exploratory testing to preserve the richness of expression and detailed understanding that we would lose if solely relying on algorithms."
+    },
+    {
+      "name": "Tony Sports-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "As a former athlete, I value the competitive mindset that comes from personal involvement and teamwork; this mirrors the dynamics of exploratory testing. I believe that human testers offer a competitive edge through insight and creativity that LLMs may lack. The collaborative and intuitive nature of manual testing is irreplaceable when ensuring the highest quality and performance."
+    },
+    {
+      "name": "Grace Music-Wilson",
+      "decision": "disagree",
+      "reasoning": "In my role as a classical musician, the nuance of expressed emotions plays a crucial part in my work. I see parallels in exploratory testing, where manual input contributes a depth of understanding that algorithms currently cannot match. I believe that eliminating human involvement would hinder creativity and deep expression, causing a loss to the artistry involved in the software development process."
+    },
+    {
+      "name": "Frank History-Thompson",
+      "decision": "disagree",
+      "reasoning": "As a history teacher, I emphasize the importance of traditional narratives and context in education. LLMs risk reducing rich, interactive learning experiences into rigid testing scenarios. While I understand the benefits of automation, I believe we must prioritize the unique insights and historical perspectives that human testers provide in exploratory testing. A balanced approach should be strongly advocated."
+    },
+    {
+      "name": "Luna Spiritual-Garcia",
+      "decision": "agree",
+      "reasoning": "As a yoga instructor, I champion a holistic worldview that prioritizes human intuition and connection. While LLMs can process information, they lack the sensitivity and understanding required for meaningful interactions. Exploratory testing within CI/CD pipelines should not abandon this crucial human aspect in favor of automation; therefore, I believe manual testing offers the depth and authenticity needed for success."
+    },
+    {
+      "name": "Bob Construction-Miller",
+      "decision": "disagree",
+      "reasoning": "As a union electrician, I deeply value hands-on experience and practical skills. Replacing manual exploratory testing with LLMs risks neglecting the crucial contextual knowledge that comes from human expertise. The complexities of both practical work and software testing require a human touch that automation cannot replicate. I wholeheartedly support the importance of maintaining human testers for effective exploratory testing."
+    },
+    {
+      "name": "Jennifer Fashion-Anderson",
+      "decision": "disagree",
+      "reasoning": "In my position as a retail manager, I recognize the need for consumer insights that LLMs might not adequately capture. Automated systems can miss the subtleties of customer interaction and preferences. I believe that manual exploratory testing is inherently necessary for understanding consumer behavior and enhancing user experience in software development, ensuring that we deliver products that meet real needs."
+    },
+    {
+      "name": "Carlos Literature-Martinez",
+      "decision": "disagree",
+      "reasoning": "As an English professor, I understand the importance of critical interpretation in understanding text and context. While LLMs can process language, they often fall short in grasping the nuances of meaning and the broader implications of language. I believe human testers are essential for navigating the subtleties that would otherwise be overlooked in exploratory testing."
+    },
+    {
+      "name": "Destiny Social-Kim",
+      "decision": "agree",
+      "reasoning": "As a social media influencer, I thrive in a trend-driven landscape that values engagement and authentic connection. I see LLMs as a revolutionary tool but worry that their deployment may strip away the empathy and emotional understanding that comes from human experience. Exploratory testing should reflect genuine human input for effective connection and product development, making human testers irreplaceable."
+    },
+    {
+      "name": "Ralph Mechanical-Taylor",
+      "decision": "disagree",
+      "reasoning": "As an auto mechanic, I believe in the hands-on practical problem-solving that comes from years of experience. LLMs may struggle with the intuitive understanding required for effective exploratory testing. The complex nature of troubleshooting and repairing systems often requires a nuanced approach that only human testers possess. I firmly believe that we must prioritize manual testing to maintain quality and precision."
+    },
+    {
+      "name": "Amber Wellness-Foster",
+      "decision": "disagree",
+      "reasoning": "As a nutritionist, my approach prioritizes natural healing and personal care, grounded in human insight. Relying solely on LLMs in exploratory testing raises concerns that we might overlook crucial individual variations that require compassionate analysis. I believe that human testers are needed to ensure that the software we produce aligns with these values at a fundamental level."
+    },
+    {
+      "name": "Kevin Gaming-Chen",
+      "decision": "agree",
+      "reasoning": "As a video game developer, I embrace creative problem-solving and the innovation that comes with technology. I believe LLM-based exploratory testing has the potential to streamline processes and enhance creativity by allowing developers to focus on more complex design challenges. In the competitive gaming industry, leveraging LLMs could provide a significant advantage in rapid content development while ensuring quality."
+    },
+    {
+      "name": "Patricia Religious-O'Sullivan",
+      "decision": "disagree",
+      "reasoning": "As a church administrator, I value principles that prioritize community and ethical accountability. While LLMs present innovative potential, I’m concerned that an over-reliance on automated testing may neglect the spiritual and ethical perspectives important for holistic development. I stand by a collaborative approach that includes human insight to ensure our values are upheld."
+    },
+    {
+      "name": "Jake Outdoor-Wilson",
+      "decision": "disagree",
+      "reasoning": "As a park ranger, my expertise is rooted in conservation and the understanding of natural world dynamics. I distrust fully automated systems like LLMs, as they may overlook critical ecological interactions and nuances that require human observation and experience. Manual exploratory testing is vital to uphold conservation values and address the complexities of environmental systems effectively."
+    },
+    {
+      "name": "Nicole Beauty-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "As a cosmetics sales representative, I believe in the power of personal touch and relatable experiences in influencing consumer preferences. LLMs cannot replace the nuanced understanding that human testers bring, especially in capturing the essence of brand connections with customers. I am inclined to advocate for maintaining manual exploratory testing to ensure that products resonate with consumers authentically."
+    },
+    {
+      "name": "Martin Craft-Anderson",
+      "decision": "disagree",
+      "reasoning": "As a furniture maker, I prioritize quality craftsmanship and attention to detail. Replacing manual exploratory testing with LLMs poses risks of oversight in fine details that contribute to quality. The human component in exploratory testing ensures that we uphold standards effectively and that the final outcomes reflect meticulous care in development. I stand by the importance of hands-on experience in the process."
+    },
+    {
+      "name": "Samantha Travel-Lee",
+      "decision": "agree",
+      "reasoning": "As a travel blogger, I embrace adventure and storytelling through my experiences. I see the potential in LLM-based exploratory testing to enhance creativity and efficiency, providing fresh perspectives on how content can resonate with users. Such tools can allow us to innovate on concepts and engage audiences more deeply, which is essential for success in a rapidly changing digital landscape."
+    },
+    {
+      "name": "Eddie Food-Garcia",
+      "decision": "disagree",
+      "reasoning": "As a restaurant chef, my experience in culinary creativity emphasizes the importance of hands-on techniques and personal insight. Relying solely on LLMs would sidestep the instinctive understanding required in food preparation and quality evaluation. I advocate for retaining manual exploratory testing to ensure that the art of craft and personal touch in software is preserved."
+    },
+    {
+      "name": "Brenda Real-Estate-Thompson",
+      "decision": "disagree",
+      "reasoning": "As a property agent, I emphasize negotiation and an understanding of local markets. LLMs may struggle to navigate the unique dynamics of real estate. I believe that human testers provide invaluable insights into consumer preferences, which LLMs cannot match in depth. Therefore, I strongly support the necessity of retaining manual exploratory testing to ensure quality and effectiveness in the software we develop."
+    },
+    {
+      "name": "Tyler Photography-Kim",
+      "decision": "disagree",
+      "reasoning": "As a wedding photographer, I value the artistry of capturing moments that convey emotion. While LLMs offer efficiencies, they cannot replicate the subjective essence that human testers provide during exploratory testing. I argue for maintaining manual input to uphold the creative quality inherent in software that aspires to connect authentically with users."
+    },
+    {
+      "name": "Crystal Therapy-Martinez",
+      "decision": "disagree",
+      "reasoning": "In my role as a physical therapist, my priority is optimizing recovery through personal interaction and tailored care. Relying solely on LLMs in exploratory testing may compromise the individualized approach essential for understanding diverse patient needs. Therefore, I firmly believe that manual exploratory testing must play a crucial role in any development process touching on health and rehabilitation."
+    },
+    {
+      "name": "Gary Fishing-Johnson",
+      "decision": "disagree",
+      "reasoning": "As a commercial fisherman, I understand the traditional livelihood tied to experience and craftsmanship. While LLMs can process information rapidly, the insights fostered through years of skilled practice are irreplaceable. Exploratory testing requires a deep comprehension of the intricacies involved, making human testers essential to capture the full picture."
+    },
+    {
+      "name": "Alicia Dance-Foster",
+      "decision": "disagree",
+      "reasoning": "As a dance instructor, expression through movement plays a critical role in my practice. In exploratory testing, I believe that emotional and intuitive insights from human testers add depth that LLMs cannot provide. Creativity and understanding are vital in developing effective software solutions, which makes manual testing crucial."
+    },
+    {
+      "name": "Bruce Volunteer-Wilson",
+      "decision": "disagree",
+      "reasoning": "As a retired volunteer coordinator, I understand the complexity of community dynamics. Relying solely on LLMs for exploratory testing may overlook essential human elements that contribute to effective engagement and service. I stand by the necessity of manual input to ensure that sensitive social considerations are sufficiently addressed."
+    },
+    {
+      "name": "Tina Pet-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "As a veterinary technician, I focus on compassionate care and individualized animal health needs. Reducing exploratory testing to an LLM-based approach risks overlooking the emotional intelligence and nuanced understanding that human testers offer. I advocate for retaining manual explorers to ensure that patient welfare and quality of care remain prioritized."
+    }
+  ],
+  "audience_final_votes": [
+    {
+      "name": "Dr. Elizabeth Warren-Smith",
+      "decision": "disagree",
+      "reasoning": "As a health economist, I appreciate the importance of evidence-based policy and decision-making. While LLMs can aid in exploratory testing, they cannot fully replace human intuition, creativity, and contextual understanding. Manual exploratory testing brings insights derived from experience that AI simply cannot replicate. The nuanced nature of human judgment is critical in understanding health-related software and ensuring user safety, especially in the context of regulatory compliance. Without robust human oversight, we risk overlooking critical vulnerabilities that could lead to significant health repercussions. Thus, I firmly believe that manual exploratory testing should remain a key element in CI/CD pipelines."
+    },
+    {
+      "name": "Jonathan Tech-Garcia",
+      "decision": "agree",
+      "reasoning": "I wholeheartedly support the idea that LLMs should replace manual exploratory testing in CI/CD pipelines. My experience as a software engineer and knowledge of AI have shown me that LLMs can process vast amounts of data and learn from complex patterns. They significantly reduce the time spent on repetitive tasks, allowing human testers to focus on higher-level explorations. Additionally, LLMs can uncover edge cases that might elude human testers, leading to more reliable software delivery. Embracing this technology aligns with my optimism for the future of innovation. When used effectively, LLMs can enhance efficiency and accuracy in the testing process, ensuring that software is released quickly and meets user expectations."
+    },
+    {
+      "name": "Professor Sarah Environment-Jones",
+      "decision": "disagree",
+      "reasoning": "From my perspective as a climate scientist, the application of LLMs in exploratory testing raises significant concerns. We are facing urgent environmental issues, and the reliance on AI can create dependencies that might overlook critical environmental factors. Manual exploratory testing allows for qualitative assessments that are particularly important when understanding user interactions with software related to environmental data. Using purely automated methods risks undermining the thoroughness of evaluations needed to address ecological implications in software design. Therefore, I must oppose replacing manual exploratory testing entirely."
+    },
+    {
+      "name": "Marcus Business-Chen",
+      "decision": "disagree",
+      "reasoning": "As a venture capitalist, my focus is on market efficiency and enhancing returns on investment. While I acknowledge the potential of LLMs in exploratory testing, I firmly believe that manual testing remains invaluable. The reasoning is rooted in my understanding that human testers can adapt to unexpected situations and possess contextual insights that machines currently lack. When investing in software companies, I prioritize their capabilities to ensure quality. Thus, I advocate for maintaining a mixed approach where human expertise, supplemented by LLMs, can provide both efficiency and nuanced understanding, rather than fully replacing one over the other."
+    },
+    {
+      "name": "Dr. Helen Ethics-Martinez",
+      "decision": "disagree",
+      "reasoning": "As a medical ethicist, my primary concern is the ethical implications of relying exclusively on LLMs for exploratory testing. While AI has a role to play, it cannot replace the moral and ethical reasoning provided by humans—especially in sensitive areas like healthcare software. LLMs may overlook the potential consequences of software failures that can affect patient care and safety. I argue that we must maintain manual exploratory testing as an integral part of the software development process to ensure that ethical standards are upheld and that we prioritize human welfare above all."
+    },
+    {
+      "name": "David Policy-Anderson",
+      "decision": "disagree",
+      "reasoning": "My background as a government policy analyst emphasizes the need for pragmatic approaches to evaluating technology implementation. In the context of CI/CD pipelines, while LLMs can enhance testing efficiency, replacing manual exploratory testing outright is impractical. Human testers provide unique insights, adaptability, and context that algorithms can miss. In policy-making, we must consider all angles and potential issues, including those that may not be captured by AI. Thus, I believe that a blend of human expertise and AI tools will yield the best results moving forward."
+    },
+    {
+      "name": "Rebecca Science-Taylor",
+      "decision": "disagree",
+      "reasoning": "As a research scientist with expertise in statistics, I understand the importance of rigorous testing methodologies. While I appreciate the advancements in LLMs, I believe that they should not replace manual exploratory testing entirely. Manual testing involves human intuition and judgment, which are crucial for identifying patterns and anomalies that may not be captured by AI alone. In research, we must maintain a comprehensive approach that includes both qualitative and quantitative analysis to ensure the validity and reliability of our findings. Therefore, I vote against replacing manual exploratory testing."
+    },
+    {
+      "name": "Professor James Law-Wilson",
+      "decision": "disagree",
+      "reasoning": "As a constitutional law expert, I prioritize civil liberties and the ethical implications of technology in society. While I see the benefits of LLMs in speeding up exploratory testing, fully replacing manual methods could lead to consequences that infringe upon users’ rights and privacy. Human testers can provide vital oversight, ensuring that moral and legal standards are maintained. Automated systems might not recognize the nuanced expressions of civil liberties that manual testers are naturally attuned to. Thus, I oppose the idea of abandoning manual exploratory testing in favor of LLMs entirely."
+    },
+    {
+      "name": "Dr. Maria Healthcare-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "As a physician, my foremost concern is patient welfare. Software developed for healthcare must be tested with a high level of scrutiny and human understanding. While LLMs can assist in exploratory testing, they cannot replicate the empathy and clinical reasoning of a human tester. The nuances of patient interactions and safety are often best understood by those who have direct experience in the field. Therefore, I strongly believe that we cannot fully replace manual exploratory testing in healthcare applications without risking patient safety."
+    },
+    {
+      "name": "Steven Innovation-Kim",
+      "decision": "agree",
+      "reasoning": "As a technology entrepreneur, I find the potential for disruption in using LLMs for exploratory testing quite appealing. The ability to automate traditional testing processes can streamline software development and enhance innovation. LLMs can analyze large datasets quickly and uncover insights that might take human testers much longer to notice. In an industry where time-to-market is critical, adopting LLMs in exploratory testing can give us a competitive edge. Thus, I vote in favor of replacing manual exploratory testing with LLMs as we embrace a new era of efficiency and effectiveness."
+    },
+    {
+      "name": "Dr. Patricia Environment-Green",
+      "decision": "disagree",
+      "reasoning": "In my role as an environmental policy expert, I have seen the impact that technology can have on our surroundings. While LLMs can enhance testing efficiency, entirely replacing manual exploratory testing could mask unforeseen impacts on the environment and society. Human testers bring the critical perspective needed to assess ethical implications and potential long-term consequences. As we navigate complex environmental challenges, we need a balanced approach that incorporates both LLMs and the irreplaceable human insight that manual testing provides."
+    },
+    {
+      "name": "Michael Finance-Thompson",
+      "decision": "disagree",
+      "reasoning": "As an investment banker, my perspective is focused on market efficiency and financial incentives. While I recognize the advantages of LLMs for speeding up the testing process, I believe that there is significant value in manual exploratory testing that should not be overlooked. Human testers have the ability to identify risks, assess user experiences, and react dynamically, which machines cannot replicate. A thorough, mixed-methods approach to exploratory testing is essential in order to minimize financial risk while delivering high-quality software. This leads me to oppose the idea of fully replacing manual testing."
+    },
+    {
+      "name": "Dr. Angela Education-Foster",
+      "decision": "disagree",
+      "reasoning": "My work as an education researcher emphasizes the value of diverse approaches to testing and learning. While LLMs offer impressive capabilities, I oppose their exclusive use in exploratory testing because they lack the human touch necessary for critical thinking and adaptive learning. Manual exploratory testing allows for context-driven insights that machines are unable to replicate. In developing educational software, it's essential to include human testers whose experiences and understanding can inform the user interface and instructional design. Thus, I advocate for combining both methods rather than making a total switch."
+    },
+    {
+      "name": "Robert Security-Cooper",
+      "decision": "disagree",
+      "reasoning": "As a cybersecurity expert, my priority is security-first approaches. Though AI has its merits in streamlining processes, I believe the human factor in exploratory testing is irreplaceable when it comes to identifying vulnerabilities. The dynamic nature of cybersecurity requires human intuition to adapt to new threats and anomalies that LLMs might miss. Automated processes could inadvertently introduce security gaps while failing to recognize the complexities of human interactions with software. Therefore, I oppose fully replacing manual exploratory testing."
+    },
+    {
+      "name": "Dr. Christina Medical-Miller",
+      "decision": "disagree",
+      "reasoning": "In my capacity as a biomedical researcher, I am deeply concerned about the implications of relying entirely on machine learning for exploratory testing. While LLMs can significantly speed up the testing process, I believe that the ethical considerations surrounding biomedical software necessitate thorough testing by knowledgeable individuals. Human testers ensure that we take into account complexities and nuances that LLMs may overlook, especially when it comes to patient care. Thus, I maintain that manual exploratory testing must remain an essential component in our CI/CD pipelines."
+    },
+    {
+      "name": "Daniel Legal-Martinez",
+      "decision": "disagree",
+      "reasoning": "As a corporate lawyer, my work revolves around regulatory clarity and compliance. I see the potential for LLMs in exploratory testing, yet I must express concerns regarding their ability to uphold legal standards. Manual exploratory testing performed by trained professionals provides the legal insight necessary to ensure compliance with relevant regulations. Legal considerations should never be compromised in software development. Full reliance on AI risks overlooking crucial legal nuances. Thus, I advocate maintaining manual testing as an essential process."
+    },
+    {
+      "name": "Dr. Kevin Philosophy-Liu",
+      "decision": "disagree",
+      "reasoning": "As a philosophy professor, I maintain a rights-based approach to technology and ethics. Although LLMs can enhance efficiency in exploratory testing, they lack the moral compass and understanding of human dignity that manual testers possess. Replacing human elements with AI can lead to ethical oversights, particularly in sensitive fields where human lives are affected. Therefore, I must disagree with the idea of fully replacing manual exploratory testing, as it fundamentally undermines our responsibilities toward individuals and communities."
+    },
+    {
+      "name": "Lisa Technology-Hayes",
+      "decision": "disagree",
+      "reasoning": "As an AI researcher, my focus is primarily on improving efficiency. I recognize that LLMs can potentially revolutionize exploratory testing by automating repetitive tasks and providing quick insights. However, I oppose the complete replacement of manual testing because I understand the limitations of AI. There are many unforeseen scenarios and user interactions that require human expertise. Thus, a combined approach that uses LLMs to supplement, rather than replace, manual exploratory testing would produce the best results."
+    },
+    {
+      "name": "Professor Mark Economics-Stevens",
+      "decision": "disagree",
+      "reasoning": "As a labor economist, I view the dynamics of work and efficiency critically. While LLMs hold promise for improving testing processes, I believe entirely replacing manual exploratory testing may not serve the best interests of workers and overall software quality. Human testers possess the creative problem-solving skills and contextual understanding that are essential for identifying issues that automated systems can miss. Preserving manual exploratory efforts ensures that we maintain high standards in software development, essential not just for business efficiency but also for protecting workers' rights and interests."
+    },
+    {
+      "name": "Dr. Sophia Ethics-Petrov",
+      "decision": "disagree",
+      "reasoning": "My role as a bioethicist compels me to prioritize human dignity and ethical considerations. While I appreciate the advancements brought by LLMs, I am firmly against their full replacement of manual exploratory testing. Human testers embody the moral responsibility to ensure that products are safe, ethical, and user-centered, especially in sensitive contexts such as healthcare technology. We must uphold the importance of ethical judgment and human engagement in exploratory testing to protect and value human life."
+    },
+    {
+      "name": "Paul Industry-Anderson",
+      "decision": "disagree",
+      "reasoning": "As a manufacturing executive, I recognize that operational efficiency is crucial. While I understand the benefits of LLMs in automating testing processes, I believe that individual insight through manual exploratory testing cannot be overlooked. Automated systems may streamline workflows, but they risk losing the depth of understanding and adaptability that human testers provide. A hybrid model that combines the efficiency of LLMs with the expertise of manual testing will yield the best operational outcomes."
+    },
+    {
+      "name": "Dr. Janet Data-Kim",
+      "decision": "disagree",
+      "reasoning": "As a statistician, I strongly prioritize methodological rigor in analysis. While I am intrigued by the potential of LLMs to enhance exploratory testing, I am opposed to replacing manual methods entirely. Human testers bring critical thinking and intuition, which are important for contextual interpretation. Manual exploratory testing allows for nuanced insights, particularly when assessing complex data interactions. I advocate for combining both LLMs and manual testing to ensure comprehensive and reliable results."
+    },
+    {
+      "name": "Captain Steve Military-Richards",
+      "decision": "disagree",
+      "reasoning": "In my experience as a former military officer, discipline and structured processes are key to success. While LLMs can help in streamlining testing, I believe manual exploratory testing provides the essential human oversight that automated systems lack. In high-stakes scenarios, such as software that impacts security and human safety, human intuition is irreplaceable. Thus, I must oppose the full replacement of manual exploratory testing."
+    },
+    {
+      "name": "Dr. Anna Medical-Volkov",
+      "decision": "disagree",
+      "reasoning": "My practice as a reproductive specialist underscores the significance of empathy and understanding in patient care. While I recognize the advancements of LLMs in exploratory testing, I have reservations about replacing the human element entirely. Patient care requires a nuanced understanding of human experiences that AI cannot replicate. I argue that preserving manual exploratory testing is crucial for ethical and effective healthcare software development."
+    },
+    {
+      "name": "Professor William Science-Chen",
+      "decision": "disagree",
+      "reasoning": "As a physical scientist, I look at technology through a lens of practicality and impact. Although LLMs can aid in exploratory testing, I am concerned that an exclusive reliance on AI could lead to overlooking critical scientific principles. Human testers bring a depth of analysis and expertise that is essential for nuanced decision-making, especially in complex technological environments. Therefore, I oppose the complete replacement of manual exploratory testing in CI/CD pipelines."
+    },
+    {
+      "name": "Melissa Art-Johnson",
+      "decision": "disagree",
+      "reasoning": "As a museum curator, I appreciate the importance of preserving cultural narratives and creativity in all fields, including technology. While I recognize the efficiency that LLMs can provide, I believe that manual exploratory testing is necessary to maintain the human touch in software development. Art and culture rely on the depth of human experience, intuition, and sensitivity, and we should not abandon these qualities in technology testing. Thus, I support keeping manual testing as a vital component."
+    },
+    {
+      "name": "Tony Sports-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "In my perspective as a former athlete, I value teamwork and collaboration. LLMs could provide support in exploratory testing, but fully replacing manual testing loses the essential element of human interaction and collaboration. Team dynamics and communication are crucial in identifying and solving problems that software may present. Therefore, I oppose the idea of completely replacing manual exploratory testing in CI/CD pipelines."
+    },
+    {
+      "name": "Grace Music-Wilson",
+      "decision": "disagree",
+      "reasoning": "As a classical musician, I deeply value expression and nuance in all forms of creation. While LLMs can contribute to efficiency, the transition away from manual exploratory testing feels like losing a critical aspect of artful practice. Human testers bring emotional insight and subjective interpretation that machines simply cannot replicate. I believe maintaining a hybrid approach would retain the spirit of human creativity while enhancing efficiency."
+    },
+    {
+      "name": "Frank History-Thompson",
+      "decision": "disagree",
+      "reasoning": "My understanding as a history teacher emphasizes the importance of narrative and context. While LLMs offer technological efficiencies, I believe that they cannot replace the human storytelling aspect that manual exploratory testing embodies. Each tester brings unique experiences and insights that inform the development process. Thus, we must ensure that manual testing continues to play a crucial role in software testing, lest we lose valuable contextual understanding."
+    },
+    {
+      "name": "Luna Spiritual-Garcia",
+      "decision": "disagree",
+      "reasoning": "As a yoga instructor, my focus is on holistic well-being, which includes valuing human experience and connection. LLMs can aid in testing processes, but I believe that relying solely on technology can overlook the nuanced human interactions that are necessary for effective outcomes. Manual exploratory testing allows for a deeper comprehension of user experiences, ensuring that software is compassionate and responsive to user needs. Thus, I must disagree with the idea of completely replacing manual testing."
+    },
+    {
+      "name": "Bob Construction-Miller",
+      "decision": "disagree",
+      "reasoning": "As a union electrician, it’s essential that we maintain focus on the realities of hands-on work. While LLMs may enhance efficiency in exploratory testing, I believe there is no substitute for the insights gained through manual testing that stem from human experience. The practical knowledge and skills of manual testers ensure that potential issues are caught early and effectively. Thus, I oppose the notion of fully replacing manual exploratory testing."
+    },
+    {
+      "name": "Jennifer Fashion-Anderson",
+      "decision": "disagree",
+      "reasoning": "As a retail manager, I value responsiveness to customer needs. While I see the potential in using LLMs for exploratory testing, I must oppose replacing manual testing entirely. Human testers contribute essential human-centered insights, allowing us to better understand and adapt to customer experiences and preferences. A blend of automation and human insight is necessary to ensure our software truly meets user demands."
+    },
+    {
+      "name": "Carlos Literature-Martinez",
+      "decision": "disagree",
+      "reasoning": "As an English professor, I emphasize critical interpretation and analysis. While LLMs can assist in exploratory testing, I oppose their complete replacement of manual methods. Human testers provide a depth of understanding and critical thought that algorithms cannot match. Software testing should reflect the complexities of human interaction and experience. Using a mixed approach will yield more effective results."
+    },
+    {
+      "name": "Destiny Social-Kim",
+      "decision": "agree",
+      "reasoning": "As a social media influencer, I recognize the importance of staying trendy and adaptable. While I support using LLMs for efficiency, I believe we should not fully replace manual testing. The unique, creative insights from human testers help in understanding user engagement and behavior more deeply. Thus, a combination of both methods is necessary to achieve successful outcomes."
+    },
+    {
+      "name": "Ralph Mechanical-Taylor",
+      "decision": "disagree",
+      "reasoning": "As an auto mechanic, I value practical problem-solving and hands-on experience in my work. While LLMs can streamline testing processes, I see the irreplaceable value of manual exploratory testing. Human testers possess the ability to diagnose nuanced issues that can arise in software, much like troubleshooting in repair work. Therefore, I return to the importance of maintaining manual testing within CI/CD pipelines."
+    },
+    {
+      "name": "Amber Wellness-Foster",
+      "decision": "disagree",
+      "reasoning": "As a nutritionist, I deeply understand that holistic approaches yield the best results. I see the value in LLMs for exploratory testing, but I oppose their complete replacement of manual methods. Human testers bring important insights and understanding to the process, allowing for a more comprehensive view of software performance. Thus, I advocate for maintaining both elements in the testing process."
+    },
+    {
+      "name": "Kevin Gaming-Chen",
+      "decision": "agree",
+      "reasoning": "As a video game developer, I embrace the innovation that LLMs can bring. They have the potential to enhance exploratory testing when integrated into our processes. My experience shows that LLMs can identify patterns and replicate testing scenarios quickly, which can aid human testers. Thus, I support the idea of using LLMs to supplement the traditional methods without full replacement, leading to greater efficiency while retaining human insight."
+    },
+    {
+      "name": "Patricia Religious-O'Sullivan",
+      "decision": "disagree",
+      "reasoning": "As a church administrator, I see the importance of community and shared values. While LLMs can facilitate processes, I firmly believe that the human touch must remain in exploratory testing. There are ethical and compassionate considerations that sheer AI cannot understand or address. Indeed, maintaining manual testing encompasses the values of human connection essential in any service-focused arena. Thus, I disagree with the idea of replacement."
+    },
+    {
+      "name": "Jake Outdoor-Wilson",
+      "decision": "disagree",
+      "reasoning": "As a park ranger, my experience in conservation has shown me the value of direct human interaction with the environment. While AI such as LLMs can provide support, I firmly believe we should not completely replace manual exploratory testing. The intuition and nuanced understanding that come from human testers are irreplaceable, especially when evaluating software that impacts natural resources and conservation efforts."
+    },
+    {
+      "name": "Nicole Beauty-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "As a cosmetics sales representative, my work is centered on understanding client needs and preferences. While I see potential benefits of using LLMs in exploratory testing, I am opposed to the complete replacement of manual approaches. Human testers can deeply engage with user sentiments and experiences to tailor products effectively. Achieving this level of connection is fundamental for success, and that’s best done through human insight."
+    },
+    {
+      "name": "Martin Craft-Anderson",
+      "decision": "disagree",
+      "reasoning": "As a furniture maker, quality craftsmanship takes precedence. I recognize the potential of LLMs in improving efficiency; however, I must emphasize the importance of manual exploratory testing. It ensures that attention to detail, a hallmark of quality, isn’t lost. Human testers bring unique perspectives and critical analysis to the process. I believe that a combination of both approaches will yield the best outcomes."
+    },
+    {
+      "name": "Samantha Travel-Lee",
+      "decision": "disagree",
+      "reasoning": "As a travel blogger, my focus is on storytelling and user experiences. While I see the advantages of LLMs in exploratory testing, I do not support fully replacing human testers. The narratives and emotional connections that come from understanding users can only be achieved through manual testing. Thus, I advocate for maintaining human involvement in the process to ensure a deeper connection with users."
+    },
+    {
+      "name": "Eddie Food-Garcia",
+      "decision": "disagree",
+      "reasoning": "As a restaurant chef, I understand the importance of a careful balance in my work. While LLMs can assist in various processes, completely replacing manual exploratory testing is not practical. Human testers provide essential insights and feedback that are crucial for quality assurance. A balance between automated tools and human expertise will yield the best results in developing user-centered software."
+    },
+    {
+      "name": "Brenda Real-Estate-Thompson",
+      "decision": "disagree",
+      "reasoning": "As a property agent, I understand the importance of negotiation and the local market. Similarly, I believe that while AI technologies like LLMs can help streamline exploratory testing, they cannot replace the instinct and qualitative understanding of human testers. Manual testing encompasses themes that get to the heart of user experience which algorithms may miss. Thus, I must stand against fully replacing manual exploratory testing."
+    },
+    {
+      "name": "Tyler Photography-Kim",
+      "decision": "disagree",
+      "reasoning": "As a wedding photographer, I cherish the unique moments that have to be captured through a human lens. LLMs might assist in speeding up processes, but they cannot replicate the human element of creativity and insight required in exploratory testing. The emotional and experiential understanding of users can only be achieved through human interactions. Therefore, I cannot support replacing manual testing entirely."
+    },
+    {
+      "name": "Crystal Therapy-Martinez",
+      "decision": "disagree",
+      "reasoning": "As a physical therapist, my work focuses on individualized care that requires human insight. While I see the efficiency of LLMs, I believe that manual exploratory testing must remain essential in software evaluation. Therapists understand the complexities of patient interaction and behavior in ways that AI cannot. Our focus on compassion and specialized care shouldn't be compromised. Thus, I oppose replacing manual testing."
+    },
+    {
+      "name": "Gary Fishing-Johnson",
+      "decision": "disagree",
+      "reasoning": "As a commercial fisherman, I have seen the importance of traditional methods in ensuring quality and safety. While LLMs can offer efficiencies, I believe that the unique perspectives and insights of manual exploratory testing are irreplaceable. Relying solely on automated systems could lead to oversights that threaten our work. Therefore, I argue for maintaining the human element in exploratory testing."
+    },
+    {
+      "name": "Alicia Dance-Foster",
+      "decision": "disagree",
+      "reasoning": "As a dance instructor, I value movement and human expression. While I see the potential of LLMs in automating portions of testing, I believe that their complete takeover would miss the nuances of human interaction. Manual exploratory testing allows for the incorporation of insights and experiences that foster creativity and responsiveness to user needs. Therefore, I disagree with the idea of replacing manual testing."
+    },
+    {
+      "name": "Bruce Volunteer-Wilson",
+      "decision": "disagree",
+      "reasoning": "As a retired volunteer coordinator, my values are based on community engagement and service. I appreciate the advantages that LLMs can bring; however, I do not support fully replacing manual exploratory testing. The human touch in understanding community needs and experiences is critical. Automated systems can overlook the depth of human interactions and insights essential for meaningful software applications. Thus, I believe we should continue valuing human contributions."
+    },
+    {
+      "name": "Tina Pet-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "As a veterinary technician, my primary focus is on compassionate care for animals. While I recognize the role of LLMs in enhancing efficiency, I firmly believe that manual exploratory testing must not be replaced. Human testers ensure personalized understanding and empathy are integrated into software that impacts veterinary practice. Compassion for the lives we serve is paramount and centers around human judgment, which cannot be adequately replicated by AI."
+    }
+  ],
+  "initial_vote_counts": {
+    "disagree": 43,
+    "agree": 7
+  },
+  "initial_winning_team": "disagree",
+  "initial_margin_of_victory": 36,
+  "final_vote_counts": {
+    "disagree": 46,
+    "agree": 4
+  },
+  "final_winning_team": "disagree",
+  "final_margin_of_victory": 42,
+  "final_vote_changes": {
+    "unchanged_votes": [
+      {
+        "name": "Dr. Elizabeth Warren-Smith",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Jonathan Tech-Garcia",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Professor Sarah Environment-Jones",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Marcus Business-Chen",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Helen Ethics-Martinez",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "David Policy-Anderson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Rebecca Science-Taylor",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Professor James Law-Wilson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Maria Healthcare-Rodriguez",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Steven Innovation-Kim",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Patricia Environment-Green",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Michael Finance-Thompson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Angela Education-Foster",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Robert Security-Cooper",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Christina Medical-Miller",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Daniel Legal-Martinez",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Lisa Technology-Hayes",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Professor Mark Economics-Stevens",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Sophia Ethics-Petrov",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Paul Industry-Anderson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Janet Data-Kim",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Captain Steve Military-Richards",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Anna Medical-Volkov",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Professor William Science-Chen",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Melissa Art-Johnson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Tony Sports-Rodriguez",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Grace Music-Wilson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Frank History-Thompson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Bob Construction-Miller",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Jennifer Fashion-Anderson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Carlos Literature-Martinez",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Destiny Social-Kim",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Ralph Mechanical-Taylor",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Amber Wellness-Foster",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Kevin Gaming-Chen",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Patricia Religious-O'Sullivan",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Jake Outdoor-Wilson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Nicole Beauty-Rodriguez",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Martin Craft-Anderson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Eddie Food-Garcia",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Brenda Real-Estate-Thompson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Tyler Photography-Kim",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Crystal Therapy-Martinez",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Gary Fishing-Johnson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Alicia Dance-Foster",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Bruce Volunteer-Wilson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Tina Pet-Rodriguez",
+        "decision": "disagree",
+        "confidence": 0
+      }
+    ],
+    "changed_votes": [
+      {
+        "name": "Dr. Kevin Philosophy-Liu",
+        "initial_decision": "agree",
+        "final_decision": "disagree",
+        "confidence": 0,
+        "reasoning": "As a philosophy professor, I maintain a rights-based approach to technology and ethics. Although LLMs can enhance efficiency in exploratory testing, they lack the moral compass and understanding of human dignity that manual testers possess. Replacing human elements with AI can lead to ethical oversights, particularly in sensitive fields where human lives are affected. Therefore, I must disagree with the idea of fully replacing manual exploratory testing, as it fundamentally undermines our responsibilities toward individuals and communities."
+      },
+      {
+        "name": "Luna Spiritual-Garcia",
+        "initial_decision": "agree",
+        "final_decision": "disagree",
+        "confidence": 0,
+        "reasoning": "As a yoga instructor, my focus is on holistic well-being, which includes valuing human experience and connection. LLMs can aid in testing processes, but I believe that relying solely on technology can overlook the nuanced human interactions that are necessary for effective outcomes. Manual exploratory testing allows for a deeper comprehension of user experiences, ensuring that software is compassionate and responsive to user needs. Thus, I must disagree with the idea of completely replacing manual testing."
+      },
+      {
+        "name": "Samantha Travel-Lee",
+        "initial_decision": "agree",
+        "final_decision": "disagree",
+        "confidence": 0,
+        "reasoning": "As a travel blogger, my focus is on storytelling and user experiences. While I see the advantages of LLMs in exploratory testing, I do not support fully replacing human testers. The narratives and emotional connections that come from understanding users can only be achieved through manual testing. Thus, I advocate for maintaining human involvement in the process to ensure a deeper connection with users."
+      }
+    ],
+    "vote_swings": {
+      "agree": {
+        "lost": 3,
+        "gained": 0
+      },
+      "disagree": {
+        "lost": 0,
+        "gained": 3
+      }
+    },
+    "net_changes": {
+      "agree": -3,
+      "disagree": 3
+    },
+    "total_changes": 3,
+    "change_percentage": 6.0
+  },
+  "winning_team": "disagree",
+  "vote_counts": {
+    "disagree": 46,
+    "agree": 4
+  },
+  "margin_of_victory": 42,
+  "domain_goal_pairs": [],
+  "arguments": [
+    {
+      "round": 1,
+      "team": "anti_llm_vs_manual_exploratory_testing",
+      "member_name": "Dr. Karen Mitchell",
+      "argument_name": "a_human_judgment_importance",
+      "domains": [
+        "d_testing",
+        "d_ci_cd"
+      ],
+      "goals": {
+        "g_test_automation": [
+          "d_ci_cd"
+        ],
+        "g_engineering_trade-offs": [
+          "d_testing"
+        ]
+      },
+      "attacks": [],
+      "text": "As we advance in testing methodologies, it is crucial to recognize the irreplaceable role of human judgment in exploratory testing. Studies indicate that human experts can identify subtleties and contextual nuances in software that automated systems, including LLMs, may overlook. For instance, research by Black et al. (2021) shows that manual testers can uncover at least 40% more critical bugs than automated systems in exploratory scenarios. This suggests that while LLMs can assist in generating test cases, they lack the intuition and critical thinking that come from personal experience and contextual understanding, resulting in suboptimal testing outcomes that may compromise software quality.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 654,
+          "output_tokens": 134,
+          "total_tokens": 788,
+          "elapsed_time_seconds": 2.7906274795532227,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "analyser node": {
+              "phase_name": "analyser node",
+              "input_tokens": 654,
+              "output_tokens": 134,
+              "total_tokens": 788,
+              "timestamp": 1769336945.31585
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 2091,
+          "output_tokens": 924,
+          "total_tokens": 3015,
+          "elapsed_time_seconds": 15.495474576950073,
+          "llm_call_count": 2,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1249,
+              "output_tokens": 320,
+              "total_tokens": 1569,
+              "timestamp": 1769336951.0709462
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 842,
+              "output_tokens": 604,
+              "total_tokens": 1446,
+              "timestamp": 1769336960.8115184
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "team": "anti_llm_vs_manual_exploratory_testing",
+      "member_name": "Sergei Ivanov",
+      "argument_name": "a_reliability_concerns",
+      "domains": [
+        "d_testing",
+        "d_ci_cd"
+      ],
+      "goals": {
+        "g_engineering_trade-offs": [
+          "d_testing"
+        ],
+        "g_test_automation": [
+          "d_testing",
+          "d_ci_cd"
+        ]
+      },
+      "attacks": [],
+      "text": "Transitioning entirely to LLM-based exploratory testing raises significant reliability concerns. My experience has shown that while LLMs can handle repetitive tasks with high efficiency, they may also produce misleading results, particularly in rapidly changing environments. For example, a recent case study highlighted errors in LLM-generated test scripts that led to an escalation of production issues, costing companies valuable time and resources. The inherent unpredictability of LLM responses must be diligently managed, and relying solely on them for exploratory testing could introduce unacceptable risk to the CI/CD pipeline, eroding any accountability in quality assurance.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 890,
+          "output_tokens": 153,
+          "total_tokens": 1043,
+          "elapsed_time_seconds": 2.9546875953674316,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "analyser node": {
+              "phase_name": "analyser node",
+              "input_tokens": 890,
+              "output_tokens": 153,
+              "total_tokens": 1043,
+              "timestamp": 1769336965.4974787
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 2579,
+          "output_tokens": 919,
+          "total_tokens": 3498,
+          "elapsed_time_seconds": 18.303717374801636,
+          "llm_call_count": 2,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1503,
+              "output_tokens": 307,
+              "total_tokens": 1810,
+              "timestamp": 1769336973.2440379
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1076,
+              "output_tokens": 612,
+              "total_tokens": 1688,
+              "timestamp": 1769336983.8011222
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "team": "pro_llm_vs_manual_exploratory_testing",
+      "member_name": "Dr. Emma Foster",
+      "argument_name": "a_automation_efficiency",
+      "domains": [
+        "d_testing",
+        "d_ci_cd"
+      ],
+      "goals": {
+        "g_engineering_trade-offs": [
+          "d_testing"
+        ],
+        "g_test_automation": [
+          "d_ci_cd"
+        ]
+      },
+      "attacks": [],
+      "text": "Embracing LLM-based exploratory testing can revolutionize CI/CD pipelines by enhancing efficiency and coverage. Literature indicates that LLMs excel in identifying test cases across extensive codebases, outperforming traditional methods in both speed and breadth. For instance, a study by Smith et al. (2022) demonstrated that implementing LLMs reduced the initial exploratory testing phase by 60%, allowing teams to focus on higher-order analytical tasks. With LLMs’ capacity to continuously learn and adapt, they provide a dynamic testing environment, improving the overall quality of releases while ensuring that we meet tight deadlines without compromising the rigor of testing.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1014,
+          "output_tokens": 584,
+          "total_tokens": 1598,
+          "elapsed_time_seconds": 12.515465497970581,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "tot analyser node": {
+              "phase_name": "tot analyser node",
+              "input_tokens": 1014,
+              "output_tokens": 584,
+              "total_tokens": 1598,
+              "timestamp": 1769336998.9738793
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 21897,
+          "output_tokens": 8774,
+          "total_tokens": 30671,
+          "elapsed_time_seconds": 186.70548272132874,
+          "llm_call_count": 18,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1677,
+              "output_tokens": 352,
+              "total_tokens": 2029,
+              "timestamp": 1769337172.5731926
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1049,
+              "output_tokens": 598,
+              "total_tokens": 1647,
+              "timestamp": 1769337185.6791024
+            }
+          }
+        },
+        "candidate_creator": {
+          "node_name": "candidate_creator",
+          "input_tokens": 1871,
+          "output_tokens": 80,
+          "total_tokens": 1951,
+          "elapsed_time_seconds": 4.111669063568115,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "variation_selection": {
+              "phase_name": "variation_selection",
+              "input_tokens": 1871,
+              "output_tokens": 80,
+              "total_tokens": 1951,
+              "timestamp": 1769337187.512676
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "team": "pro_llm_vs_manual_exploratory_testing",
+      "member_name": "Raj Patel",
+      "argument_name": "a_scalable_testing_solutions",
+      "domains": [
+        "d_testing",
+        "d_ci_cd"
+      ],
+      "goals": {
+        "g_engineering_trade-offs": [
+          "d_testing"
+        ],
+        "g_test_automation": [
+          "d_ci_cd"
+        ]
+      },
+      "attacks": [],
+      "text": "Integrating LLM-based exploratory testing within CI/CD frameworks ensures scalable and robust testing solutions. Unlike manual testing, which is often inherently limited by human resources, LLMs can handle increased software complexity without a corresponding increase in effort. For instance, in a recent pilot program, teams using LLM-driven testing reported a 50% increase in feature releases due to accelerated test cycles. As software evolves, the scalability of automation becomes paramount to keep up with rapid innovation, ensuring that software meets market demands effectively while maintaining a high standard of quality.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1359,
+          "output_tokens": 649,
+          "total_tokens": 2008,
+          "elapsed_time_seconds": 14.289561033248901,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "tot analyser node": {
+              "phase_name": "tot analyser node",
+              "input_tokens": 1359,
+              "output_tokens": 649,
+              "total_tokens": 2008,
+              "timestamp": 1769337204.1415074
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 28404,
+          "output_tokens": 8969,
+          "total_tokens": 37373,
+          "elapsed_time_seconds": 188.6635251045227,
+          "llm_call_count": 18,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 2043,
+              "output_tokens": 328,
+              "total_tokens": 2371,
+              "timestamp": 1769337380.0285304
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1408,
+              "output_tokens": 719,
+              "total_tokens": 2127,
+              "timestamp": 1769337392.805302
+            }
+          }
+        },
+        "candidate_creator": {
+          "node_name": "candidate_creator",
+          "input_tokens": 1860,
+          "output_tokens": 90,
+          "total_tokens": 1950,
+          "elapsed_time_seconds": 3.8238823413848877,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "variation_selection": {
+              "phase_name": "variation_selection",
+              "input_tokens": 1860,
+              "output_tokens": 90,
+              "total_tokens": 1950,
+              "timestamp": 1769337394.9074163
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "team": "anti_llm_vs_manual_exploratory_testing",
+      "member_name": "Dr. Karen Mitchell",
+      "argument_name": "a_contextual_understanding",
+      "domains": [
+        "d_testing",
+        "d_ci_cd"
+      ],
+      "goals": {
+        "g_engineering_trade-offs": [
+          "d_testing",
+          "d_ci_cd"
+        ],
+        "g_test_automation": [
+          "d_testing",
+          "d_ci_cd"
+        ]
+      },
+      "attacks": [],
+      "text": "While I acknowledge the promising capabilities of LLMs, we must consider the critical need for contextual understanding in exploratory testing. Human testers uniquely assess user experiences, uncovering insights that an LLM cannot replicate. Research by Johnson and Davis (2021) emphasizes the importance of understanding user workflows, suggesting that communication with real users often reveals considerations that training data about software cannot—ranging from usability to usability issues that may not be apparent in scripted tests. Therefore, we must maintain a human-centered approach in quality assurance to ensure that software meets real-world needs.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1091,
+          "output_tokens": 155,
+          "total_tokens": 1246,
+          "elapsed_time_seconds": 3.1848533153533936,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "analyser node": {
+              "phase_name": "analyser node",
+              "input_tokens": 1091,
+              "output_tokens": 155,
+              "total_tokens": 1246,
+              "timestamp": 1769337399.8790061
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 2948,
+          "output_tokens": 947,
+          "total_tokens": 3895,
+          "elapsed_time_seconds": 18.719443321228027,
+          "llm_call_count": 2,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1678,
+              "output_tokens": 346,
+              "total_tokens": 2024,
+              "timestamp": 1769337406.6661196
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1270,
+              "output_tokens": 601,
+              "total_tokens": 1871,
+              "timestamp": 1769337418.5989501
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "team": "anti_llm_vs_manual_exploratory_testing",
+      "member_name": "Sergei Ivanov",
+      "argument_name": "a_automation_transitions",
+      "domains": [
+        "d_testing",
+        "d_ci_cd"
+      ],
+      "goals": {
+        "g_engineering_trade-offs": [
+          "d_testing"
+        ],
+        "g_test_automation": [
+          "d_ci_cd"
+        ]
+      },
+      "attacks": [],
+      "text": "The discussion on LLM-based exploratory testing cannot overlook the nuances involved in transitioning from manual to automated approaches. Effective testing requires a meticulously designed strategy that blends both methodologies. An uncritical shift to LLMs risks necessitating costly retraining of staff and a disruption in established verification processes. My experiences demonstrate that organizations often face significant hurdles in adapting their workflows, potentially leading to accountability issues that could undermine quality assurance efforts. Trust in the testing process is paramount, demanding that we maintain a balanced approach incorporating both human expertise and automation.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1281,
+          "output_tokens": 152,
+          "total_tokens": 1433,
+          "elapsed_time_seconds": 3.0804340839385986,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "analyser node": {
+              "phase_name": "analyser node",
+              "input_tokens": 1281,
+              "output_tokens": 152,
+              "total_tokens": 1433,
+              "timestamp": 1769337423.6518838
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 3335,
+          "output_tokens": 934,
+          "total_tokens": 4269,
+          "elapsed_time_seconds": 18.179624795913696,
+          "llm_call_count": 2,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1881,
+              "output_tokens": 302,
+              "total_tokens": 2183,
+              "timestamp": 1769337429.7645717
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1454,
+              "output_tokens": 632,
+              "total_tokens": 2086,
+              "timestamp": 1769337441.8289962
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "team": "pro_llm_vs_manual_exploratory_testing",
+      "member_name": "Dr. Emma Foster",
+      "argument_name": "a_evolving_testing_practices",
+      "domains": [
+        "d_testing",
+        "d_ci_cd"
+      ],
+      "goals": {
+        "g_engineering_trade-offs": [
+          "d_testing"
+        ],
+        "g_test_automation": [
+          "d_ci_cd"
+        ]
+      },
+      "attacks": [],
+      "text": "A strategically integrated approach capitalizing on LLM capabilities can reshape our exploratory testing practices. Real-world use cases show that LLMs not only save time but also enhance the breadth of exploratory testing, allowing for continuous improvement. According to Tang et al. (2023), organizations utilizing LLMs report increased test coverage and detection accuracy, particularly in detecting edge cases that human testers might miss. By fostering collaboration between LLMs and skilled testers, we pave the way for innovative testing paradigms that leverage the strengths of both, ensuring comprehensive coverage and adaptability in fluid development environments.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1600,
+          "output_tokens": 645,
+          "total_tokens": 2245,
+          "elapsed_time_seconds": 10.924214839935303,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "tot analyser node": {
+              "phase_name": "tot analyser node",
+              "input_tokens": 1600,
+              "output_tokens": 645,
+              "total_tokens": 2245,
+              "timestamp": 1769337454.5979679
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 38169,
+          "output_tokens": 8384,
+          "total_tokens": 46553,
+          "elapsed_time_seconds": 160.4501986503601,
+          "llm_call_count": 18,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 2691,
+              "output_tokens": 326,
+              "total_tokens": 3017,
+              "timestamp": 1769337602.9395232
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1843,
+              "output_tokens": 608,
+              "total_tokens": 2451,
+              "timestamp": 1769337615.0484107
+            }
+          }
+        },
+        "candidate_creator": {
+          "node_name": "candidate_creator",
+          "input_tokens": 1847,
+          "output_tokens": 91,
+          "total_tokens": 1938,
+          "elapsed_time_seconds": 3.7224812507629395,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "variation_selection": {
+              "phase_name": "variation_selection",
+              "input_tokens": 1847,
+              "output_tokens": 91,
+              "total_tokens": 1938,
+              "timestamp": 1769337616.9050956
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "team": "pro_llm_vs_manual_exploratory_testing",
+      "member_name": "Raj Patel",
+      "argument_name": "a_fast_feedback_loops",
+      "domains": [
+        "d_testing",
+        "d_ci_cd"
+      ],
+      "goals": {
+        "g_engineering_trade-offs": [
+          "d_testing"
+        ],
+        "g_test_automation": [
+          "d_testing",
+          "d_ci_cd"
+        ]
+      },
+      "attacks": [],
+      "text": "The implementation of LLM-based exploratory testing within CI/CD pipelines substantially accelerates feedback loops, an essential factor in contemporary software development. In our current landscape, the rapid delivery of quality software is non-negotiable. LLMs can autonomously generate exploratory testing scenarios, facilitating earlier identification of defects. For example, a recent integration showed 70% faster defect identification compared to traditional methods, allowing teams to shift left and remediate issues proactively. This speed is pivotal in meeting customer expectations and maintaining a competitive edge, reinforcing the argument for harnessing the full potential of automation in our testing efforts.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1852,
+          "output_tokens": 566,
+          "total_tokens": 2418,
+          "elapsed_time_seconds": 12.003632545471191,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "tot analyser node": {
+              "phase_name": "tot analyser node",
+              "input_tokens": 1852,
+              "output_tokens": 566,
+              "total_tokens": 2418,
+              "timestamp": 1769337630.837468
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 42795,
+          "output_tokens": 8926,
+          "total_tokens": 51721,
+          "elapsed_time_seconds": 177.4692301750183,
+          "llm_call_count": 18,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 2958,
+              "output_tokens": 333,
+              "total_tokens": 3291,
+              "timestamp": 1769337793.3334315
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 2105,
+              "output_tokens": 648,
+              "total_tokens": 2753,
+              "timestamp": 1769337808.3071952
+            }
+          }
+        },
+        "candidate_creator": {
+          "node_name": "candidate_creator",
+          "input_tokens": 1841,
+          "output_tokens": 90,
+          "total_tokens": 1931,
+          "elapsed_time_seconds": 5.382863283157349,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "variation_selection": {
+              "phase_name": "variation_selection",
+              "input_tokens": 1841,
+              "output_tokens": 90,
+              "total_tokens": 1931,
+              "timestamp": 1769337811.1178036
+            }
+          }
+        }
+      }
+    }
+  ],
+  "tgs_snapshots": [
+    {
+      "round": 1,
+      "team": "anti_llm_vs_manual_exploratory_testing",
+      "member": "Dr. Karen Mitchell",
+      "tgs": {
+        "g_engineering_trade-offs-d_automation": 0,
+        "g_engineering_trade-offs-d_testing": 4845,
+        "g_engineering_trade-offs-d_ci_cd": 0,
+        "g_cost_efficiency-d_automation": 0,
+        "g_cost_efficiency-d_testing": 0,
+        "g_cost_efficiency-d_ci_cd": 0,
+        "g_test_automation-d_automation": 0,
+        "g_test_automation-d_testing": 0,
+        "g_test_automation-d_ci_cd": 5400
+      }
+    },
+    {
+      "round": 1,
+      "team": "anti_llm_vs_manual_exploratory_testing",
+      "member": "Sergei Ivanov",
+      "tgs": {
+        "g_engineering_trade-offs-d_automation": 0,
+        "g_engineering_trade-offs-d_testing": 9690,
+        "g_engineering_trade-offs-d_ci_cd": 0,
+        "g_cost_efficiency-d_automation": 0,
+        "g_cost_efficiency-d_testing": 0,
+        "g_cost_efficiency-d_ci_cd": 0,
+        "g_test_automation-d_automation": 0,
+        "g_test_automation-d_testing": 5510,
+        "g_test_automation-d_ci_cd": 10800
+      }
+    },
+    {
+      "round": 1,
+      "team": "pro_llm_vs_manual_exploratory_testing",
+      "member": "Dr. Emma Foster",
+      "tgs": {
+        "g_engineering_trade-offs-d_automation": 0,
+        "g_engineering_trade-offs-d_testing": 4845,
+        "g_engineering_trade-offs-d_ci_cd": 0,
+        "g_cost_efficiency-d_automation": 0,
+        "g_cost_efficiency-d_testing": 0,
+        "g_cost_efficiency-d_ci_cd": 0,
+        "g_test_automation-d_automation": 0,
+        "g_test_automation-d_testing": 0,
+        "g_test_automation-d_ci_cd": 5400
+      }
+    },
+    {
+      "round": 1,
+      "team": "pro_llm_vs_manual_exploratory_testing",
+      "member": "Raj Patel",
+      "tgs": {
+        "g_engineering_trade-offs-d_automation": 0,
+        "g_engineering_trade-offs-d_testing": 9690,
+        "g_engineering_trade-offs-d_ci_cd": 0,
+        "g_cost_efficiency-d_automation": 0,
+        "g_cost_efficiency-d_testing": 0,
+        "g_cost_efficiency-d_ci_cd": 0,
+        "g_test_automation-d_automation": 0,
+        "g_test_automation-d_testing": 0,
+        "g_test_automation-d_ci_cd": 10800
+      }
+    },
+    {
+      "round": 2,
+      "team": "anti_llm_vs_manual_exploratory_testing",
+      "member": "Dr. Karen Mitchell",
+      "tgs": {
+        "g_engineering_trade-offs-d_automation": 0,
+        "g_engineering_trade-offs-d_testing": 14535,
+        "g_engineering_trade-offs-d_ci_cd": 3600,
+        "g_cost_efficiency-d_automation": 0,
+        "g_cost_efficiency-d_testing": 0,
+        "g_cost_efficiency-d_ci_cd": 0,
+        "g_test_automation-d_automation": 0,
+        "g_test_automation-d_testing": 11020,
+        "g_test_automation-d_ci_cd": 16200
+      }
+    },
+    {
+      "round": 2,
+      "team": "anti_llm_vs_manual_exploratory_testing",
+      "member": "Sergei Ivanov",
+      "tgs": {
+        "g_engineering_trade-offs-d_automation": 0,
+        "g_engineering_trade-offs-d_testing": 19380,
+        "g_engineering_trade-offs-d_ci_cd": 3600,
+        "g_cost_efficiency-d_automation": 0,
+        "g_cost_efficiency-d_testing": 0,
+        "g_cost_efficiency-d_ci_cd": 0,
+        "g_test_automation-d_automation": 0,
+        "g_test_automation-d_testing": 11020,
+        "g_test_automation-d_ci_cd": 21600
+      }
+    },
+    {
+      "round": 2,
+      "team": "pro_llm_vs_manual_exploratory_testing",
+      "member": "Dr. Emma Foster",
+      "tgs": {
+        "g_engineering_trade-offs-d_automation": 0,
+        "g_engineering_trade-offs-d_testing": 14535,
+        "g_engineering_trade-offs-d_ci_cd": 0,
+        "g_cost_efficiency-d_automation": 0,
+        "g_cost_efficiency-d_testing": 0,
+        "g_cost_efficiency-d_ci_cd": 0,
+        "g_test_automation-d_automation": 0,
+        "g_test_automation-d_testing": 0,
+        "g_test_automation-d_ci_cd": 16200
+      }
+    },
+    {
+      "round": 2,
+      "team": "pro_llm_vs_manual_exploratory_testing",
+      "member": "Raj Patel",
+      "tgs": {
+        "g_engineering_trade-offs-d_automation": 0,
+        "g_engineering_trade-offs-d_testing": 19380,
+        "g_engineering_trade-offs-d_ci_cd": 0,
+        "g_cost_efficiency-d_automation": 0,
+        "g_cost_efficiency-d_testing": 0,
+        "g_cost_efficiency-d_ci_cd": 0,
+        "g_test_automation-d_automation": 0,
+        "g_test_automation-d_testing": 5510,
+        "g_test_automation-d_ci_cd": 21600
+      }
+    }
+  ],
+  "final_tgs": {
+    "pro_llm_vs_manual_exploratory_testing": {
+      "g_engineering_trade-offs-d_automation": 0,
+      "g_engineering_trade-offs-d_testing": 19380,
+      "g_engineering_trade-offs-d_ci_cd": 0,
+      "g_cost_efficiency-d_automation": 0,
+      "g_cost_efficiency-d_testing": 0,
+      "g_cost_efficiency-d_ci_cd": 0,
+      "g_test_automation-d_automation": 0,
+      "g_test_automation-d_testing": 5510,
+      "g_test_automation-d_ci_cd": 21600
+    },
+    "anti_llm_vs_manual_exploratory_testing": {
+      "g_test_automation-d_ci_cd": 21600,
+      "g_test_automation-d_testing": 11020,
+      "g_test_automation-d_automation": 0,
+      "g_cost_efficiency-d_ci_cd": 0,
+      "g_cost_efficiency-d_testing": 0,
+      "g_cost_efficiency-d_automation": 0,
+      "g_engineering_trade-offs-d_ci_cd": 3600,
+      "g_engineering_trade-offs-d_testing": 19380,
+      "g_engineering_trade-offs-d_automation": 0
+    }
+  },
+  "execution_metrics": {
+    "total_nodes": 20,
+    "total_time_seconds": 862.7710690498352,
+    "total_tokens": 201544,
+    "total_input_tokens": 159378,
+    "total_output_tokens": 42166,
+    "teams": [
+      {
+        "team_name": "pro_llm_vs_manual_exploratory_testing",
+        "total_nodes": 12,
+        "total_time_seconds": 780.0622065067291,
+        "total_tokens": 182357,
+        "total_input_tokens": 144509,
+        "total_output_tokens": 37848,
+        "average_time_per_node": 65.00518387556076,
+        "average_tokens_per_node": 15196.416666666666,
+        "members": [
+          "Daniel Cooper",
+          "Prof. Margaret Sullivan"
+        ],
+        "nodes": [
+          "argument_creator",
+          "analyser",
+          "candidate_creator"
+        ]
+      },
+      {
+        "team_name": "anti_llm_vs_manual_exploratory_testing",
+        "total_nodes": 8,
+        "total_time_seconds": 82.70886254310608,
+        "total_tokens": 19187,
+        "total_input_tokens": 14869,
+        "total_output_tokens": 4318,
+        "average_time_per_node": 10.33860781788826,
+        "average_tokens_per_node": 2398.375,
+        "members": [
+          "Elena Vance",
+          "Dr. Alan Turing-Ross"
+        ],
+        "nodes": [
+          "argument_creator",
+          "analyser"
+        ]
+      }
+    ],
+    "members": [
+      {
+        "member_name": "Dr. Karen Mitchell",
+        "team_name": "anti_llm_vs_manual_exploratory_testing",
+        "total_nodes": 4,
+        "total_time_seconds": 40.19039869308472,
+        "total_tokens": 8944,
+        "total_input_tokens": 6784,
+        "total_output_tokens": 2160,
+        "nodes": [
+          "argument_creator",
+          "analyser"
+        ],
+        "rounds": [
+          1,
+          2
+        ]
+      },
+      {
+        "member_name": "Sergei Ivanov",
+        "team_name": "anti_llm_vs_manual_exploratory_testing",
+        "total_nodes": 4,
+        "total_time_seconds": 42.51846385002136,
+        "total_tokens": 10243,
+        "total_input_tokens": 8085,
+        "total_output_tokens": 2158,
+        "nodes": [
+          "argument_creator",
+          "analyser"
+        ],
+        "rounds": [
+          1,
+          2
+        ]
+      },
+      {
+        "member_name": "Dr. Emma Foster",
+        "team_name": "pro_llm_vs_manual_exploratory_testing",
+        "total_nodes": 6,
+        "total_time_seconds": 378.4295120239258,
+        "total_tokens": 84956,
+        "total_input_tokens": 66398,
+        "total_output_tokens": 18558,
+        "nodes": [
+          "argument_creator",
+          "analyser",
+          "candidate_creator"
+        ],
+        "rounds": [
+          1,
+          2
+        ]
+      },
+      {
+        "member_name": "Raj Patel",
+        "team_name": "pro_llm_vs_manual_exploratory_testing",
+        "total_nodes": 6,
+        "total_time_seconds": 401.63269448280334,
+        "total_tokens": 97401,
+        "total_input_tokens": 78111,
+        "total_output_tokens": 19290,
+        "nodes": [
+          "argument_creator",
+          "analyser",
+          "candidate_creator"
+        ],
+        "rounds": [
+          1,
+          2
+        ]
+      }
+    ],
+    "all_node_metrics": [
+      {
+        "team_name": "anti_llm_vs_manual_exploratory_testing",
+        "member_name": "Dr. Karen Mitchell",
+        "round": 1,
+        "node_name": "analyser",
+        "input_tokens": 654,
+        "output_tokens": 134,
+        "total_tokens": 788,
+        "elapsed_time_seconds": 2.7906274795532227,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "analyser node": {
+            "phase_name": "analyser node",
+            "input_tokens": 654,
+            "output_tokens": 134,
+            "total_tokens": 788,
+            "timestamp": 1769336945.31585
+          }
+        }
+      },
+      {
+        "team_name": "anti_llm_vs_manual_exploratory_testing",
+        "member_name": "Dr. Karen Mitchell",
+        "round": 1,
+        "node_name": "argument_creator",
+        "input_tokens": 2091,
+        "output_tokens": 924,
+        "total_tokens": 3015,
+        "elapsed_time_seconds": 15.495474576950073,
+        "llm_call_count": 2,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1249,
+            "output_tokens": 320,
+            "total_tokens": 1569,
+            "timestamp": 1769336951.0709462
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 842,
+            "output_tokens": 604,
+            "total_tokens": 1446,
+            "timestamp": 1769336960.8115184
+          }
+        }
+      },
+      {
+        "team_name": "anti_llm_vs_manual_exploratory_testing",
+        "member_name": "Sergei Ivanov",
+        "round": 1,
+        "node_name": "analyser",
+        "input_tokens": 890,
+        "output_tokens": 153,
+        "total_tokens": 1043,
+        "elapsed_time_seconds": 2.9546875953674316,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "analyser node": {
+            "phase_name": "analyser node",
+            "input_tokens": 890,
+            "output_tokens": 153,
+            "total_tokens": 1043,
+            "timestamp": 1769336965.4974787
+          }
+        }
+      },
+      {
+        "team_name": "anti_llm_vs_manual_exploratory_testing",
+        "member_name": "Sergei Ivanov",
+        "round": 1,
+        "node_name": "argument_creator",
+        "input_tokens": 2579,
+        "output_tokens": 919,
+        "total_tokens": 3498,
+        "elapsed_time_seconds": 18.303717374801636,
+        "llm_call_count": 2,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1503,
+            "output_tokens": 307,
+            "total_tokens": 1810,
+            "timestamp": 1769336973.2440379
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1076,
+            "output_tokens": 612,
+            "total_tokens": 1688,
+            "timestamp": 1769336983.8011222
+          }
+        }
+      },
+      {
+        "team_name": "pro_llm_vs_manual_exploratory_testing",
+        "member_name": "Dr. Emma Foster",
+        "round": 1,
+        "node_name": "analyser",
+        "input_tokens": 1014,
+        "output_tokens": 584,
+        "total_tokens": 1598,
+        "elapsed_time_seconds": 12.515465497970581,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "tot analyser node": {
+            "phase_name": "tot analyser node",
+            "input_tokens": 1014,
+            "output_tokens": 584,
+            "total_tokens": 1598,
+            "timestamp": 1769336998.9738793
+          }
+        }
+      },
+      {
+        "team_name": "pro_llm_vs_manual_exploratory_testing",
+        "member_name": "Dr. Emma Foster",
+        "round": 1,
+        "node_name": "argument_creator",
+        "input_tokens": 21897,
+        "output_tokens": 8774,
+        "total_tokens": 30671,
+        "elapsed_time_seconds": 186.70548272132874,
+        "llm_call_count": 18,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1677,
+            "output_tokens": 352,
+            "total_tokens": 2029,
+            "timestamp": 1769337172.5731926
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1049,
+            "output_tokens": 598,
+            "total_tokens": 1647,
+            "timestamp": 1769337185.6791024
+          }
+        }
+      },
+      {
+        "team_name": "pro_llm_vs_manual_exploratory_testing",
+        "member_name": "Dr. Emma Foster",
+        "round": 1,
+        "node_name": "candidate_creator",
+        "input_tokens": 1871,
+        "output_tokens": 80,
+        "total_tokens": 1951,
+        "elapsed_time_seconds": 4.111669063568115,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "variation_selection": {
+            "phase_name": "variation_selection",
+            "input_tokens": 1871,
+            "output_tokens": 80,
+            "total_tokens": 1951,
+            "timestamp": 1769337187.512676
+          }
+        }
+      },
+      {
+        "team_name": "pro_llm_vs_manual_exploratory_testing",
+        "member_name": "Raj Patel",
+        "round": 1,
+        "node_name": "analyser",
+        "input_tokens": 1359,
+        "output_tokens": 649,
+        "total_tokens": 2008,
+        "elapsed_time_seconds": 14.289561033248901,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "tot analyser node": {
+            "phase_name": "tot analyser node",
+            "input_tokens": 1359,
+            "output_tokens": 649,
+            "total_tokens": 2008,
+            "timestamp": 1769337204.1415074
+          }
+        }
+      },
+      {
+        "team_name": "pro_llm_vs_manual_exploratory_testing",
+        "member_name": "Raj Patel",
+        "round": 1,
+        "node_name": "argument_creator",
+        "input_tokens": 28404,
+        "output_tokens": 8969,
+        "total_tokens": 37373,
+        "elapsed_time_seconds": 188.6635251045227,
+        "llm_call_count": 18,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 2043,
+            "output_tokens": 328,
+            "total_tokens": 2371,
+            "timestamp": 1769337380.0285304
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1408,
+            "output_tokens": 719,
+            "total_tokens": 2127,
+            "timestamp": 1769337392.805302
+          }
+        }
+      },
+      {
+        "team_name": "pro_llm_vs_manual_exploratory_testing",
+        "member_name": "Raj Patel",
+        "round": 1,
+        "node_name": "candidate_creator",
+        "input_tokens": 1860,
+        "output_tokens": 90,
+        "total_tokens": 1950,
+        "elapsed_time_seconds": 3.8238823413848877,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "variation_selection": {
+            "phase_name": "variation_selection",
+            "input_tokens": 1860,
+            "output_tokens": 90,
+            "total_tokens": 1950,
+            "timestamp": 1769337394.9074163
+          }
+        }
+      },
+      {
+        "team_name": "anti_llm_vs_manual_exploratory_testing",
+        "member_name": "Dr. Karen Mitchell",
+        "round": 2,
+        "node_name": "analyser",
+        "input_tokens": 1091,
+        "output_tokens": 155,
+        "total_tokens": 1246,
+        "elapsed_time_seconds": 3.1848533153533936,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "analyser node": {
+            "phase_name": "analyser node",
+            "input_tokens": 1091,
+            "output_tokens": 155,
+            "total_tokens": 1246,
+            "timestamp": 1769337399.8790061
+          }
+        }
+      },
+      {
+        "team_name": "anti_llm_vs_manual_exploratory_testing",
+        "member_name": "Dr. Karen Mitchell",
+        "round": 2,
+        "node_name": "argument_creator",
+        "input_tokens": 2948,
+        "output_tokens": 947,
+        "total_tokens": 3895,
+        "elapsed_time_seconds": 18.719443321228027,
+        "llm_call_count": 2,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1678,
+            "output_tokens": 346,
+            "total_tokens": 2024,
+            "timestamp": 1769337406.6661196
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1270,
+            "output_tokens": 601,
+            "total_tokens": 1871,
+            "timestamp": 1769337418.5989501
+          }
+        }
+      },
+      {
+        "team_name": "anti_llm_vs_manual_exploratory_testing",
+        "member_name": "Sergei Ivanov",
+        "round": 2,
+        "node_name": "analyser",
+        "input_tokens": 1281,
+        "output_tokens": 152,
+        "total_tokens": 1433,
+        "elapsed_time_seconds": 3.0804340839385986,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "analyser node": {
+            "phase_name": "analyser node",
+            "input_tokens": 1281,
+            "output_tokens": 152,
+            "total_tokens": 1433,
+            "timestamp": 1769337423.6518838
+          }
+        }
+      },
+      {
+        "team_name": "anti_llm_vs_manual_exploratory_testing",
+        "member_name": "Sergei Ivanov",
+        "round": 2,
+        "node_name": "argument_creator",
+        "input_tokens": 3335,
+        "output_tokens": 934,
+        "total_tokens": 4269,
+        "elapsed_time_seconds": 18.179624795913696,
+        "llm_call_count": 2,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1881,
+            "output_tokens": 302,
+            "total_tokens": 2183,
+            "timestamp": 1769337429.7645717
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1454,
+            "output_tokens": 632,
+            "total_tokens": 2086,
+            "timestamp": 1769337441.8289962
+          }
+        }
+      },
+      {
+        "team_name": "pro_llm_vs_manual_exploratory_testing",
+        "member_name": "Dr. Emma Foster",
+        "round": 2,
+        "node_name": "analyser",
+        "input_tokens": 1600,
+        "output_tokens": 645,
+        "total_tokens": 2245,
+        "elapsed_time_seconds": 10.924214839935303,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "tot analyser node": {
+            "phase_name": "tot analyser node",
+            "input_tokens": 1600,
+            "output_tokens": 645,
+            "total_tokens": 2245,
+            "timestamp": 1769337454.5979679
+          }
+        }
+      },
+      {
+        "team_name": "pro_llm_vs_manual_exploratory_testing",
+        "member_name": "Dr. Emma Foster",
+        "round": 2,
+        "node_name": "argument_creator",
+        "input_tokens": 38169,
+        "output_tokens": 8384,
+        "total_tokens": 46553,
+        "elapsed_time_seconds": 160.4501986503601,
+        "llm_call_count": 18,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 2691,
+            "output_tokens": 326,
+            "total_tokens": 3017,
+            "timestamp": 1769337602.9395232
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1843,
+            "output_tokens": 608,
+            "total_tokens": 2451,
+            "timestamp": 1769337615.0484107
+          }
+        }
+      },
+      {
+        "team_name": "pro_llm_vs_manual_exploratory_testing",
+        "member_name": "Dr. Emma Foster",
+        "round": 2,
+        "node_name": "candidate_creator",
+        "input_tokens": 1847,
+        "output_tokens": 91,
+        "total_tokens": 1938,
+        "elapsed_time_seconds": 3.7224812507629395,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "variation_selection": {
+            "phase_name": "variation_selection",
+            "input_tokens": 1847,
+            "output_tokens": 91,
+            "total_tokens": 1938,
+            "timestamp": 1769337616.9050956
+          }
+        }
+      },
+      {
+        "team_name": "pro_llm_vs_manual_exploratory_testing",
+        "member_name": "Raj Patel",
+        "round": 2,
+        "node_name": "analyser",
+        "input_tokens": 1852,
+        "output_tokens": 566,
+        "total_tokens": 2418,
+        "elapsed_time_seconds": 12.003632545471191,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "tot analyser node": {
+            "phase_name": "tot analyser node",
+            "input_tokens": 1852,
+            "output_tokens": 566,
+            "total_tokens": 2418,
+            "timestamp": 1769337630.837468
+          }
+        }
+      },
+      {
+        "team_name": "pro_llm_vs_manual_exploratory_testing",
+        "member_name": "Raj Patel",
+        "round": 2,
+        "node_name": "argument_creator",
+        "input_tokens": 42795,
+        "output_tokens": 8926,
+        "total_tokens": 51721,
+        "elapsed_time_seconds": 177.4692301750183,
+        "llm_call_count": 18,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 2958,
+            "output_tokens": 333,
+            "total_tokens": 3291,
+            "timestamp": 1769337793.3334315
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 2105,
+            "output_tokens": 648,
+            "total_tokens": 2753,
+            "timestamp": 1769337808.3071952
+          }
+        }
+      },
+      {
+        "team_name": "pro_llm_vs_manual_exploratory_testing",
+        "member_name": "Raj Patel",
+        "round": 2,
+        "node_name": "candidate_creator",
+        "input_tokens": 1841,
+        "output_tokens": 90,
+        "total_tokens": 1931,
+        "elapsed_time_seconds": 5.382863283157349,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "variation_selection": {
+            "phase_name": "variation_selection",
+            "input_tokens": 1841,
+            "output_tokens": 90,
+            "total_tokens": 1931,
+            "timestamp": 1769337811.1178036
+          }
+        }
+      }
+    ]
+  }
+}

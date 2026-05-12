@@ -1,0 +1,50 @@
+{
+  "topic": "Technical debt remediation should be prioritized whenever test coverage falls below defined thresholds",
+  "teams": [
+    "anti_technical_debt_coverage_threshold",
+    "pro_technical_debt_coverage_threshold"
+  ],
+  "rounds_completed": 0,
+  "audience_initial_votes": [],
+  "audience_final_votes": [],
+  "argument_log": [],
+  "tgs_snapshots": [
+    {
+      "round": 1,
+      "team": "anti_technical_debt_coverage_threshold",
+      "member": "Mark Sullivan",
+      "tgs": {
+        "g_reliability-d_quality_assurance": 0,
+        "g_reliability-d_test_management": 0,
+        "g_reliability-d_software_engineering": 0,
+        "g_value_proposition-d_quality_assurance": 0,
+        "g_value_proposition-d_test_management": 0,
+        "g_value_proposition-d_software_engineering": 0,
+        "g_pragmatism-d_quality_assurance": 0,
+        "g_pragmatism-d_test_management": 0,
+        "g_pragmatism-d_software_engineering": 0
+      }
+    },
+    {
+      "round": 1,
+      "team": "pro_technical_debt_coverage_threshold",
+      "member": "Dr. Robert Klein",
+      "tgs": {
+        "g_reliability-d_quality_assurance": 0,
+        "g_reliability-d_test_management": 0,
+        "g_reliability-d_software_engineering": 0,
+        "g_value_proposition-d_quality_assurance": 0,
+        "g_value_proposition-d_test_management": 0,
+        "g_value_proposition-d_software_engineering": 0,
+        "g_pragmatism-d_quality_assurance": 0,
+        "g_pragmatism-d_test_management": 0,
+        "g_pragmatism-d_software_engineering": 0
+      }
+    }
+  ],
+  "error": "Unexpected error: max() iterable argument is empty",
+  "error_type": "ValueError",
+  "traceback": "Traceback (most recent call last):\n  File \"E:\\PW\\MAOSDS\\agents\\debate_extended\\debate_config.py\", line 88, in create_debate_from_config\n    final_state = workflow.invoke(initial_state)\n  File \"E:\\PW\\MAOSDS\\venv\\Lib\\site-packages\\langgraph\\pregel\\main.py\", line 3068, in invoke\n    for chunk in self.stream(\n                 ~~~~~~~~~~~^\n        input,\n        ^^^^^^\n    ...<10 lines>...\n        **kwargs,\n        ^^^^^^^^^\n    ):\n    ^\n  File \"E:\\PW\\MAOSDS\\venv\\Lib\\site-packages\\langgraph\\pregel\\main.py\", line 2643, in stream\n    for _ in runner.tick(\n             ~~~~~~~~~~~^\n        [t for t in loop.tasks.values() if not t.writes],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<2 lines>...\n        schedule_task=loop.accept_push,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ):\n    ^\n  File \"E:\\PW\\MAOSDS\\venv\\Lib\\site-packages\\langgraph\\pregel\\_runner.py\", line 167, in tick\n    run_with_retry(\n    ~~~~~~~~~~~~~~^\n        t,\n        ^^\n    ...<10 lines>...\n        },\n        ^^\n    )\n    ^\n  File \"E:\\PW\\MAOSDS\\venv\\Lib\\site-packages\\langgraph\\pregel\\_retry.py\", line 42, in run_with_retry\n    return task.proc.invoke(task.input, config)\n           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\PW\\MAOSDS\\venv\\Lib\\site-packages\\langgraph\\_internal\\_runnable.py\", line 656, in invoke\n    input = context.run(step.invoke, input, config, **kwargs)\n  File \"E:\\PW\\MAOSDS\\venv\\Lib\\site-packages\\langgraph\\_internal\\_runnable.py\", line 400, in invoke\n    ret = self.func(*args, **kwargs)\n  File \"E:\\PW\\MAOSDS\\agents\\debate_extended\\debate.py\", line 67, in audience_final_voting\n    return audience_node.final_voting_node(state)\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^\n  File \"E:\\PW\\MAOSDS\\agents\\audience_extended\\audience_node.py\", line 282, in final_voting_node\n    final_winning_team = max(final_vote_counts.items(), key=lambda x: x[1])[0]\n                         ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: max() iterable argument is empty\nDuring task with name 'audience_final_voting' and id 'b5556ca8-cda9-4460-6702-f94e81eba198'\n",
+  "config_id": "technical_debt_coverage_threshold",
+  "team_architectures": {}
+}

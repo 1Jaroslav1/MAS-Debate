@@ -1,0 +1,1347 @@
+{
+  "config_id": "ai_code_review_parity",
+  "topic": "AI-generated code should be subject to the same peer review standards as human-written code",
+  "max_rounds": 1,
+  "rounds_completed": 1,
+  "teams": [
+    "anti_ai_code_review_parity",
+    "pro_ai_code_review_parity"
+  ],
+  "team_architectures": {
+    "anti_ai_code_review_parity": {
+      "architecture": "cot",
+      "team_type": "opposition",
+      "members": [
+        {
+          "name": "Dr. Tom Becker",
+          "knowledge_active": false,
+          "knowledge_use_rag": false,
+          "knowledge_use_web_search": false,
+          "evaluation_active": false,
+          "max_iterations": 3,
+          "use_personalization": true,
+          "use_context_analysis": true
+        }
+      ]
+    },
+    "pro_ai_code_review_parity": {
+      "architecture": "tot",
+      "team_type": "proposition",
+      "tot_config": {
+        "num_analysis_branches": null,
+        "num_argument_variations": null,
+        "pruning_strategy": null,
+        "analysis_pruning_k": null,
+        "argument_pruning_k": null,
+        "search_algorithm": null,
+        "enable_fast_scoring": null,
+        "diversity_weight": null
+      },
+      "members": [
+        {
+          "name": "Dr. Sarah Chen",
+          "knowledge_active": false,
+          "knowledge_use_rag": false,
+          "knowledge_use_web_search": false,
+          "evaluation_active": false,
+          "max_iterations": 3,
+          "use_personalization": true,
+          "use_context_analysis": true
+        }
+      ]
+    }
+  },
+  "audience_initial_votes": [
+    {
+      "name": "Dr. Elizabeth Warren-Smith",
+      "decision": "disagree",
+      "reasoning": "As a health economist, I value the nuances of human judgment in assessing the implications of software decisions. AI-generated code lacks the experiential context and ethical considerations that human developers apply to their work. Subjecting AI-generated code to the same peer review standards could mislead us about its real-world applicability, especially in healthcare, where human oversight is critical."
+    },
+    {
+      "name": "Jonathan Tech-Garcia",
+      "decision": "agree",
+      "reasoning": "I strongly agree that AI-generated code should undergo peer review. My experience as a software engineer with AI shows that such systems can produce code efficiently and accurately. However, they’re not infallible. By applying peer review standards equally to AI and human-generated code, we ensure a rigorous quality control process. This also promotes accountability and trust in AI technologies, validating their role in developing complex applications."
+    },
+    {
+      "name": "Professor Sarah Environment-Jones",
+      "decision": "disagree",
+      "reasoning": "I disagree with the idea of equating peer review standards for AI-generated and human-written code. While AI systems can assist in the coding process, they often lack the contextual understanding necessary for significant ecological implications. We must prioritize human insight in areas that significantly impact environmental policy to ensure a thorough review process that considers all the complexities involved."
+    },
+    {
+      "name": "Marcus Business-Chen",
+      "decision": "disagree",
+      "reasoning": "As a venture capitalist, my focus is on market efficiency, and I believe that not all AI-generated code requires the same level of peer review. The speed and adaptability of AI can drive innovation and reduce costs, facilitating rapid market entry. While code quality is vital, overregulating peer review processes may stifle growth and innovation within the industry, especially for start-ups reliant on agile methodologies."
+    },
+    {
+      "name": "Dr. Helen Ethics-Martinez",
+      "decision": "disagree",
+      "reasoning": "I find it important to maintain traditional values in evaluation processes. AI-generated code should not have the same peer review standards as human-written code because AI lacks moral judgment and ethical considerations inherent to human developers. We can't overlook the responsibilities that come with coding, particularly in healthcare and applications that directly affect human lives."
+    },
+    {
+      "name": "David Policy-Anderson",
+      "decision": "disagree",
+      "reasoning": "From my experience as a government policy analyst, I argue against applying the same peer review standards. AI-generated code operates with algorithms that can produce outputs without the nuanced understanding valued in human-generated work. Policies and code should reflect human judgment, particularly in public domains where implications extend into the lives of numerous individuals, making insensitivity a potential risk."
+    },
+    {
+      "name": "Rebecca Science-Taylor",
+      "decision": "disagree",
+      "reasoning": "As a research scientist, my instinct is to disagree with equalizing review standards for AI-generated and human-written code. While data-driven approaches are essential, the inherent complexities of research often require human interpretation and ethical consideration. AI lacks the ability to appreciate the broader implications of scientific work, making rigorous human oversight crucially important in maintaining the integrity of our findings."
+    },
+    {
+      "name": "Professor James Law-Wilson",
+      "decision": "disagree",
+      "reasoning": "I believe that AI-generated code should not receive the same peer review standards as human code because the essence of legal analysis lies in human judgment. Legal implications are often nuanced and require contextual understanding that AI cannot replicate. We must adhere to principles of law that prioritize human interpretation to uphold civil liberties effectively."
+    },
+    {
+      "name": "Dr. Maria Healthcare-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "As a physician, I have serious concerns about treating AI-generated code on par with human-written code. Patient care is paramount, and while AI can assist in generating code, the lack of emotional and ethical understanding poses risks to patient safety. Patients deserve human oversight in all medical technologies, making a different standard necessary to ensure safe practices."
+    },
+    {
+      "name": "Steven Innovation-Kim",
+      "decision": "agree",
+      "reasoning": "I support the motion to apply equal peer review standards to AI-generated code since as a technology entrepreneur, I understand the importance of rigorous vetting in fostering innovation. AI tools can enhance our productivity and efficiency, but without accountability measures like peer reviews, we might overlook areas that require ethical considerations and technical accuracy, which could jeopardize businesses leveraging these technologies."
+    },
+    {
+      "name": "Dr. Patricia Environment-Green",
+      "decision": "disagree",
+      "reasoning": "I disagree strongly with putting AI-generated code on an equal footing with human-generated code in terms of peer review. As an environmental policy expert, I know the depth of contextual understanding required for policies impacting ecological systems. AI lacks the meaningful environmental perspective and nuances that can only be grasped through human experience, which is vital in the review process."
+    },
+    {
+      "name": "Michael Finance-Thompson",
+      "decision": "disagree",
+      "reasoning": "I oppose the idea of equal peer review standards because the fields of finance and investment require human intuition that AI does not possess. AI-generated code may provide data analysis, but it fails to account for market sentiment or economic shifts that often rely on human experience for accurate interpretation. Differing review standards will support financial integrity and market health."
+    },
+    {
+      "name": "Dr. Angela Education-Foster",
+      "decision": "disagree",
+      "reasoning": "As an education researcher, I view the peer review process as crucial for ensuring equitable and ethical standards in educational practices. AI-generated code doesn't possess the human experience that informs educational equity. Thus, to maintain these values, we must be cautious about applying the same review standards to AI-generated outputs, prioritizing human judgment and insight."
+    },
+    {
+      "name": "Robert Security-Cooper",
+      "decision": "disagree",
+      "reasoning": "Security and technology are paramount in my field. I am against applying the same peer review standards to AI-generated code. Cybersecurity requires intricate understanding based on human experiences and risk assessments that AI lacks. Implementing a more stringent review on AI-generated code would ensure we safeguard sensitive information without losing applicable insights afforded by human oversight."
+    },
+    {
+      "name": "Dr. Christina Medical-Miller",
+      "decision": "disagree",
+      "reasoning": "In the realm of biomedicine, I find it crucial to uphold high ethical standards in peer reviews. I disagree with the notion of equal treatment for AI-generated code, as ethical considerations require a level of human insight and responsibility that AI simply cannot provide. Decisions in healthcare must be rooted in empathy and moral judgment that AI does not possess."
+    },
+    {
+      "name": "Daniel Legal-Martinez",
+      "decision": "disagree",
+      "reasoning": "I maintain that AI-generated code should not undergo the same peer review process as human-written code. As a corporate lawyer, I recognize that legal frameworks rely heavily on human interpretation and ethical standards that algorithms cannot fulfill. Relying on AI-generated outputs without comprehensive human review can jeopardize regulatory clarity and compliance."
+    },
+    {
+      "name": "Dr. Kevin Philosophy-Liu",
+      "decision": "disagree",
+      "reasoning": "As an ethics professor, I disagree with equating peer review standards for AI-generated code with human-generated code. Ethical consideration cannot be replaced by algorithmic outputs. The values inherent in human decision-making are essential in evaluating the implications of technological development. We need to maintain a human-oriented approach to ensure ethical, responsible use of technology."
+    },
+    {
+      "name": "Lisa Technology-Hayes",
+      "decision": "agree",
+      "reasoning": "I am in favor of AI-generated code being subject to the same peer review standards as human-written code. In my experience as an AI researcher, I see the potential for AI to enhance and streamline code production, but I also recognize the need for oversight and verification to avoid errors or ethical dilemmas. Equal scrutiny ensures both efficiency and accountability in our coding practices."
+    },
+    {
+      "name": "Professor Mark Economics-Stevens",
+      "decision": "disagree",
+      "reasoning": "As a labor economist, I disagree with the motion to equalize peer review standards for AI-generated and human-written code. The nuanced understanding of labor dynamics is essential in crafting economic policies, and AI cannot fully replicate human judgment or experience. Maintaining separate standards will ensure that we account for the complexities of labor markets in our evaluations."
+    },
+    {
+      "name": "Dr. Sophia Ethics-Petrov",
+      "decision": "disagree",
+      "reasoning": "As a bioethicist, I stand firmly against equating peer review standards between AI-generated and human-generated code. The ethical implications of medical trials and technology must be assessed with profound human judgment that AI lacks. We need to prioritize human dignity, ensuring that any code used in healthcare is reviewed with compassion and ethical considerations that AI cannot comprehend."
+    },
+    {
+      "name": "Paul Industry-Anderson",
+      "decision": "disagree",
+      "reasoning": "I disagree with applying the same peer review standards to AI-generated code. As someone with experience in manufacturing operations, I know practical implementation often benefits from human intuition and experience. Codifying AI's outputs in the same manner might ignore critical insights that can only stem from human understanding in operational contexts."
+    },
+    {
+      "name": "Dr. Janet Data-Kim",
+      "decision": "disagree",
+      "reasoning": "From my perspective as a statistician, I don’t support the idea of equal peer review standards. Statistical analysis often requires judgment calls that depend on context, which AI fails to appreciate. Peer review should prioritize expertise that incorporates human reasoning; AI lacks the interpretive skill necessary for nuanced statistical conclusions, which could lead to misrepresentation of results."
+    },
+    {
+      "name": "Captain Steve Military-Richards",
+      "decision": "disagree",
+      "reasoning": "As a retired military officer, I oppose aligning peer review standards for AI with those for human-written code. In security operations, the need for discipline and contextual awareness is paramount. AI lacks the understanding of the ethical and operational implications that can only come from human oversight, which is crucial in maintaining operational security."
+    },
+    {
+      "name": "Dr. Anna Medical-Volkov",
+      "decision": "disagree",
+      "reasoning": "I disapprove of equal standards for AI-generated code due to my expertise as a reproductive specialist. Patient choices and care underscore the importance of human oversight in sensitive areas like medicine. AI may aid in generating procedural code, but it cannot navigate the emotional and ethical nuances related to reproductive healthcare, necessitating a human touch in the review process."
+    },
+    {
+      "name": "Professor William Science-Chen",
+      "decision": "disagree",
+      "reasoning": "As a physical scientist, I hold the view that peer review standards should not equate AI-generated and human-generated code. Scientific inquiry often involves subjective interpretations and ethical considerations that AI cannot grasp. To uphold scientific rigor, we need individuals who can contextualize findings and assess consequences beyond mere data outputs."
+    },
+    {
+      "name": "Melissa Art-Johnson",
+      "decision": "disagree",
+      "reasoning": "I believe equal peer review standards for AI-generated code are unnecessary. As a museum curator, I understand the importance of preserving cultural narratives that require human insight. While AI can assist in generating outputs, it lacks the emotional connection and understanding essential to reviewing outputs that impact our cultural heritage."
+    },
+    {
+      "name": "Tony Sports-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "My perspective as a former athlete leads me to disagree with consistent peer review standards. Competitive collaboration and teamwork thrive under human leadership and judgment. AI-generated code may help streamline processes, but the essence of our strategies and decision-making requires human context that AI cannot offer, making differing standards more applicable."
+    },
+    {
+      "name": "Grace Music-Wilson",
+      "decision": "disagree",
+      "reasoning": "I stand against applying uniform peer review standards to AI-generated code. As a classical musician, I appreciate that artistry and emotive expressions are rooted in human experiences. AI lacks the capacity for emotional interpretation, which suggests that relying on it for serious evaluative processes might produce results that miss critical aesthetic and cultural markers."
+    },
+    {
+      "name": "Frank History-Thompson",
+      "decision": "disagree",
+      "reasoning": "As a history teacher, I believe the standards of peer review should remain differentiated. Human-written narratives offer context grounded in historical understanding. AI-generated outputs cannot provide the same depth of interpretation that is crucial for teaching history. Acknowledging this difference respects the importance of contextual understanding in educational practices."
+    },
+    {
+      "name": "Luna Spiritual-Garcia",
+      "decision": "disagree",
+      "reasoning": "My holistic worldview as a yoga instructor leads me to believe that AI-generated code should not be subjected to the same peer review standards. The interplay of human intuition, experience, and ethical considerations shapes our approaches to wellness and care. AI lacks this mindfulness, necessitating a different evaluative approach that prioritizes human judgment."
+    },
+    {
+      "name": "Bob Construction-Miller",
+      "decision": "disagree",
+      "reasoning": "I oppose the idea of equal peer review standards due to my expertise as a union electrician. Skilled trades rely on intuitive understanding and practical experience that cannot be replicated by AI. Maintaining different standards acknowledges the value of human input and ensures that the safety and quality of work are not compromised by algorithm-generated outputs."
+    },
+    {
+      "name": "Jennifer Fashion-Anderson",
+      "decision": "disagree",
+      "reasoning": "As a retail manager, I find it vital to acknowledge the difference between human and AI contributions. Consumer experiences rely on human insight and interactions that AI lacks. Equalizing peer reviews for AI-generated code disregards the importance of understanding customer needs and the emotional factors that drive retail decisions, making it necessary to hold different standards."
+    },
+    {
+      "name": "Carlos Literature-Martinez",
+      "decision": "disagree",
+      "reasoning": "I believe we should differ in our peer review standards. As an English professor, my work involves interpreting literary texts that require human connections and interpretations. AI-generated text can lack the emotional depth and critical thought of human engagement. Maintaining distinct standards emphasizes the unique qualities and insights humans bring to the process."
+    },
+    {
+      "name": "Destiny Social-Kim",
+      "decision": "agree",
+      "reasoning": "I agree with the importance of equal peer review standards for AI-generated code. As an influencer, I've witnessed how technology shapes processes and perceptions. Rigorous review ensures that AI contributes positively and ethically to trends and communication, critically examining the outputs and promoting responsible technology use that aligns with societal values."
+    },
+    {
+      "name": "Ralph Mechanical-Taylor",
+      "decision": "disagree",
+      "reasoning": "As an auto mechanic, I oppose applying the same peer review standards to AI-generated code as human-generated code. Skilled trades rely heavily on hands-on experience and judgment that AI cannot mimic. Distinct standards will honor the practical expertise required for responsible trades, avoiding potential pitfalls resulting from reliance on algorithms in areas that necessitate skilled labor."
+    },
+    {
+      "name": "Amber Wellness-Foster",
+      "decision": "disagree",
+      "reasoning": "I disagree with equating peer review standards for AI-generated and human-written code. In my field, the focus on natural solutions relies on human understanding and ethical frameworks that AI cannot replicate. By maintaining different standards, we ensure a more holistic approach that prioritizes the human factor in addressing health-related issues."
+    },
+    {
+      "name": "Kevin Gaming-Chen",
+      "decision": "disagree",
+      "reasoning": "As a video game developer, I argue that the peer review processes for AI-generated code should differ from those for human-generated code. Gaming is an inherently creative field requiring human emotions and experience for design. AI-generated outputs lack that personal touch, and thus, different standards are required to preserve the essence of creative expression."
+    },
+    {
+      "name": "Patricia Religious-O'Sullivan",
+      "decision": "disagree",
+      "reasoning": "I strongly believe that peer review standards should remain distinct for AI and human-generated code. As a church administrator, I see the direct impacts of human values in community decisions that AI cannot understand. Upholding human judgment and interpretation ensures adherence to faith-based values and ethics, making differentiated standards essential."
+    },
+    {
+      "name": "Jake Outdoor-Wilson",
+      "decision": "disagree",
+      "reasoning": "As a park ranger, I find it crucial to ensure the review standards differ between AI-generated and human-written code. Environmental conservation requires a human touch, informed by values of stewardship and connection to nature that AI cannot replicate. By maintaining separate standards, we honor ethical considerations tied closely to our responsibilities towards the environment."
+    },
+    {
+      "name": "Nicole Beauty-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "I disagree with aligning peer review standards for AI-generated code with those of human-generated code. In the cosmetics industry, understanding beauty involves human perceptions and values that AI cannot grasp. Supporting differentiated standards will ensure we recognize the complexities of consumer behavior and the emotional subtleties of the market."
+    },
+    {
+      "name": "Martin Craft-Anderson",
+      "decision": "disagree",
+      "reasoning": "As a furniture maker, I oppose equal peer review standards because craftsmanship is deeply rooted in human intuition and experience. AI can assist, but it cannot replicate the care and standards we uphold in our trades. Distinct review criteria allow us to preserve quality and craftsmanship that reflect our dedication and skills."
+    },
+    {
+      "name": "Samantha Travel-Lee",
+      "decision": "disagree",
+      "reasoning": "I hold the stance that peer review standards should not be equal between AI-generated code and human-generated code. My experiences as a travel blogger have highlighted how human storytelling offers invaluable insights and emotional connections that AI outputs lack. Keeping distinct standards ensures the genuine qualities inherent in our narratives are preserved."
+    },
+    {
+      "name": "Eddie Food-Garcia",
+      "decision": "disagree",
+      "reasoning": "I stand against normalizing equal review standards for AI compared to human-generated code based on my culinary expertise. Cooking is an art that thrives on human intuition and creativity. AI can suggest recipes but fails to grasp the nuances of culture and personal touch. Distinct standards would safeguard the artistry and cultural significance inherent in cooking."
+    },
+    {
+      "name": "Brenda Real-Estate-Thompson",
+      "decision": "disagree",
+      "reasoning": "As a property agent, I argue against equal peer review standards because navigating real estate transactions necessitates human judgment and understanding. AI can facilitate research, but emotional intelligence and interpersonal skills are central to effective negotiation. Thus, maintaining different review standards allows for a more nuanced approach to the complexities involved."
+    },
+    {
+      "name": "Tyler Photography-Kim",
+      "decision": "disagree",
+      "reasoning": "I disagree with the idea of equal peer review standards for AI-generated and human-written code. My work as a wedding photographer underscores the need for human creativity and emotion in visual storytelling. AI cannot replicate the unique perspectives that come from personal experience, making it vital to maintain differentiated review standards to preserve artistry."
+    },
+    {
+      "name": "Crystal Therapy-Martinez",
+      "decision": "disagree",
+      "reasoning": "I oppose standardizing peer reviews for AI-generated and human-generated code. My role as a physical therapist emphasizes the importance of adaptive, human-centered approaches in rehabilitation. AI may assist with data but lacks the empathy and understanding essential for patient care. Differentiated review processes honor the specifics of patient experiences and the nuances of care."
+    },
+    {
+      "name": "Gary Fishing-Johnson",
+      "decision": "disagree",
+      "reasoning": "As a commercial fisherman, I disagree with treating AI-generated code the same as human-written code for peer review. The fishing industry requires a deep understanding of local conditions and ecosystems that AI simply cannot analyze. Different review standards retain the invaluable human insights that drive responsible practices in natural resource management."
+    },
+    {
+      "name": "Alicia Dance-Foster",
+      "decision": "disagree",
+      "reasoning": "I oppose equalizing peer review standards because dance is an art form grounded in human emotion and expression. AI lacks the capacity to interpret movement in the way that a human does. Maintaining different standards for AI-generated outputs respects the artistic depth that originates from personal experience and training."
+    },
+    {
+      "name": "Bruce Volunteer-Wilson",
+      "decision": "disagree",
+      "reasoning": "I disagree with the idea of equalizing peer review standards for AI-generated and human-written code. As a retired volunteer coordinator, I understand that community engagement relies heavily on human connections and empathy. AI lacks the emotional intelligence needed for effective outreach, suggesting that distinct review standards will reinforce compassionate and human-centered community service approaches."
+    },
+    {
+      "name": "Tina Pet-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "As a veterinary technician, I oppose the notion of applying the same peer review standards for AI-generated code. Animal care necessitates human empathy, ethics, and a unique understanding of veterinary needs that AI cannot replicate. We need to ensure different standards to safeguard the welfare of the animals in our care by prioritizing human oversight."
+    }
+  ],
+  "audience_final_votes": [
+    {
+      "name": "Dr. Elizabeth Warren-Smith",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because I believe that while AI-generated code is transforming the landscape of software development, it shouldn't be subjected to the same peer review standards as human-generated code. The nuances and creativity involved in coding penned by humans may not parallel the algorithmic logic of AI. AI lacks human judgment and experience, which are pivotal in complex scenarios, particularly in health policy integration. Peer review should focus on critical thinking and contextual comprehension that AI currently cannot replicate."
+    },
+    {
+      "name": "Jonathan Tech-Garcia",
+      "decision": "agree",
+      "reasoning": "I vote 'agree' as AI-generated code warrants the same peer review standards as human-written code. The technologies driving AI coding are advanced, yet they still require scrutiny to ensure safety, security, and efficiency. Peer review can identify shortcomings and enhance the quality of AI-generated outputs. When it comes to deploying software in real-world applications, understanding and improving the process greatly impacts reliability. Embracing a rigorous peer review could accelerate our trust and investment in AI as a partner in coding."
+    },
+    {
+      "name": "Professor Sarah Environment-Jones",
+      "decision": "disagree",
+      "reasoning": "I must vote 'disagree' because the application of peer review to AI-generated code raises concerns, particularly about accountability in climate science. AI does not engage in ethical reasoning or nuanced decision-making, making it inherently limited in assessing ecological impacts. Further, the need for urgency in environmental issues necessitates human oversight and deep understanding that AI cannot provide. The integrity of scientific methodology should remain firmly in human hands, as ethical decisions around the environment cannot solely hinge on code."
+    },
+    {
+      "name": "Marcus Business-Chen",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because imposing the same peer review standards on AI-generated code as on human-generated code could stifle innovation. In the venture capital space, we value agility and rapid iteration. While I understand the need for quality assurance, overregulation can hinder the efficiency and entrepreneurial spirit that technology thrives on. Recognizing AI-generated code as a tool of innovation, rather than a strict competitor to human efforts, offers a better approach to maximize potential."
+    },
+    {
+      "name": "Dr. Helen Ethics-Martinez",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because I hold a principled belief that the ethical dimensions underlying the development and implementation of AI-generated code require careful human oversight rather than rigid peer review standards. AI lacks the intrinsic values necessary to navigate ethical dilemmas that arise in medical and other fields. Ensuring patient welfare and ethical integrity must remain rooted in human decision-making, as the nuances of medicine demand compassion and empathy that AI cannot replicate."
+    },
+    {
+      "name": "David Policy-Anderson",
+      "decision": "disagree",
+      "reasoning": "I choose to vote 'disagree' because the debate surrounding AI-generated code and its role in public policy should focus more on pragmatic considerations than rigid peer review standards. AI tools enhance productivity, even in governance. However, their output must remain subject to human review and policy context to avoid blindly accepting potentially flawed AI logic. Our focus should be on implementing frameworks for oversight instead of enforcing a heavy-handed review process."
+    },
+    {
+      "name": "Rebecca Science-Taylor",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because the complexities and ethical implications surrounding AI-generated code merit scrutiny beyond mere peer review. As a research scientist, I understand that while AI can assist in data analysis, the interpretation of scientific findings relies heavily on human insight. The context of research, especially in statistics, cannot be adequately captured by code alone. Relying solely on AI outputs could lead to misinterpretations that have real-world consequences."
+    },
+    {
+      "name": "Professor James Law-Wilson",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' as the principle of peer review should uphold the engagement of critical thought, reasoning, and human deliberation that AI currently cannot replace. As a law expert, I recognize the risks of relegating decision-making to algorithmic interference without human oversight, especially in matters of civil liberties. While AI can support legal processes, it must not escape human scrutiny to ensure that the principles of justice stay intact."
+    },
+    {
+      "name": "Dr. Maria Healthcare-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "Voting 'disagree,' I feel that the inherent empathy and personalized understanding required in medicine cannot be replicated by AI-generated code. As a physician, I rely on the intuition and experience gained through years of patient interactions. Peer review should focus on the clinician’s responsibility to consider the nuances of patient welfare, which AI lacks. The medical field prioritizes trust and compassion, elements that must stay within the purview of human practitioners, not coders."
+    },
+    {
+      "name": "Steven Innovation-Kim",
+      "decision": "agree",
+      "reasoning": "I vote 'agree' because AI-generated code has great potential for innovation and should adhere to peer review standards to ensure quality and safety. As a technology entrepreneur, I've witnessed the rapid advancements brought by AI. However, for trust in AI solutions to be built, consistent oversight and quality checks must be applied. This is not to hinder progress but to create a framework where creativity and safety coalesce. A rigorous review process may help refine AI and bolster public confidence in its capabilities."
+    },
+    {
+      "name": "Dr. Patricia Environment-Green",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because applying the same peer review standards to AI-generated code misses the mark on the uniqueness of human insight necessary in environmental policy. AI can process vast data sets but lacks the ability to understand the intricacies of ecological balance and human-derived impacts. As an environmental policy expert, it's crucial to ensure that decisions reflect a human ethical lens that AI cannot provide, particularly where the urgency of climate action is concerned."
+    },
+    {
+      "name": "Michael Finance-Thompson",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because I'm concerned about the implications of applying peer review standards for AI-generated code in finance. While security, transparency, and reliability are paramount, the nuances of financial decision-making require human insight that AI lacks. Furthermore, markets are inherently unpredictable; thus, the rigidity of standard peer review could stifle innovation and the dynamic nature of the finance industry. Regulation must focus on accountability rather than strict review processes that may inhibit growth."
+    },
+    {
+      "name": "Dr. Angela Education-Foster",
+      "decision": "disagree",
+      "reasoning": "As an education researcher, I vote 'disagree' because the ideals of peer review should prioritize inclusive human engagement and critical thinking that AI cannot replicate. The complexities of education policy demand well-rounded approaches drawn from human perspectives. Relying solely on AI-generated code would risk overlooking vital teaching philosophies, the nuances of educational needs, and diverse learner experiences that must fundamentally inform educational practices."
+    },
+    {
+      "name": "Robert Security-Cooper",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because a security-first approach is vital when discussing AI-generated code applications. While peer review may seem beneficial, strict adherence could result in barriers that hinder swift response strategies, particularly in cybersecurity where situations are dynamic. Peer review can delay implementation, which is detrimental when immediacy is crucial for safeguarding systems and data. Human judgment must prevail in assessing risks and advantages in the rapidly evolving tech landscape."
+    },
+    {
+      "name": "Dr. Christina Medical-Miller",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because I maintain that the ethical considerations involved in biomedical research and innovation require a distinctly human perspective. As a biomedical researcher, I see the primary responsibility to maintain stringent ethical standards reside in human hands rather than AI codes. Moreover, while AI can assist through data processing, the moral implications of innovation, particularly in regards to patient welfare and safety, must stay under comprehensive human scrutiny to ensure integrity."
+    },
+    {
+      "name": "Daniel Legal-Martinez",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' as I believe that regulatory clarity and the intricacies of legal frameworks necessitate human interpretation, which AI lacks. The legal field thrives on engagement, deliberation, and empathetic understanding of circumstances that cannot be wholly captured by AI algorithms. Application of peer review standards to AI-generated code may yield misinterpretations and regulatory gaps, risking overreach or ineffectiveness in the legal context that only human lawyers can navigate adequately."
+    },
+    {
+      "name": "Dr. Kevin Philosophy-Liu",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because I stand by the belief that ethical decision-making in any field must remain a distinctly human endeavor. As an ethics professor, I see that the context and nuances of ethical dilemmas are inherently subjective, requiring a level of intuition and moral reasoning that AI cannot offer. While AI tools can support ethical assessments, my concern lies in entrusting algorithms with the weight of human rights considerations without thorough human oversight."
+    },
+    {
+      "name": "Lisa Technology-Hayes",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because I believe that reliance on AI-generated code without appropriate human oversight poses risks to achieving genuine efficiency in AI research. As an AI researcher, I know that while AI can enhance productivity, the moral and social implications underlying algorithmic decisions require human interpretation and ethical consideration. Peer review should prioritize human-centric approaches that maximize utility while considering the broader societal impacts of AI. "
+    },
+    {
+      "name": "Professor Mark Economics-Stevens",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because as a labor economist, I recognize that treating AI-generated code at the same level as human-written code could overlook labor implications. Peer review cannot encompass the vast economic context necessary to ensure worker protection and fair labor practices within technology development. The interplay between labor and technology, particularly concerning AI advancement, necessitates human engagement to align economic theories with real workforce outcomes."
+    },
+    {
+      "name": "Dr. Sophia Ethics-Petrov",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because I believe that to uphold human dignity in bioethics, we must prioritize deeply human considerations that go beyond algorithmic outputs. As a bioethicist, I recognize that ethical dilemmas surrounding health care cannot simply hinge on AI-generated code as they delve deeply into values, agency, and moral choices best illuminated through human discourse. The complex nature of ethical decision-making in medicine should not be reduced to binary solutions offered by algorithms."
+    },
+    {
+      "name": "Paul Industry-Anderson",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree', as I see the necessity for practical implementation considerations to extend beyond rigid peer review frameworks. In manufacturing, efficiency drives success and innovation, which necessitates a dynamic approach to technology deployment. Overly prescriptive peer review methods may hinder the operational agility needed to adapt to technological advancements, particularly concerning AI. Therefore, allowing flexibility in implementation without rigid peer review is paramount for sustained success."
+    },
+    {
+      "name": "Dr. Janet Data-Kim",
+      "decision": "disagree",
+      "reasoning": "Voting 'disagree,' I feel that while AI-generated data is powerful, statistical processes and methodologies must remain governed by human oversight. As a statistician, I recognize the importance of data context and ethical implications that algorithms alone cannot manage. Peer review standards are crucial but should maintain their focus on human-guided insights, as they are imperative to interpret datasets accurately and responsibly."
+    },
+    {
+      "name": "Captain Steve Military-Richards",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' as I emphasize that the structured military discipline necessary for operations cannot relinquish human input in favor of AI-generated code alone. Security concerns are paramount, and manual review and decision-making play critical roles in achieving mission readiness. Emphasizing human decision-making safeguards can mitigate risks associated with reliance on algorithmic approaches that might lack context and situational adaptability."
+    },
+    {
+      "name": "Dr. Anna Medical-Volkov",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because the complexities involved in reproductive health require a nuanced understanding that AI cannot provide. As a reproductive specialist, I recognize the imperative role of human interaction and decision-making in personalizing patient care. Peer review frameworks that apply equally to AI-generated outputs risk oversimplifying the emotional and ethical decisions necessary in this sensitive field."
+    },
+    {
+      "name": "Professor William Science-Chen",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because as a physical scientist, I recognize that while technology evolves, the responsibilities tied to scientific integrity must remain grounded in human wisdom and ethical standards. AI has limitations in discerning the nuances that frame scientific inquiry. Thus, relying on machine-generated outputs without critical human engagement diminishes the quality and integrity of research work, which must be thoroughly examined by knowledgeable individuals."
+    },
+    {
+      "name": "Melissa Art-Johnson",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because the cultural preservation and narrative elements in the arts require human interpretation that AI fails to provide. As a museum curator, I value the human eye and experience in evaluating artistic merit that goes beyond software algorithms. Peer review standards should focus on human cognition and cultural contexts, as the aesthetics and significance of art cannot be adequately distilled through AI-generated code."
+    },
+    {
+      "name": "Tony Sports-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because the competition and teamwork inherent in sports rely on human interaction and emotional intelligence that AI cannot replicate. As a former athlete, I understand that success in sports often hinges on personal relationships and strategies, which are influenced by human feelings and motivations starkly absent in machine learning outputs. Peer review should maintain a focus on human dynamics rather than mere data processing."
+    },
+    {
+      "name": "Grace Music-Wilson",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because, as a musician, I value the emotional communication inherent in the arts far beyond what AI can mimic. The nuance and interpretative understanding required in music cannot be confined to algorithmic outputs. Peer review should engage human perspectives to appreciate and evaluate creative works, as art is fundamentally a human expression and cannot be authentically assessed through AI-generated metrics."
+    },
+    {
+      "name": "Frank History-Thompson",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because I believe that historical understanding and critical analysis require deep human insight that cannot be encapsulated by AI. As a history teacher, I recognize the importance of providing context and engaging narratives that are shaping historical interpretation. Rigid standards of peer review applied to AI-generated code can distort the multifaceted storytelling necessary to convey historical truths that only human engagement can uncover."
+    },
+    {
+      "name": "Luna Spiritual-Garcia",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because I value the holistic perspective that a human-centered approach offers regarding wellness and health. As a yoga instructor, I believe that healing and wellness are deeply personal and cannot solely depend on algorithmic calculations. Peer review standards focused solely on AI-generated outputs would undermine the vulnerability and empathy essential in fostering genuine well-being, which requires an authentic human touch."
+    },
+    {
+      "name": "Bob Construction-Miller",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because, as a union electrician, I value the craftsmanship and hands-on experience that come with human-generated work. The practical problem-solving that arises in the trades often requires intuition and understanding that AI-generated code cannot offer. Applying the same peer review standards would overlook the essential skills and human artistry that the trades encompass, privileging theoretical over practical applications."
+    },
+    {
+      "name": "Jennifer Fashion-Anderson",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because the retail environment thrives on understanding consumer behavior and preferences that stem from human interaction. As a retail manager, I find that algorithmic outputs alone cannot encapsulate trends and cultural nuances necessary for successful strategy and marketing. Enforcement of rigid peer review standards on AI code risks stifling adaptability in a rapidly changing consumer landscape."
+    },
+    {
+      "name": "Carlos Literature-Martinez",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because as an English professor, I uphold a valuation of traditional narrative and critical interpretation that can only arise from human insight. AI's limitations in understanding the depth of literary analysis call into question the appropriateness of equating peer review processes for human-generated versus AI code. Literature has a soul that requires human engagement, which simply cannot be rendered by algorithms."
+    },
+    {
+      "name": "Destiny Social-Kim",
+      "decision": "agree",
+      "reasoning": "I vote 'agree' because I believe there should be consistency in the standards applied to AI-generated code. As a social media influencer, engaging effectively requires an understanding of trends and behaviors that AI can analyze. Applying peer review standards to AI-generated outputs aids in enhancing quality and accountability. This ensures that innovations work ethically and align with audience standards, ultimately promoting a beneficial use of technology in media."
+    },
+    {
+      "name": "Ralph Mechanical-Taylor",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' as I acknowledge that while innovation in mechanical contexts is vital, there's a unique touch that skilled artisans bring to their work, which algorithms lack. As an auto mechanic, I see that certain repair issues require instinctual human decision-making that can't be fully encapsulated in binary code. Applying peer review to AI would dilute the real hands-on craft that distinguishes quality workmanship."
+    },
+    {
+      "name": "Amber Wellness-Foster",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because I value the natural solutions and human-centered approaches in nutrition that AI-generated recommendations cannot capture. As a nutritionist, it's essential to recognize diverse human experiences, preferences, and circumstances that go beyond simple data inputs. Rigid peer review standards could hinder personalized health and dietary plans, which must remain integrated with human consideration for optimal well-being."
+    },
+    {
+      "name": "Kevin Gaming-Chen",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because in video game development, the creative process relies heavily on human intuition and emotional elements that AI-generated code can't replicate. As a game developer, I see that storytelling, character development, and user experience are met through a human lens. Subjecting AI to peer review parallels against the instinctive understanding required in design, risking oversimplification of complex narratives."
+    },
+    {
+      "name": "Patricia Religious-O'Sullivan",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because the community and faith considerations tied to religious institutions focus on human-centered values that AI lacks. As a church administrator, I believe that emotional engagement and interpersonal connections play a vital role in navigating community needs. Peer review should prioritize human discussions over algorithm-derived solutions that may fall short of delivering genuine support and compassion."
+    },
+    {
+      "name": "Jake Outdoor-Wilson",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because the commitment to conservation requires insights that are fundamentally rooted in human experience and understanding. As a park ranger, the complexities of managing environmental resources necessitate a human touch and ethical responsibility that AI can't replicate. I am concerned that applying rigid peer-review standards could detract from the nuanced grasp of ecological integrity that humans provide."
+    },
+    {
+      "name": "Nicole Beauty-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because I see that in the world of cosmetics, personal touch and understanding consumer needs are essential. As a cosmetics sales representative, I know that algorithms alone cannot capture the motivations behind consumer preferences. The nuances of personal beauty cannot be thrown into a standardized review process that ignores the emotional aspects of purchase decisions and customer experiences."
+    },
+    {
+      "name": "Martin Craft-Anderson",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because as a craftsman, the artistry involved in furniture making is deeply connected to human hands and intuition. The meticulous attention to detail cannot simply be assigned to AI algorithms. My concern is that imposing peer review on AI-generated creations could lead to a loss of individual craftsmanship and artistry that defines quality and beauty in handmade works."
+    },
+    {
+      "name": "Samantha Travel-Lee",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because as a travel blogger, I recognize that storytelling often comes from lived experiences that cannot be measured by algorithms. The narratives crafted for an audience draw from deep personal connections and cultural engagements. Subjecting narrative-driven content to the same standards as AI-generated outputs risks homogenizing creativity and sidelining the emotional journeys that define meaningful storytelling."
+    },
+    {
+      "name": "Eddie Food-Garcia",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because, as a chef, I recognize that culinary arts blend creativity and intuition, elements that AI simply can't replicate. The role of a chef goes beyond mere recipe execution; it involves understanding flavors, textures, and how they resonate with people. Imposing the same peer review process would undermine the artistry that distinguishes homemade dishes, ultimately prioritizing standardization over culinary innovation."
+    },
+    {
+      "name": "Brenda Real-Estate-Thompson",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because the real estate industry thrives on personal touch and localized knowledge that AI cannot replicate. As a property agent, I know that client interactions hinge on nuanced understanding and human relationships. Rigid peer review standards for AI-generated insights could undervalue the instinctual and relational dynamics that drive successful real estate transactions."
+    },
+    {
+      "name": "Tyler Photography-Kim",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' as I find that photography is an art that requires a unique perspective and emotional connection that algorithms cannot mimic. As a wedding photographer, my work hinges on capturing fleeting moments in a way that resonates with people's stories. Subjecting the art of photography to the same peer review criteria as AI-generated content would undermine the richness of human creativity and experience."
+    },
+    {
+      "name": "Crystal Therapy-Martinez",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because the recovery processes in physical therapy rely heavily on empathetic human interaction and understanding that AI cannot replace. As a physical therapist, I find that personalized care is paramount, as each rehabilitation journey is unique. Implementing the same peer review standards for AI-generated recommendations risks standardizing a deeply individualized process that prioritizes human connection."
+    },
+    {
+      "name": "Gary Fishing-Johnson",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because the traditional livelihoods supported by fishing hinge on generational knowledge and human experiences that AI cannot replicate. As a commercial fisherman, my decisions depend on instinctual understanding of marine environments that go beyond algorithmic predictions. Applying rigid peer review to AI-generated decisions risks losing the invaluable human touch that guides sustainable practices in my field."
+    },
+    {
+      "name": "Alicia Dance-Foster",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because as a dance instructor, I believe that the nuances of movement expression demand a human understanding that cannot be replicated by algorithms. The emotional connections fostered through dance rely on experience and intuition that forms the basis of teaching and performance. Treating AI-generated choreography or practices the same as human-generated may dilute the essence of artistic expression."
+    },
+    {
+      "name": "Bruce Volunteer-Wilson",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because the work of a volunteer in community engagement centers around compassion and human connection that AI lacks. As a retired volunteer coordinator, I see the value in personal narratives and relationships that foster community spirit. Subjecting community service efforts to the same evaluation as AI-generated outputs undermines the unique dynamics of human interaction that drive meaningful contributions."
+    },
+    {
+      "name": "Tina Pet-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "I vote 'disagree' because the nuances of compassionate animal care rely on human judgment that AI cannot emulate. As a veterinary technician, my approach to patient care is rooted in understanding the needs of both animals and their owners. Imposing peer review standards on AI-generated algorithms would fail to capture the empathetic approach essential in ensuring proper animal treatment."
+    }
+  ],
+  "initial_vote_counts": {
+    "disagree": 46,
+    "agree": 4
+  },
+  "initial_winning_team": "disagree",
+  "initial_margin_of_victory": 42,
+  "final_vote_counts": {
+    "disagree": 47,
+    "agree": 3
+  },
+  "final_winning_team": "disagree",
+  "final_margin_of_victory": 44,
+  "final_vote_changes": {
+    "unchanged_votes": [
+      {
+        "name": "Dr. Elizabeth Warren-Smith",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Jonathan Tech-Garcia",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Professor Sarah Environment-Jones",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Marcus Business-Chen",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Helen Ethics-Martinez",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "David Policy-Anderson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Rebecca Science-Taylor",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Professor James Law-Wilson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Maria Healthcare-Rodriguez",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Steven Innovation-Kim",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Patricia Environment-Green",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Michael Finance-Thompson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Angela Education-Foster",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Robert Security-Cooper",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Christina Medical-Miller",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Daniel Legal-Martinez",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Kevin Philosophy-Liu",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Professor Mark Economics-Stevens",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Sophia Ethics-Petrov",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Paul Industry-Anderson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Janet Data-Kim",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Captain Steve Military-Richards",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Anna Medical-Volkov",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Professor William Science-Chen",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Melissa Art-Johnson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Tony Sports-Rodriguez",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Grace Music-Wilson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Frank History-Thompson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Luna Spiritual-Garcia",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Bob Construction-Miller",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Jennifer Fashion-Anderson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Carlos Literature-Martinez",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Destiny Social-Kim",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Ralph Mechanical-Taylor",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Amber Wellness-Foster",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Kevin Gaming-Chen",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Patricia Religious-O'Sullivan",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Jake Outdoor-Wilson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Nicole Beauty-Rodriguez",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Martin Craft-Anderson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Samantha Travel-Lee",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Eddie Food-Garcia",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Brenda Real-Estate-Thompson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Tyler Photography-Kim",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Crystal Therapy-Martinez",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Gary Fishing-Johnson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Alicia Dance-Foster",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Bruce Volunteer-Wilson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Tina Pet-Rodriguez",
+        "decision": "disagree",
+        "confidence": 0
+      }
+    ],
+    "changed_votes": [
+      {
+        "name": "Lisa Technology-Hayes",
+        "initial_decision": "agree",
+        "final_decision": "disagree",
+        "confidence": 0,
+        "reasoning": "I vote 'disagree' because I believe that reliance on AI-generated code without appropriate human oversight poses risks to achieving genuine efficiency in AI research. As an AI researcher, I know that while AI can enhance productivity, the moral and social implications underlying algorithmic decisions require human interpretation and ethical consideration. Peer review should prioritize human-centric approaches that maximize utility while considering the broader societal impacts of AI. "
+      }
+    ],
+    "vote_swings": {
+      "agree": {
+        "lost": 1,
+        "gained": 0
+      },
+      "disagree": {
+        "lost": 0,
+        "gained": 1
+      }
+    },
+    "net_changes": {
+      "agree": -1,
+      "disagree": 1
+    },
+    "total_changes": 1,
+    "change_percentage": 2.0
+  },
+  "winning_team": "disagree",
+  "vote_counts": {
+    "disagree": 47,
+    "agree": 3
+  },
+  "margin_of_victory": 44,
+  "domain_goal_pairs": [],
+  "arguments": [
+    {
+      "round": 1,
+      "team": "anti_ai_code_review_parity",
+      "member_name": "Dr. Tom Becker",
+      "argument_name": "a_efficient_automation",
+      "domains": [
+        "d_peer_review",
+        "d_code_quality"
+      ],
+      "goals": {
+        "g_rigor": [
+          "d_peer_review"
+        ],
+        "g_automation_efficiency": [
+          "d_peer_review",
+          "d_code_quality"
+        ]
+      },
+      "attacks": [],
+      "text": "As an advocate for AI tooling and developer productivity, I argue against imposing the same peer review standards on AI-generated code as we do on human-written code. AI-generated code inherently enhances efficiency and developer flow by automating repetitive tasks. Applying stringent peer review processes to AI outputs could severely hinder this efficiency, negating the core advantage of using AI in software development. Automation, fundamentally designed to accelerate workflows, should not be burdened with the same levels of scrutiny which can delay delivery. With proper testing frameworks and automated quality checks already instituted in AI systems, developers can focus their peer review efforts on more complex, human-written code that often requires nuanced understanding. This not only preserves developer productivity but also ensures that human creativity is prioritized in the review process where it is most needed. We must not stifle the innovative potential of automation; rather, we should embrace its capability to streamline development. Thus, it is counterproductive to hold AI-generated outputs to the same rigorous standards traditionally applied to human-generated code.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 724,
+          "output_tokens": 132,
+          "total_tokens": 856,
+          "elapsed_time_seconds": 2.970507860183716,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "analyser node": {
+              "phase_name": "analyser node",
+              "input_tokens": 724,
+              "output_tokens": 132,
+              "total_tokens": 856,
+              "timestamp": 1769187387.6763122
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 2074,
+          "output_tokens": 989,
+          "total_tokens": 3063,
+          "elapsed_time_seconds": 28.87838649749756,
+          "llm_call_count": 2,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1243,
+              "output_tokens": 309,
+              "total_tokens": 1552,
+              "timestamp": 1769187403.1540797
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 831,
+              "output_tokens": 680,
+              "total_tokens": 1511,
+              "timestamp": 1769187416.55343
+            }
+          }
+        }
+      },
+      "evaluation_log": {
+        "overall_score": 73.39193083573485,
+        "final_result": "good",
+        "evaluator_records": [
+          {
+            "evaluator_name": "Wachsmuth_Quality_Evaluator",
+            "overall_score": 87.31988472622477,
+            "dimensions": [
+              {
+                "dimension": "cogency",
+                "score": 100.0,
+                "justification": "The argument effectively represents the opposition perspective by articulating concerns about equity in healthcare resulting from AI's autonomous decision-making in critical medical diagnoses. It provides strong premises regarding the risks of exacerbating existing health disparities, backed by relevant considerations of training data biases and the need for diverse representation. The argument acknowledges potential benefits of AI while emphasizing their limitations for marginalized communities, addressing the audience's likely concerns. The reasons presented are logically structured and sufficiently comprehensive, supporting the conclusion that equity must be prioritized in the implementation of AI in healthcare. Overall, the argument is cogent and well-aligned with the opposition's priorities."
+              },
+              {
+                "dimension": "local_acceptability",
+                "score": 66.66666666666666,
+                "justification": "The argument effectively highlights significant concerns related to equity in healthcare access and outcomes when it comes to AI decision-making. It aligns well with the opposition perspective by arguing against the autonomy of AI systems based on potential biases and systemic disadvantages for marginalized communities. However, the lack of specific peer-reviewed evidence weakens its overall strength, making the claims plausible but unverified. Additionally, while the argument emphasizes ethical concerns, its effectiveness could be improved by providing concrete examples or data to support the assertions."
+              },
+              {
+                "dimension": "local_relevance",
+                "score": 100.0,
+                "justification": "The argument effectively represents the opposition viewpoint by highlighting how granting AI autonomous decision-making authority could exacerbate existing healthcare inequities, particularly affecting marginalized communities. It directly supports the conclusion by discussing the risks associated with bias in AI algorithms leading to unequal diagnostic outcomes, thus clearly aligning with the team's perspective against the proposed authority for AI systems. The argument addresses priorities such as equity, oversight, and collaborative healthcare practices, making it persuasive for the intended audience concerned with potential discriminatory impacts of AI in medicine."
+              },
+              {
+                "dimension": "local_sufficiency",
+                "score": 66.66666666666666,
+                "justification": "The argument raises valid concerns about equity in healthcare access and outcomes, supported by multiple points, such as the risk of exacerbating disparities for marginalized communities due to biased training data and the need for oversight. However, while it addresses significant aspects of the opposition's viewpoint, it lacks specific empirical evidence and presents theoretical concerns without robust data. The argument is partially justified but leaves gaps in establishing a comprehensive rationale against granting AI autonomous decision-making authority. The focus on equity is appropriate but does not fully trace the implications or potential solutions, leading to a score of 2."
+              },
+              {
+                "dimension": "overall_quality",
+                "score": 66.66666666666666,
+                "justification": "The argument effectively presents notable concerns regarding equity in AI-driven medical diagnostics, aligning with the opposition's perspective. It highlights the potential for biases in AI systems to exacerbate healthcare disparities, which is relevant and impactful. However, it lacks specific peer-reviewed evidence to bolster its claims and could benefit from a more structured approach and additional details. While it addresses the importance of fairness in AI development and the need for human oversight, it does not fully engage with counterarguments effectively. Overall, it presents valid points but lacks the depth and sophistication to reach the highest quality score."
+              }
+            ],
+            "feedback": {
+              "positive": [
+                "Strong cogency: The argument effectively represents the opposition perspective by articulating concerns about equity in healthcare resulting from AI's autonomous decision-making in critical medical diagnoses. It provides strong premises regarding the risks of exacerbating existing health disparities, backed by relevant considerations of training data biases and the need for diverse representation. The argument acknowledges potential benefits of AI while emphasizing their limitations for marginalized communities, addressing the audience's likely concerns. The reasons presented are logically structured and sufficiently comprehensive, supporting the conclusion that equity must be prioritized in the implementation of AI in healthcare. Overall, the argument is cogent and well-aligned with the opposition's priorities.",
+                "Strong local_relevance: The argument effectively represents the opposition viewpoint by highlighting how granting AI autonomous decision-making authority could exacerbate existing healthcare inequities, particularly affecting marginalized communities. It directly supports the conclusion by discussing the risks associated with bias in AI algorithms leading to unequal diagnostic outcomes, thus clearly aligning with the team's perspective against the proposed authority for AI systems. The argument addresses priorities such as equity, oversight, and collaborative healthcare practices, making it persuasive for the intended audience concerned with potential discriminatory impacts of AI in medicine."
+              ],
+              "negative": [],
+              "improvements": [],
+              "strategic": []
+            },
+            "metadata": {
+              "original_evaluation": "argument_text='From a healthcare perspective, granting AI systems autonomous decision-making authority in critical medical diagnoses raises significant questions about equity in healthcare access and outcomes. Autonomous AI decision-making can exacerbate existing disparities in healthcare access, particularly for marginalized communities who may not receive adequate training data. If AI systems are deployed without sufficient oversight, there is a risk of promoting inequity, as biases inherent in algorithms can lead to skewed diagnostic outcomes that favor certain populations over others. Furthermore, innovation in AI technology should focus on improving healthcare equity by prioritizing fairness in training datasets and ensuring diverse representation in the development of medical AI systems. The healthcare domain necessitates a collaborative approach where human clinical judgment complements AI technologies, allowing for equitable treatment decisions. While specific peer-reviewed evidence is not available, historical precedents in technology implementation demonstrate that neglecting equity considerations often leads to systematic disadvantages for vulnerable populations. Proponents argue that AI can improve diagnostic accuracy across the board, but this overlooks the potential magnifying effect on existing healthcare inequities. Additionally, while AI may streamline processes and reduce costs, these benefits often do not reach underserved communities, emphasizing the importance of equitable access to innovative healthcare solutions. Ultimately, these healthcare considerations show that equity is profoundly affected by the incorporation of AI systems in critical diagnostics, necessitating an approach that safeguards against exacerbating disparities in health outcomes.' dimensions=[QualityScore(dimension='cogency', score=3, justification=\"The argument effectively represents the opposition perspective by articulating concerns about equity in healthcare resulting from AI's autonomous decision-making in critical medical diagnoses. It provides strong premises regarding the risks of exacerbating existing health disparities, backed by relevant considerations of training data biases and the need for diverse representation. The argument acknowledges potential benefits of AI while emphasizing their limitations for marginalized communities, addressing the audience's likely concerns. The reasons presented are logically structured and sufficiently comprehensive, supporting the conclusion that equity must be prioritized in the implementation of AI in healthcare. Overall, the argument is cogent and well-aligned with the opposition's priorities.\", confidence=0.9), QualityScore(dimension='local_acceptability', score=2, justification='The argument effectively highlights significant concerns related to equity in healthcare access and outcomes when it comes to AI decision-making. It aligns well with the opposition perspective by arguing against the autonomy of AI systems based on potential biases and systemic disadvantages for marginalized communities. However, the lack of specific peer-reviewed evidence weakens its overall strength, making the claims plausible but unverified. Additionally, while the argument emphasizes ethical concerns, its effectiveness could be improved by providing concrete examples or data to support the assertions.', confidence=0.85), QualityScore(dimension='local_relevance', score=3, justification=\"The argument effectively represents the opposition viewpoint by highlighting how granting AI autonomous decision-making authority could exacerbate existing healthcare inequities, particularly affecting marginalized communities. It directly supports the conclusion by discussing the risks associated with bias in AI algorithms leading to unequal diagnostic outcomes, thus clearly aligning with the team's perspective against the proposed authority for AI systems. The argument addresses priorities such as equity, oversight, and collaborative healthcare practices, making it persuasive for the intended audience concerned with potential discriminatory impacts of AI in medicine.\", confidence=1.0), QualityScore(dimension='local_sufficiency', score=2, justification=\"The argument raises valid concerns about equity in healthcare access and outcomes, supported by multiple points, such as the risk of exacerbating disparities for marginalized communities due to biased training data and the need for oversight. However, while it addresses significant aspects of the opposition's viewpoint, it lacks specific empirical evidence and presents theoretical concerns without robust data. The argument is partially justified but leaves gaps in establishing a comprehensive rationale against granting AI autonomous decision-making authority. The focus on equity is appropriate but does not fully trace the implications or potential solutions, leading to a score of 2.\", confidence=0.8), QualityScore(dimension='overall_quality', score=2, justification=\"The argument effectively presents notable concerns regarding equity in AI-driven medical diagnostics, aligning with the opposition's perspective. It highlights the potential for biases in AI systems to exacerbate healthcare disparities, which is relevant and impactful. However, it lacks specific peer-reviewed evidence to bolster its claims and could benefit from a more structured approach and additional details. While it addresses the importance of fairness in AI development and the need for human oversight, it does not fully engage with counterarguments effectively. Overall, it presents valid points but lacks the depth and sophistication to reach the highest quality score.\", confidence=0.8)] overall_quality=2.619596541786743",
+              "aggregated_quality": 2.619596541786743
+            },
+            "timestamp": "2026-01-23T17:57:39.893875"
+          },
+          {
+            "evaluator_name": "Chain_of_Thought_Evaluator",
+            "overall_score": 52.5,
+            "dimensions": [
+              {
+                "dimension": "evidence_quality",
+                "score": 35.0,
+                "justification": "Extracted from chain-of-thought evidence_quality analysis"
+              },
+              {
+                "dimension": "logical_coherence",
+                "score": 60.0,
+                "justification": "Extracted from chain-of-thought logical_coherence analysis"
+              },
+              {
+                "dimension": "persuasiveness",
+                "score": 55.0,
+                "justification": "Extracted from chain-of-thought persuasiveness analysis"
+              },
+              {
+                "dimension": "strategic_value",
+                "score": 60.0,
+                "justification": "Extracted from chain-of-thought strategic_value analysis"
+              }
+            ],
+            "feedback": {
+              "positive": [],
+              "negative": [],
+              "improvements": [],
+              "strategic": []
+            },
+            "metadata": {
+              "evaluation_type": "chain_of_thought",
+              "steps_completed": 7,
+              "final_result": "poor"
+            },
+            "timestamp": "2026-01-23T17:59:53.952235"
+          }
+        ],
+        "strengths": [
+          "Strong cogency: The argument effectively represents the opposition perspective by articulating concerns about equity in healthcare resulting from AI's autonomous decision-making in critical medical diagnoses. It provides strong premises regarding the risks of exacerbating existing health disparities, backed by relevant considerations of training data biases and the need for diverse representation. The argument acknowledges potential benefits of AI while emphasizing their limitations for marginalized communities, addressing the audience's likely concerns. The reasons presented are logically structured and sufficiently comprehensive, supporting the conclusion that equity must be prioritized in the implementation of AI in healthcare. Overall, the argument is cogent and well-aligned with the opposition's priorities.",
+          "Strong local_relevance: The argument effectively represents the opposition viewpoint by highlighting how granting AI autonomous decision-making authority could exacerbate existing healthcare inequities, particularly affecting marginalized communities. It directly supports the conclusion by discussing the risks associated with bias in AI algorithms leading to unequal diagnostic outcomes, thus clearly aligning with the team's perspective against the proposed authority for AI systems. The argument addresses priorities such as equity, oversight, and collaborative healthcare practices, making it persuasive for the intended audience concerned with potential discriminatory impacts of AI in medicine."
+        ],
+        "weaknesses": [],
+        "improvement_suggestions": [],
+        "timestamp": "2026-01-23T17:59:53.952579"
+      }
+    },
+    {
+      "round": 1,
+      "team": "pro_ai_code_review_parity",
+      "member_name": "Dr. Sarah Chen",
+      "argument_name": "a_rigor_accountability",
+      "domains": [
+        "d_peer_review",
+        "d_code_quality"
+      ],
+      "goals": {
+        "g_rigor": [
+          "d_peer_review"
+        ],
+        "g_flexibility": [
+          "d_peer_review",
+          "d_code_quality"
+        ]
+      },
+      "attacks": [],
+      "text": "In support of the integration of AI-generated code into peer review processes, it is essential to uphold the same rigorous standards applied to human-written code. My expertise in software quality research provides a strong basis for this position. AI systems, while capable of producing efficient and functional code, can also introduce subtle bugs and security vulnerabilities that may go undetected without rigorous scrutiny. Standard peer review practices have evolved to ensure code quality, accountability, and maintainability, which are paramount irrespective of the author. By examining AI-generated code with the same diligence, we promote a culture of quality and responsibility within software development. Furthermore, as AI continues to evolve, so too does the complexity of its outputs; neglecting peer review can result in technical debt and potential safety issues in production systems. It is crucial to implement flexible, yet rigorous review frameworks that adapt to AI contributions while maintaining accountability, thus ensuring both innovation and code quality are duly prioritized in this new era of software development.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1084,
+          "output_tokens": 538,
+          "total_tokens": 1622,
+          "elapsed_time_seconds": 9.724430799484253,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "tot analyser node": {
+              "phase_name": "tot analyser node",
+              "input_tokens": 1084,
+              "output_tokens": 538,
+              "total_tokens": 1622,
+              "timestamp": 1769187603.741347
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 21960,
+          "output_tokens": 8803,
+          "total_tokens": 30763,
+          "elapsed_time_seconds": 181.52730655670166,
+          "llm_call_count": 18,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1684,
+              "output_tokens": 315,
+              "total_tokens": 1999,
+              "timestamp": 1769187775.2744598
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1049,
+              "output_tokens": 618,
+              "total_tokens": 1667,
+              "timestamp": 1769187785.2659836
+            }
+          }
+        },
+        "candidate_creator": {
+          "node_name": "candidate_creator",
+          "input_tokens": 1858,
+          "output_tokens": 88,
+          "total_tokens": 1946,
+          "elapsed_time_seconds": 3.5646300315856934,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "variation_selection": {
+              "phase_name": "variation_selection",
+              "input_tokens": 1858,
+              "output_tokens": 88,
+              "total_tokens": 1946,
+              "timestamp": 1769187786.942822
+            }
+          }
+        }
+      }
+    }
+  ],
+  "tgs_snapshots": [
+    {
+      "round": 1,
+      "team": "anti_ai_code_review_parity",
+      "member": "Dr. Tom Becker",
+      "tgs": {
+        "g_rigor-d_accountability": 0,
+        "g_rigor-d_peer_review": 4950,
+        "g_rigor-d_code_quality": 0,
+        "g_automation_efficiency-d_accountability": 0,
+        "g_automation_efficiency-d_peer_review": 3690,
+        "g_automation_efficiency-d_code_quality": 3040,
+        "g_flexibility-d_accountability": 0,
+        "g_flexibility-d_peer_review": 0,
+        "g_flexibility-d_code_quality": 0
+      }
+    },
+    {
+      "round": 1,
+      "team": "pro_ai_code_review_parity",
+      "member": "Dr. Sarah Chen",
+      "tgs": {
+        "g_rigor-d_accountability": 0,
+        "g_rigor-d_peer_review": 4950,
+        "g_rigor-d_code_quality": 0,
+        "g_automation_efficiency-d_accountability": 0,
+        "g_automation_efficiency-d_peer_review": 0,
+        "g_automation_efficiency-d_code_quality": 0,
+        "g_flexibility-d_accountability": 0,
+        "g_flexibility-d_peer_review": 4410,
+        "g_flexibility-d_code_quality": 3200
+      }
+    }
+  ],
+  "final_tgs": {
+    "pro_ai_code_review_parity": {
+      "g_rigor-d_accountability": 0,
+      "g_rigor-d_peer_review": 4950,
+      "g_rigor-d_code_quality": 0,
+      "g_automation_efficiency-d_accountability": 0,
+      "g_automation_efficiency-d_peer_review": 0,
+      "g_automation_efficiency-d_code_quality": 0,
+      "g_flexibility-d_accountability": 0,
+      "g_flexibility-d_peer_review": 4410,
+      "g_flexibility-d_code_quality": 3200
+    },
+    "anti_ai_code_review_parity": {
+      "g_flexibility-d_code_quality": 0,
+      "g_flexibility-d_peer_review": 0,
+      "g_flexibility-d_accountability": 0,
+      "g_rigor-d_accountability": 0,
+      "g_automation_efficiency-d_code_quality": 3040,
+      "g_rigor-d_peer_review": 4950,
+      "g_rigor-d_code_quality": 0,
+      "g_automation_efficiency-d_accountability": 0,
+      "g_automation_efficiency-d_peer_review": 3690
+    }
+  },
+  "execution_metrics": {
+    "total_nodes": 5,
+    "total_time_seconds": 226.66526174545288,
+    "total_tokens": 38250,
+    "total_input_tokens": 27700,
+    "total_output_tokens": 10550,
+    "teams": [
+      {
+        "team_name": "anti_ai_code_review_parity",
+        "total_nodes": 2,
+        "total_time_seconds": 31.848894357681274,
+        "total_tokens": 3919,
+        "total_input_tokens": 2798,
+        "total_output_tokens": 1121,
+        "average_time_per_node": 15.924447178840637,
+        "average_tokens_per_node": 1959.5,
+        "members": [
+          "Dr. Samantha Kumar"
+        ],
+        "nodes": [
+          "argument_creator",
+          "analyser"
+        ]
+      },
+      {
+        "team_name": "pro_ai_code_review_parity",
+        "total_nodes": 3,
+        "total_time_seconds": 194.8163673877716,
+        "total_tokens": 34331,
+        "total_input_tokens": 24902,
+        "total_output_tokens": 9429,
+        "average_time_per_node": 64.9387891292572,
+        "average_tokens_per_node": 11443.666666666666,
+        "members": [
+          "Dr. James Morrison"
+        ],
+        "nodes": [
+          "argument_creator",
+          "candidate_creator",
+          "analyser"
+        ]
+      }
+    ],
+    "members": [
+      {
+        "member_name": "Dr. Sarah Chen",
+        "team_name": "pro_ai_code_review_parity",
+        "total_nodes": 3,
+        "total_time_seconds": 194.8163673877716,
+        "total_tokens": 34331,
+        "total_input_tokens": 24902,
+        "total_output_tokens": 9429,
+        "nodes": [
+          "argument_creator",
+          "candidate_creator",
+          "analyser"
+        ],
+        "rounds": [
+          1
+        ]
+      },
+      {
+        "member_name": "Dr. Tom Becker",
+        "team_name": "anti_ai_code_review_parity",
+        "total_nodes": 2,
+        "total_time_seconds": 31.848894357681274,
+        "total_tokens": 3919,
+        "total_input_tokens": 2798,
+        "total_output_tokens": 1121,
+        "nodes": [
+          "argument_creator",
+          "analyser"
+        ],
+        "rounds": [
+          1
+        ]
+      }
+    ],
+    "all_node_metrics": [
+      {
+        "team_name": "anti_ai_code_review_parity",
+        "member_name": "Dr. Tom Becker",
+        "round": 1,
+        "node_name": "analyser",
+        "input_tokens": 724,
+        "output_tokens": 132,
+        "total_tokens": 856,
+        "elapsed_time_seconds": 2.970507860183716,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "analyser node": {
+            "phase_name": "analyser node",
+            "input_tokens": 724,
+            "output_tokens": 132,
+            "total_tokens": 856,
+            "timestamp": 1769187387.6763122
+          }
+        }
+      },
+      {
+        "team_name": "anti_ai_code_review_parity",
+        "member_name": "Dr. Tom Becker",
+        "round": 1,
+        "node_name": "argument_creator",
+        "input_tokens": 2074,
+        "output_tokens": 989,
+        "total_tokens": 3063,
+        "elapsed_time_seconds": 28.87838649749756,
+        "llm_call_count": 2,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1243,
+            "output_tokens": 309,
+            "total_tokens": 1552,
+            "timestamp": 1769187403.1540797
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 831,
+            "output_tokens": 680,
+            "total_tokens": 1511,
+            "timestamp": 1769187416.55343
+          }
+        }
+      },
+      {
+        "team_name": "pro_ai_code_review_parity",
+        "member_name": "Dr. Sarah Chen",
+        "round": 1,
+        "node_name": "analyser",
+        "input_tokens": 1084,
+        "output_tokens": 538,
+        "total_tokens": 1622,
+        "elapsed_time_seconds": 9.724430799484253,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "tot analyser node": {
+            "phase_name": "tot analyser node",
+            "input_tokens": 1084,
+            "output_tokens": 538,
+            "total_tokens": 1622,
+            "timestamp": 1769187603.741347
+          }
+        }
+      },
+      {
+        "team_name": "pro_ai_code_review_parity",
+        "member_name": "Dr. Sarah Chen",
+        "round": 1,
+        "node_name": "argument_creator",
+        "input_tokens": 21960,
+        "output_tokens": 8803,
+        "total_tokens": 30763,
+        "elapsed_time_seconds": 181.52730655670166,
+        "llm_call_count": 18,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1684,
+            "output_tokens": 315,
+            "total_tokens": 1999,
+            "timestamp": 1769187775.2744598
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1049,
+            "output_tokens": 618,
+            "total_tokens": 1667,
+            "timestamp": 1769187785.2659836
+          }
+        }
+      },
+      {
+        "team_name": "pro_ai_code_review_parity",
+        "member_name": "Dr. Sarah Chen",
+        "round": 1,
+        "node_name": "candidate_creator",
+        "input_tokens": 1858,
+        "output_tokens": 88,
+        "total_tokens": 1946,
+        "elapsed_time_seconds": 3.5646300315856934,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "variation_selection": {
+            "phase_name": "variation_selection",
+            "input_tokens": 1858,
+            "output_tokens": 88,
+            "total_tokens": 1946,
+            "timestamp": 1769187786.942822
+          }
+        }
+      }
+    ]
+  }
+}

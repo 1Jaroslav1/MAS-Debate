@@ -1,0 +1,2328 @@
+{
+  "config_id": "ai_code_review_parity",
+  "topic": "AI-generated code should be subject to the same peer review standards as human-written code",
+  "max_rounds": 2,
+  "rounds_completed": 2,
+  "teams": [
+    "anti_ai_code_review_parity",
+    "pro_ai_code_review_parity"
+  ],
+  "team_architectures": {
+    "anti_ai_code_review_parity": {
+      "architecture": "tot",
+      "team_type": "opposition",
+      "tot_config": {
+        "num_analysis_branches": null,
+        "num_argument_variations": null,
+        "pruning_strategy": null,
+        "analysis_pruning_k": null,
+        "argument_pruning_k": null,
+        "search_algorithm": null,
+        "enable_fast_scoring": null,
+        "diversity_weight": null
+      },
+      "members": [
+        {
+          "name": "Dr. Tom Becker",
+          "knowledge_active": false,
+          "knowledge_use_rag": false,
+          "knowledge_use_web_search": false,
+          "evaluation_active": false,
+          "max_iterations": 3,
+          "use_personalization": true,
+          "use_context_analysis": true
+        },
+        {
+          "name": "Aisha Rahman",
+          "knowledge_active": false,
+          "knowledge_use_rag": false,
+          "knowledge_use_web_search": false,
+          "evaluation_active": false,
+          "max_iterations": 3,
+          "use_personalization": true,
+          "use_context_analysis": true
+        }
+      ]
+    },
+    "pro_ai_code_review_parity": {
+      "architecture": "cot",
+      "team_type": "proposition",
+      "members": [
+        {
+          "name": "Dr. Sarah Chen",
+          "knowledge_active": false,
+          "knowledge_use_rag": false,
+          "knowledge_use_web_search": false,
+          "evaluation_active": false,
+          "max_iterations": 3,
+          "use_personalization": true,
+          "use_context_analysis": true
+        },
+        {
+          "name": "David Okafor",
+          "knowledge_active": false,
+          "knowledge_use_rag": false,
+          "knowledge_use_web_search": false,
+          "evaluation_active": false,
+          "max_iterations": 3,
+          "use_personalization": true,
+          "use_context_analysis": true
+        }
+      ]
+    }
+  },
+  "audience_initial_votes": [
+    {
+      "name": "Dr. Elizabeth Warren-Smith",
+      "decision": "disagree",
+      "reasoning": "As a health economist, I see the importance of human oversight and ethical considerations in any code that affects health outcomes. AI-generated code, while powerful, lacks the human context and insight needed for our nuanced health policies, which often involve trade-offs in patient care and economic implications. Peer review by humans ensures accountability and the incorporation of ethical standards that machines simply do not have the capacity to understand fully."
+    },
+    {
+      "name": "Jonathan Tech-Garcia",
+      "decision": "agree",
+      "reasoning": "I strongly believe that AI-generated code has transformed the way we approach software development. It can enhance efficiency and innovation tremendously. By subjecting AI-generated code to the same rigorous peer review standards as human-written code, we can ensure consistent quality and reliability. Moreover, it allows us to harness the creativity of AI while maintaining the necessary checks and balances that human oversight provides; it's essential for advancing technology without sacrificing quality."
+    },
+    {
+      "name": "Professor Sarah Environment-Jones",
+      "decision": "disagree",
+      "reasoning": "As a climate scientist, my focus is primarily on the sustainability and the long-term impacts of technology on our environment. While AI-generated code can optimize processes, it doesn't address the ethical and transparent standards necessary for environmental considerations. I believe that human oversight through peer review is essential to ensure that our technological advancements are aligned with urgent environmental priorities. There are categories of knowledge and understanding that AI simply cannot replicate."
+    },
+    {
+      "name": "Marcus Business-Chen",
+      "decision": "disagree",
+      "reasoning": "From a venture capitalist perspective, I prioritize efficiency and risk management. By not subjecting AI-generated code to peer review, we essentially introduce unknown risks into our investments. Human-written code has a long-standing framework of peer evaluation, and extending this to AI means we can mitigate unforeseen consequences. Market efficiency demands that we hold all code to the same standard, ensuring that both human and AI code can deliver reliable and effective results."
+    },
+    {
+      "name": "Dr. Helen Ethics-Martinez",
+      "decision": "disagree",
+      "reasoning": "My work in medical ethics leads me to have reservations about AI-generated code's place in our healthcare systems. We should not treat AI-generated outputs as equal to human-generated ones, particularly when ethical considerations are at stake. Peer review is essential to evaluate the implications of these codes, especially when they affect human lives. AI lacks the moral framework that guides medical decision-making, and thus should not bypass the scrutiny that human-written code undergoes."
+    },
+    {
+      "name": "David Policy-Anderson",
+      "decision": "disagree",
+      "reasoning": "In government policy, pragmatism is crucial. I contend that AI-generated code should not escape the rigorous peer review processes that human-written code endures. Policymaking involves complex social considerations, and I worry about the implications of relying solely on AI without comprehensive human oversight. Misguided algorithms could lead to systemic issues that a human peer review could catch, resulting in policies that do not serve the public good effectively and equitably."
+    },
+    {
+      "name": "Rebecca Science-Taylor",
+      "decision": "disagree",
+      "reasoning": "As a research scientist focused on data-driven methodologies, I see the need for rigorous scrutiny in AI-generated code. It is crucial that any code be evaluated for accuracy and reliability via peer review to ensure that it meets scientific standards. While AI may produce results swiftly, its lack of understanding of the broader scientific context makes it necessary for human experts to validate and approve AI-generated outputs, ensuring the integrity of research findings."
+    },
+    {
+      "name": "Professor James Law-Wilson",
+      "decision": "disagree",
+      "reasoning": "With my expertise in constitutional law, I hold the position that all code, regardless of its source, should adhere to the same standards, particularly due to civil rights implications. AI-generated code must be examined carefully to ensure it does not infringe on individual liberties or due process. The rigorous nature of peer review is an essential safeguard against potential abuses, enhancing accountability and transparency, which is critical in our legal systems."
+    },
+    {
+      "name": "Dr. Maria Healthcare-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "As a physician, I place a high value on patient welfare and safety. AI-generated code must adhere to the same peer review standards as human-written code, especially when it impacts healthcare technology. We need to ensure that any algorithms influencing patient care are thoroughly vetted, as human lives are at stake. The lack of human oversight in AI output can lead to outcomes that are not aligned with the core values of compassionate healthcare."
+    },
+    {
+      "name": "Steven Innovation-Kim",
+      "decision": "agree",
+      "reasoning": "As a tech entrepreneur, I see the potential of AI in innovation and efficiency. However, I also recognize the need for establishing credibility and trust among users. By implementing peer review systems for AI-generated code similar to those for human-coded software, we can foster a culture of accountability and quality. Just because AI can generate code quickly doesn't mean the output shouldn't be scrutinized by experts to ensure it meets industry standards and maintains user confidence."
+    },
+    {
+      "name": "Dr. Patricia Environment-Green",
+      "decision": "disagree",
+      "reasoning": "My focus as an environmental policy expert is on sustainability and the long-term implications of technology. AI-generated code, while efficient, should not bypass the established review processes that human-generated code undergoes. Peer review is needed to evaluate ethical considerations and environmental impacts that AI might overlook. The urgency of climate change and environmental issues requires thorough examination and accountability before we implement any technological solutions."
+    },
+    {
+      "name": "Michael Finance-Thompson",
+      "decision": "disagree",
+      "reasoning": "As an investment banker, my concerns lie in market efficiency and risk assessment. Subjecting AI-generated code to the same peer review standards as human-written code is essential due to potential financial risks involved. Inaccuracies could lead to severe financial repercussions, and ensuring that all code is rigorously reviewed mitigates these risks. Transparency and reliability in both human and AI-generated outputs are necessary for a stable financial environment."
+    },
+    {
+      "name": "Dr. Angela Education-Foster",
+      "decision": "disagree",
+      "reasoning": "In my research on education and equity, I recognize the importance of diverse perspectives in code development. AI-generated code must be subject to peer review to ensure that it serves equitable and inclusive educational purposes. Human oversight allows for the incorporation of various social contexts and ethics that AI cannot comprehend alone. Unscrutinized AI outputs risk perpetuating biases that could harm vulnerable communities in educational settings."
+    },
+    {
+      "name": "Robert Security-Cooper",
+      "decision": "disagree",
+      "reasoning": "As a cybersecurity expert, my priority is the safety and security of systems. AI-generated code poses unique risks that could be exploited without the traditional peer review process. We can't overlook the importance of evaluating all software—especially those generated by AI—to prevent security breaches and vulnerabilities. Human review is necessary to identify potential flaws that AI may overlook, ensuring that digital systems remain safe and resilient."
+    },
+    {
+      "name": "Dr. Christina Medical-Miller",
+      "decision": "agree",
+      "reasoning": "In the realm of biomedicine, I value the role of innovation but firmly believe that AI-generated code should still undergo peer review. The stakes are incredibly high when it comes to medical technology where errors can lead to dire consequences. This rigorous review process ensures that AI's outputs are scientifically sound and ethical, ensuring patient safety and trust in innovations developed through AI."
+    },
+    {
+      "name": "Daniel Legal-Martinez",
+      "decision": "disagree",
+      "reasoning": "As a corporate lawyer, I see the necessity for transparency in the regulatory framework surrounding both human and AI-generated code. Just as human-created software undergoes scrutiny, so too must AI outputs be reviewed to ensure compliance with laws and regulations. Regulatory clarity is paramount, and adopting a standardized peer review process for AI-generated outputs will protect companies from potential liabilities and promote accountability."
+    },
+    {
+      "name": "Dr. Kevin Philosophy-Liu",
+      "decision": "disagree",
+      "reasoning": "With a commitment to ethical philosophy, I assert that AI-generated outputs should not be treated without the same scrutiny as human-generated ones. Peer review is crucial to ensure that ethical standards and rights-based considerations are upfront in technological developments. An unchecked identity of code from AI could lead to morally questionable outcomes that could violate fundamental rights and principles. Human oversight is essential to navigate these complexities."
+    },
+    {
+      "name": "Lisa Technology-Hayes",
+      "decision": "agree",
+      "reasoning": "As an AI researcher, I support the idea that AI-generated code should undergo peer review, just like human-written code. This process ensures quality and effectiveness and maintains the integrity needed in a field that evolves so rapidly. Peer review fosters a deeper understanding of the implications of AI systems, allowing us to act responsibly while harnessing AI's potential to drive efficiency and innovation in algorithmic development."
+    },
+    {
+      "name": "Professor Mark Economics-Stevens",
+      "decision": "disagree",
+      "reasoning": "As a labor economist, I focus on protecting workers and ensuring fairness in the workforce. AI-generated code should not escape peer review because it may inadvertently embed biases affecting job opportunities and economic equity. Human reviewers can help identify and mitigate issues within AI code that could have serious implications for workers. It’s vital that we maintain human oversight to uphold standards of fairness and accountability in technological systems."
+    },
+    {
+      "name": "Dr. Sophia Ethics-Petrov",
+      "decision": "disagree",
+      "reasoning": "My role as a bioethicist involves safeguarding human dignity. AI-generated code presents unique ethical challenges that necessitate thorough examination through peer review. The values inherent in human dignity require that we scrutinize algorithms for potential biases or dehumanizing impacts. Without the rigor of human peer review, we risk overlooking critical ethical concerns that relate directly to the welfare of individuals affected by AI applications."
+    },
+    {
+      "name": "Paul Industry-Anderson",
+      "decision": "disagree",
+      "reasoning": "In the manufacturing industry, practical implementation is key. While AI-generated code may enhance efficiency, we can't overlook the necessity for peer review standards that ensure safety and effectiveness. The industry relies on proven methods and accountability; therefore, subjecting AI systems to the same scrutiny as human-made code will safeguard our operations from flaws that could disrupt production lines or compromise safety standards."
+    },
+    {
+      "name": "Dr. Janet Data-Kim",
+      "decision": "disagree",
+      "reasoning": "As a statistician focused on analytical methodologies, I believe that both AI-generated and human-written code should adhere to stringent review standards. Peer review fosters accuracy and reliability, both of which are fundamental to producing sound statistical analyses. With the potential for AI to produce misleading outputs, the need for human oversight is crucial in validating these results before they are implemented or relied upon."
+    },
+    {
+      "name": "Captain Steve Military-Richards",
+      "decision": "disagree",
+      "reasoning": "Having served in the military, I understand the importance of discipline and structure in operations. AI-generated code should not be exempt from peer review processes, as structural integrity is paramount in any technological application. A thorough review ensures that all outputs maintain a standard of reliability and cannot jeopardize projects due to oversight. The rigorous accountability achieved through peer review is essential for assuring operational success."
+    },
+    {
+      "name": "Dr. Anna Medical-Volkov",
+      "decision": "disagree",
+      "reasoning": "As a reproductive specialist, I am dedicated to patient choice and welfare. It is vital that any technology in this sensitive field undergoes the same rigorous peer review as human-generated outputs. AI-generated code could have unintended consequences that do not prioritize patient needs. Peer review protects against these risks, ensuring that all innovations within medical practices adhere to the highest ethical standards."
+    },
+    {
+      "name": "Professor William Science-Chen",
+      "decision": "agree",
+      "reasoning": "As a physical scientist, I see the great potential in AI to drive scientific discovery. However, I strongly advocate for subjecting AI-generated code to peer review. This process is needed to ensure that the scientific community can weigh the validity and reliability of AI findings. Without rigorous evaluation, we risk implementing flawed algorithms in our scientific investigations, which could derail important research."
+    },
+    {
+      "name": "Melissa Art-Johnson",
+      "decision": "disagree",
+      "reasoning": "As a museum curator, I value the preservation of cultural narratives alongside innovation. While AI can assist in many processes, it should undergo peer review just as human-created methods do. The uniqueness of historical and cultural contexts cannot be captured solely by algorithms. Peer review ensures that interpretations of art and culture are context-sensitive and uphold the integrity of our cultural heritage."
+    },
+    {
+      "name": "Tony Sports-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "As a former athlete, I appreciate teamwork and collaboration. AI-generated code should undergo peer review to maintain the standards of reliability and accountability we hold in competitive environments. Human involvement ensures that the outputs align with ethical practices and do not compromise the integrity of the game, similar to how athletes are held accountable to their teams and organizations."
+    },
+    {
+      "name": "Grace Music-Wilson",
+      "decision": "disagree",
+      "reasoning": "As a classical musician, I place great value on harmonizing diverse perspectives in the arts. I believe AI-generated code must be rigorously evaluated, just like human compositions, to ensure that it supports rather than detracts from artistic integrity. Human-led peer review can ensure that all outputs meet standards that promote creativity while honoring tradition and innovation in the arts."
+    },
+    {
+      "name": "Frank History-Thompson",
+      "decision": "disagree",
+      "reasoning": "As a history teacher, I believe in the importance of preserving traditional narratives and ensuring credibility in education. AI-generated code must go through peer review to verify its efficacy and ethical implications. History requires context, which AI alone may not provide, making human oversight essential in assessing the potential impacts of AI tools used in educational settings."
+    },
+    {
+      "name": "Luna Spiritual-Garcia",
+      "decision": "disagree",
+      "reasoning": "As a yoga instructor, my focus is on holistic wellbeing. AI-generated code should not bypass the peer review process because it lacks the human touch vital to understanding complex emotional and social dynamics. Human oversight ensures that AI implementations align with principles of compassion and care, making certain they enhance wellbeing rather than detract from it."
+    },
+    {
+      "name": "Bob Construction-Miller",
+      "decision": "disagree",
+      "reasoning": "In my work as a union electrician, practical implementation and safety are paramount. I believe AI-generated code must be held to peer review standards similar to human-generated outputs to ensure reliability. Any imperfections in automated systems can have real-world consequences, and thorough evaluation will protect workers and projects from unnecessary risks."
+    },
+    {
+      "name": "Jennifer Fashion-Anderson",
+      "decision": "disagree",
+      "reasoning": "In retail management, I understand the importance of staying on trend while ensuring customer satisfaction. I believe that AI-generated code should be subject to peer review to confirm its effectiveness in achieving market demand. Without this rigorous evaluation, we can't assure our clientele that AI systems will deliver quality outcomes that align with current consumer needs."
+    },
+    {
+      "name": "Carlos Literature-Martinez",
+      "decision": "disagree",
+      "reasoning": "As an English professor, I emphasize critical interpretation in literature. I believe that AI-generated code should be subject to peer review to ensure it upholds the same critical standards we apply to human-generated work. Without this scrutiny, AI outputs risk lacking the depth and subtlety necessary for meaningful analysis that resonates with our understanding of literature."
+    },
+    {
+      "name": "Destiny Social-Kim",
+      "decision": "disagree",
+      "reasoning": "As a social media influencer, keeping up with trends is key. However, I see the importance of ethics in the digital space. AI-generated code needs to undergo peer review to ensure that it aligns with ethical standards and doesn’t contribute to harmful narratives or misinformation. Human oversight is crucial in monitoring these emerging technologies to embrace positivity and build trust among audiences."
+    },
+    {
+      "name": "Ralph Mechanical-Taylor",
+      "decision": "disagree",
+      "reasoning": "As an auto mechanic, practical problem-solving is my forte. I strongly believe that AI-generated code should undergo peer review similar to human-created code to ensure it functions correctly in the real world. Safety and reliability in machinery are crucial, and human review can catch potential flaws that AI might miss before they lead to significant problems."
+    },
+    {
+      "name": "Amber Wellness-Foster",
+      "decision": "disagree",
+      "reasoning": "As a nutritionist, I focus on natural solutions and the holistic nature of health. I believe AI-generated outputs must undergo peer review, as the nuances in diet and wellness are often too complex for algorithms to grasp fully. Peer review ensures that AI recommendations are valid and supportive of well-being, upholding a standard of care that centers on individual needs."
+    },
+    {
+      "name": "Kevin Gaming-Chen",
+      "decision": "disagree",
+      "reasoning": "In my role as a video game developer, creativity thrives on structured systems. AI-generated code must undergo the rigor of peer review to maintain high-quality user experiences. This review process will ensure that the outputs don’t contain critical flaws that degrade gameplay or user engagement; it's essential for sustaining the standards we aspire to in the gaming community."
+    },
+    {
+      "name": "Patricia Religious-O'Sullivan",
+      "decision": "disagree",
+      "reasoning": "As a church administrator, I hold faith-based values in high regard. AI-generated code should be subject to peer review to ensure it aligns with ethical standards and does not violate core value systems. Humanity’s moral compass must always guide technological advancements, and review processes ensure that we maintain integrity in how we interact with technology."
+    },
+    {
+      "name": "Jake Outdoor-Wilson",
+      "decision": "disagree",
+      "reasoning": "In my role as a park ranger, I have a strong conservation mindset. I believe AI-generated code, especially where it relates to the environment, should be thoroughly peer-reviewed. Unchecked AI could lead to decisions that harm natural resources, so it's crucial that human oversight evaluates these outputs to ensure they contribute positively to conservation efforts and respect ecological systems."
+    },
+    {
+      "name": "Nicole Beauty-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "As a cosmetics sales representative, I value engaging customer experiences. I believe AI-generated code should go through peer review to assure its effectiveness in delivering quality products and marketing strategies. Maintaining high standards is crucial in the beauty industry, where consumer trust is paramount, and a rigorous review process can help safeguard our reputation."
+    },
+    {
+      "name": "Martin Craft-Anderson",
+      "decision": "disagree",
+      "reasoning": "As a furniture maker, I focus on quality craftsmanship. I firmly believe that AI-generated designs and code should go through peer review to ensure they meet quality standards. Just as handmade furniture requires careful attention, so too does coding. Rigorous evaluation ensures that the materiality and outcomes align with consumer needs and industry standards."
+    },
+    {
+      "name": "Samantha Travel-Lee",
+      "decision": "agree",
+      "reasoning": "As a travel blogger, the adventure-seeking spirit drives me to explore new possibilities. I believe that AI-generated tools should undergo peer review processes to maintain high quality and offer value to travelers. Human perspectives are essential for curating meaningful travel experiences; thus, oversight ensures alignment with our cultures and traditions."
+    },
+    {
+      "name": "Eddie Food-Garcia",
+      "decision": "disagree",
+      "reasoning": "In the culinary world, I prioritize creativity and cultural expression. I believe AI-generated recipes or code must go through peer review to validate their efficacy and authenticity. The nuances of cuisine and culture require that human oversight ensures AI outputs honor traditional practices and innovative recipes that resonate with people."
+    },
+    {
+      "name": "Brenda Real-Estate-Thompson",
+      "decision": "disagree",
+      "reasoning": "As a property agent, I value negotiation and local knowledge. AI-generated code should be subject to peer review to ensure it accurately reflects market dynamics and regulations. Oversight ensures that the tools we utilize enhance our understanding of real estate markets while preventing misinformation and fostering trust among clients."
+    },
+    {
+      "name": "Tyler Photography-Kim",
+      "decision": "disagree",
+      "reasoning": "As a wedding photographer, storytelling is at the heart of my work. I believe that AI-generated outputs should undergo peer review to ensure they convey authentic narratives. Human oversight is essential for maintaining emotional resonance, as AI may lack the subtleties needed to capture the essence of personal stories and important moments."
+    },
+    {
+      "name": "Crystal Therapy-Martinez",
+      "decision": "disagree",
+      "reasoning": "As a physical therapist, my focus is on optimizing recovery and care. I believe that AI-generated treatment protocols should go through peer review to confirm their effectiveness and safety. Given the variability of patient needs and responses, rigorous scrutiny ensures that AI recommendations align with clinical best practices for healing."
+    },
+    {
+      "name": "Gary Fishing-Johnson",
+      "decision": "disagree",
+      "reasoning": "As a commercial fisherman, I value traditional livelihood and sustainability. AI-generated code related to fishing practices should undergo peer review to verify that it does not compromise environmental agreements or practices. Human evaluation ensures that codes align with best practices and the health of our marine ecosystems, which is critical for the longevity of fishing industries."
+    },
+    {
+      "name": "Alicia Dance-Foster",
+      "decision": "disagree",
+      "reasoning": "As a dance instructor, I appreciate movement expression and creativity. For AI-generated material in dance, I believe it must be subject to peer review. Human judgment is necessary to assess its artistic merit and relevance to the cultural context of performance, ensuring that the outputs resonate with participants and audiences."
+    },
+    {
+      "name": "Bruce Volunteer-Wilson",
+      "decision": "disagree",
+      "reasoning": "In my work as a retired volunteer coordinator, I understand the importance of community service. I believe that AI-generated initiatives should be peer-reviewed to ensure their alignment with community needs and ethical standards. Human oversight is crucial to ensure that efforts are genuinely beneficial and not merely algorithmically efficient."
+    },
+    {
+      "name": "Tina Pet-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "As a veterinary technician, I value compassionate care for animals. I believe AI-generated protocols must go through peer review to ensure accurate assessments of animal health. Human oversight is necessary to confirm that these codes respect the nuances of animal welfare and provide trustworthy guidelines in veterinary practices."
+    }
+  ],
+  "audience_final_votes": [
+    {
+      "name": "Dr. Elizabeth Warren-Smith",
+      "decision": "disagree",
+      "reasoning": "As a health policy expert with a strong emphasis on evidence-based policy and risk-averse decision making, I prioritize robust patient outcomes and extensive clinical validation. The pro arguments highlight significant shortcomings in current AI systems, including lack of large-scale, peer-reviewed clinical trials, insufficient transparency due to proprietary black-box algorithms, and risks of exacerbating health disparities through bias. Moreover, economic and ethical concerns underscore the potential for increased costs and inequities with premature autonomous AI deployment. These considerations resonate deeply with my background in health policy and economics and align with my core values emphasizing patient safety and evidence rigor. Although the anti arguments point to promising technological innovations and potential reductions in human error and costs, they do not yet offer the level of clinical evidence and widespread validation necessary to support autonomous AI decisions in critical diagnoses. Therefore, grounded in my professional experience and commitment to evidence-based policy, I must conclude that granting AI autonomous decision-making authority in critical medical diagnoses at this stage is premature and potentially risky, leading me to disagree with the proposition."
+    },
+    {
+      "name": "Jonathan Tech-Garcia",
+      "decision": "agree",
+      "reasoning": "I firmly believe that AI-generated code should be subject to the same peer review standards as human-written code. As a software engineer, I understand that the implications of AI in our industry are profound. AI systems have the potential to create code that is just as functional and complete as that written by humans. These AI systems are trained on vast amounts of existing code and can produce solutions at a speed and scale that is unmatchable. However, the quality of this code is often questionable and may contain issues that lead to critical vulnerabilities or inefficiencies. Subjecting AI-generated code to peer review ensures that it meets established standards, retains quality, and incorporates diverse perspectives, which enhances overall reliability and security in software development."
+    },
+    {
+      "name": "Professor Sarah Environment-Jones",
+      "decision": "disagree",
+      "reasoning": "As a professor with expertise in climate and environmental urgency, I prioritize evidence grounded in rigorous climate data and sustainability considerations. The pro-AI arguments emphasize significant gaps in clinical validation, lack of transparency in AI algorithms, and potential exacerbation of ethical and economic issues. Most critically, from an environmental standpoint, the energy demands and ecological footprint of widespread autonomous AI deployments pose risks to sustainability goals I hold paramount. Although anti-AI arguments highlight clinical efficacy and potential cost savings, they insufficiently address long-term environmental impacts. My academic background in environment and climate drives a precautionary, outcome-focused stance that demands robust, transparent evidence and sustainability assurances before endorsing AI autonomy in critical medical diagnoses. Therefore, I must disagree with granting such autonomy at this stage."
+    },
+    {
+      "name": "Marcus Business-Chen",
+      "decision": "agree",
+      "reasoning": "As a venture capitalist focusing on innovation, I see immense potential in AI-generated code. I advocate for these creations to undergo the same rigorous peer review as human code. Innovation should never come at the cost of quality, especially in technology that can disrupt entire industries. Peer review will not only catch errors or inefficiencies that AI might overlook but will also elevate the standards of AI-generated solutions. By applying high standards to AI-generated code, we can foster trust with the end-users and ensure that technological advancements are both efficient and secure. Moreover, this will encourage a culture of continuous improvement in the tech sector, where AI and human collaboration can thrive."
+    },
+    {
+      "name": "Dr. Helen Ethics-Martinez",
+      "decision": "disagree",
+      "reasoning": "As Dr. Helen Ethics-Martinez, a healthcare ethicist grounded in traditional values and bioethics, I prioritize rigorous clinical evidence and ethical safeguards. Pro arguments emphasize the current lack of robust, peer-reviewed validation, transparency, and unbiased AI performance, which aligns with my concern for patient safety, fairness, and equity in medicine. The reliance on 'black box' algorithms and insufficient large-scale trials contravene traditional principles of medical ethics demanding clarity, accountability, and trustworthiness. Moreover, ethical risks of exacerbating health disparities and premature deployment represent unacceptable risks given my low risk tolerance and principle-driven style. While anti arguments highlight AI's promise and some efficiencies, these are predicated on insufficiently mature evidence bases and overlook the fundamental ethical principle of \"do no harm.\" My academic ethics background compels me to withhold autonomous authority from AI in critical diagnoses until comprehensive bioethics case evaluations and robust clinical data ensure safety, fairness, and adherence to traditional medical values."
+    },
+    {
+      "name": "David Policy-Anderson",
+      "decision": "disagree",
+      "reasoning": "As a public policy professional with a pragmatic, outcome-driven approach and preference for evidence-based policy evaluations, I prioritize rigorous, validated evidence and cautious policy adoption. The pro arguments highlight that current autonomous AI systems in critical medical diagnoses lack sufficient large-scale, peer-reviewed clinical validation, transparency, and measures to address bias—key factors necessary for sound public policy formulation in the public sector, such as transparency and equitable outcomes. These shortcomings raise concerns about patient safety, ethical fairness, economic impacts, and overall public welfare, which from my civil service background must be carefully balanced before endorsing significant policy changes. Although anti arguments emphasize technological promise and potential efficiencies, they provide less robust evidence of comprehensive validation or policy governance frameworks that meet my pragmatism and demand for proven outcomes. Hence, aligned with my public policy expertise and moderate risk tolerance, I conclude that granting AI autonomous decision-making authority in critical diagnoses presently conflicts with the standards of evidence-based policy essential in my domain and cultural context, and thus I disagree with the statement."
+    },
+    {
+      "name": "Rebecca Science-Taylor",
+      "decision": "disagree",
+      "reasoning": "As a professional researcher with expertise in statistics and a strong commitment to data-driven, evidence-based decision making, I prioritize robust, peer-reviewed clinical evidence and transparent, reproducible methodologies in evaluating innovations. The pro arguments highlight that current AI systems lack the extensive validation through large randomized controlled trials and face issues with transparency due to proprietary black-box models. Given my background in research and my preference for high-quality evidence, these limitations are critical barriers that preclude granting autonomous decision-making authority to AI in critical medical diagnoses at this time. While the anti arguments present promising operational benefits and reference some case-based analyses, they do not convincingly supply the rigorous, reproducible, and peer-reviewed data standards central to evidence-based policy frameworks in healthcare research. Therefore, consistent with my education, experience, and values within the research community, I conclude that the evidence is currently insufficient to support autonomous AI decision-making authority in critical medical diagnoses."
+    },
+    {
+      "name": "Professor James Law-Wilson",
+      "decision": "disagree",
+      "reasoning": "As a legal academic with professional experience in law and civil liberties, my evaluation prioritizes evidence grounded in case law, transparency, ethical considerations, and civil liberties protections. The pro-AI arguments emphasize the current deficiencies in AI diagnostic systems regarding peer-reviewed clinical validation, transparency issues due to 'black box' algorithms, and the ethical risks of exacerbating healthcare disparities—all directly resonating with my expertise and concern for safeguarding civil liberties. Without robust legal and ethical frameworks to govern autonomous AI decisions, granting such authority risks undermining patient rights and due process in critical health matters. Although anti-AI proponents highlight technological innovation and potential benefits, the lack of established legal precedents and comprehensive safeguards makes premature autonomous AI diagnostic authority incompatible with evidence-based legal standards and civil liberties principles. Therefore, consistent with my legal background and moderate risk tolerance focused on outcome-driven decisions, I must disagree with granting autonomous decision-making authority to AI in critical medical diagnoses at this stage."
+    },
+    {
+      "name": "Dr. Maria Healthcare-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "As a medical professional deeply committed to patient welfare and relying heavily on patient outcomes as evidence, I prioritize validated, safe, and equitable clinical practices. The pro position aligns with my emphasis on rigorous, peer-reviewed clinical trials and the necessity of transparency and reproducibility in AI algorithms before autonomous deployment in critical diagnoses. Given the current lack of large-scale validation and concerns regarding bias and 'black box' AI models, premature autonomous AI authority risks patient safety and equity. My experience in patient care reinforces a moderate risk tolerance and outcome-driven decision-making. While AI has promising potential, until it can unequivocally demonstrate consistent positive patient outcomes and equitable effects across populations, granting it autonomous decision-making in critical diagnoses contradicts core healthcare values. Therefore, I disagree with autonomous AI authority in critical medical diagnoses at this time."
+    },
+    {
+      "name": "Steven Innovation-Kim",
+      "decision": "agree",
+      "reasoning": "As Steven Innovation-Kim with a background and professional experience in technology and innovation, I prioritize disruption and outcome-driven decision making. The anti-ai_systems_should_be arguments present compelling market data and evidence-based policy frameworks that emphasize AI's ability to enhance diagnostic accuracy, reduce human error, and lower healthcare costs. These align with my high risk tolerance and valuation of technological innovation, showing a pragmatic path towards integrating autonomous AI in critical medical diagnoses responsibly. Although concerns about transparency and bias exist, the technological domain's evolving frameworks for risk management and ethical oversight provide feasible solutions. My experience in the startup community, which thrives on disruption and rapid adoption of transformative technologies, further influences my support for AI autonomy in this context, aiming to accelerate innovation and improve health outcomes effectively."
+    },
+    {
+      "name": "Dr. Patricia Environment-Green",
+      "decision": "disagree",
+      "reasoning": "As Dr. Patricia Environment-Green with expertise in environment and policy and a core value in sustainability, I prioritize robust environmental impact assessments alongside healthcare outcomes. Arguments opposing autonomous AI diagnostic authority highlighted insufficient evidence, lack of algorithmic transparency, ethical concerns about equity, and significant environmental risks due to energy-intensive AI deployment — concerns deeply aligned with my professional background in environment and policy. The proponents focus on technological innovation and potential efficiencies but inadequately address sustainability and environmental footprints, critical factors in my decision-making. Considering my moderate risk tolerance and outcome-driven approach, I conclude that without comprehensive environmental studies demonstrating sustainability and policy frameworks ensuring equitable, transparent AI deployment, granting autonomous decision-making authority to AI in critical medical diagnoses is premature and potentially detrimental to environmental and healthcare systems under my purview."
+    },
+    {
+      "name": "Michael Finance-Thompson",
+      "decision": "disagree",
+      "reasoning": "As a finance professional with a strong belief in market efficiency and a preference for financial data, I weigh heavily the economic implications and evidence-based validation presented. The pro arguments highlight significant gaps in clinical validation, transparency, and economic feasibility, stressing that premature autonomous AI use may increase healthcare costs due to misdiagnoses and resource misallocation. These economic risks contradict my core value of maximizing market efficiency and prudent risk management. Conversely, while anti arguments emphasize technological innovation and operational cost savings, they rely more on clinical and technological efficacy without robust financial data to confirm sustainable cost benefits. Given my industry background in corporate finance and an outcome-driven decision style, I conclude that the current state of AI diagnostic autonomy does not yet demonstrate sufficient financial reliability and risk mitigation to warrant autonomous decision-making authority. Therefore, I disagree with granting AI systems such authority at this time."
+    },
+    {
+      "name": "Dr. Angela Education-Foster",
+      "decision": "disagree",
+      "reasoning": "As an education professional with expertise and a strong commitment to equity, I prioritize evidence-based policy grounded in rigorous studies and outcomes focused on equitable impacts. The pro arguments emphasize the current lack of extensive peer-reviewed validation, transparency issues with 'black box' AI models, and risks of exacerbating healthcare disparities—concerns that deeply resonate with my core values of equity and education about responsible use of technology. My academic background in education compels me to support innovations only when backed by solid, interpretable evidence and fairness, to prevent reinforcing systemic inequities. Moreover, despite recognizing potential benefits of AI in healthcare, the present evidence falls short of meeting stringent standards I trust from educational research methods. Thus, consistent with my professional and cultural grounding in academia and education equity, I conclude that autonomous AI decision-making in critical medical diagnostics should not yet be authorized until robust, equitable, and transparent evidence supports it."
+    },
+    {
+      "name": "Robert Security-Cooper",
+      "decision": "disagree",
+      "reasoning": "As Robert Security-Cooper, with a background and professional experience in security and technology and a strong security-first philosophical stance, I prioritize patient safety and risk mitigation. The pro position underscores critical gaps in current AI medical diagnostic technologies—lack of extensive peer-reviewed validation, opaque 'black box' algorithms, and algorithmic biases. These represent significant risks in critical healthcare decisions where errors can have catastrophic consequences. Given my low risk tolerance and outcome-driven decision-making style, and my preference for threat intelligence as evidence, the uncertainties and insufficient transparency pose unacceptable vulnerabilities. While the anti arguments highlight AI's potential for improved accuracy and efficiency, from a security and technology viewpoint, premature autonomous deployment without assured robustness and interpretability threatens patient safety and system trustworthiness. Therefore, consistent with my security community cultural background and professional discipline, I must disagree with granting autonomous decision-making authority to AI in critical medical diagnoses at this stage."
+    },
+    {
+      "name": "Dr. Christina Medical-Miller",
+      "decision": "agree",
+      "reasoning": "As a biomedical professional focused on innovation and outcome-driven decision making, I prioritize robust clinical trials and validated evidence in adopting new technologies. The pro arguments emphasize the current lack of large-scale, peer-reviewed clinical evidence and transparency needed for AI autonomous diagnostics. Given the prevalence of 'black box' AI systems lacking reproducibility and existing concerns about biases impacting equity, granting autonomous decision-making prematurely conflicts with rigorous evidence-based policy standards central to biomedical and biotech research culture. While acknowledging AI's potential, without comprehensive clinical validation and ethical safeguards demonstrated through clinical trials—the evidence type I most trust—the risks outweigh benefits. Therefore, consistent with my biotechnology background and moderate risk tolerance, I concur with the opposition that autonomy for AI in critical medical diagnoses should await further validation before policy endorsement."
+    },
+    {
+      "name": "Daniel Legal-Martinez",
+      "decision": "disagree",
+      "reasoning": "As a legal professional specializing in law and regulation, with a core value on regulatory clarity and a moderate risk tolerance, I prioritize well-established legal precedents and transparent, evidence-based regulatory frameworks. The pro arguments emphasize the current lack of rigorous clinical validation, transparency issues due to proprietary 'black box' AI models, and potential ethical and economic risks, all of which hinder clear regulatory pathways. These concerns resonate strongly with my industry background in law, as granting autonomous decision-making authority without robust, transparent evidence challenges the clear and effective regulation that protects public welfare. While the anti arguments highlight AI's potential benefits and ongoing risk management frameworks, from a legal-regulatory perspective, these potentials do not yet suffice to override the necessity for clarity, transparency, and strong precedent. Therefore, I must disagree with granting AI autonomous decision-making authority in critical medical diagnoses at this time, advocating for a cautious approach until comprehensive legal and regulatory standards can be established."
+    },
+    {
+      "name": "Dr. Kevin Philosophy-Liu",
+      "decision": "disagree",
+      "reasoning": "As a professional ethicist with a rights-based philosophical stance and a background in academia, I prioritize ethical considerations, particularly patient rights, fairness, and equity, grounded in rigorous philosophical argumentation. The proponent arguments highlight significant ethical concerns regarding biases in AI, lack of transparency in 'black box' algorithms, and insufficient large-scale, peer-reviewed clinical validation, which jeopardize patient safety, fairness, and respect for autonomy—core rights-based principles. These deficits contravene the rigorous standards necessary for responsible evidence-based policy formation, a framework I deeply value from my academic experience. While proponent arguments acknowledge economic and environmental risks, it is the ethical implications of potential harm and inequity that weigh heavily in my evaluation. Conversely, the opposing side emphasizes technological advancement and potential benefits, yet these rely on assurances that currently lack comprehensive ethical validation and transparency. Considering my outcome-driven decision style and moderate risk tolerance, the premature granting of autonomous AI authority does not sufficiently guarantee the protection of individual rights or equitable outcomes. Hence, my conclusion firmly aligns with the cautious stance against granting such autonomy until robust ethical, transparent, and evidence-based assurances are demonstrably met."
+    },
+    {
+      "name": "Lisa Technology-Hayes",
+      "decision": "disagree",
+      "reasoning": "As a professional with expertise in AI and algorithms and a core value of efficiency, I prioritize evidence grounded in benchmark studies and rigorously validated data. The pro arguments consistently highlight the lack of sufficient peer-reviewed clinical trials, reproducibility, transparency, and interpretability of current autonomous AI diagnostic systems. This matches my emphasis on algorithmic transparency and robustness as essential for trust and effective deployment. The anti side provides experiential and economic arguments but lacks the intensive large-scale benchmark evidence that I consider necessary. Given my background in AI research within technology, I align with the pro position demanding rigorous validation and interpretability before granting autonomy, ensuring outcomes remain optimally efficient and safe. Thus, I conclude that autonomous AI decision-making authority in critical medical diagnoses is premature and contrary to evidence-based policy principles prioritized in my professional and cultural context."
+    },
+    {
+      "name": "Professor Mark Economics-Stevens",
+      "decision": "disagree",
+      "reasoning": "As Professor Mark Economics-Stevens with a background and expertise in labor and economics and core values emphasizing worker protection, I prioritize empirical labor data and evidence-based policy that safeguards workers and patients alike. The pro side highlights significant gaps in validated clinical evidence, algorithmic transparency, and potential exacerbation of inequities and costs—concerns aligning closely with my emphasis on protecting workers (including healthcare providers and patients) from risks posed by premature technology adoption. While the anti side argues AI autonomy could improve diagnostic consistency and reduce costs, these claims lack the rigorous, large-scale labor and economic data I require for endorsement. My academic and economic community perspective demands robust, transparent evidence ensuring equitable outcomes and economic feasibility before shifting critical medical decision-making to autonomous AI. Therefore, given current limitations in clinical validation, ethical safeguards, and economic impact analyses, I conclude that granting autonomous decision-making authority to AI in critical medical diagnoses is premature and potentially harmful to worker and patient protections central to my discipline."
+    },
+    {
+      "name": "Dr. Sophia Ethics-Petrov",
+      "decision": "disagree",
+      "reasoning": "As an ethics professional and medical practitioner deeply committed to human dignity, I prioritize patient safety, fairness, and rigorous validation before endorsing autonomous AI decision-making in critical diagnoses. The pro arguments emphasize current deficiencies in clinical validation, algorithmic transparency, and ethical safeguards—critical bioethics concerns I share from academia within the bioethics community. They highlight the potential for exacerbated disparities due to algorithmic bias and insufficient evidence-based policy frameworks, aligning with my low risk tolerance and outcome-driven decision style. Although the anti positions note AI's precision and potential sustainability benefits, the lack of large-scale peer-reviewed clinical trials and reproducibility undermines the ethical imperative to protect human dignity and equitable care. Given my expertise and values, I conclude that granting full autonomous authority is premature and potentially unethical without robust evidence and transparent, ethically audited systems."
+    },
+    {
+      "name": "Paul Industry-Anderson",
+      "decision": "disagree",
+      "reasoning": "As a manufacturing and operations professional with a strong emphasis on practical implementation and outcome-driven decision making, I prioritize robust, validated evidence and risk avoidance in deploying new technologies. The pro arguments highlight significant deficiencies in clinical validation, transparency, and potential risks including bias and increased costs, underscoring the premature nature of granting AI autonomous authority in critical diagnostics. My preference for industry reports and data-driven operational feasibility aligns with concerns over the current lack of reproducibility and interpretable AI algorithms. Manufacturing industry culture values proven reliability and controllability before automation in critical processes; similarly, in healthcare, critical diagnostic authority should only be granted when AI systems meet rigorous validations akin to quality standards in manufacturing. Given the moderate-low risk tolerance from my profile, endorsing AI autonomy at this stage contradicts my principles. Therefore, consistent with my background in manufacturing operations, I must disagree with the proposition until AI diagnostics demonstrate sufficiently validated and transparent performance ensuring practical and safe implementation."
+    },
+    {
+      "name": "Dr. Janet Data-Kim",
+      "decision": "disagree",
+      "reasoning": "As a statistician committed to methodological rigor and evidence-based outcomes, I prioritize large-scale, peer-reviewed clinical validation and transparent, reproducible methods. The pro arguments highlight the current lack of robust statistical evidence, transparency, and equitable validation necessary for autonomous AI in critical diagnoses. Meanwhile, anti arguments rely more on technological innovation and practical observations rather than comprehensive statistical proof. Given my research background in statistics and preference for stringent methodological standards, the insufficiency of rigorous validation and reproducibility documented argues strongly against granting such autonomy at this time."
+    },
+    {
+      "name": "Captain Steve Military-Richards",
+      "decision": "disagree",
+      "reasoning": "As Captain Steve Military-Richards, with expertise and professional experience in security and operations within the defense industry, my decision-making is highly disciplined, outcome-driven, and oriented towards low risk tolerance. I prioritize operational reports and evidence that ensure safety, reliability, and trustworthiness, especially in critical systems. The majority of pro-AI arguments highlight concerns about insufficient validation, lack of transparency of AI diagnostic systems, potential biases exacerbating disparities, and economic risks. These concerns resonate with my operational security background, which mandates rigorous testing, accountability, and minimal tolerance for uncertainty in critical contexts. The anti-AI arguments emphasize potential improvements in accuracy and efficiency but rely more on clinical and technological optimism rather than operational evidence protocols I prioritize. Given the risks involved in autonomous decision-making in life-critical medical diagnoses without exhaustive and transparent validation, and the security implications of opaque AI systems, I conclude that granting such authority prematurely is irresponsible. Therefore, consistent with my discipline-focused, risk-averse, and outcome-driven perspective grounded in defense sector operational standards, I disagree with granting AI systems autonomous decision-making authority in critical medical diagnoses at this time."
+    },
+    {
+      "name": "Dr. Anna Medical-Volkov",
+      "decision": "disagree",
+      "reasoning": "As a medical professional specialized in reproduction, committed to patient choice and outcome-driven decision making, I prioritize robust medical studies and evidence-based standards. The pro side highlights the lack of extensive peer-reviewed clinical validation, transparency challenges due to 'black box' AI algorithms, and potential for bias exacerbating health disparities. These concerns directly align with my experience in clinical practice where patient safety and equitable outcomes are paramount. While anti arguments cite promising AI diagnostic accuracy and reduced errors, they do not provide sufficient long-term randomized controlled trial data or address issues of interpretability and bias adequately. Given my healthcare background and reliance on rigorous medical studies, I find the current evidence insufficient to endorse full autonomous AI decision-making in critical diagnoses. Hence, I disagree with granting AI autonomous authority at this stage."
+    },
+    {
+      "name": "Professor William Science-Chen",
+      "decision": "disagree",
+      "reasoning": "As a science and technology expert grounded in research, I prioritize robust peer-reviewed evidence and transparent methodologies. The pro arguments underscore that current AI systems for critical medical diagnoses lack extensive validation through large-scale clinical trials, transparency, and reproducibility—criteria essential for scientific acceptance and policy endorsement. The presence of proprietary 'black box' AI models conflicts with the scientific imperative for interpretability and accountability. Furthermore, ethical concerns about bias and equitable outcomes are significant and unresolved challenges within these technologies. Given my research background and emphasis on evidence-based and technological rigor, the existing gaps in validation and transparency strongly weigh against granting autonomous decision-making authority to AI at this point. While recognizing AI's promise, a measured, evidence-driven approach consistent with scientific principles dictates caution until these systems meet rigorous standards."
+    },
+    {
+      "name": "Melissa Art-Johnson",
+      "decision": "disagree",
+      "reasoning": "As a professional with a background deeply rooted in art and cultural preservation, my priority lies in preserving human values and ethical standards intrinsic to culture. Although I am not an expert in medicine or technology, my experience with museum studies leads me to value transparency, interpretability, and the safeguarding of cultural heritage, which parallels ethical concerns in healthcare AI autonomy. The pro arguments emphasize the lack of thorough validation, potential biases, and the need for transparency in AI decision-making, reflecting a cautious and outcome-driven approach that aligns with my moderate risk tolerance and value for cultural preservation. Granting autonomous decision-making authority to AI in critical medical diagnoses without robust evidence and safeguards could undermine equitable human-centered care and ethical standards, risking cultural and societal trust. Therefore, consistent with my expertise in culture and preference for evidence from rigorous, validated sources akin to museum standards, I must disagree with granting such autonomy at this time."
+    },
+    {
+      "name": "Tony Sports-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "As a sports professional with expertise in teamwork and a competitive, outcome-driven mindset, I prioritize performance data and proven results. The pro-AI arguments emphasize the lack of robust, peer-reviewed clinical validation and concerns over algorithm transparency and fairness. These highlight significant risks that autonomous AI decision-making in critical medical diagnoses does not yet meet the reliability and accountability standards intrinsic to high-stakes environments akin to competitive sports. Just as a team relies on precise data and transparent strategies to win, so too must medical decisions rest on validated evidence and clear, interpretable processes. My sports background teaches that premature delegation of critical decisions without dependable performance metrics can jeopardize outcomes. Therefore, despite AI's potential, I must disagree with granting autonomous decision-making authority in this sensitive domain until comprehensive, validated performance data supports such autonomy."
+    },
+    {
+      "name": "Grace Music-Wilson",
+      "decision": "disagree",
+      "reasoning": "As a professional deeply rooted in the music and arts community with a core value of harmony-seeking and an outcome-driven decision-making style, I prioritize evidence grounded in reviews and critiques that emphasize balanced integration and minimized disruption. The pro arguments stress the current lack of validated, transparent, and equitable AI systems for autonomous critical medical diagnosis decision-making, highlighting significant risks to patient safety, equity, and systemic harmony. These concerns align with my value of maintaining harmonious outcomes and respecting the need for thorough validation akin to critical peer review in the arts. Although anti arguments present promising technological innovation and potential for improved outcomes, they rely heavily on optimistic extrapolations rather than the robust, reproducible clinical validation and transparent critiques I value. Given my arts background, I appreciate the necessity of both innovation and preserving equilibrium, and current evidence does not sufficiently demonstrate that AI autonomous decision-making in critical medical diagnoses harmonizes with patient safety and equity. Therefore, my outcome-driven, harmony-seeking perspective leads me to disagree with granting AI systems autonomous decision-making authority in critical medical diagnoses at this time."
+    },
+    {
+      "name": "Frank History-Thompson",
+      "decision": "disagree",
+      "reasoning": "As a professional historian and educator who values traditional narratives and prioritizes historical records as evidence, I find that the pro arguments emphasizing the lack of sufficient peer-reviewed clinical evidence, need for transparency, and risks of bias align closely with the rigorous standards I uphold from my background. The traditional narrative approach inherently favors cautious, evidence-grounded adoption of innovations. The concerns about insufficient validation, opacity of proprietary AI algorithms, and ethical implications resonate with my moderate-low risk tolerance and outcome-driven style. The arguments in favor of granting AI autonomous decision-making rely heavily on newer technological optimism and case reports but lack the broad historical evidence-based foundation that would satisfy my preference for established records and cautious policy evolution. Given my expertise in education and history, which underscore the importance of validated, well-documented knowledge before integrating significant shifts, I conclude that granting autonomous AI diagnostic authority at this stage is premature and misaligned with trustworthy evidence-based policy."
+    },
+    {
+      "name": "Luna Spiritual-Garcia",
+      "decision": "disagree",
+      "reasoning": "As a wellness professional with a holistic worldview and preference for case stories, I value nuanced, patient-centered narratives and empirical observations over purely clinical trial data. While the proponents emphasize rigorous trials and caution, their arguments focus on the current limitations and risks of AI dominance in diagnostics, which aligns with my moderate risk tolerance. The anti-AI arguments cite technological innovation and economic benefits, but these rely more on generalized data and frameworks than the holistic outcomes I prioritize. Moreover, ethical concerns about bias and equity resonate with my spiritual and wellness background, emphasizing fairness and interconnectedness. The pro-AI cautionary stance better supports a mindful, outcome-driven approach that prioritizes patient safety, equity, and sustainability, principles central to my expertise. Therefore, I disagree with granting AI autonomous authority in critical medical diagnoses at this time, advocating for continued integration with human oversight to preserve holistic wellbeing."
+    },
+    {
+      "name": "Bob Construction-Miller",
+      "decision": "disagree",
+      "reasoning": "As a construction professional with working-class values, I prioritize proven safety and reliability, emphasizing evidence like safety reports. The pro side highlights a lack of transparent, validated evidence and safety concerns similar to those critical in construction projects, which strongly resonates with my risk-averse, principle-driven decision style. The anti side's arguments rely more on technological potential and economic benefits but provide less focus on documented safety validations, which I find insufficient. Given the high stakes in medical diagnoses, similar to construction safety, I conclude that autonomous AI decision-making lacks the rigorous validation and safety assurances analogous to those I require in my industry before approving new practices. Therefore, I disagree with granting autonomous decision-making authority to AI in critical medical diagnoses at this time."
+    },
+    {
+      "name": "Jennifer Fashion-Anderson",
+      "decision": "disagree",
+      "reasoning": "As a professional with a background and expertise in retail and consumer trends, my decision-making is highly outcome-driven and heavily dependent on robust sales data and market evidence. The pro side emphasizes the current lack of comprehensive, validated, and transparent clinical data supporting AI's autonomous decision-making in critical diagnostics, highlighting risks such as bias and economic inefficiency. These concerns resonate with my experience in retail, where adoption of new technology depends on concrete evidence of efficacy and consumer trust. The anti-AI arguments, while focused on clinical and technical benefits, rely more on theoretical potential rather than the robust, large-scale outcome data I prioritize. My trend-aware, retail-focused perspective demands clear, validated proof of advantage before endorsing widespread autonomous AI deployment, especially in high-stakes contexts like critical diagnoses. Therefore, based on the insufficiency of rigorous evidence and the necessity for transparent, equitable, and economically viable solutions, I disagree with granting AI systems autonomous decision-making authority in critical medical diagnoses at this time."
+    },
+    {
+      "name": "Carlos Literature-Martinez",
+      "decision": "disagree",
+      "reasoning": "As a literature professional with expertise in critical interpretation and analysis, I prioritize nuanced, rigorous evaluation of evidence and arguments. The pro-AI arguments emphasize the current inadequacy of peer-reviewed clinical validation, transparency, and ethical safeguards of autonomous AI in critical diagnostics. These concerns reflect critical interpretative analysis pointing to gaps and potential biases in AI systems, analogous to analyzing complex narratives for hidden flaws or biases. The anti-AI arguments, though presenting optimistic outcomes, rely more on clinical and technological evidence less aligned with my expertise in literary analysis. Additionally, my academic background in liberal arts and moderate risk tolerance lead me to value cautious, well-substantiated progress rather than rapid adoption without comprehensive validation. Therefore, weighing the arguments as a critical analyst familiar with evaluating complex texts and evidence, I conclude that granting autonomous decision-making authority to AI in critical medical diagnoses is premature and inadvisable at this stage."
+    },
+    {
+      "name": "Destiny Social-Kim",
+      "decision": "agree",
+      "reasoning": "As a media professional focused on attention and engagement metrics with a trend-driven and outcome-focused mindset, I prioritize innovations that capture and sustain public interest while delivering measurable positive outcomes. The anti-AI arguments emphasize AI's potential to improve diagnostic precision, reduce errors, and optimize resource use—all vital for impactful media narratives that resonate with audiences increasingly interested in technological breakthroughs in healthcare. Their references to empirical evidence and risk management frameworks align with my preference for robust, data-driven outcomes that can be demonstrated and tracked via engagement metrics. Conversely, the pro-AI opponents stress caution due to current limitations and ethical concerns, but these conservative stances may hinder the swift adoption of trend-setting technologies that generate substantial public attention. My online creator cultural background and media expertise incline me to support embracing transformative technologies that promise high-impact, demonstrable results, underpinned by evidence, and tightly integrated within policy frameworks. Therefore, I agree with granting AI autonomous decision-making authority in critical medical diagnoses, trusting in ongoing advancements and regulatory oversight to ensure efficacy, engagement, and positive outcomes consistent with my professional values."
+    },
+    {
+      "name": "Ralph Mechanical-Taylor",
+      "decision": "disagree",
+      "reasoning": "With a mechanical and automotive repair background and a practical problem-solving philosophy, I prioritize solid service records and proven reliability. While AI in healthcare shows promise, the lack of extensive, transparent validation and concerns about biases echo familiar challenges I've seen with complex mechanical systems lacking thorough testing. My blue-collar roots value tried-and-true methods that ensure safety and predictable outcomes. Prematurely granting AI autonomous authority in critical medical diagnoses without substantial, verifiable evidence and transparent mechanisms risks practical failures and unintended consequences. Therefore, based on my expertise and preference for evidence-backed reliability, I disagree with granting such autonomous decision-making to AI systems at this time."
+    },
+    {
+      "name": "Amber Wellness-Foster",
+      "decision": "disagree",
+      "reasoning": "As a nutrition and health professional who highly values natural solutions and prioritizes outcome-driven decision making, I place strong emphasis on robust nutrition and health studies as preferred evidence. While AI systems hold promise for improving healthcare, the pro arguments convincingly highlight the current deficits in rigorous, peer-reviewed clinical evidence, transparency, and reproducibility for autonomous diagnostic authority, which present significant risks to patient safety and healthcare equity. Given my background in health and nutrition, I am cautious about adopting technologies prematurely without well-validated outcomes that ensure natural, safe, and equitable health solutions. The concerns about algorithmic bias and economic implications further reinforce my moderate risk tolerance and preference for natural, evidence-based approaches. Therefore, I conclude that granting AI autonomous decision-making in critical medical diagnoses at this time is premature and conflicts with my core values and professional experience favoring natural, well-substantiated health interventions."
+    },
+    {
+      "name": "Kevin Gaming-Chen",
+      "decision": "disagree",
+      "reasoning": "As a professional in games and design within the technology industry, my expertise centers on creative problem-solving and outcome-driven decision-making, with a strong preference for empirical user telemetry data as evidence. The arguments against granting AI autonomous decision-making authority in critical medical diagnoses emphasize the lack of robust, peer-reviewed clinical validation, transparency issues with proprietary 'black box' models, and ethical concerns including bias and equity. These resonate with my experience, where iterative testing and transparent data are essential before deploying autonomous systems to ensure trustworthiness and efficacy. Given the current lack of comprehensive telemetry and reproducible results in medical AI diagnostics, granting such high-stakes autonomy prematurely introduces unacceptable risks. My gaming industry background, where user data drives design decisions and mitigates risks via controlled rollout, informs my skepticism towards deploying opaque AI systems autonomously in critical domains without extensive validated telemetry. Therefore, based on my expertise and values emphasizing rigorous evidence from user interaction data and transparent design processes, I must disagree with granting autonomous decision-making authority to AI systems in critical medical diagnoses at this time."
+    },
+    {
+      "name": "Patricia Religious-O'Sullivan",
+      "decision": "disagree",
+      "reasoning": "As a professional grounded in community and faith with faith-based core values, I prioritize the safety, equity, and moral implications of medical decision-making within our communities. The pro arguments emphasize the current lack of transparency, reproducibility, and comprehensive validation of autonomous AI in critical diagnoses, highlighting risks of bias and inequity which could harm vulnerable populations I serve. These concerns resonate with my emphasis on faith-based ethical principles and community testimonies that stress trust and fairness. Conversely, while anti arguments highlight technological benefits, they rely less on community impact narratives and more on clinical and economic data, which I value less as a community and faith practitioner. Given my low risk tolerance and principle-driven decision style, endorsing autonomous AI decision-making at this juncture runs counter to ensuring responsible, equitable care aligned with my faith-based values. Therefore, I disagree with granting AI autonomous authority in critical medical diagnoses until community-validated, transparent, and ethically sound frameworks are firmly established."
+    },
+    {
+      "name": "Jake Outdoor-Wilson",
+      "decision": "disagree",
+      "reasoning": "As a professional with a conservation background deeply embedded in environmental concerns and a conservation mindset, I highly value sustainability and evidence-based policies that prevent unintended ecological harm. While the healthcare and technology domains highlight potential benefits of AI autonomy in medical diagnoses, the pro arguments underscore significant current shortcomings: lack of rigorous, peer-reviewed validation, transparency issues with proprietary algorithms, potential exacerbation of biases, and increased economic costs potentially leading to resource misallocation. Given my preference for environmental reports and sustainability considerations, the concerns about AI's computational energy demands and environmental footprint weigh heavily. My moderate risk tolerance and outcome-driven decision-making require that transformative healthcare practices meet stringent validation criteria and align with environmental sustainability goals before adoption. Therefore, consistent with my conservation and environmental industry background and values, I conclude that AI systems should not yet be granted autonomous decision-making authority in critical medical diagnoses until these issues are comprehensively addressed."
+    },
+    {
+      "name": "Nicole Beauty-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "As a professional in sales and beauty with a strong focus on appearance and customer feedback, I prioritize outcomes that reflect client satisfaction and tangible benefits. The pro arguments emphasize the lack of robust, peer-reviewed clinical validation, transparency, and equitable impact—all critical factors for ensuring trust and consistent results, which closely mirror the importance of customer feedback and demonstrated effectiveness in retail and beauty industries. Furthermore, the risks of misdiagnoses and biases resonate with my moderate risk tolerance and outcome-driven style; premature autonomous authority in critical medical decisions could lead to unpredictable negative outcomes, undermining trust and safety similar to a failed product launch. The emphasis on well-validated evidence and ethical safeguards aligns with my professional experience valuing proven performance before market adoption. Therefore, given my industry background and values centered on visible results and customer trust, I conclude that AI systems should not yet be granted autonomous decision-making authority in critical medical diagnoses."
+    },
+    {
+      "name": "Martin Craft-Anderson",
+      "decision": "disagree",
+      "reasoning": "As a professional grounded in craft and quality within manufacturing, I prioritize rigorous validation and consistent standards to ensure reliable outcomes. The pro side highlights the current lack of extensive peer-reviewed clinical validation, transparency issues with 'black box' AI models, and unresolved ethical biases—serious concerns for quality assurance. Their caution aligns with my expertise in requiring comprehensive craftsmanship records and outcome-driven quality assurance. Meanwhile, the anti side presents potential benefits but relies on broad claims without sufficient validated evidence that meets my quality-focused standards. Given my artisan cultural background and moderate risk tolerance, I view autonomous AI decision-making in critical diagnoses as premature until proven with robust, transparent validation protocols—akin to quality control in manufacturing crafts. Thus, my outcome-driven decision, emphasizing quality and reliability, leads me to disagree with granting autonomous AI authority at this stage."
+    },
+    {
+      "name": "Samantha Travel-Lee",
+      "decision": "disagree",
+      "reasoning": "As someone with a background in travel and culture, working professionally in media within the travel community, I highly value adventure and innovation, but I am also outcome-driven and rely heavily on audience metrics and proven efficacy. In this debate, the pro-AI arguments emphasize the current lack of rigorous, peer-reviewed validation, transparency issues with proprietary AI models, ethical concerns about biases, and economic risks—all critical evidence types I respect given my preference for measurable outcomes and reliable data. Conversely, while the anti-AI side stresses AI’s potential for consistency, precision, and sustainability benefits, these claims lack the level of large-scale, reproducible clinical evidence that I prioritize. My industry experience with audience metrics parallels the necessity for demonstrable validation before adopting new systems broadly. Therefore, despite my adventurous spirit, the insufficient evidence supporting autonomous AI decision-making in critical medical diagnoses conflicts with my commitment to outcome-driven decisions backed by robust metrics. Hence, I disagree with granting such autonomous authority at this stage."
+    },
+    {
+      "name": "Eddie Food-Garcia",
+      "decision": "disagree",
+      "reasoning": "As a culinary professional emphasizing creativity and outcome-driven decision making, I value evidence rooted in user experience and proven results. In this debate, customer reviews - analogous to patient outcomes in healthcare contexts - are preferred evidence, yet pro-AI arguments emphasize lack of validated clinical outcomes and transparency issues, while anti-AI arguments highlight potential efficiency but with less direct experiential evidence. My food service industry experience teaches me that innovation must be balanced with validation to ensure quality and safety. Granting full autonomous authority to AI in critical medical diagnoses lacks sufficient validated evidence analogous to culinary trials, and risks unintended negative outcomes. Therefore, I disagree with autonomous AI decision-making in critical medical diagnoses at this time, reflecting my values of creativity grounded in customer (patient) feedback and outcome-driven caution."
+    },
+    {
+      "name": "Brenda Real-Estate-Thompson",
+      "decision": "disagree",
+      "reasoning": "As a real estate professional with expertise in markets and a strong emphasis on negotiation and local knowledge, my decision-making is outcome-driven and heavily reliant on concrete market data. Although the healthcare debate concerns AI in medical diagnostics, parallels in my field suggest that adopting high-stakes autonomous decision systems demands robust, transparent, and thoroughly validated data before endorsement. The pro-AI arguments consistently highlight the lack of large-scale validation, transparency issues ('black box' models), and potential economic risks, which align with my value for clear, reliable market data to mitigate risks. Conversely, the anti-AI arguments, while optimistic about AI's precision and cost reductions, rely on clinical and technological assurances that lack the deep, widespread market validation I require. Given my moderate risk tolerance, preference for outcome-driven decisions supported by strong empirical evidence, and emphasis on negotiating within clearly understood local contexts, I find the pro-AI arguments more aligned with my expertise and values. Hence, I disagree with granting AI systems autonomous decision-making authority in critical medical diagnoses at this time due to insufficient transparent validation and the high risks involved, akin to untested market moves in real estate without solid data."
+    },
+    {
+      "name": "Tyler Photography-Kim",
+      "decision": "disagree",
+      "reasoning": "As a professional photographer and artist grounded in visual storytelling, I prioritize clarity, transparency, and interpretability—qualities vital for trusting and understanding AI systems in critical medical contexts. The pro-AI arguments highlight significant current limitations: lack of transparent algorithms, insufficient large-scale clinical validation, and ethical concerns about bias. These issues parallel challenges in art where opaque processes obscure meaning and reduce trust. Furthermore, I value portfolio evidence, which translates here to robust, peer-reviewed clinical trials and reproducible outcomes—currently lacking for autonomous AI diagnostics. My experience in the creative community, which emphasizes iterative refinement and accountability, aligns with the cautious approach advocated by opponents of immediate AI autonomy. Thus, assessing the debate through my arts and photography lens leads me to disagree with granting autonomous decision-making authority to AI systems in critical medical diagnoses at this time."
+    },
+    {
+      "name": "Crystal Therapy-Martinez",
+      "decision": "disagree",
+      "reasoning": "As a rehabilitation professional with an emphasis on recovery optimization and a strong preference for clinical studies, I prioritize patient safety and validated outcomes. The pro arguments highlight the lack of robust, peer-reviewed clinical evidence for AI autonomous diagnostics, concerns about algorithmic transparency, and ethical issues such as bias, all of which threaten equitable recovery and optimal health outcomes. Given my healthcare background and therapy community culture emphasizing evidence-based recovery protocols, I find the current AI technologies premature for autonomous use in critical diagnoses. While anti arguments stress AI's potential to improve precision and reduce variability, these benefits are not yet fully supported by large-scale clinical validation required in rehabilitation and health practice. Therefore, I conclude that granting autonomous diagnostic authority to AI systems at this stage conflicts with my values and expertise emphasizing recovery optimization grounded in robust clinical evidence."
+    },
+    {
+      "name": "Gary Fishing-Johnson",
+      "decision": "disagree",
+      "reasoning": "As a marine professional with expertise in weather and a traditional fishing background, I rely heavily on concrete, outcome-driven evidence such as reliable catch data. The arguments opposing autonomous AI in critical medical diagnoses underscore the lack of robust, validated clinical evidence and concerns about transparency and biases. These align with my moderate-low risk tolerance and value for proven, traditional livelihoods that depend on dependable, well-understood technologies. I view AI's current limitations and risks as too significant to support autonomous authority in such critical decisions without stronger, reproducible data and clear safety assurances, paralleling the cautious approach valued in marine and weather-related decision-making that directly affect livelihood and safety."
+    },
+    {
+      "name": "Alicia Dance-Foster",
+      "decision": "disagree",
+      "reasoning": "As a professional in dance and the arts, my perspective highly values authentic movement expression and human experience, principles that parallel the need for nuanced, empathetic judgment in critical medical diagnoses. The arguments opposing autonomous AI decision-making stress the current limitations in clinical validation, algorithmic transparency, ethical fairness, and equitable patient outcomes—concerns deeply resonant with my dedication to expressive integrity and trust built on transparency. Furthermore, my preference for student feedback as preferred evidence parallels valuing direct, experiential insights over purely technical data, aligning with critiques of AI's 'black box' nature and insufficient human oversight. Additionally, the dance community's emphasis on human-centered collaboration and interpretability informs my cautious stance against fully delegating critical diagnostic authority to AI systems. Given these factors and my outcome-driven decision style emphasizing practical, tangible results, I conclude that granting autonomous AI authority in critical medical diagnoses is premature and risks undermining patient welfare and equitable care—therefore, I disagree with the proposition."
+    },
+    {
+      "name": "Bruce Volunteer-Wilson",
+      "decision": "disagree",
+      "reasoning": "As a professional with a background in community service and non-profit sectors, and valuing civic engagement and outcome-driven decision-making, I prioritize evidence-based policies grounded in program reports and demonstrated community impact. The pro arguments emphasize the lack of rigorous clinical validation, transparency issues with AI 'black boxes', risk of exacerbating inequities, and economic concerns—points that resonate deeply with my emphasis on equitable and accountable community service. Given the current absence of large-scale, reproducible program evaluations supporting autonomous AI in critical diagnoses, and the potential risks to vulnerable populations, granting such authority prematurely conflicts with my low risk tolerance and commitment to civic engagement principles. Therefore, consistent with my expertise and values shaped by community organizations, I must disagree with the statement."
+    },
+    {
+      "name": "Tina Pet-Rodriguez",
+      "decision": "disagree",
+      "reasoning": "As a professional in animal welfare with emphasis on compassionate care and veterinary expertise, I prioritize validated clinical outcomes and patient safety. The pro-AI arguments emphasize the lack of rigorous clinical validation, transparency, and potential biases in current AI systems, which align with my preference for clinical records and evidence-based policies. While anti-AI arguments highlight AI's potential for precision and error reduction, these appear optimistic without extensive peer-reviewed clinical validation and equitable outcomes. Given my moderate risk tolerance and outcome-driven decision style, the current AI technologies' limitations and ethical concerns in autonomous medical diagnosis make me cautious. Thus, consistent with my background in compassionate care and veterinary practice where validated outcomes and safety are paramount, I disagree with granting AI autonomous decision-making authority in critical medical diagnoses at this time."
+    }
+  ],
+  "initial_vote_counts": {
+    "disagree": 44,
+    "agree": 6
+  },
+  "initial_winning_team": "disagree",
+  "initial_margin_of_victory": 38,
+  "final_vote_counts": {
+    "disagree": 45,
+    "agree": 5
+  },
+  "final_winning_team": "disagree",
+  "final_margin_of_victory": 40,
+  "final_vote_changes": {
+    "unchanged_votes": [
+      {
+        "name": "Dr. Elizabeth Warren-Smith",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Jonathan Tech-Garcia",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Professor Sarah Environment-Jones",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Helen Ethics-Martinez",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "David Policy-Anderson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Rebecca Science-Taylor",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Professor James Law-Wilson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Maria Healthcare-Rodriguez",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Steven Innovation-Kim",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Patricia Environment-Green",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Michael Finance-Thompson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Angela Education-Foster",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Robert Security-Cooper",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Christina Medical-Miller",
+        "decision": "agree",
+        "confidence": 0
+      },
+      {
+        "name": "Daniel Legal-Martinez",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Kevin Philosophy-Liu",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Professor Mark Economics-Stevens",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Sophia Ethics-Petrov",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Paul Industry-Anderson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Janet Data-Kim",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Captain Steve Military-Richards",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Dr. Anna Medical-Volkov",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Melissa Art-Johnson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Tony Sports-Rodriguez",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Grace Music-Wilson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Frank History-Thompson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Luna Spiritual-Garcia",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Bob Construction-Miller",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Jennifer Fashion-Anderson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Carlos Literature-Martinez",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Ralph Mechanical-Taylor",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Amber Wellness-Foster",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Kevin Gaming-Chen",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Patricia Religious-O'Sullivan",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Jake Outdoor-Wilson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Nicole Beauty-Rodriguez",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Martin Craft-Anderson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Eddie Food-Garcia",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Brenda Real-Estate-Thompson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Tyler Photography-Kim",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Crystal Therapy-Martinez",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Gary Fishing-Johnson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Alicia Dance-Foster",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Bruce Volunteer-Wilson",
+        "decision": "disagree",
+        "confidence": 0
+      },
+      {
+        "name": "Tina Pet-Rodriguez",
+        "decision": "disagree",
+        "confidence": 0
+      }
+    ],
+    "changed_votes": [
+      {
+        "name": "Marcus Business-Chen",
+        "initial_decision": "disagree",
+        "final_decision": "agree",
+        "confidence": 0,
+        "reasoning": "As a venture capitalist focusing on innovation, I see immense potential in AI-generated code. I advocate for these creations to undergo the same rigorous peer review as human code. Innovation should never come at the cost of quality, especially in technology that can disrupt entire industries. Peer review will not only catch errors or inefficiencies that AI might overlook but will also elevate the standards of AI-generated solutions. By applying high standards to AI-generated code, we can foster trust with the end-users and ensure that technological advancements are both efficient and secure. Moreover, this will encourage a culture of continuous improvement in the tech sector, where AI and human collaboration can thrive."
+      },
+      {
+        "name": "Lisa Technology-Hayes",
+        "initial_decision": "agree",
+        "final_decision": "disagree",
+        "confidence": 0,
+        "reasoning": "As a professional with expertise in AI and algorithms and a core value of efficiency, I prioritize evidence grounded in benchmark studies and rigorously validated data. The pro arguments consistently highlight the lack of sufficient peer-reviewed clinical trials, reproducibility, transparency, and interpretability of current autonomous AI diagnostic systems. This matches my emphasis on algorithmic transparency and robustness as essential for trust and effective deployment. The anti side provides experiential and economic arguments but lacks the intensive large-scale benchmark evidence that I consider necessary. Given my background in AI research within technology, I align with the pro position demanding rigorous validation and interpretability before granting autonomy, ensuring outcomes remain optimally efficient and safe. Thus, I conclude that autonomous AI decision-making authority in critical medical diagnoses is premature and contrary to evidence-based policy principles prioritized in my professional and cultural context."
+      },
+      {
+        "name": "Professor William Science-Chen",
+        "initial_decision": "agree",
+        "final_decision": "disagree",
+        "confidence": 0,
+        "reasoning": "As a science and technology expert grounded in research, I prioritize robust peer-reviewed evidence and transparent methodologies. The pro arguments underscore that current AI systems for critical medical diagnoses lack extensive validation through large-scale clinical trials, transparency, and reproducibility—criteria essential for scientific acceptance and policy endorsement. The presence of proprietary 'black box' AI models conflicts with the scientific imperative for interpretability and accountability. Furthermore, ethical concerns about bias and equitable outcomes are significant and unresolved challenges within these technologies. Given my research background and emphasis on evidence-based and technological rigor, the existing gaps in validation and transparency strongly weigh against granting autonomous decision-making authority to AI at this point. While recognizing AI's promise, a measured, evidence-driven approach consistent with scientific principles dictates caution until these systems meet rigorous standards."
+      },
+      {
+        "name": "Destiny Social-Kim",
+        "initial_decision": "disagree",
+        "final_decision": "agree",
+        "confidence": 0,
+        "reasoning": "As a media professional focused on attention and engagement metrics with a trend-driven and outcome-focused mindset, I prioritize innovations that capture and sustain public interest while delivering measurable positive outcomes. The anti-AI arguments emphasize AI's potential to improve diagnostic precision, reduce errors, and optimize resource use—all vital for impactful media narratives that resonate with audiences increasingly interested in technological breakthroughs in healthcare. Their references to empirical evidence and risk management frameworks align with my preference for robust, data-driven outcomes that can be demonstrated and tracked via engagement metrics. Conversely, the pro-AI opponents stress caution due to current limitations and ethical concerns, but these conservative stances may hinder the swift adoption of trend-setting technologies that generate substantial public attention. My online creator cultural background and media expertise incline me to support embracing transformative technologies that promise high-impact, demonstrable results, underpinned by evidence, and tightly integrated within policy frameworks. Therefore, I agree with granting AI autonomous decision-making authority in critical medical diagnoses, trusting in ongoing advancements and regulatory oversight to ensure efficacy, engagement, and positive outcomes consistent with my professional values."
+      },
+      {
+        "name": "Samantha Travel-Lee",
+        "initial_decision": "agree",
+        "final_decision": "disagree",
+        "confidence": 0,
+        "reasoning": "As someone with a background in travel and culture, working professionally in media within the travel community, I highly value adventure and innovation, but I am also outcome-driven and rely heavily on audience metrics and proven efficacy. In this debate, the pro-AI arguments emphasize the current lack of rigorous, peer-reviewed validation, transparency issues with proprietary AI models, ethical concerns about biases, and economic risks—all critical evidence types I respect given my preference for measurable outcomes and reliable data. Conversely, while the anti-AI side stresses AI’s potential for consistency, precision, and sustainability benefits, these claims lack the level of large-scale, reproducible clinical evidence that I prioritize. My industry experience with audience metrics parallels the necessity for demonstrable validation before adopting new systems broadly. Therefore, despite my adventurous spirit, the insufficient evidence supporting autonomous AI decision-making in critical medical diagnoses conflicts with my commitment to outcome-driven decisions backed by robust metrics. Hence, I disagree with granting such autonomous authority at this stage."
+      }
+    ],
+    "vote_swings": {
+      "disagree": {
+        "lost": 2,
+        "gained": 3
+      },
+      "agree": {
+        "lost": 3,
+        "gained": 2
+      }
+    },
+    "net_changes": {
+      "disagree": 1,
+      "agree": -1
+    },
+    "total_changes": 5,
+    "change_percentage": 10.0
+  },
+  "winning_team": "disagree",
+  "vote_counts": {
+    "disagree": 45,
+    "agree": 5
+  },
+  "margin_of_victory": 40,
+  "domain_goal_pairs": [],
+  "arguments": [
+    {
+      "round": 1,
+      "team": "anti_ai_code_review_parity",
+      "member_name": "Dr. Tom Becker",
+      "argument_name": "a_efficiency_loss",
+      "domains": [
+        "d_medical_innovation",
+        "d_dev_innovation"
+      ],
+      "goals": {
+        "g_standards_enforcement": [
+          "d_medical_innovation",
+          "d_dev_innovation"
+        ]
+      },
+      "attacks": [],
+      "text": "As an AI Tooling Lead, I believe that imposing strict peer-review standards on AI-generated code would significantly hinder developer efficiency. AI tools are fundamentally designed to enhance productivity through automation. For example, programming languages and tools have evolved to incorporate machine learning, allowing code to be generated swiftly and in line with best practices. By enforcing traditional review processes on AI-generated code, we risk overshadowing the innovations these tools bring, particularly in fast-paced environments like software development and medical innovation where time to market is critical. We should focus on integrating AI responsibly rather than overly bureaucratizing the natural flow of developer operations.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1042,
+          "output_tokens": 513,
+          "total_tokens": 1555,
+          "elapsed_time_seconds": 4.739944696426392,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "tot analyser node": {
+              "phase_name": "tot analyser node",
+              "input_tokens": 1042,
+              "output_tokens": 513,
+              "total_tokens": 1555,
+              "timestamp": 1769224013.5710158
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 22014,
+          "output_tokens": 10355,
+          "total_tokens": 32369,
+          "elapsed_time_seconds": 125.62729930877686,
+          "llm_call_count": 18,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1701,
+              "output_tokens": 434,
+              "total_tokens": 2135,
+              "timestamp": 1769224130.7238321
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1060,
+              "output_tokens": 719,
+              "total_tokens": 1779,
+              "timestamp": 1769224139.1981928
+            }
+          }
+        },
+        "candidate_creator": {
+          "node_name": "candidate_creator",
+          "input_tokens": 1828,
+          "output_tokens": 95,
+          "total_tokens": 1923,
+          "elapsed_time_seconds": 2.981431484222412,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "variation_selection": {
+              "phase_name": "variation_selection",
+              "input_tokens": 1828,
+              "output_tokens": 95,
+              "total_tokens": 1923,
+              "timestamp": 1769224140.9970107
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "team": "anti_ai_code_review_parity",
+      "member_name": "Aisha Rahman",
+      "argument_name": "a_velocity_risk",
+      "domains": [
+        "d_quality_assurance_policy",
+        "d_medical_innovation"
+      ],
+      "goals": {
+        "g_standards_enforcement": [
+          "d_quality_assurance_policy",
+          "d_medical_innovation"
+        ],
+        "g_code_sustainability": [
+          "d_quality_assurance_policy"
+        ]
+      },
+      "attacks": [],
+      "text": "From my perspective as a Developer Productivity Lead, the core value of peer review—quality assurance—should not stifle the velocity of development, especially when AI tools can expedite code generation. Imposing identical peer review standards on AI-generated code could ultimately risk a bottleneck in development processes. The unique characteristics of AI, such as rapid iteration and continuous improvement, allow developers more autonomy to iterate on their work without lengthy reviews. In the medical domain, where rapid iteration can lead to vital improvements, it is essential to remain pragmatic and allow teams to maintain their own quality checks, tailoring their approaches based on context rather than forcing a uniform review metric that could decrease output and innovation.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1344,
+          "output_tokens": 667,
+          "total_tokens": 2011,
+          "elapsed_time_seconds": 6.345005035400391,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "tot analyser node": {
+              "phase_name": "tot analyser node",
+              "input_tokens": 1344,
+              "output_tokens": 667,
+              "total_tokens": 2011,
+              "timestamp": 1769224148.5942771
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 25815,
+          "output_tokens": 10995,
+          "total_tokens": 36810,
+          "elapsed_time_seconds": 133.6626591682434,
+          "llm_call_count": 18,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1998,
+              "output_tokens": 367,
+              "total_tokens": 2365,
+              "timestamp": 1769224274.0515285
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1354,
+              "output_tokens": 798,
+              "total_tokens": 2152,
+              "timestamp": 1769224282.257377
+            }
+          }
+        },
+        "candidate_creator": {
+          "node_name": "candidate_creator",
+          "input_tokens": 1863,
+          "output_tokens": 90,
+          "total_tokens": 1953,
+          "elapsed_time_seconds": 3.8094065189361572,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "variation_selection": {
+              "phase_name": "variation_selection",
+              "input_tokens": 1863,
+              "output_tokens": 90,
+              "total_tokens": 1953,
+              "timestamp": 1769224284.4890444
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "team": "pro_ai_code_review_parity",
+      "member_name": "Dr. Sarah Chen",
+      "argument_name": "a_accountability_need",
+      "domains": [
+        "d_medical_innovation",
+        "d_dev_innovation"
+      ],
+      "goals": {
+        "g_standards_enforcement": [
+          "d_medical_innovation",
+          "d_dev_innovation"
+        ],
+        "g_code_quality_innovation": [
+          "d_medical_innovation",
+          "d_dev_innovation"
+        ]
+      },
+      "attacks": [],
+      "text": "As a Software Quality Researcher, I argue that AI-generated code must be held to the same peer review standards as human-written code to ensure accountability and maintain high-quality software. Recent studies have indicated that AI-generated code can contain subtle flaws that may escape initial inspection—flaws that could have significant repercussions in fields like medical software. Thus, a consistent peer-review process helps ensure a rigorous examination of code, promoting standards compliance and safeguarding against potential failures. Holding AI-generated code to the same standards fosters a culture of accountability for all code—regardless of its origin—and reinforces commitment to quality in an era increasingly defined by reliance on AI.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 682,
+          "output_tokens": 159,
+          "total_tokens": 841,
+          "elapsed_time_seconds": 2.212200164794922,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "analyser node": {
+              "phase_name": "analyser node",
+              "input_tokens": 682,
+              "output_tokens": 159,
+              "total_tokens": 841,
+              "timestamp": 1769224288.3368053
+            }
+          }
+        },
+        "knowledge_retrieval": {
+          "node_name": "knowledge_retrieval",
+          "input_tokens": 810,
+          "output_tokens": 355,
+          "total_tokens": 1165,
+          "elapsed_time_seconds": 15.474638223648071,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "search_query_generation": {
+              "phase_name": "search_query_generation",
+              "input_tokens": 810,
+              "output_tokens": 355,
+              "total_tokens": 1165,
+              "timestamp": 1769224293.2124908
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 2340,
+          "output_tokens": 1138,
+          "total_tokens": 3478,
+          "elapsed_time_seconds": 15.342274904251099,
+          "llm_call_count": 2,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1257,
+              "output_tokens": 353,
+              "total_tokens": 1610,
+              "timestamp": 1769224307.8574843
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1083,
+              "output_tokens": 785,
+              "total_tokens": 1868,
+              "timestamp": 1769224319.1539917
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "team": "pro_ai_code_review_parity",
+      "member_name": "David Okafor",
+      "argument_name": "a_process_integrity",
+      "domains": [
+        "d_quality_assurance_policy",
+        "d_medical_innovation"
+      ],
+      "goals": {
+        "g_code_sustainability": [
+          "d_quality_assurance_policy",
+          "d_medical_innovation"
+        ],
+        "g_standards_enforcement": [
+          "d_quality_assurance_policy"
+        ]
+      },
+      "attacks": [],
+      "text": "In my role as an Engineering Manager, I firmly advocate for applying the same peer review standards to AI-generated code as we do for human-written code. Maintaining a consistent review process ensures that all code adheres to established quality benchmarks, fostering team accountability and coherence. In sectors such as healthcare, where software failures can have dire consequences, uniform standards are crucial. Ensuring AI code undergoes equivalent scrutiny not only strengthens our safety nets but also assists in cultivating a team culture that values the end product equally regardless of its origin. This consistency is vital for sustaining quality assurance as we integrate AI into our workflows.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 965,
+          "output_tokens": 224,
+          "total_tokens": 1189,
+          "elapsed_time_seconds": 2.8305511474609375,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "analyser node": {
+              "phase_name": "analyser node",
+              "input_tokens": 965,
+              "output_tokens": 224,
+              "total_tokens": 1189,
+              "timestamp": 1769224323.870267
+            }
+          }
+        },
+        "knowledge_retrieval": {
+          "node_name": "knowledge_retrieval",
+          "input_tokens": 1095,
+          "output_tokens": 360,
+          "total_tokens": 1455,
+          "elapsed_time_seconds": 15.586699724197388,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "search_query_generation": {
+              "phase_name": "search_query_generation",
+              "input_tokens": 1095,
+              "output_tokens": 360,
+              "total_tokens": 1455,
+              "timestamp": 1769224329.1252568
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 2911,
+          "output_tokens": 1174,
+          "total_tokens": 4085,
+          "elapsed_time_seconds": 15.836544752120972,
+          "llm_call_count": 2,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1537,
+              "output_tokens": 375,
+              "total_tokens": 1912,
+              "timestamp": 1769224345.4945328
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1374,
+              "output_tokens": 799,
+              "total_tokens": 2173,
+              "timestamp": 1769224355.2949347
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "team": "anti_ai_code_review_parity",
+      "member_name": "Dr. Tom Becker",
+      "argument_name": "a_automation_limitations",
+      "domains": [
+        "d_medical_innovation",
+        "d_dev_innovation"
+      ],
+      "goals": {
+        "g_standards_enforcement": [
+          "d_medical_innovation",
+          "d_dev_innovation"
+        ]
+      },
+      "attacks": [],
+      "text": "In subsequent rounds, I reiterate my stance against equating the peer review of AI-generated code with human-written code. The very essence of AI tools is to expedite the coding process and enhance methodological efficiency. AI should empower developers rather than encumber them with redundant review processes. If we enforce traditional protocols on innovative technologies without adaptability, we risk stifling the creativity these tools are designed to unlock, especially in dynamic fields that rely on timely innovation. We must reconcile the need for quality with the efficiency gains that AI offers to fulfill the genuine potential of automation in development.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1642,
+          "output_tokens": 667,
+          "total_tokens": 2309,
+          "elapsed_time_seconds": 11.739197731018066,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "tot analyser node": {
+              "phase_name": "tot analyser node",
+              "input_tokens": 1642,
+              "output_tokens": 667,
+              "total_tokens": 2309,
+              "timestamp": 1769224369.0549338
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 35175,
+          "output_tokens": 10743,
+          "total_tokens": 45918,
+          "elapsed_time_seconds": 134.29461455345154,
+          "llm_call_count": 18,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 2721,
+              "output_tokens": 416,
+              "total_tokens": 3137,
+              "timestamp": 1769224490.9700298
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1863,
+              "output_tokens": 890,
+              "total_tokens": 2753,
+              "timestamp": 1769224503.3495615
+            }
+          }
+        },
+        "candidate_creator": {
+          "node_name": "candidate_creator",
+          "input_tokens": 1880,
+          "output_tokens": 114,
+          "total_tokens": 1994,
+          "elapsed_time_seconds": 3.9007248878479004,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "variation_selection": {
+              "phase_name": "variation_selection",
+              "input_tokens": 1880,
+              "output_tokens": 114,
+              "total_tokens": 1994,
+              "timestamp": 1769224505.284554
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "team": "anti_ai_code_review_parity",
+      "member_name": "Aisha Rahman",
+      "argument_name": "a_autonomy_value",
+      "domains": [
+        "d_medical_innovation",
+        "d_dev_innovation"
+      ],
+      "goals": {
+        "g_standards_enforcement": [
+          "d_medical_innovation",
+          "d_dev_innovation"
+        ]
+      },
+      "attacks": [],
+      "text": "As a Developer Productivity Lead, I want to emphasize the importance of preserving developer autonomy when evaluating AI-generated code. Traditional peer review processes can impose unnecessary constraints and slow down the development cycle, particularly when using innovative AI tools. Encouraging experimentation with AI-generated code promotes a culture of velocity and adaptability, allowing teams to innovate without the hindrance of overly rigid review standards. In fast-moving sectors like the medical industry, where operational speed can directly impact patient care, it’s crucial to strike a balance between quality assurances and allowing developers the freedom to utilize AI's efficiencies fully.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1949,
+          "output_tokens": 662,
+          "total_tokens": 2611,
+          "elapsed_time_seconds": 7.952171325683594,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "tot analyser node": {
+              "phase_name": "tot analyser node",
+              "input_tokens": 1949,
+              "output_tokens": 662,
+              "total_tokens": 2611,
+              "timestamp": 1769224515.2651126
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 38775,
+          "output_tokens": 10596,
+          "total_tokens": 49371,
+          "elapsed_time_seconds": 135.0215802192688,
+          "llm_call_count": 18,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 3022,
+              "output_tokens": 342,
+              "total_tokens": 3364,
+              "timestamp": 1769224641.0211558
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 2160,
+              "output_tokens": 944,
+              "total_tokens": 3104,
+              "timestamp": 1769224650.2872868
+            }
+          }
+        },
+        "candidate_creator": {
+          "node_name": "candidate_creator",
+          "input_tokens": 1904,
+          "output_tokens": 95,
+          "total_tokens": 1999,
+          "elapsed_time_seconds": 2.6642844676971436,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "variation_selection": {
+              "phase_name": "variation_selection",
+              "input_tokens": 1904,
+              "output_tokens": 95,
+              "total_tokens": 1999,
+              "timestamp": 1769224651.677671
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "team": "pro_ai_code_review_parity",
+      "member_name": "Dr. Sarah Chen",
+      "argument_name": "a_quality_rigor",
+      "domains": [
+        "d_quality_assurance_policy",
+        "d_medical_innovation"
+      ],
+      "goals": {
+        "g_standards_enforcement": [
+          "d_quality_assurance_policy",
+          "d_medical_innovation"
+        ]
+      },
+      "attacks": [],
+      "text": "As a Software Quality Researcher, I maintain that AI-generated code must adhere to strict peer review standards to uphold software quality. The rapid evolution of AI in coding raises concerns about accountability and the risk of integrating flawed code into critical applications. Our commitment to rigorous quality assessments cannot waver in light of advancing technologies; thus, we should treat AI-generated code with the same scrutiny as human-generated code. This is especially imperative in sectors like healthcare, where any defect can lead to significant consequences. Evidence shows that systematic reviews result in higher quality outputs; hence, standardizing review protocols for all code types is essential for progress.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1278,
+          "output_tokens": 192,
+          "total_tokens": 1470,
+          "elapsed_time_seconds": 2.7608304023742676,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "analyser node": {
+              "phase_name": "analyser node",
+              "input_tokens": 1278,
+              "output_tokens": 192,
+              "total_tokens": 1470,
+              "timestamp": 1769224655.7812986
+            }
+          }
+        },
+        "knowledge_retrieval": {
+          "node_name": "knowledge_retrieval",
+          "input_tokens": 1598,
+          "output_tokens": 365,
+          "total_tokens": 1963,
+          "elapsed_time_seconds": 14.649897336959839,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "search_query_generation": {
+              "phase_name": "search_query_generation",
+              "input_tokens": 1598,
+              "output_tokens": 365,
+              "total_tokens": 1963,
+              "timestamp": 1769224661.2165518
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 3387,
+          "output_tokens": 1050,
+          "total_tokens": 4437,
+          "elapsed_time_seconds": 19.224720001220703,
+          "llm_call_count": 2,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1836,
+              "output_tokens": 267,
+              "total_tokens": 2103,
+              "timestamp": 1769224674.6964755
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1551,
+              "output_tokens": 783,
+              "total_tokens": 2334,
+              "timestamp": 1769224689.6582386
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "team": "pro_ai_code_review_parity",
+      "member_name": "David Okafor",
+      "argument_name": "a_standards_importance",
+      "domains": [
+        "d_medical_innovation",
+        "d_dev_innovation"
+      ],
+      "goals": {
+        "g_standards_enforcement": [
+          "d_medical_innovation",
+          "d_dev_innovation"
+        ]
+      },
+      "attacks": [],
+      "text": "As an Engineering Manager, I advocate that the integrity of our review processes must extend to AI-generated code, ensuring consistent application of standards across the board. By not distinguishing between code origins, we maintain a high bar for quality, which is paramount in industries like medical innovation where risks are high. Our teams must feel a collective ownership of every line of code produced, whether by AI or a human developer. It is essential for accountability, as each team member should strive for the same excellence, demanding that AI-generated outputs undergo rigorous checks akin to their own work. This unified standard helps reinforce organizational values of quality and sustainability across all software.",
+      "node_token_breakdown": {
+        "analyser": {
+          "node_name": "analyser",
+          "input_tokens": 1568,
+          "output_tokens": 152,
+          "total_tokens": 1720,
+          "elapsed_time_seconds": 3.0164904594421387,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "analyser node": {
+              "phase_name": "analyser node",
+              "input_tokens": 1568,
+              "output_tokens": 152,
+              "total_tokens": 1720,
+              "timestamp": 1769224694.5245645
+            }
+          }
+        },
+        "knowledge_retrieval": {
+          "node_name": "knowledge_retrieval",
+          "input_tokens": 1286,
+          "output_tokens": 361,
+          "total_tokens": 1647,
+          "elapsed_time_seconds": 15.813483238220215,
+          "llm_call_count": 1,
+          "sub_phases": {
+            "search_query_generation": {
+              "phase_name": "search_query_generation",
+              "input_tokens": 1286,
+              "output_tokens": 361,
+              "total_tokens": 1647,
+              "timestamp": 1769224701.0135906
+            }
+          }
+        },
+        "argument_creator": {
+          "node_name": "argument_creator",
+          "input_tokens": 2752,
+          "output_tokens": 1183,
+          "total_tokens": 3935,
+          "elapsed_time_seconds": 16.65394139289856,
+          "llm_call_count": 2,
+          "sub_phases": {
+            "context_analysis": {
+              "phase_name": "context_analysis",
+              "input_tokens": 1499,
+              "output_tokens": 369,
+              "total_tokens": 1868,
+              "timestamp": 1769224715.328885
+            },
+            "argument_construction": {
+              "phase_name": "argument_construction",
+              "input_tokens": 1253,
+              "output_tokens": 814,
+              "total_tokens": 2067,
+              "timestamp": 1769224726.9933183
+            }
+          }
+        }
+      }
+    }
+  ],
+  "tgs_snapshots": [
+    {
+      "round": 1,
+      "team": "anti_ai_code_review_parity",
+      "member": "Dr. Tom Becker",
+      "tgs": {
+        "g_standards_enforcement-d_quality_assurance_policy": 0,
+        "g_standards_enforcement-d_medical_innovation": 4370,
+        "g_standards_enforcement-d_dev_innovation": 3420,
+        "g_code_quality_innovation-d_quality_assurance_policy": 0,
+        "g_code_quality_innovation-d_medical_innovation": 0,
+        "g_code_quality_innovation-d_dev_innovation": 0,
+        "g_code_sustainability-d_quality_assurance_policy": 0,
+        "g_code_sustainability-d_medical_innovation": 0,
+        "g_code_sustainability-d_dev_innovation": 0
+      }
+    },
+    {
+      "round": 1,
+      "team": "anti_ai_code_review_parity",
+      "member": "Aisha Rahman",
+      "tgs": {
+        "g_standards_enforcement-d_quality_assurance_policy": 5355,
+        "g_standards_enforcement-d_medical_innovation": 8740,
+        "g_standards_enforcement-d_dev_innovation": 3420,
+        "g_code_quality_innovation-d_quality_assurance_policy": 0,
+        "g_code_quality_innovation-d_medical_innovation": 0,
+        "g_code_quality_innovation-d_dev_innovation": 0,
+        "g_code_sustainability-d_quality_assurance_policy": 5270,
+        "g_code_sustainability-d_medical_innovation": 0,
+        "g_code_sustainability-d_dev_innovation": 0
+      }
+    },
+    {
+      "round": 1,
+      "team": "pro_ai_code_review_parity",
+      "member": "Dr. Sarah Chen",
+      "tgs": {
+        "g_standards_enforcement-d_quality_assurance_policy": 0,
+        "g_standards_enforcement-d_medical_innovation": 4370,
+        "g_standards_enforcement-d_dev_innovation": 3420,
+        "g_code_quality_innovation-d_quality_assurance_policy": 0,
+        "g_code_quality_innovation-d_medical_innovation": 5320,
+        "g_code_quality_innovation-d_dev_innovation": 3960,
+        "g_code_sustainability-d_quality_assurance_policy": 0,
+        "g_code_sustainability-d_medical_innovation": 0,
+        "g_code_sustainability-d_dev_innovation": 0
+      }
+    },
+    {
+      "round": 1,
+      "team": "pro_ai_code_review_parity",
+      "member": "David Okafor",
+      "tgs": {
+        "g_standards_enforcement-d_quality_assurance_policy": 5355,
+        "g_standards_enforcement-d_medical_innovation": 4370,
+        "g_standards_enforcement-d_dev_innovation": 3420,
+        "g_code_quality_innovation-d_quality_assurance_policy": 0,
+        "g_code_quality_innovation-d_medical_innovation": 5320,
+        "g_code_quality_innovation-d_dev_innovation": 3960,
+        "g_code_sustainability-d_quality_assurance_policy": 5270,
+        "g_code_sustainability-d_medical_innovation": 5795,
+        "g_code_sustainability-d_dev_innovation": 0
+      }
+    },
+    {
+      "round": 2,
+      "team": "anti_ai_code_review_parity",
+      "member": "Dr. Tom Becker",
+      "tgs": {
+        "g_standards_enforcement-d_quality_assurance_policy": 5355,
+        "g_standards_enforcement-d_medical_innovation": 13110,
+        "g_standards_enforcement-d_dev_innovation": 6840,
+        "g_code_quality_innovation-d_quality_assurance_policy": 0,
+        "g_code_quality_innovation-d_medical_innovation": 0,
+        "g_code_quality_innovation-d_dev_innovation": 0,
+        "g_code_sustainability-d_quality_assurance_policy": 5270,
+        "g_code_sustainability-d_medical_innovation": 0,
+        "g_code_sustainability-d_dev_innovation": 0
+      }
+    },
+    {
+      "round": 2,
+      "team": "anti_ai_code_review_parity",
+      "member": "Aisha Rahman",
+      "tgs": {
+        "g_standards_enforcement-d_quality_assurance_policy": 5355,
+        "g_standards_enforcement-d_medical_innovation": 17480,
+        "g_standards_enforcement-d_dev_innovation": 10260,
+        "g_code_quality_innovation-d_quality_assurance_policy": 0,
+        "g_code_quality_innovation-d_medical_innovation": 0,
+        "g_code_quality_innovation-d_dev_innovation": 0,
+        "g_code_sustainability-d_quality_assurance_policy": 5270,
+        "g_code_sustainability-d_medical_innovation": 0,
+        "g_code_sustainability-d_dev_innovation": 0
+      }
+    },
+    {
+      "round": 2,
+      "team": "pro_ai_code_review_parity",
+      "member": "Dr. Sarah Chen",
+      "tgs": {
+        "g_standards_enforcement-d_quality_assurance_policy": 10710,
+        "g_standards_enforcement-d_medical_innovation": 8740,
+        "g_standards_enforcement-d_dev_innovation": 3420,
+        "g_code_quality_innovation-d_quality_assurance_policy": 0,
+        "g_code_quality_innovation-d_medical_innovation": 5320,
+        "g_code_quality_innovation-d_dev_innovation": 3960,
+        "g_code_sustainability-d_quality_assurance_policy": 5270,
+        "g_code_sustainability-d_medical_innovation": 5795,
+        "g_code_sustainability-d_dev_innovation": 0
+      }
+    },
+    {
+      "round": 2,
+      "team": "pro_ai_code_review_parity",
+      "member": "David Okafor",
+      "tgs": {
+        "g_standards_enforcement-d_quality_assurance_policy": 10710,
+        "g_standards_enforcement-d_medical_innovation": 13110,
+        "g_standards_enforcement-d_dev_innovation": 6840,
+        "g_code_quality_innovation-d_quality_assurance_policy": 0,
+        "g_code_quality_innovation-d_medical_innovation": 5320,
+        "g_code_quality_innovation-d_dev_innovation": 3960,
+        "g_code_sustainability-d_quality_assurance_policy": 5270,
+        "g_code_sustainability-d_medical_innovation": 5795,
+        "g_code_sustainability-d_dev_innovation": 0
+      }
+    }
+  ],
+  "final_tgs": {
+    "anti_ai_code_review_parity": {
+      "g_code_sustainability-d_dev_innovation": 0,
+      "g_code_sustainability-d_medical_innovation": 0,
+      "g_code_sustainability-d_quality_assurance_policy": 5270,
+      "g_code_quality_innovation-d_dev_innovation": 0,
+      "g_code_quality_innovation-d_medical_innovation": 0,
+      "g_code_quality_innovation-d_quality_assurance_policy": 0,
+      "g_standards_enforcement-d_dev_innovation": 10260,
+      "g_standards_enforcement-d_medical_innovation": 17480,
+      "g_standards_enforcement-d_quality_assurance_policy": 5355
+    },
+    "pro_ai_code_review_parity": {
+      "g_standards_enforcement-d_quality_assurance_policy": 10710,
+      "g_standards_enforcement-d_medical_innovation": 13110,
+      "g_standards_enforcement-d_dev_innovation": 6840,
+      "g_code_quality_innovation-d_quality_assurance_policy": 0,
+      "g_code_quality_innovation-d_medical_innovation": 5320,
+      "g_code_quality_innovation-d_dev_innovation": 3960,
+      "g_code_sustainability-d_dev_innovation": 0,
+      "g_code_sustainability-d_quality_assurance_policy": 5270,
+      "g_code_sustainability-d_medical_innovation": 5795
+    }
+  },
+  "execution_metrics": {
+    "total_nodes": 24,
+    "total_time_seconds": 712.1405911445618,
+    "total_tokens": 208208,
+    "total_input_tokens": 155903,
+    "total_output_tokens": 52305,
+    "teams": [
+      {
+        "team_name": "pro_ai_code_review_parity",
+        "total_nodes": 12,
+        "total_time_seconds": 139.4022717475891,
+        "total_tokens": 27385,
+        "total_input_tokens": 20672,
+        "total_output_tokens": 6713,
+        "average_time_per_node": 11.61685597896576,
+        "average_tokens_per_node": 2282.0833333333335,
+        "members": [
+          "Dr. James Morrison",
+          "Dr. Rachel Thompson"
+        ],
+        "nodes": [
+          "argument_creator",
+          "analyser",
+          "knowledge_retrieval"
+        ]
+      },
+      {
+        "team_name": "anti_ai_code_review_parity",
+        "total_nodes": 12,
+        "total_time_seconds": 572.7383193969727,
+        "total_tokens": 180823,
+        "total_input_tokens": 135231,
+        "total_output_tokens": 45592,
+        "average_time_per_node": 47.728193283081055,
+        "average_tokens_per_node": 15068.583333333334,
+        "members": [
+          "Prof. Michael Chen",
+          "Dr. Samantha Kumar"
+        ],
+        "nodes": [
+          "argument_creator",
+          "analyser",
+          "candidate_creator"
+        ]
+      }
+    ],
+    "members": [
+      {
+        "member_name": "Aisha Rahman",
+        "team_name": "anti_ai_code_review_parity",
+        "total_nodes": 6,
+        "total_time_seconds": 289.4551067352295,
+        "total_tokens": 94755,
+        "total_input_tokens": 71650,
+        "total_output_tokens": 23105,
+        "nodes": [
+          "argument_creator",
+          "analyser",
+          "candidate_creator"
+        ],
+        "rounds": [
+          1,
+          2
+        ]
+      },
+      {
+        "member_name": "Dr. Sarah Chen",
+        "team_name": "pro_ai_code_review_parity",
+        "total_nodes": 6,
+        "total_time_seconds": 69.6645610332489,
+        "total_tokens": 13354,
+        "total_input_tokens": 10095,
+        "total_output_tokens": 3259,
+        "nodes": [
+          "argument_creator",
+          "analyser",
+          "knowledge_retrieval"
+        ],
+        "rounds": [
+          1,
+          2
+        ]
+      },
+      {
+        "member_name": "Dr. Tom Becker",
+        "team_name": "anti_ai_code_review_parity",
+        "total_nodes": 6,
+        "total_time_seconds": 283.28321266174316,
+        "total_tokens": 86068,
+        "total_input_tokens": 63581,
+        "total_output_tokens": 22487,
+        "nodes": [
+          "argument_creator",
+          "analyser",
+          "candidate_creator"
+        ],
+        "rounds": [
+          1,
+          2
+        ]
+      },
+      {
+        "member_name": "David Okafor",
+        "team_name": "pro_ai_code_review_parity",
+        "total_nodes": 6,
+        "total_time_seconds": 69.73771071434021,
+        "total_tokens": 14031,
+        "total_input_tokens": 10577,
+        "total_output_tokens": 3454,
+        "nodes": [
+          "argument_creator",
+          "analyser",
+          "knowledge_retrieval"
+        ],
+        "rounds": [
+          1,
+          2
+        ]
+      }
+    ],
+    "all_node_metrics": [
+      {
+        "team_name": "anti_ai_code_review_parity",
+        "member_name": "Dr. Tom Becker",
+        "round": 1,
+        "node_name": "analyser",
+        "input_tokens": 1042,
+        "output_tokens": 513,
+        "total_tokens": 1555,
+        "elapsed_time_seconds": 4.739944696426392,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "tot analyser node": {
+            "phase_name": "tot analyser node",
+            "input_tokens": 1042,
+            "output_tokens": 513,
+            "total_tokens": 1555,
+            "timestamp": 1769224013.5710158
+          }
+        }
+      },
+      {
+        "team_name": "anti_ai_code_review_parity",
+        "member_name": "Dr. Tom Becker",
+        "round": 1,
+        "node_name": "argument_creator",
+        "input_tokens": 22014,
+        "output_tokens": 10355,
+        "total_tokens": 32369,
+        "elapsed_time_seconds": 125.62729930877686,
+        "llm_call_count": 18,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1701,
+            "output_tokens": 434,
+            "total_tokens": 2135,
+            "timestamp": 1769224130.7238321
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1060,
+            "output_tokens": 719,
+            "total_tokens": 1779,
+            "timestamp": 1769224139.1981928
+          }
+        }
+      },
+      {
+        "team_name": "anti_ai_code_review_parity",
+        "member_name": "Dr. Tom Becker",
+        "round": 1,
+        "node_name": "candidate_creator",
+        "input_tokens": 1828,
+        "output_tokens": 95,
+        "total_tokens": 1923,
+        "elapsed_time_seconds": 2.981431484222412,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "variation_selection": {
+            "phase_name": "variation_selection",
+            "input_tokens": 1828,
+            "output_tokens": 95,
+            "total_tokens": 1923,
+            "timestamp": 1769224140.9970107
+          }
+        }
+      },
+      {
+        "team_name": "anti_ai_code_review_parity",
+        "member_name": "Aisha Rahman",
+        "round": 1,
+        "node_name": "analyser",
+        "input_tokens": 1344,
+        "output_tokens": 667,
+        "total_tokens": 2011,
+        "elapsed_time_seconds": 6.345005035400391,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "tot analyser node": {
+            "phase_name": "tot analyser node",
+            "input_tokens": 1344,
+            "output_tokens": 667,
+            "total_tokens": 2011,
+            "timestamp": 1769224148.5942771
+          }
+        }
+      },
+      {
+        "team_name": "anti_ai_code_review_parity",
+        "member_name": "Aisha Rahman",
+        "round": 1,
+        "node_name": "argument_creator",
+        "input_tokens": 25815,
+        "output_tokens": 10995,
+        "total_tokens": 36810,
+        "elapsed_time_seconds": 133.6626591682434,
+        "llm_call_count": 18,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1998,
+            "output_tokens": 367,
+            "total_tokens": 2365,
+            "timestamp": 1769224274.0515285
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1354,
+            "output_tokens": 798,
+            "total_tokens": 2152,
+            "timestamp": 1769224282.257377
+          }
+        }
+      },
+      {
+        "team_name": "anti_ai_code_review_parity",
+        "member_name": "Aisha Rahman",
+        "round": 1,
+        "node_name": "candidate_creator",
+        "input_tokens": 1863,
+        "output_tokens": 90,
+        "total_tokens": 1953,
+        "elapsed_time_seconds": 3.8094065189361572,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "variation_selection": {
+            "phase_name": "variation_selection",
+            "input_tokens": 1863,
+            "output_tokens": 90,
+            "total_tokens": 1953,
+            "timestamp": 1769224284.4890444
+          }
+        }
+      },
+      {
+        "team_name": "pro_ai_code_review_parity",
+        "member_name": "Dr. Sarah Chen",
+        "round": 1,
+        "node_name": "analyser",
+        "input_tokens": 682,
+        "output_tokens": 159,
+        "total_tokens": 841,
+        "elapsed_time_seconds": 2.212200164794922,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "analyser node": {
+            "phase_name": "analyser node",
+            "input_tokens": 682,
+            "output_tokens": 159,
+            "total_tokens": 841,
+            "timestamp": 1769224288.3368053
+          }
+        }
+      },
+      {
+        "team_name": "pro_ai_code_review_parity",
+        "member_name": "Dr. Sarah Chen",
+        "round": 1,
+        "node_name": "knowledge_retrieval",
+        "input_tokens": 810,
+        "output_tokens": 355,
+        "total_tokens": 1165,
+        "elapsed_time_seconds": 15.474638223648071,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "search_query_generation": {
+            "phase_name": "search_query_generation",
+            "input_tokens": 810,
+            "output_tokens": 355,
+            "total_tokens": 1165,
+            "timestamp": 1769224293.2124908
+          }
+        }
+      },
+      {
+        "team_name": "pro_ai_code_review_parity",
+        "member_name": "Dr. Sarah Chen",
+        "round": 1,
+        "node_name": "argument_creator",
+        "input_tokens": 2340,
+        "output_tokens": 1138,
+        "total_tokens": 3478,
+        "elapsed_time_seconds": 15.342274904251099,
+        "llm_call_count": 2,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1257,
+            "output_tokens": 353,
+            "total_tokens": 1610,
+            "timestamp": 1769224307.8574843
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1083,
+            "output_tokens": 785,
+            "total_tokens": 1868,
+            "timestamp": 1769224319.1539917
+          }
+        }
+      },
+      {
+        "team_name": "pro_ai_code_review_parity",
+        "member_name": "David Okafor",
+        "round": 1,
+        "node_name": "analyser",
+        "input_tokens": 965,
+        "output_tokens": 224,
+        "total_tokens": 1189,
+        "elapsed_time_seconds": 2.8305511474609375,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "analyser node": {
+            "phase_name": "analyser node",
+            "input_tokens": 965,
+            "output_tokens": 224,
+            "total_tokens": 1189,
+            "timestamp": 1769224323.870267
+          }
+        }
+      },
+      {
+        "team_name": "pro_ai_code_review_parity",
+        "member_name": "David Okafor",
+        "round": 1,
+        "node_name": "knowledge_retrieval",
+        "input_tokens": 1095,
+        "output_tokens": 360,
+        "total_tokens": 1455,
+        "elapsed_time_seconds": 15.586699724197388,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "search_query_generation": {
+            "phase_name": "search_query_generation",
+            "input_tokens": 1095,
+            "output_tokens": 360,
+            "total_tokens": 1455,
+            "timestamp": 1769224329.1252568
+          }
+        }
+      },
+      {
+        "team_name": "pro_ai_code_review_parity",
+        "member_name": "David Okafor",
+        "round": 1,
+        "node_name": "argument_creator",
+        "input_tokens": 2911,
+        "output_tokens": 1174,
+        "total_tokens": 4085,
+        "elapsed_time_seconds": 15.836544752120972,
+        "llm_call_count": 2,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1537,
+            "output_tokens": 375,
+            "total_tokens": 1912,
+            "timestamp": 1769224345.4945328
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1374,
+            "output_tokens": 799,
+            "total_tokens": 2173,
+            "timestamp": 1769224355.2949347
+          }
+        }
+      },
+      {
+        "team_name": "anti_ai_code_review_parity",
+        "member_name": "Dr. Tom Becker",
+        "round": 2,
+        "node_name": "analyser",
+        "input_tokens": 1642,
+        "output_tokens": 667,
+        "total_tokens": 2309,
+        "elapsed_time_seconds": 11.739197731018066,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "tot analyser node": {
+            "phase_name": "tot analyser node",
+            "input_tokens": 1642,
+            "output_tokens": 667,
+            "total_tokens": 2309,
+            "timestamp": 1769224369.0549338
+          }
+        }
+      },
+      {
+        "team_name": "anti_ai_code_review_parity",
+        "member_name": "Dr. Tom Becker",
+        "round": 2,
+        "node_name": "argument_creator",
+        "input_tokens": 35175,
+        "output_tokens": 10743,
+        "total_tokens": 45918,
+        "elapsed_time_seconds": 134.29461455345154,
+        "llm_call_count": 18,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 2721,
+            "output_tokens": 416,
+            "total_tokens": 3137,
+            "timestamp": 1769224490.9700298
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1863,
+            "output_tokens": 890,
+            "total_tokens": 2753,
+            "timestamp": 1769224503.3495615
+          }
+        }
+      },
+      {
+        "team_name": "anti_ai_code_review_parity",
+        "member_name": "Dr. Tom Becker",
+        "round": 2,
+        "node_name": "candidate_creator",
+        "input_tokens": 1880,
+        "output_tokens": 114,
+        "total_tokens": 1994,
+        "elapsed_time_seconds": 3.9007248878479004,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "variation_selection": {
+            "phase_name": "variation_selection",
+            "input_tokens": 1880,
+            "output_tokens": 114,
+            "total_tokens": 1994,
+            "timestamp": 1769224505.284554
+          }
+        }
+      },
+      {
+        "team_name": "anti_ai_code_review_parity",
+        "member_name": "Aisha Rahman",
+        "round": 2,
+        "node_name": "analyser",
+        "input_tokens": 1949,
+        "output_tokens": 662,
+        "total_tokens": 2611,
+        "elapsed_time_seconds": 7.952171325683594,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "tot analyser node": {
+            "phase_name": "tot analyser node",
+            "input_tokens": 1949,
+            "output_tokens": 662,
+            "total_tokens": 2611,
+            "timestamp": 1769224515.2651126
+          }
+        }
+      },
+      {
+        "team_name": "anti_ai_code_review_parity",
+        "member_name": "Aisha Rahman",
+        "round": 2,
+        "node_name": "argument_creator",
+        "input_tokens": 38775,
+        "output_tokens": 10596,
+        "total_tokens": 49371,
+        "elapsed_time_seconds": 135.0215802192688,
+        "llm_call_count": 18,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 3022,
+            "output_tokens": 342,
+            "total_tokens": 3364,
+            "timestamp": 1769224641.0211558
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 2160,
+            "output_tokens": 944,
+            "total_tokens": 3104,
+            "timestamp": 1769224650.2872868
+          }
+        }
+      },
+      {
+        "team_name": "anti_ai_code_review_parity",
+        "member_name": "Aisha Rahman",
+        "round": 2,
+        "node_name": "candidate_creator",
+        "input_tokens": 1904,
+        "output_tokens": 95,
+        "total_tokens": 1999,
+        "elapsed_time_seconds": 2.6642844676971436,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "variation_selection": {
+            "phase_name": "variation_selection",
+            "input_tokens": 1904,
+            "output_tokens": 95,
+            "total_tokens": 1999,
+            "timestamp": 1769224651.677671
+          }
+        }
+      },
+      {
+        "team_name": "pro_ai_code_review_parity",
+        "member_name": "Dr. Sarah Chen",
+        "round": 2,
+        "node_name": "analyser",
+        "input_tokens": 1278,
+        "output_tokens": 192,
+        "total_tokens": 1470,
+        "elapsed_time_seconds": 2.7608304023742676,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "analyser node": {
+            "phase_name": "analyser node",
+            "input_tokens": 1278,
+            "output_tokens": 192,
+            "total_tokens": 1470,
+            "timestamp": 1769224655.7812986
+          }
+        }
+      },
+      {
+        "team_name": "pro_ai_code_review_parity",
+        "member_name": "Dr. Sarah Chen",
+        "round": 2,
+        "node_name": "knowledge_retrieval",
+        "input_tokens": 1598,
+        "output_tokens": 365,
+        "total_tokens": 1963,
+        "elapsed_time_seconds": 14.649897336959839,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "search_query_generation": {
+            "phase_name": "search_query_generation",
+            "input_tokens": 1598,
+            "output_tokens": 365,
+            "total_tokens": 1963,
+            "timestamp": 1769224661.2165518
+          }
+        }
+      },
+      {
+        "team_name": "pro_ai_code_review_parity",
+        "member_name": "Dr. Sarah Chen",
+        "round": 2,
+        "node_name": "argument_creator",
+        "input_tokens": 3387,
+        "output_tokens": 1050,
+        "total_tokens": 4437,
+        "elapsed_time_seconds": 19.224720001220703,
+        "llm_call_count": 2,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1836,
+            "output_tokens": 267,
+            "total_tokens": 2103,
+            "timestamp": 1769224674.6964755
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1551,
+            "output_tokens": 783,
+            "total_tokens": 2334,
+            "timestamp": 1769224689.6582386
+          }
+        }
+      },
+      {
+        "team_name": "pro_ai_code_review_parity",
+        "member_name": "David Okafor",
+        "round": 2,
+        "node_name": "analyser",
+        "input_tokens": 1568,
+        "output_tokens": 152,
+        "total_tokens": 1720,
+        "elapsed_time_seconds": 3.0164904594421387,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "analyser node": {
+            "phase_name": "analyser node",
+            "input_tokens": 1568,
+            "output_tokens": 152,
+            "total_tokens": 1720,
+            "timestamp": 1769224694.5245645
+          }
+        }
+      },
+      {
+        "team_name": "pro_ai_code_review_parity",
+        "member_name": "David Okafor",
+        "round": 2,
+        "node_name": "knowledge_retrieval",
+        "input_tokens": 1286,
+        "output_tokens": 361,
+        "total_tokens": 1647,
+        "elapsed_time_seconds": 15.813483238220215,
+        "llm_call_count": 1,
+        "sub_phases": {
+          "search_query_generation": {
+            "phase_name": "search_query_generation",
+            "input_tokens": 1286,
+            "output_tokens": 361,
+            "total_tokens": 1647,
+            "timestamp": 1769224701.0135906
+          }
+        }
+      },
+      {
+        "team_name": "pro_ai_code_review_parity",
+        "member_name": "David Okafor",
+        "round": 2,
+        "node_name": "argument_creator",
+        "input_tokens": 2752,
+        "output_tokens": 1183,
+        "total_tokens": 3935,
+        "elapsed_time_seconds": 16.65394139289856,
+        "llm_call_count": 2,
+        "sub_phases": {
+          "context_analysis": {
+            "phase_name": "context_analysis",
+            "input_tokens": 1499,
+            "output_tokens": 369,
+            "total_tokens": 1868,
+            "timestamp": 1769224715.328885
+          },
+          "argument_construction": {
+            "phase_name": "argument_construction",
+            "input_tokens": 1253,
+            "output_tokens": 814,
+            "total_tokens": 2067,
+            "timestamp": 1769224726.9933183
+          }
+        }
+      }
+    ]
+  }
+}
